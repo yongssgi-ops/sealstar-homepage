@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>홍보센터 | SEALSTAR (주)씰스타</title>
+<meta name="description" content="씰스타 홍보센터 - 전시회 참가 소식과 최신 뉴스, 신제품 정보를 전해드립니다." />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .pbanner{background:linear-gradient(115deg,var(--navy-3),var(--navy-2));color:#fff;padding:66px 0 54px;position:relative;overflow:hidden}
+  .pbanner::after{content:"";position:absolute;right:-60px;top:-40px;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(91,172,224,.35),transparent 70%)}
+  .pbanner .eyebrow{color:var(--sky)}
+  .pbanner h1{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.02em}
+  .pbanner p{color:#c4d5ec;margin-top:12px;max-width:620px}
+
+  .board{padding:44px 0 92px}
+  .filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:32px}
+  .filters button{border:1px solid var(--line);background:#fff;color:var(--muted);font-weight:700;font-size:14px;
+    padding:9px 18px;border-radius:999px;cursor:pointer;transition:.15s}
+  .filters button:hover{border-color:var(--sky)}
+  .filters button.on{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+  .ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+  .ncard{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;transition:.2s;display:flex;flex-direction:column;cursor:pointer}
+  .ncard:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:#cfe0f2}
+  .ncard .nh{height:190px;background:var(--navy-2) center/cover}
+  .ncard .nb{padding:22px;flex:1;display:flex;flex-direction:column}
+  .ncard .tag{align-self:flex-start;font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px;margin-bottom:13px}
+  .tag.exhibition{background:#eaf3fb;color:var(--sky-d)}
+  .tag.press{background:#fff2d6;color:#b57a00}
+  .tag.notice{background:#eef0f3;color:var(--grey)}
+  .ncard h4{color:var(--navy);font-size:18px;margin-bottom:10px;line-height:1.45}
+  .ncard .ex{color:var(--muted);font-size:14px;flex:1}
+  .ncard .date{color:var(--muted);font-size:13px;margin-top:16px;padding-top:14px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+  .ncard .date .place{color:var(--sky-d);font-weight:600}
+  .empty{color:var(--muted);padding:40px 0}
+
+  /* Modal */
+  .modal{position:fixed;inset:0;background:rgba(6,16,32,.86);z-index:200;display:none;align-items:center;justify-content:center;padding:24px}
+  .modal.show{display:flex}
+  .modal .box{background:#fff;border-radius:16px;max-width:720px;width:100%;max-height:88vh;overflow:auto;position:relative}
+  .modal .mh{height:300px;background:var(--navy-2) center/cover}
+  .modal .mc{padding:30px 34px 36px}
+  .modal .tag{display:inline-block;font-weight:700;font-size:12px;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+  .modal h3{color:var(--navy);font-size:24px;margin-bottom:8px;line-height:1.35}
+  .modal .meta{color:var(--muted);font-size:14px;margin-bottom:18px}
+  .modal .body-txt{color:#37424f;font-size:15.5px;line-height:1.8;white-space:pre-line}
+  .modal .src{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);white-space:normal}
+  .modal .src a{display:inline-flex;align-items:center;gap:6px;background:var(--bg-soft);border:1px solid var(--line);border-radius:999px;padding:9px 16px;font-size:13.5px;font-weight:700;color:var(--sky-d);transition:.15s}
+  .modal .src a:hover{border-color:var(--sky);background:#fff}
+  .modal .x{position:absolute;top:14px;right:18px;font-size:30px;color:#fff;cursor:pointer;line-height:1;
+    text-shadow:0 1px 6px rgba(0,0,0,.5)}
+
+  .admin-note{margin-top:40px;background:var(--bg-soft);border:1px dashed var(--line);border-radius:12px;padding:18px 22px;color:var(--muted);font-size:13.5px}
+  .admin-note b{color:var(--navy)}
+  code{background:#eef1f5;padding:1px 6px;border-radius:5px;font-size:12.5px}
+
+  @media(max-width:900px){.ngrid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.ngrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><img src="images/logo-color.png" alt="SEALSTAR" /></a>
+    <nav class="menu" id="menu">
+      <a href="index.html"><span class="ko">홈</span><span class="en">Home</span></a>
+      <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+      <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+      <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+      <a href="news.html" class="active"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      <a href="contact.html"><span class="ko">문의하기</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang">
+        <button id="ko-btn" class="on" onclick="setLang('ko')">KO</button>
+        <button id="en-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <span class="tel">02-2637-6200</span>
+      <button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="pbanner">
+  <div class="wrap">
+    <div class="eyebrow"><span class="ko">홍보센터</span><span class="en">News Center</span></div>
+    <h1><span class="ko">홍보센터</span><span class="en">News &amp; Exhibitions</span></h1>
+    <p><span class="ko">씰스타의 전시회 참가 소식과 신제품·회사 소식을 전해드립니다.</span><span class="en">Sealstar's exhibitions, new products and company updates.</span></p>
+  </div>
+</section>
+
+<!-- BOARD -->
+<section class="board">
+  <div class="wrap">
+    <div class="filters" id="filters">
+      <button class="on" data-f="all" onclick="NB.filter('all',this)"><span class="ko">전체</span><span class="en">All</span></button>
+      <button data-f="exhibition" onclick="NB.filter('exhibition',this)"><span class="ko">전시회</span><span class="en">Exhibitions</span></button>
+      <button data-f="press" onclick="NB.filter('press',this)"><span class="ko">언론보도</span><span class="en">Press</span></button>
+      <button data-f="notice" onclick="NB.filter('notice',this)"><span class="ko">공지</span><span class="en">Notice</span></button>
+    </div>
+    <div class="ngrid" id="ngrid"><!-- rendered by JS --></div>
+
+    <div class="admin-note">
+      <b><span class="ko">＊ 게시글 추가 방법</span><span class="en">＊ How to add posts</span></b>
+      <span class="ko"> — <code>js/news.js</code> 파일 상단의 <code>POSTS</code> 목록에 항목을 하나 추가하면 자동으로 게시됩니다. 이미지는 <code>images/</code> 폴더에 넣고 경로만 지정하세요.</span>
+      <span class="en"> — Add an item to the <code>POSTS</code> array at the top of <code>js/news.js</code>; it appears automatically. Place images in <code>images/</code> and set the path.</span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="flogo" src="images/logo-white.png" alt="SEALSTAR" />
+        <p class="ko-b">(주)씰스타 — 정밀 씰링 솔루션 전문 기업.<br>1982년 이래 고객의 충실한 사업 동반자로 함께합니다.</p>
+        <p class="en-b">Sealstar Co., Ltd. — a precision sealing solutions specialist since 1982.</p>
+      </div>
+      <div>
+        <h5><span class="ko">바로가기</span><span class="en">Quick Links</span></h5>
+        <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+        <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+        <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+        <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      </div>
+      <div>
+        <h5><span class="ko">회사 정보</span><span class="en">Company Info</span></h5>
+        <a><span class="ko">대표: 양희승</span><span class="en">CEO: Hee-seung Yang</span></a>
+        <a><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></a>
+        <a href="tel:0226376200">Tel. 02-2637-6200 · Fax. 02-2634-0482</a>
+        <a href="mailto:info@sealstar.com">info@sealstar.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 (주)씰스타 SEALSTAR Co., Ltd. All rights reserved.</span>
+      <span><span class="ko">사업자등록번호: 107-87-85067</span><span class="en">Biz Reg. 107-87-85067</span></span>
+    </div>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal" id="modal" onclick="if(event.target===this)this.classList.remove('show')">
+  <div class="box">
+    <span class="x" onclick="document.getElementById('modal').classList.remove('show')">×</span>
+    <div class="mh" id="m-img"></div>
+    <div class="mc">
+      <span class="tag" id="m-tag"></span>
+      <h3 id="m-title"></h3>
+      <div class="meta" id="m-meta"></div>
+      <div class="body-txt" id="m-body"></div>
+    </div>
+  </div>
+</div>
+
+<script src="js/site.js"></script>
+<script src="js/news.js"></script>
+</body>
+</html>

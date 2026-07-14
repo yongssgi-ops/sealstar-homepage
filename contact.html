@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>문의하기 | SEALSTAR (주)씰스타</title>
+<meta name="description" content="씰스타 문의하기 - 전화, 이메일, 견적 문의 양식. 사양·도면·수량을 알려주시면 담당자가 신속히 답변드립니다." />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  .pbanner{background:linear-gradient(115deg,var(--navy-3),var(--navy-2));color:#fff;padding:66px 0 54px;position:relative;overflow:hidden}
+  .pbanner::after{content:"";position:absolute;right:-60px;top:-40px;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(91,172,224,.35),transparent 70%)}
+  .pbanner .eyebrow{color:var(--sky)}
+  .pbanner h1{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.02em}
+  .crumb{color:#9db4d0;font-size:14px;margin-top:12px}
+  .crumb a:hover{color:#fff}
+
+  .cwrap{padding:56px 0 92px}
+  .cgrid{display:grid;grid-template-columns:340px 1fr;gap:34px;align-items:start}
+
+  /* Info card */
+  .cinfo{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
+  .cinfo .ci-h{background:var(--navy);color:#fff;padding:22px 24px}
+  .cinfo .ci-h .en-s{color:var(--sky);font-weight:700;font-size:12.5px;letter-spacing:.05em;margin-bottom:4px}
+  .cinfo .ci-h h3{font-size:19px;font-weight:800}
+  .ci-list{padding:6px 0}
+  .ci-item{display:flex;gap:14px;padding:16px 24px;border-top:1px solid var(--line)}
+  .ci-item:first-child{border-top:none}
+  .ci-item .ic{width:38px;height:38px;flex:none;border-radius:10px;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;font-size:17px;color:var(--sky-d)}
+  .ci-item .tx .lbl{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.03em;margin-bottom:2px}
+  .ci-item .tx a, .ci-item .tx span.val{color:var(--navy);font-weight:700;font-size:15px}
+  .ci-item .tx .sub{color:var(--muted);font-size:13px;margin-top:2px;line-height:1.6}
+  .ci-cta{padding:18px 24px 24px;display:flex;flex-direction:column;gap:10px}
+  .ci-cta .btn{width:100%;text-align:center}
+
+  /* Form */
+  .cform{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:32px 34px}
+  .cform h2{font-size:22px;color:var(--navy);font-weight:800;margin-bottom:6px}
+  .cform .lead{color:var(--muted);font-size:14.5px;margin-bottom:26px;line-height:1.7}
+  .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
+  .fgroup{margin-bottom:16px}
+  .fgroup label{display:block;font-size:13.5px;font-weight:700;color:var(--navy);margin-bottom:7px}
+  .fgroup label .req{color:#d64545;margin-left:2px}
+  .fgroup input, .fgroup select, .fgroup textarea{
+    width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:14.5px;font-family:inherit;color:var(--navy);background:#fff;transition:.15s}
+  .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(91,172,224,.15)}
+  .fgroup textarea{resize:vertical;min-height:130px}
+  .fsubmit{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px}
+  .fnote{color:var(--muted);font-size:13px;line-height:1.6}
+  .fok{display:none;margin-top:18px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:var(--navy);font-size:14px;font-weight:600}
+  .fok.show{display:block}
+
+  @media(max-width:900px){
+    .cgrid{grid-template-columns:1fr}
+    .frow{grid-template-columns:1fr}
+    .cform{padding:26px 22px}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><img src="images/logo-color.png" alt="SEALSTAR" /></a>
+    <nav class="menu" id="menu">
+      <a href="index.html"><span class="ko">홈</span><span class="en">Home</span></a>
+      <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+      <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+      <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+      <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      <a href="contact.html" class="active"><span class="ko">문의하기</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang">
+        <button id="ko-btn" class="on" onclick="setLang('ko')">KO</button>
+        <button id="en-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <span class="tel">02-2637-6200</span>
+      <button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- BANNER -->
+<section class="pbanner">
+  <div class="wrap">
+    <div class="eyebrow"><span class="ko">문의하기</span><span class="en">Contact</span></div>
+    <h1><span class="ko">씰스타에 문의하기</span><span class="en">Get in Touch with Sealstar</span></h1>
+    <div class="crumb"><a href="index.html"><span class="ko">홈</span><span class="en">Home</span></a> &nbsp;›&nbsp; <span class="ko">문의하기</span><span class="en">Contact</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="cwrap">
+  <div class="wrap cgrid">
+
+    <!-- INFO CARD -->
+    <div class="cinfo reveal">
+      <div class="ci-h">
+        <div class="en-s">SEALSTAR CO., LTD.</div>
+        <h3><span class="ko">(주)씰스타 연락처</span><span class="en">Contact Information</span></h3>
+      </div>
+      <div class="ci-list">
+        <div class="ci-item">
+          <div class="ic">☎</div>
+          <div class="tx">
+            <div class="lbl"><span class="ko">전화</span><span class="en">Phone</span></div>
+            <a href="tel:0226376200">02-2637-6200</a>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ic">🖨</div>
+          <div class="tx">
+            <div class="lbl"><span class="ko">팩스</span><span class="en">Fax</span></div>
+            <span class="val">02-2634-0482</span>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ic">✉</div>
+          <div class="tx">
+            <div class="lbl"><span class="ko">이메일</span><span class="en">Email</span></div>
+            <a href="mailto:info@sealstar.com">info@sealstar.com</a>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ic">📍</div>
+          <div class="tx">
+            <div class="lbl"><span class="ko">주소</span><span class="en">Address</span></div>
+            <span class="val"><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></span>
+          </div>
+        </div>
+        <div class="ci-item">
+          <div class="ic">🕐</div>
+          <div class="tx">
+            <div class="lbl"><span class="ko">영업시간</span><span class="en">Business Hours</span></div>
+            <span class="val"><span class="ko">평일 09:00 – 18:00 (주말·공휴일 휴무)</span><span class="en">Mon–Fri 09:00–18:00 (closed weekends & holidays)</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="ci-cta">
+        <a href="tel:0226376200" class="btn btn-primary">☎ <span class="ko">전화 문의</span><span class="en">Call Us</span></a>
+        <a href="mailto:info@sealstar.com" class="btn btn-ghost"><span class="ko">이메일 보내기</span><span class="en">Send an Email</span></a>
+      </div>
+    </div>
+
+    <!-- FORM -->
+    <div class="cform reveal">
+      <h2><span class="ko">견적 및 제품 문의</span><span class="en">Request a Quote</span></h2>
+      <p class="lead"><span class="ko">아래 양식을 작성해 제출하시면, 입력하신 내용이 담당자 이메일로 전달될 수 있도록 메일 작성 화면이 열립니다. 사양·도면·수량을 함께 알려주시면 더 빠르고 정확한 답변이 가능합니다.</span><span class="en">Fill in the form and submit — it will open your email app with the details pre-filled, ready to send to our team. Including specs, drawings and quantity helps us respond faster and more accurately.</span></p>
+
+      <form id="cform">
+        <div class="frow">
+          <div class="fgroup">
+            <label><span class="ko">이름</span><span class="en">Name</span><span class="req">*</span></label>
+            <input type="text" id="f-name" required />
+          </div>
+          <div class="fgroup">
+            <label><span class="ko">회사명</span><span class="en">Company</span></label>
+            <input type="text" id="f-company" />
+          </div>
+        </div>
+        <div class="frow">
+          <div class="fgroup">
+            <label><span class="ko">이메일</span><span class="en">Email</span><span class="req">*</span></label>
+            <input type="email" id="f-email" required />
+          </div>
+          <div class="fgroup">
+            <label><span class="ko">연락처</span><span class="en">Phone</span></label>
+            <input type="tel" id="f-phone" />
+          </div>
+        </div>
+        <div class="fgroup">
+          <label><span class="ko">문의 제품/분야</span><span class="en">Product / Area of Interest</span></label>
+          <select id="f-topic">
+            <option value=""><span class="ko">선택 안 함</span></option>
+            <option value="오링/O-Ring">오링 (O-Ring)</option>
+            <option value="유공압씰/Hydraulic&Pneumatic Seal">유공압씰 (Hydraulic &amp; Pneumatic Seal)</option>
+            <option value="오일씰/Oil Seal">오일씰 (Oil Seal)</option>
+            <option value="스프링에너자이드씰/Spring-Energized Seal">스프링에너자이드씰 (Spring-Energized Seal)</option>
+            <option value="PEEK">PEEK</option>
+            <option value="메카니컬씰/Mechanical Seal">메카니컬씰 (Mechanical Seal)</option>
+            <option value="ACM베어링/ACM Bearing">ACM베어링 (ACM Bearing)</option>
+            <option value="자석필터/Magnetic Filter">자석필터 (Magnetic Filter)</option>
+            <option value="기타/Other">기타 (Other)</option>
+          </select>
+        </div>
+        <div class="fgroup">
+          <label><span class="ko">문의 내용</span><span class="en">Message</span><span class="req">*</span></label>
+          <textarea id="f-msg" required placeholder="사양·도면·수량 등을 자유롭게 적어주세요."></textarea>
+        </div>
+
+        <div class="fsubmit">
+          <button type="submit" class="btn btn-primary"><span class="ko">문의 보내기</span><span class="en">Send Inquiry</span></button>
+          <span class="fnote"><span class="ko">* 표시는 필수 입력 항목입니다.</span><span class="en">* Required fields.</span></span>
+        </div>
+        <div class="fok" id="fok"><span class="ko">이메일 작성 화면이 열리지 않으면 info@sealstar.com 으로 직접 보내주세요.</span><span class="en">If your email app didn't open, please send directly to info@sealstar.com.</span></div>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="flogo" src="images/logo-white.png" alt="SEALSTAR" />
+        <p class="ko-b">(주)씰스타 — 정밀 씰링 솔루션 전문 기업.<br>1982년 이래 고객의 충실한 사업 동반자로 함께합니다.</p>
+        <p class="en-b">Sealstar Co., Ltd. — a precision sealing solutions specialist since 1982.</p>
+      </div>
+      <div>
+        <h5><span class="ko">바로가기</span><span class="en">Quick Links</span></h5>
+        <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+        <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+        <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+        <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      </div>
+      <div>
+        <h5><span class="ko">회사 정보</span><span class="en">Company Info</span></h5>
+        <a><span class="ko">대표: 양희승</span><span class="en">CEO: Hee-seung Yang</span></a>
+        <a><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></a>
+        <a href="tel:0226376200">Tel. 02-2637-6200 · Fax. 02-2634-0482</a>
+        <a href="mailto:info@sealstar.com">info@sealstar.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 (주)씰스타 SEALSTAR Co., Ltd. All rights reserved.</span>
+      <span><span class="ko">사업자등록번호: 107-87-85067</span><span class="en">Biz Reg. 107-87-85067</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+<script>
+(function(){
+  var form = document.getElementById('cform');
+  if(!form) return;
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var name = document.getElementById('f-name').value.trim();
+    var company = document.getElementById('f-company').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    var phone = document.getElementById('f-phone').value.trim();
+    var topic = document.getElementById('f-topic').value;
+    var msg = document.getElementById('f-msg').value.trim();
+
+    var subject = '[씰스타 견적문의] ' + (topic || '일반 문의') + ' - ' + name;
+    var bodyLines = [
+      '이름: ' + name,
+      '회사명: ' + (company || '-'),
+      '이메일: ' + email,
+      '연락처: ' + (phone || '-'),
+      '문의 제품/분야: ' + (topic || '-'),
+      '',
+      '문의 내용:',
+      msg
+    ];
+    var mailto = 'mailto:info@sealstar.com'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+    window.location.href = mailto;
+    document.getElementById('fok').classList.add('show');
+  });
+})();
+</script>
+</body>
+</html>

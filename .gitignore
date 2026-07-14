@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+Thumbs.db
+images/
+제품소개용 카탈로그자료/
+*.png
+*.jpg
+*.jpeg
+*.pdf

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEALSTAR (주)씰스타 | 정밀 씰링 솔루션</title>
+<meta name="description" content="(주)씰스타는 유압·공압씰, 오일씰, 가공씰, 스프링에너자이즈씰 등 정밀 씰링 제품을 공급하는 전문 기업입니다." />
+<link rel="stylesheet" href="css/style.css" />
+<style>
+  /* ---------- Hero (image slideshow + optional video) ---------- */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:var(--navy-3)}
+  .hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+  .slideshow{position:absolute;inset:0;z-index:0}
+  .slideshow .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;animation:heroFade 36s infinite}
+  .slideshow .slide:nth-child(1){animation-delay:0s}
+  .slideshow .slide:nth-child(2){animation-delay:6s}
+  .slideshow .slide:nth-child(3){animation-delay:12s}
+  .slideshow .slide:nth-child(4){animation-delay:18s}
+  .slideshow .slide:nth-child(5){animation-delay:24s}
+  .slideshow .slide:nth-child(6){animation-delay:30s}
+  @keyframes heroFade{
+    0%{opacity:0;transform:scale(1)}
+    2%{opacity:1}
+    14%{opacity:1;transform:scale(1.08)}
+    17%{opacity:0}
+    100%{opacity:0;transform:scale(1)}
+  }
+  .hero::after{content:"";position:absolute;inset:0;z-index:1;
+    background:linear-gradient(110deg,rgba(8,20,44,.93) 0%,rgba(10,28,52,.80) 45%,rgba(18,48,90,.48) 100%)}
+  .hero .wrap{position:relative;z-index:2;color:#fff;padding:60px 24px}
+  .hero .eyebrow{color:var(--sky)}
+  .hero h1{font-size:clamp(34px,5.2vw,60px);line-height:1.12;font-weight:900;letter-spacing:-.03em;margin-bottom:22px;max-width:840px}
+  .hero h1 .hl{color:var(--sky)}
+  .hero p.sub{font-size:clamp(16px,2vw,20px);color:#d6e2f2;max-width:640px;margin-bottom:34px}
+  .hero-actions{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:40px}
+  .hero-stats{display:flex;gap:46px;margin-top:52px;flex-wrap:wrap}
+  .hero-stats .n{font-size:clamp(30px,4vw,44px);font-weight:900;color:#fff;line-height:1}
+  .hero-stats .n span{color:var(--amber)}
+  .hero-stats .l{color:#b9c8dc;font-size:14px;margin-top:8px}
+  .chips{display:flex;flex-wrap:wrap;gap:10px}
+  .chips a{border:1px solid rgba(255,255,255,.3);color:#e6eefb;padding:9px 16px;border-radius:999px;font-size:13.5px;font-weight:600;transition:.18s}
+  .chips a:hover{background:var(--sky);border-color:var(--sky);color:#04223b}
+
+  /* ---------- Trust bar ---------- */
+  .trust{background:var(--navy-3);color:#c3d1e4;padding:20px 0;border-top:1px solid rgba(255,255,255,.06)}
+  .trust .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:14.5px;font-weight:600}
+  .trust b{color:#fff}
+  .trust .tags b{color:var(--sky)}
+
+  /* ---------- Pillars strip ---------- */
+  .pillars{background:var(--navy);color:#cdd8e8}
+  .pillars .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:0 24px}
+  .pillars .p{padding:30px 22px;border-left:1px solid rgba(255,255,255,.1)}
+  .pillars .p:first-child{border-left:none}
+  .pillars .p .en-t{color:var(--sky);font-weight:800;font-size:13px;letter-spacing:.08em;margin-bottom:8px}
+  .pillars .p .ko-t{color:#fff;font-weight:700;font-size:16px}
+
+  /* ---------- About ---------- */
+  .about{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+  .about .imgs{position:relative;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);min-height:420px}
+  .about p{color:var(--muted);margin-bottom:14px}
+  .about .actions{display:flex;gap:12px;margin-top:26px;flex-wrap:wrap}
+
+  /* ---------- Products preview ---------- */
+  .pgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .pcard{position:relative;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);background:#fff;transition:.22s;display:block}
+  .pcard:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#cfe0f2}
+  .pcard .ph{height:180px;background:#f0f3f7 center/cover;position:relative}
+  .pcard .pb{padding:18px 20px}
+  .pcard h3{font-size:17px;color:var(--navy);margin-bottom:6px}
+  .pcard .pdesc{font-size:13.5px;color:var(--muted);line-height:1.55}
+  .pcard .en-s{font-size:12.5px;color:var(--sky-d);font-weight:700;letter-spacing:.04em}
+  .pcard .go{position:absolute;top:14px;right:14px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.9);
+    display:flex;align-items:center;justify-content:center;color:var(--navy);font-weight:800;transition:.2s}
+  .pcard:hover .go{background:var(--amber)}
+
+  /* ---------- Markets ---------- */
+  .mgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .mcard{position:relative;border-radius:var(--radius);overflow:hidden;min-height:190px;color:#fff;display:flex;align-items:flex-end;padding:20px;
+    background:var(--navy) center/cover}
+  .mcard::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,48,.1),rgba(9,25,48,.85))}
+  .mcard span{position:relative;z-index:1;font-weight:800;font-size:16.5px}
+  .m1{background-image:url("https://images.pexels.com/photos/34334647/pexels-photo-34334647.jpeg?auto=compress&cs=tinysrgb&w=700")}
+  .m2{background-image:url("https://images.pexels.com/photos/14887614/pexels-photo-14887614.jpeg?auto=compress&cs=tinysrgb&w=700")}
+  .m3{background-image:url("https://images.pexels.com/photos/4460676/pexels-photo-4460676.jpeg?auto=compress&cs=tinysrgb&w=700")}
+  .m4{background-image:url("https://images.pexels.com/photos/15970032/pexels-photo-15970032.jpeg?auto=compress&cs=tinysrgb&w=700")}
+  .m5{background-image:url("https://images.pexels.com/photos/9083327/pexels-photo-9083327.jpeg?auto=compress&cs=tinysrgb&w=700")}
+  .m6{background-image:url("https://images.pexels.com/photos/23783/rocket-launch-space-discovery.png?auto=compress&cs=tinysrgb&w=700")}
+  .m7{background-image:url("https://images.pexels.com/photos/9259963/pexels-photo-9259963.jpeg?auto=compress&cs=tinysrgb&w=700")}
+
+  /* ---------- Strengths ---------- */
+  .strengths{background:var(--bg-soft)}
+  .sgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:8px}
+  .scard{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+  .scard .num{font-size:34px;font-weight:900;color:var(--sky);line-height:1;margin-bottom:14px}
+  .scard h4{color:var(--navy);font-size:19px;margin-bottom:8px}
+  .scard p{color:var(--muted);font-size:15px}
+
+  /* ---------- News preview ---------- */
+  .ngrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .ncard{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:#fff;transition:.2s;display:flex;flex-direction:column}
+  .ncard:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+  .ncard .nh{height:170px;background:var(--navy-2) center/cover}
+  .ncard .nb{padding:20px;flex:1;display:flex;flex-direction:column}
+  .ncard .tag{align-self:flex-start;background:#eaf3fb;color:var(--sky-d);font-weight:700;font-size:12px;padding:4px 11px;border-radius:999px;margin-bottom:12px}
+  .ncard h4{color:var(--navy);font-size:17px;margin-bottom:8px;line-height:1.4}
+  .ncard .date{color:var(--muted);font-size:13px;margin-top:auto}
+
+  /* ---------- CTA ---------- */
+  .cta-band{background:linear-gradient(120deg,var(--sky-d),var(--navy-2));color:#fff;border-radius:22px;padding:56px;text-align:center;margin:0 24px}
+  .cta-band h2{font-size:clamp(24px,3vw,32px);font-weight:900;margin-bottom:12px}
+  .cta-band p{color:#e2edf8;margin-bottom:26px;font-size:17px}
+
+  @media(max-width:980px){
+    .pillars .wrap{grid-template-columns:1fr 1fr}
+    .pillars .p{border-left:none;border-top:1px solid rgba(255,255,255,.1)}
+    .about{grid-template-columns:1fr;gap:34px}
+    .pgrid,.mgrid,.sgrid{grid-template-columns:1fr 1fr}
+    .ngrid{grid-template-columns:1fr}
+    .cta-band{padding:40px 22px}
+  }
+  @media(max-width:560px){.pgrid,.mgrid,.sgrid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><img src="images/logo-color.png" alt="SEALSTAR" /></a>
+    <nav class="menu" id="menu">
+      <a href="index.html" class="active"><span class="ko">홈</span><span class="en">Home</span></a>
+      <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+      <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+      <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+      <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      <a href="contact.html"><span class="ko">문의하기</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang">
+        <button id="ko-btn" class="on" onclick="setLang('ko')">KO</button>
+        <button id="en-btn" onclick="setLang('en')">EN</button>
+      </div>
+      <span class="tel">02-2637-6200</span>
+      <button class="hamb" onclick="document.getElementById('menu').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <!-- 산업현장 이미지가 자동 전환됩니다 (건설·반도체·원자력·우주항공 / 교체 가능: 아래 background-image 경로). -->
+  <div class="slideshow">
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/34334647/pexels-photo-34334647.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/14887614/pexels-photo-14887614.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/4460676/pexels-photo-4460676.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/15970032/pexels-photo-15970032.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/23783/rocket-launch-space-discovery.png?auto=compress&cs=tinysrgb&w=1600')"></div>
+    <div class="slide" style="background-image:url('https://images.pexels.com/photos/9259963/pexels-photo-9259963.jpeg?auto=compress&cs=tinysrgb&w=1600')"></div>
+  </div>
+  <!-- 동영상 준비: video/hero.mp4 파일을 넣으면 이미지 대신 자동 재생됩니다. -->
+  <video autoplay muted loop playsinline>
+    <source src="video/hero.mp4" type="video/mp4" />
+  </video>
+  <div class="wrap">
+    <div class="eyebrow">SEALSTAR · Sealing Solutions · Since 1982</div>
+    <h1>
+      <span class="ko">세상을 움직이는 힘,<br>그 틈을 <span class="hl">씰스타</span>가 채웁니다</span>
+      <span class="en">The Forces That Move the World,<br>Sealed by <span class="hl">Sealstar</span></span>
+    </h1>
+    <p class="sub">
+      <span class="ko">건설·반도체·원자력·우주항공까지, 가장 가혹한 현장이 요구하는 정밀 씰링. 1982년부터 씰스타가 산업의 신뢰를 지켜왔습니다.</span>
+      <span class="en">From construction and semiconductors to nuclear and aerospace — precision sealing demanded by the most extreme environments. Since 1982, Sealstar has safeguarded the trust of industry.</span>
+    </p>
+    <div class="hero-actions">
+      <a href="products.html" class="btn btn-primary"><span class="ko">제품 둘러보기</span><span class="en">Explore Products</span></a>
+      <a href="contact.html" class="btn btn-ghost"><span class="ko">견적 문의</span><span class="en">Request a Quote</span></a>
+    </div>
+    <div class="hero-stats">
+      <div><div class="n">1982</div><div class="l"><span class="ko">설립</span><span class="en">Established</span></div></div>
+      <div><div class="n">40<span>+</span></div><div class="l"><span class="ko">년 현장 경험</span><span class="en">Years in the Field</span></div></div>
+      <div><div class="n">40,000<span>+</span></div><div class="l"><span class="ko">등록 제품</span><span class="en">Registered Products</span></div></div>
+      <div><div class="n">3,000<span>+</span></div><div class="l"><span class="ko">등록 업체</span><span class="en">Registered Partners</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TRUST BAR ===== -->
+<div class="trust">
+  <div class="wrap">
+    <span class="ko">건설장비 · 산업용 기계 · 반도체 장비 · 선박 부품 분야 <b>신뢰받는 씰링 파트너</b></span>
+    <span class="en">A <b>trusted sealing partner</b> for construction, industrial machinery, semiconductor &amp; marine</span>
+    <span class="tags"><b>PU</b> · <b>Rubber</b> · <b>PTFE</b> · <b>O-Ring</b> · <b>PEEK</b> · <b>ACM</b></span>
+  </div>
+</div>
+
+<!-- ===== PILLARS ===== -->
+<div class="pillars">
+  <div class="wrap">
+    <div class="p"><div class="en-t">WIDE STOCK &amp; VARIETY</div><div class="ko-t"><span class="ko">다양한 품종, 재고운영</span><span class="en">Broad Range, Large Inventory</span></div></div>
+    <div class="p"><div class="en-t">LARGEST STOCK &amp; MOLDS</div><div class="ko-t"><span class="ko">업계최다재고 금형보유</span><span class="en">Industry-Leading Stock &amp; Molds</span></div></div>
+    <div class="p"><div class="en-t">EXPERT WORKFORCE</div><div class="ko-t"><span class="ko">전문인력 보유</span><span class="en">Skilled Specialists</span></div></div>
+    <div class="p"><div class="en-t">GLOBAL CERTIFICATIONS</div><div class="ko-t"><span class="ko">글로벌 인증 보유</span><span class="en">Global Standards</span></div></div>
+  </div>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="wrap about">
+    <div class="imgs reveal photo-rotator" data-interval="4200" data-photos='[
+      {"img":"images/web/company-exterior.jpg","ko":"본사 외부전경","en":"Headquarters Exterior"},
+      {"img":"images/web/company-warehouse-2f.jpg","ko":"대규모 재고 창고","en":"Large-Scale Stock Warehouse"},
+      {"img":"images/web/company-warehouse-annex.jpg","ko":"제2창고","en":"Annex Warehouse"}
+    ]'></div>
+    <div class="reveal">
+      <div class="eyebrow"><span class="ko">회사소개</span><span class="en">About Sealstar</span></div>
+      <h2 class="title">About SEALSTAR<br><span style="color:var(--sky-d)">"Sealing Solutions"</span></h2>
+      <p class="ko-b">(주)씰스타는 1982년 설립 이래로 건설장비, 산업용 기계, 반도체 장비 및 선박 부품 등에 우레탄, 고무제품, 오링, 유공압 씰 및 테프론 제품 등을 공급하여 왔습니다.</p>
+      <p class="ko-b">현재는 축적된 노하우와 전문성을 바탕으로 보다 정밀하고 세분화되는 산업기술의 추이에 따라 사업의 영역을 확대하고 전문화해 가고 있습니다.</p>
+      <p class="ko-b">기술력과 품질, 가격과 납기, 신용을 최고의 가치로 여기며, 앞으로도 고객의 충실한 사업 동반자로서 귀사의 발전에 기여하겠습니다.</p>
+      <p class="en-b">Since its founding in 1982, Sealstar has supplied polyurethane, rubber components, O-rings, hydraulic/pneumatic seals and PTFE products to the construction equipment, industrial machinery, semiconductor and marine industries.</p>
+      <p class="en-b">Backed by decades of know-how, we continue to expand and specialize in step with ever more precise industrial technology.</p>
+      <p class="en-b">We uphold technology, quality, price, delivery and trust as our highest values — a faithful partner committed to our customers' growth.</p>
+      <div class="actions">
+        <a href="products.html" class="btn btn-sky"><span class="ko">제품 둘러보기</span><span class="en">View Products</span></a>
+        <a href="about.html" class="btn btn-outline"><span class="ko">회사소개 더보기 →</span><span class="en">Learn more →</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCTS PREVIEW ===== -->
+<section class="section-soft" id="products">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="eyebrow"><span class="ko">제품소개</span><span class="en">Our Products</span></div>
+        <h2 class="title"><span class="ko">씰스타 제품 라인업</span><span class="en">Sealstar Product Range</span></h2>
+        <p class="lead"><span class="ko">기본씰부터 맞춤 가공씰까지 — 다양한 사용조건에 맞는 고성능 씰링 제품을 제공합니다.</span><span class="en">From standard seals to custom-machined solutions for every operating condition.</span></p>
+      </div>
+      <a href="products.html" class="btn btn-primary"><span class="ko">전체 제품 보기</span><span class="en">All Products</span></a>
+    </div>
+    <div class="pgrid">
+      <a class="pcard" href="products.html#oring"><div class="ph" style="background-image:url('images/web/oring1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">O-RING</div><h3><span class="ko">오링</span><span class="en">O-Ring</span></h3><p class="pdesc"><span class="ko">오링·캡슐오링·쿼드링 등 다양한 규격의 기본 밀봉 씰.</span><span class="en">O-rings, capsule O-rings, quad-rings and more standard seals.</span></p></div></a>
+      <a class="pcard" href="products.html#hp"><div class="ph" style="background-image:url('images/web/hyd1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">HYDRAULIC &amp; PNEUMATIC</div><h3><span class="ko">유압 &amp; 공압씰</span><span class="en">Hydraulic &amp; Pneumatic</span></h3><p class="pdesc"><span class="ko">로드·피스톤·와이퍼 등 고압 환경 대응 씰.</span><span class="en">Rod, piston and wiper seals for high-pressure systems.</span></p></div></a>
+      <a class="pcard" href="products.html#oil"><div class="ph" style="background-image:url('images/web/oil1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">OIL SEAL</div><h3><span class="ko">오일씰</span><span class="en">Oil Seal</span></h3><p class="pdesc"><span class="ko">회전축 누유 방지를 위한 정밀 오일씰.</span><span class="en">Precision oil seals preventing shaft leakage.</span></p></div></a>
+      <a class="pcard" href="products.html#spring"><div class="ph" style="background-image:url('images/web/spring1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">SPRING-ENERGIZED &amp; PEEK</div><h3><span class="ko">스프링에너자이즈씰 &amp; PEEK</span><span class="en">Spring-Energized &amp; PEEK</span></h3><p class="pdesc"><span class="ko">극한 온도·화학 환경용 고성능 씰과 PEEK 부품.</span><span class="en">High-performance seals &amp; PEEK for extreme conditions.</span></p></div></a>
+      <a class="pcard" href="products.html#isolator"><div class="ph" style="background-image:url('images/web/isolator1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">BEARING ISOLATOR</div><h3><span class="ko">베어링아이솔레이터</span><span class="en">Bearing Isolator</span></h3><p class="pdesc"><span class="ko">비접촉 구조로 반영구적인 베어링 보호 아이솔레이터.</span><span class="en">Non-contact isolator with near-permanent service life.</span></p></div></a>
+      <a class="pcard" href="products.html#acm"><div class="ph" style="background-image:url('images/web/acm1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">ACM BEARING</div><h3><span class="ko">ACM 베어링</span><span class="en">ACM Bearing</span></h3><p class="pdesc"><span class="ko">고하중·저마찰 복합소재 베어링.</span><span class="en">High-load, low-friction composite bearing.</span></p></div></a>
+      <a class="pcard" href="products.html#magnetic"><div class="ph" style="background-image:url('images/web/magnetic1.jpg')"></div><div class="go">→</div><div class="pb"><div class="en-s">MAGNETIC FILTER</div><h3><span class="ko">자석필터</span><span class="en">Magnetic Filter</span></h3><p class="pdesc"><span class="ko">유체 내 금속 이물을 자력으로 제거하는 필터.</span><span class="en">Magnetic filters removing metal debris from fluids.</span></p></div></a>
+      <a class="pcard" href="contact.html" style="background:var(--navy);color:#fff"><div class="ph" style="background:linear-gradient(135deg,var(--navy-2),var(--sky-d));display:flex;align-items:center;justify-content:center;font-size:40px">＋</div><div class="pb"><div class="en-s" style="color:var(--sky)">OEM / ODM</div><h3 style="color:#fff"><span class="ko">맞춤 개발 문의</span><span class="en">Custom Development</span></h3></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== MARKETS ===== -->
+<section id="markets">
+  <div class="wrap">
+    <div class="eyebrow"><span class="ko">적용분야</span><span class="en">Markets We Serve</span></div>
+    <h2 class="title"><span class="ko">씰스타가 함께하는 산업</span><span class="en">Industries Powered by Sealstar</span></h2>
+    <p class="lead" style="margin-bottom:36px"><span class="ko">다양한 사용조건(압력·온도·유체)에 대한 최적의 씰링 솔루션을 제공합니다.</span><span class="en">Optimal sealing solutions for diverse operating conditions — pressure, temperature and fluid media.</span></p>
+    <div class="mgrid">
+      <a class="mcard m1" href="markets.html#construction"><span class="ko">건설기계 &amp; 중장비</span><span class="en">Construction &amp; Heavy Equipment</span></a>
+      <a class="mcard m2" href="markets.html#semiconductor"><span class="ko">반도체 &amp; 디스플레이</span><span class="en">Semiconductor &amp; Display</span></a>
+      <a class="mcard m3" href="markets.html#energy"><span class="ko">에너지 (수소·LNG·원자력)</span><span class="en">Energy (H₂·LNG·Nuclear)</span></a>
+      <a class="mcard m4" href="markets.html#oilgas"><span class="ko">석유가스화학</span><span class="en">Oil, Gas &amp; Chemical</span></a>
+      <a class="mcard m5" href="markets.html#shipbuilding"><span class="ko">조선해양</span><span class="en">Marine &amp; Offshore</span></a>
+      <a class="mcard m6" href="markets.html#aerospace"><span class="ko">우주항공</span><span class="en">Aerospace</span></a>
+      <a class="mcard m7" href="markets.html#food-pharma"><span class="ko">식·의약품</span><span class="en">Food &amp; Pharmaceutical</span></a>
+      <a class="mcard" href="contact.html" style="background:var(--navy);align-items:center;justify-content:center"><span style="text-align:center"><span class="ko">기타 산업<br>문의하기 →</span><span class="en">Other Industries<br>Contact →</span></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STRENGTHS ===== -->
+<section class="strengths">
+  <div class="wrap">
+    <div class="eyebrow"><span class="ko">경쟁력</span><span class="en">Why Sealstar</span></div>
+    <h2 class="title"><span class="ko">왜 씰스타인가</span><span class="en">Why Choose Sealstar</span></h2>
+    <p class="lead" style="margin-bottom:8px"><span class="ko">40여 년간 이어온 신뢰. 축적된 노하우부터 신속한 납기까지, 씰스타가 선택받는 이유입니다.</span><span class="en">Over 40 years of trust — from accumulated know-how to fast delivery, the reasons customers choose Sealstar.</span></p>
+    <div class="sgrid">
+      <div class="scard reveal"><div class="num">01</div><h4><span class="ko">축적된 노하우</span><span class="en">Proven Know-How</span></h4><p><span class="ko">1982년 설립 이래 건설·산업기계·반도체·조선 등 다양한 현장에서 검증된 씰링 경험과 숙련된 인재가 함께합니다.</span><span class="en">Sealing experience proven across construction, machinery, semiconductor and marine since 1982 — backed by skilled people.</span></p></div>
+      <div class="scard reveal"><div class="num">02</div><h4><span class="ko">폭넓은 소재 역량</span><span class="en">Material Versatility</span></h4><p><span class="ko">PU·고무·PTFE·PEEK 등 사용조건에 맞는 최적 소재를 선정해 표준품부터 극한 환경용까지 대응합니다.</span><span class="en">Optimal material selection — PU, rubber, PTFE, PEEK — from standard parts to extreme environments.</span></p></div>
+      <div class="scard reveal"><div class="num">03</div><h4><span class="ko">기술 지원</span><span class="en">Technical Support</span></h4><p><span class="ko">해외 엔지니어와의 협업을 통한 기술 지원으로 소재 선정부터 설계 검토까지 함께합니다.</span><span class="en">Collaboration with overseas engineers — from material selection to design review.</span></p></div>
+      <div class="scard reveal"><div class="num">04</div><h4><span class="ko">맞춤 가공 &amp; 신속 납기</span><span class="en">Custom &amp; Fast Delivery</span></h4><p><span class="ko">비표준 사양의 정밀 가공과 자체 재고관리 직납 체계로 긴급 수요에도 빠르게 대응합니다.</span><span class="en">Precision machining for non-standard specs, plus in-house inventory and direct supply for urgent needs.</span></p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NEWS / EXHIBITIONS PREVIEW ===== -->
+<section class="section-soft">
+  <div class="wrap">
+    <div class="head-row">
+      <div>
+        <div class="eyebrow"><span class="ko">홍보센터</span><span class="en">News &amp; Exhibitions</span></div>
+        <h2 class="title"><span class="ko">씰스타 소식 &amp; 전시회</span><span class="en">Latest News &amp; Exhibitions</span></h2>
+        <p class="lead"><span class="ko">씰스타의 전시회 참가 및 최신 소식을 전해드립니다.</span><span class="en">Follow Sealstar's exhibitions and latest updates.</span></p>
+      </div>
+      <a href="news.html" class="btn btn-primary"><span class="ko">전체 보기</span><span class="en">View All</span></a>
+    </div>
+    <div class="ngrid" id="homeNewsGrid"><!-- rendered by js/news.js — always shows the latest 3 posts --></div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section style="padding:0 0 92px">
+  <div class="cta-band" id="contact">
+    <h2><span class="ko">필요한 씰링 제품을 찾고 계신가요?</span><span class="en">Looking for the Right Seal?</span></h2>
+    <p><span class="ko">사양·도면·수량을 알려주시면 담당자가 확인 후 신속히 답변드립니다.</span><span class="en">Send us your specs, drawings and quantity — our team will respond promptly.</span></p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="tel:0226376200" class="btn btn-primary">☎ 02-2637-6200</a>
+      <a href="mailto:info@sealstar.com" class="btn btn-ghost"><span class="ko">이메일 문의</span><span class="en">Email Us</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img class="flogo" src="images/logo-white.png" alt="SEALSTAR" />
+        <p class="ko-b">(주)씰스타 — 정밀 씰링 솔루션 전문 기업.<br>1982년 이래 고객의 충실한 사업 동반자로 함께합니다.</p>
+        <p class="en-b">Sealstar Co., Ltd. — a precision sealing solutions specialist and a faithful business partner since 1982.</p>
+      </div>
+      <div>
+        <h5><span class="ko">바로가기</span><span class="en">Quick Links</span></h5>
+        <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
+        <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
+        <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
+        <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
+      </div>
+      <div>
+        <h5><span class="ko">회사 정보</span><span class="en">Company Info</span></h5>
+        <a><span class="ko">대표: 양희승</span><span class="en">CEO: Hee-seung Yang</span></a>
+        <a><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></a>
+        <a href="tel:0226376200">Tel. 02-2637-6200 · Fax. 02-2634-0482</a>
+        <a href="mailto:info@sealstar.com">info@sealstar.com</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 (주)씰스타 SEALSTAR Co., Ltd. All rights reserved.</span>
+      <span><span class="ko">사업자등록번호: 107-87-85067</span><span class="en">Biz Reg. 107-87-85067</span></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/news.js"></script>
+<script src="js/site.js"></script>
+<script>
+(function(){
+  var grid = document.getElementById('homeNewsGrid');
+  if(!grid || typeof POSTS==='undefined') return;
+  var TAG = {exhibition:{ko:'전시회',en:'Exhibition'},press:{ko:'언론보도',en:'Press'},notice:{ko:'공지',en:'Notice'}};
+  function esc(s){return (s||'').replace(/</g,'&lt;');}
+  var latest = POSTS.slice().sort(function(a,b){ return b.date.localeCompare(a.date); }).slice(0,3);
+  grid.innerHTML = latest.map(function(p){
+    var bg = p.img ? ("background-image:url('"+p.img+"')") : "background:linear-gradient(135deg,var(--navy-2),var(--sky-d))";
+    return '<a class="ncard" href="news.html">'
+      +'<div class="nh" style="'+bg+'"></div>'
+      +'<div class="nb"><span class="tag"><span class="ko">'+TAG[p.type].ko+'</span><span class="en">'+TAG[p.type].en+'</span></span>'
+      +'<h4><span class="ko">'+esc(p.titleKo)+'</span><span class="en">'+esc(p.titleEn)+'</span></h4>'
+      +'<span class="date">'+p.date+'</span></div></a>';
+  }).join('');
+})();
+</script>
+</body>
+</html>
+                     
