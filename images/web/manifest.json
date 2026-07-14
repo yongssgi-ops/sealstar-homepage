@@ -1,0 +1,120 @@
+{
+ "oring": [
+  "web/oring1.jpg",
+  "web/oring2.jpg",
+  "web/oring3.jpg",
+  "web/oring4.jpg",
+  "web/oring5.jpg",
+  "web/oring6.jpg",
+  "web/oring7.jpg",
+  "web/oring8.jpg",
+  "web/oring9.jpg"
+ ],
+ "capsule": [
+  "web/capsule1.jpg",
+  "web/capsule2.jpg",
+  "web/capsule3.jpg",
+  "web/capsule4.jpg",
+  "web/capsule5.jpg",
+  "web/capsule6.jpg",
+  "web/capsule7.jpg",
+  "web/capsule8.jpg",
+  "web/capsule9.jpg",
+  "web/capsule10.jpg",
+  "web/capsule11.jpg",
+  "web/capsule12.jpg",
+  "web/capsule13.jpg"
+ ],
+ "xring": [
+  "web/xring1.jpg",
+  "web/xring2.jpg",
+  "web/xring3.jpg",
+  "web/xring4.jpg"
+ ],
+ "edring": [
+  "web/edring1.jpg",
+  "web/edring2.jpg",
+  "web/edring3.jpg",
+  "web/edring4.jpg"
+ ],
+ "bond": [
+  "web/bond1.jpg",
+  "web/bond2.jpg",
+  "web/bond3.jpg",
+  "web/bond4.jpg",
+  "web/bond5.jpg"
+ ],
+ "bps": [
+  "web/bps1.jpg"
+ ],
+ "hyd": [
+  "web/hyd1.jpg",
+  "web/hyd2.jpg",
+  "web/hyd3.jpg",
+  "web/hyd4.jpg",
+  "web/hyd5.jpg",
+  "web/hyd6.jpg",
+  "web/hyd7.jpg",
+  "web/hyd8.jpg",
+  "web/hyd9.jpg",
+  "web/hyd10.jpg"
+ ],
+ "pneu": [
+  "web/pneu1.jpg",
+  "web/pneu2.jpg",
+  "web/pneu3.jpg",
+  "web/pneu4.jpg",
+  "web/pneu5.jpg",
+  "web/pneu6.jpg",
+  "web/pneu7.jpg",
+  "web/pneu8.jpg",
+  "web/pneu9.jpg",
+  "web/pneu10.jpg",
+  "web/pneu11.jpg"
+ ],
+ "oil": [
+  "web/oil1.jpg",
+  "web/oil2.jpg",
+  "web/oil3.jpg",
+  "web/oil4.jpg",
+  "web/oil5.jpg",
+  "web/oil6.jpg"
+ ],
+ "machined": [
+  "web/machined1.jpg",
+  "web/machined2.jpg",
+  "web/machined3.jpg"
+ ],
+ "spring": [
+  "web/spring1.jpg",
+  "web/spring2.jpg",
+  "web/spring3.jpg",
+  "web/spring4.jpg",
+  "web/spring5.jpg",
+  "web/spring6.jpg",
+  "web/spring7.jpg",
+  "web/spring8.jpg",
+  "web/spring9.jpg"
+ ],
+ "peek": [
+  "web/peek1.jpg",
+  "web/peek2.jpg",
+  "web/peek3.jpg",
+  "web/peek4.jpg",
+  "web/peek5.jpg",
+  "web/peek6.jpg",
+  "web/peek7.jpg"
+ ],
+ "acm": [
+  "web/acm1.jpg",
+  "web/acm2.jpg"
+ ],
+ "magnetic": [
+  "web/magnetic1.jpg",
+  "web/magnetic2.jpg",
+  "web/magnetic3.jpg"
+ ],
+ "office": [
+  "web/office1.jpg"
+ ]
+}
