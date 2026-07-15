@@ -53,8 +53,8 @@
     },
     spec:{
       ko:'규격표', en:'Spec Table',
-      bodyKo:'오링 규격은 내경(ID)과 선경(CS)의 조합으로 결정됩니다. 씰스타는 아래 국제 표준과 고객 맞춤 규격을 모두 지원하며, 공차가 포함된 전체 규격표(PDF)는 문의 시 제공해 드립니다.',
-      bodyEn:'O-ring size is defined by the inner diameter (ID) and cross-section (CS). Sealstar supports the international standards below as well as custom sizes — the full dimension table with tolerances (PDF) is available on request.',
+      bodyKo:'오링 규격은 내경(ID)과 선경(CS)의 조합으로 결정됩니다. 씰스타는 아래 국제 표준과 고객 맞춤 규격을 모두 지원합니다.',
+      bodyEn:'O-ring size is defined by the inner diameter (ID) and cross-section (CS). Sealstar supports the international standards below as well as custom sizes.',
       items:[
         {ko:'AS568 (American Standard)', en:'AS568 (American Standard)', dko:'미국표준협회(AS568) 규격 — #001~#425 등 표준 사이즈를 재고로 운영합니다.', den:'U.S. AS568 standard sizes (#001–#425 and more) carried in stock.'},
         {ko:'JIS B 2401 (일본공업규격)', en:'JIS B 2401 (Japanese Standard)', dko:'G(고정용)·P(피스톤용)·S(로드용)·V(진공용) 시리즈를 모두 지원합니다.', den:'Covers the G (static), P (piston), S (rod) and V (vacuum) series.'},
@@ -475,7 +475,7 @@
         + '<h4 class="sizeh"><span class="ko">JIS B 2401 규격표 · P·G·S·V ('+(ORING_SIZES.jis.P.length+ORING_SIZES.jis.G.length+ORING_SIZES.jis.S.length+ORING_SIZES.jis.V.length)+'종)</span><span class="en">JIS B 2401 Size Chart — P/G/S/V ('+(ORING_SIZES.jis.P.length+ORING_SIZES.jis.G.length+ORING_SIZES.jis.S.length+ORING_SIZES.jis.V.length)+' sizes)</span></h4>'
         + '<p class="desc" style="margin-bottom:14px"><span class="ko">번호(Dash No.) · 내경(ID) · 두께(CS) 단위 mm. 대표 치수이며 상세·특수 규격은 문의 바랍니다.</span><span class="en">Dash No. · Inner Diameter (ID) · Cross-Section (CS) in mm. Representative sizes — contact us for detailed or special specifications.</span></p>'
         + secs.map(function(s){
-            return '<h5 class="sizesub">'+s[0]+' <span class="ko">'+s[1]+' ('+ORING_SIZES.jis[s[0]].length+'종)</span><span class="en">'+s[2]+' ('+ORING_SIZES.jis[s[0]].length+' sizes)</span></h5>'
+            return '<h5 class="sizesub"><span class="ko">'+s[1]+' ('+ORING_SIZES.jis[s[0]].length+'종)</span><span class="en">'+s[2]+' ('+ORING_SIZES.jis[s[0]].length+' sizes)</span></h5>'
               + sizeColsHtml(ORING_SIZES.jis[s[0]]);
           }).join('');
     }
