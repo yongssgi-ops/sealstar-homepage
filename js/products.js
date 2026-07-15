@@ -431,8 +431,8 @@
           }).join('') + '</div>';
     }
 
-    content.innerHTML = baseHead(it) + heroImgHtml(it) + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>'
-      + bodyHtml(it) + inquireHtml;
+    content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it)
+      + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
   }
 
   function render(id){
