@@ -360,7 +360,7 @@
       ],
       apps:[{ko:'유압 시스템',en:'Hydraulic systems'},{ko:'기어박스/변속기',en:'Gearboxes & transmissions'},{ko:'윤활유 순환계통',en:'Lubrication circulation systems'},{ko:'엔진 오일라인',en:'Engine oil lines'}] },
 
-    { id:'mechanical', ko:'메카니컬씰', en:'Mechanical Seal', imgs:[],
+    { id:'mechanical', ko:'메카니컬씰', en:'Mechanical Seal', imgs:['images/web/mechanical1.jpg'],
       dko:'회전축 밀봉을 위한 메카니컬씰로, 고정환과 회전환의 정밀 랩핑 면 접촉을 통해 고압·고속 회전 조건에서도 누출 없는 밀봉을 구현합니다. 펌프·믹서 등 회전 장비에 사용됩니다.',
       den:'Mechanical seals for rotating shafts, using precision-lapped stationary and rotating faces to achieve leak-free sealing under high pressure and high-speed rotation — used in pumps, mixers and other rotating equipment.',
       mat:['카본','실리콘카바이드(SiC)','텅스텐카바이드','NBR/FKM 오링'],
