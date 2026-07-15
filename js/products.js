@@ -65,6 +65,54 @@
   };
 
   // ---------------------------------------------------------------
+  // 퍼플러오링 전용 서브탭 콘텐츠 (퍼플러(Perlast) / Kalrez(반도체))
+  // 출처: 이지스씰링테크놀로지(aegisseal.kr) 제품자료
+  // ---------------------------------------------------------------
+  var PERFLUORO_TABS = {
+    perlast:{
+      ko:'퍼플러 (Perlast)', en:'Perfluoro (Perlast)',
+      bodyKo:'퍼플러(Perfluoroelastomer, FFKM)는 현존하는 고무 탄성체 중 최고 수준의 내열성·내화학성을 갖춘 불소고무로, 듀폰사의 Kalrez, 영국 PPE사의 Perlast, GTC사의 Chemraz 등이 대표적입니다. 재질기호는 FFPM(DIN/ISO 1629) 또는 FFKM(ASTM D1418)이며, 최고 327℃까지 견디고 거의 모든 부식성 화학약품에 대응합니다. Perlast는 국내에는 덜 알려져 있으나 유럽에서는 Kalrez 이상으로 널리 사용되는 퍼플러입니다.',
+      bodyEn:'Perfluoroelastomer (FFKM) is the most heat- and chemical-resistant rubber elastomer available, represented by brands such as DuPont Kalrez, UK-based PPE\'s Perlast and GTC\'s Chemraz. Designated FFPM (DIN/ISO 1629) or FFKM (ASTM D1418), it withstands temperatures up to 327°C and resists almost all corrosive chemicals. Perlast is less known domestically but is used across Europe as widely as Kalrez.',
+      grades:[
+        {g:'G75M', d:'Ultimate chemical resistance grade', c:'Black', h:'72', t:'-15℃ ~ +260℃'},
+        {g:'G80A', d:'Ultimate chemical resistance grade', c:'Black', h:'80', t:'-15℃ ~ +260℃'},
+        {g:'G75B', d:'General purpose, high temperature grade', c:'Black', h:'78', t:'-15℃ ~ +325℃'},
+        {g:'G75S', d:'Food & Pharma grade — FDA, USP Class VI & 3A', c:'White', h:'75', t:'-15℃ ~ +310℃'},
+        {g:'G75LT', d:'Extreme low temperature grade (Perlast ICE)', c:'Black', h:'75', t:'-46℃ ~ +250℃'},
+        {g:'G92E', d:'ENDURA, ED-resistant grade', c:'Black', h:'90', t:'-15℃ ~ +260℃'},
+        {g:'G92LT', d:'ENDURA, ED-resistant grade (ICE)', c:'Black', h:'90', t:'-46℃ ~ +240℃'}
+      ],
+      appsKo:'화학공정 산업, 식품·제약 산업, 도장(페인트 스프레이), 오일·가스/유전 산업용 내ED 퍼플러, 디젤·가스 엔진',
+      appsEn:'Chemical processing industry, food & pharmaceutical industry, paint spray, ED-resistant grades for oil & gas / oilfield, diesel & gas engines'
+    },
+    kalrez:{
+      ko:'Kalrez (반도체)', en:'Kalrez (Semiconductor)',
+      bodyKo:'듀폰 Kalrez는 반도체 공정별 화학·플라즈마 환경에 최적화된 등급을 제공합니다. 아래는 이지스씰링테크놀로지 자료를 기준으로 정리한 공정별 추천 제품군입니다.',
+      bodyEn:'DuPont Kalrez offers grades optimized for the chemical and plasma environment of each semiconductor process step. The table below summarizes recommended grades by process, based on Aegis Sealing Technology reference data.',
+      rows:[
+        {grp:'Plasma', proc:'PECVD / ALD', temp:'25~200℃', env:'TMS, DEMS, TEOS, SiH4, C3H8, NH3, SiF4, O2, N2O, NF3', rec:'9100, 9500', app:'Door/Gate/Pendulum valve seals, Chamber lid, Exhaust valve, Gas inlet·outlet·mixing block, Window seals, Center rings, Wafer/FPD carrier'},
+        {grp:'Plasma', proc:'HDP-CVD', temp:'25~200℃', env:'TEOS, SiH4, NH3, SiF4, O2, C2F6, N2O, NF3, CF4', rec:'9100, 9500', app:'Plasma 공정 챔버 씰 전반'},
+        {grp:'Plasma', proc:'SACVD', temp:'25~250℃', env:'TEOS, TeP, TEBO, O3, NF3', rec:'9500, 8002', app:''},
+        {grp:'Plasma', proc:'Ash / Strip', temp:'25~250℃', env:'O2, CF4, CHF3, NH3, H2O Vapor, Forming Gas', rec:'9300, 9500', app:''},
+        {grp:'Plasma', proc:'Dielectric(Oxide) Etch', temp:'25~200℃', env:'CF4, C3F8, CHF3, SF6, O2, H2', rec:'9300, 9500', app:''},
+        {grp:'Plasma', proc:'Conductor(Poly/Metal) Etch', temp:'25~200℃', env:'CF4, CHF3, HBr, BCl3, CCl4, Cl2', rec:'9300, 9500', app:''},
+        {grp:'Thermal', proc:'Metal CVD / ALD / LPCVD', temp:'25~300℃', env:'Organic precursors, WF6, TiCl4, SiH4, HF, F2, Cl2, ClF3, NF3, H2O Vapor, O2, O3', rec:'8900, 9100', app:'Quartz chamber seal, Fittings, Center ring, Plenum seals'},
+        {grp:'Thermal', proc:'Oxidation / Diffusion', temp:'150~300℃', env:'N2, O2, H2O, HCl, Cl2', rec:'8900, 8475', app:''},
+        {grp:'Thermal', proc:'Lamp Anneal / RTP', temp:'150~300℃', env:'적외선(IR) 흡수 저항 요구', rec:'8475', app:''},
+        {grp:'Wet', proc:'Wafer Prep', temp:'25~125℃', env:'UPDI, Piranha, SC-1, SC-2, O3, HF(49%)', rec:'6375UP', app:'Door/lid seals, Drain seals, Chemical container seals, Fittings, Filter/connector seals, Flow meters'},
+        {grp:'Wet', proc:'Etching', temp:'25~180℃', env:'HNO3, HF, H2O, H3PO4', rec:'6375UP, 1050LF', app:''},
+        {grp:'Wet', proc:'Photolithography', temp:'25~125℃', env:'H2SO4 + Oxidant, Organic Acids, NMP', rec:'6375UP, 1050LF', app:''},
+        {grp:'Wet', proc:'Stripping', temp:'25~125℃', env:'NMP/Alkanolamine, Hydroxylamine', rec:'6375UP, 1050LF', app:''},
+        {grp:'Wet', proc:'Copper Plating', temp:'25~100℃', env:'CuSO4 Solution, H2SO4, H2O2', rec:'6375UP, 1050LF', app:''}
+      ],
+      noteKo:'9100 — 가혹한 플라즈마 환경에서 낮은 침식률과 초저파티클 특성 / 9500 — 오존·암모니아·수증기·플라즈마 라디칼에 대한 우수한 저항성 / 9300 — 이온(물리적)과 라디칼(화학적)이 혼재된 플라즈마 공정용 / 8900 — 금속 CVD·ALD·LPCVD·산화·확산 공정 권장 제품 / 8475 — 램프 어닐·RTP 공정 권장 제품 / 6375UP — 전체 습식 공정용 범용 제품',
+      noteEn:'9100 — low erosion rate & ultra-low particle generation in harsh plasma; 9500 — excellent resistance to ozone, ammonia, water vapor & plasma radicals; 9300 — for plasma combining ionic and radical species; 8900 — recommended for metal CVD/ALD/LPCVD, oxidation & diffusion; 8475 — recommended for lamp anneal & RTP; 6375UP — general-purpose grade for all wet process applications.',
+      srcKo:'출처: 이지스씰링테크놀로지(aegisseal.kr) 제품자료',
+      srcEn:'Source: Aegis Sealing Technology (aegisseal.kr) product data'
+    }
+  };
+
+  // ---------------------------------------------------------------
   // 전체 제품 카테고리 (좌측에서 바로 선택하는 평면 목록, 18종)
   // ---------------------------------------------------------------
   var ITEMS = [
@@ -97,7 +145,7 @@
       ],
       apps:[{ko:'화학 배관/밸브',en:'Chemical piping & valves'},{ko:'반도체 습식 공정',en:'Semiconductor wet process'},{ko:'제약·식품 설비',en:'Pharma & food equipment'},{ko:'열교환기',en:'Heat exchangers'}] },
 
-    { id:'perfluoro', ko:'퍼플러오링', en:'Perfluoro O-Ring (FFKM)', imgs:imgs('oring',4),
+    { id:'perfluoro', ko:'퍼플러오링', en:'Perfluoro O-Ring (FFKM)', imgs:imgs('oring',4), special:'perfluoro',
       dko:'FFKM(퍼플루오로 엘라스토머) 소재의 오링으로, 최대 330℃에 이르는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 갖춰 반도체 공정·초고온·초극한 환경에 사용됩니다.',
       den:'O-rings made from FFKM (perfluoroelastomer), offering heat resistance up to roughly 330°C and near-universal chemical compatibility — used in semiconductor processes and other extreme environments.',
       mat:['FFKM'],
@@ -435,9 +483,48 @@
       + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
   }
 
+  // ---- special: 퍼플러오링 render with top sub-tabs (퍼플러 Perlast / Kalrez 반도체) ----
+  var perfluoroTab = 'perlast';
+  function renderPerfluoro(){
+    var it = MAP['perfluoro'];
+    var tabsHtml = '<div class="subtabs">'
+      + ['perlast','kalrez'].map(function(k){
+          var t=PERFLUORO_TABS[k];
+          return '<button class="'+(k===perfluoroTab?'on':'')+'" onclick="SS.perfluoroTab(\''+k+'\')"><span class="ko">'+t.ko+'</span><span class="en">'+t.en+'</span></button>';
+        }).join('')
+      + '</div>';
+
+    var tabBody='';
+    if(perfluoroTab==='perlast'){
+      var t=PERFLUORO_TABS.perlast;
+      var grows = t.grades.map(function(r){
+        return '<tr><td class="mname">'+r.g+'</td><td>'+r.d+'</td><td>'+r.c+'</td><td>'+r.h+'</td><td class="mtemp">'+r.t+'</td></tr>';
+      }).join('');
+      tabBody = '<p class="desc"><span class="ko">'+t.bodyKo+'</span><span class="en">'+t.bodyEn+'</span></p>'
+        + '<table class="mtable"><thead><tr>'
+        + '<th>GRADE</th><th><span class="ko">설명</span><span class="en">Description</span></th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th>'
+        + '</tr></thead><tbody>'+grows+'</tbody></table>'
+        + '<p class="desc" style="margin-top:18px"><span class="ko"><b>적용분야</b> — '+t.appsKo+'</span><span class="en"><b>Applications</b> — '+t.appsEn+'</span></p>';
+    } else {
+      var t2=PERFLUORO_TABS.kalrez;
+      var krows = t2.rows.map(function(r){
+        return '<tr><td class="mname">'+r.grp+'</td><td>'+r.proc+'</td><td class="mtemp">'+r.temp+'</td><td>'+r.env+'</td><td>'+r.rec+'</td><td>'+r.app+'</td></tr>';
+      }).join('');
+      tabBody = '<p class="desc"><span class="ko">'+t2.bodyKo+'</span><span class="en">'+t2.bodyEn+'</span></p>'
+        + '<table class="mtable"><thead><tr>'
+        + '<th><span class="ko">공정구분</span><span class="en">Group</span></th><th><span class="ko">세부공정</span><span class="en">Process</span></th><th><span class="ko">온도</span><span class="en">Temp.</span></th><th><span class="ko">공정 환경</span><span class="en">Environment</span></th><th><span class="ko">추천제품</span><span class="en">Suggested</span></th><th><span class="ko">주요 용도</span><span class="en">Applications</span></th>'
+        + '</tr></thead><tbody>'+krows+'</tbody></table>'
+        + '<p class="desc" style="margin-top:16px;font-size:13px"><span class="ko">'+t2.noteKo+'</span><span class="en">'+t2.noteEn+'</span></p>'
+        + '<p style="margin-top:10px;font-size:12px;color:var(--muted)"><span class="ko">'+t2.srcKo+'</span><span class="en">'+t2.srcEn+'</span></p>';
+    }
+
+    content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
+  }
+
   function render(id){
     var it=MAP[id]; if(!it) return;
     if(it.special==='oring'){ renderOring(); }
+    else if(it.special==='perfluoro'){ renderPerfluoro(); }
     else{
       content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + inquireHtml;
     }
@@ -452,7 +539,8 @@
       history.replaceState(null,'','#'+id);
       if(window.innerWidth<900){ document.getElementById('content').scrollIntoView({behavior:'smooth'}); }
     },
-    oringTab:function(k){ oringTab=k; renderOring(); }
+    oringTab:function(k){ oringTab=k; renderOring(); },
+    perfluoroTab:function(k){ perfluoroTab=k; renderPerfluoro(); }
   };
 
   // ---- deep link (#oring, #hp, #oil, ...) ----
