@@ -1,0 +1,40 @@
+# SEALSTAR (주)씰스타
+
+> Founded in 1982, SEALSTAR is a Seoul, Korea-based manufacturer and supplier of precision industrial sealing products — O-rings, hydraulic/pneumatic seals, oil seals, machined seals, spring-energized seals, PEEK components and more — serving construction equipment, industrial machinery, semiconductor, marine and aerospace industries.
+
+Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-daero 54-gil 53-6, 1F
+
+## Pages
+
+- [Home](https://www.sealstar.com/): Company overview and product highlights
+- [About](https://www.sealstar.com/about.html): Company history since 1982, facilities, values, glossary of sealing terms
+- [Markets](https://www.sealstar.com/markets.html): Industries served — construction equipment, semiconductor, energy, oil & gas, marine, aerospace, food & pharma
+- [Products](https://www.sealstar.com/products.html): Interactive catalog of all 18 product categories
+- [News](https://www.sealstar.com/news.html): Exhibitions and company announcements
+- [Contact](https://www.sealstar.com/contact.html): Quote request form and FAQ
+
+## Products (18 categories, each with a dedicated page)
+
+- [O-Ring](https://www.sealstar.com/products/oring.html) — general sealing rings; design, material and spec-table guides included
+- [Teflon Capsule O-Ring](https://www.sealstar.com/products/capsule.html) — FEP/PFA-encapsulated elastomer core O-rings for corrosive chemicals
+- [Perfluoro O-Ring (FFKM)](https://www.sealstar.com/products/perfluoro.html) — evolast (MCM) and Kalrez (DuPont) grades for semiconductor/extreme environments
+- [Non-Standard Vulc'd O-Ring](https://www.sealstar.com/products/vulc.html) — large-diameter, custom-jointed O-rings
+- [Quad-Ring / X-Ring](https://www.sealstar.com/products/quad.html)
+- [ED-Ring / Back-up Ring](https://www.sealstar.com/products/edring.html)
+- [Bonded Seal](https://www.sealstar.com/products/bond.html)
+- [Hydraulic & Pneumatic Seal](https://www.sealstar.com/products/hp.html) — rod/piston seals, wipers, buffer rings
+- [Spring-Energized Seal](https://www.sealstar.com/products/spring.html) — cryogenic to high-temperature sealing
+- [PTFE Lip Seal](https://www.sealstar.com/products/lip.html)
+- [PEEK](https://www.sealstar.com/products/peek.html) — high-strength, high-temperature engineering plastic components
+- [Oil Seal](https://www.sealstar.com/products/oil.html)
+- [Bearing Isolator (BPS)](https://www.sealstar.com/products/isolator.html)
+- [Wear Ring / Guide Ring](https://www.sealstar.com/products/wearring.html)
+- [Machined Seal](https://www.sealstar.com/products/machined.html) — non-standard dimensions, small-lot production
+- [ACM Bearing](https://www.sealstar.com/products/acm.html) — low-friction composite sliding bearing
+- [Magnetic Filter](https://www.sealstar.com/products/magnetic.html) — rare-earth magnetic filtration for hydraulic/lubrication systems
+- [Mechanical Seal](https://www.sealstar.com/products/mechanical.html)
+
+## Notes
+
+- All product pages include material, principle/structure, key features, applications and (where relevant) full spec tables in plain HTML — not behind JavaScript interaction.
+- For quotes, specify operating temperature, pressure, fluid/media and dimensions (or send a drawing/damaged sample); contact 02-2637-6200 or info@sealstar.com.

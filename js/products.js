@@ -389,10 +389,12 @@
   var MAP={}; ITEMS.forEach(function(it){ MAP[it.id]=it; });
 
   // ---- render sidebar (flat list, no accordion) ----
+  // href points to the static, individually-crawlable product page (products/{id}.html);
+  // onclick keeps the fast in-page SPA switch for JS-enabled visitors.
   var side=document.getElementById('side');
   var sideHtml='<div class="itemlist">';
   ITEMS.forEach(function(it){
-    sideHtml+='<a class="item" data-item="'+it.id+'" onclick="SS.select(\''+it.id+'\')">'
+    sideHtml+='<a class="item" data-item="'+it.id+'" href="products/'+it.id+'.html" onclick="SS.select(\''+it.id+'\');return false;">'
       +'<span class="ko">'+it.ko+'</span><span class="en">'+it.en+'</span></a>';
   });
   sideHtml+='</div>';
