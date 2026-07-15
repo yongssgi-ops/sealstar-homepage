@@ -56,8 +56,20 @@
   .admin-note b{color:var(--navy)}
   code{background:#eef1f5;padding:1px 6px;border-radius:5px;font-size:12.5px}
 
-  @media(max-width:900px){.ngrid{grid-template-columns:1fr 1fr}}
-  @media(max-width:560px){.ngrid{grid-template-columns:1fr}}
+  @media(max-width:900px){
+    .ngrid{grid-template-columns:1fr 1fr}
+    .pbanner{padding:52px 0 40px}
+  }
+  @media(max-width:560px){
+    .ngrid{grid-template-columns:1fr}
+    .modal{padding:0}
+    .modal .box{max-width:100%;max-height:100%;height:100%;border-radius:0}
+    .modal .mh{height:200px}
+    .modal .mc{padding:22px 20px 30px}
+    .modal h3{font-size:20px}
+    .filters{gap:8px}
+    .filters button{padding:7px 14px;font-size:13px}
+  }
 </style>
 </head>
 <body>

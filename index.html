@@ -112,14 +112,27 @@
   .cta-band p{color:#e2edf8;margin-bottom:26px;font-size:17px}
 
   @media(max-width:980px){
+    .hero{min-height:auto}
+    .hero .wrap{padding:120px 24px 46px}
     .pillars .wrap{grid-template-columns:1fr 1fr}
     .pillars .p{border-left:none;border-top:1px solid rgba(255,255,255,.1)}
     .about{grid-template-columns:1fr;gap:34px}
+    .about .imgs{min-height:280px}
     .pgrid,.mgrid,.sgrid{grid-template-columns:1fr 1fr}
     .ngrid{grid-template-columns:1fr}
     .cta-band{padding:40px 22px}
+    .hero-stats{gap:30px}
   }
-  @media(max-width:560px){.pgrid,.mgrid,.sgrid{grid-template-columns:1fr}}
+  @media(max-width:560px){
+    .pgrid,.mgrid,.sgrid{grid-template-columns:1fr}
+    .pillars .wrap{grid-template-columns:1fr}
+    .hero .wrap{padding:104px 20px 40px}
+    .hero-actions{gap:10px}
+    .hero-stats{gap:24px;margin-top:36px}
+    .about .imgs{min-height:220px}
+    .cta-band{padding:32px 18px}
+    .mcard{min-height:150px}
+  }
 </style>
 </head>
 <body>
@@ -366,4 +379,3 @@
 </script>
 </body>
 </html>
-                     

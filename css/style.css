@@ -21,9 +21,11 @@
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+html{overflow-x:hidden}
 body{
   font-family:"Pretendard","Segoe UI",-apple-system,BlinkMacSystemFont,"Malgun Gothic",sans-serif;
   color:var(--ink);background:var(--bg);line-height:1.65;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;max-width:100vw;
 }
 a{color:inherit;text-decoration:none}
 img{max-width:100%;display:block}
@@ -88,4 +90,28 @@ html[lang="en"] .en-b{display:block}
 .photo-rotator .pr-slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.2s ease}
 .photo-rotator .pr-slide.on{opacity:1}
 .photo-rotator .pr-dots{position:absolute;right:14px;bottom:14px;display:flex;gap:6px}
-.photo-rotator .pr-dots span{width:6px;height:6px
+.photo-rotator .pr-dots span{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.45);transition:.25s}
+.photo-rotator .pr-dots span.on{background:#fff;width:16px;border-radius:4px}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  .menu,.tel{display:none}
+  .hamb{display:block}
+  .foot-grid{grid-template-columns:1fr;gap:30px}
+  section{padding:64px 0}
+  .menu.open{display:flex;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;
+    padding:16px 24px;gap:14px;border-bottom:1px solid var(--line);box-shadow:var(--shadow);z-index:70}
+  .nav{gap:10px}
+  .nav-right{gap:10px}
+  .lang button{padding:6px 9px;font-size:12px}
+}
+@media(max-width:480px){
+  .wrap{padding:0 16px}
+  .brand img{height:30px}
+  .nav-right{gap:6px}
+  .lang button{padding:5px 8px;font-size:11px}
+  .hamb{font-size:23px}
+  section{padding:48px 0}
+  h2.title{font-size:clamp(22px,6vw,30px)}
+  .lead{font-size:15.5px}
+}
