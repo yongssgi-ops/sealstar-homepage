@@ -25,8 +25,8 @@
           dko:'고압 조건에서는 오링이 틈새로 밀려나오는 압출(Extrusion)을 방지하기 위해 백업링을 함께 적용합니다. 편측 고압에는 1개, 양측 고압에는 2개를 사용합니다.',
           den:'Under high pressure, a back-up ring prevents O-ring extrusion into the clearance gap — one ring for single-direction pressure, two for bidirectional pressure.'},
         {ko:'그루브 치수 산출', en:'Groove Dimensioning',
-          dko:'그루브 폭(G)·깊이(G1)·모따기(C)·표면조도(S) 등은 오링의 선경(CS)·내경(ID)과 목표 압축률을 기준으로 산출합니다. 정확한 그루브 도면은 문의 시 무상으로 제공해 드립니다.',
-          den:'Groove width (G), depth (G1), chamfer (C) and surface finish (S) are calculated from the O-ring\'s cross-section (CS), inner diameter (ID) and target compression ratio. Contact us for a free groove drawing.'},
+          dko:'그루브 폭(G)·깊이(G1)·모따기(C)·표면조도(S) 등은 오링의 선경(CS)·내경(ID)과 목표 압축률을 기준으로 산출합니다.',
+          den:'Groove width (G), depth (G1), chamfer (C) and surface finish (S) are calculated from the O-ring\'s cross-section (CS), inner diameter (ID) and target compression ratio.'},
         {ko:'틈새 간격(Gap)과 압출', en:'Gap Width & Extrusion',
           dko:'상대 부품 사이 틈새가 넓을수록, 압력이 높을수록, 소재 경도가 낮을수록 오링이 틈으로 밀려나가는 압출 위험이 커집니다. 틈새가 크거나 고압인 경우 백업링 적용을 권장합니다.',
           den:'Extrusion risk rises with a wider clearance gap, higher pressure and softer material hardness. We recommend a back-up ring wherever the gap is large or pressure is high.'},
@@ -465,17 +465,17 @@
     var t3 = ORING_TABS.spec;
     if(oringSizeView==='as568'){
       return '<button class="backlink" onclick="SS.oringSize(null)">← <span class="ko">규격 목록으로</span><span class="en">Back to list</span></button>'
-        + '<h4 class="sizeh"><span class="ko">AS568 규격표 · 001~932 ('+ORING_SIZES.as568.length+'종)</span><span class="en">AS568 Size Chart ('+ORING_SIZES.as568.length+' sizes)</span></h4>'
+        + '<h4 class="sizeh"><span class="ko">AS568 규격표 · 001~932</span><span class="en">AS568 Size Chart</span></h4>'
         + '<p class="desc" style="margin-bottom:14px"><span class="ko">번호(Dash No.) · 내경(ID) · 두께(CS) 단위 mm. 대표 치수이며 상세·특수 규격은 문의 바랍니다.</span><span class="en">Dash No. · Inner Diameter (ID) · Cross-Section (CS) in mm. Representative sizes — contact us for detailed or special specifications.</span></p>'
         + sizeColsHtml(ORING_SIZES.as568);
     }
     if(oringSizeView==='jis'){
       var secs=[['P','P 계열','P Series'],['G','G 계열','G Series'],['S','S 계열','S Series'],['V','V 계열','V Series']];
       return '<button class="backlink" onclick="SS.oringSize(null)">← <span class="ko">규격 목록으로</span><span class="en">Back to list</span></button>'
-        + '<h4 class="sizeh"><span class="ko">JIS B 2401 규격표 · P·G·S·V ('+(ORING_SIZES.jis.P.length+ORING_SIZES.jis.G.length+ORING_SIZES.jis.S.length+ORING_SIZES.jis.V.length)+'종)</span><span class="en">JIS B 2401 Size Chart — P/G/S/V ('+(ORING_SIZES.jis.P.length+ORING_SIZES.jis.G.length+ORING_SIZES.jis.S.length+ORING_SIZES.jis.V.length)+' sizes)</span></h4>'
+        + '<h4 class="sizeh"><span class="ko">JIS B 2401 규격표 · P·G·S·V</span><span class="en">JIS B 2401 Size Chart — P/G/S/V</span></h4>'
         + '<p class="desc" style="margin-bottom:14px"><span class="ko">번호(Dash No.) · 내경(ID) · 두께(CS) 단위 mm. 대표 치수이며 상세·특수 규격은 문의 바랍니다.</span><span class="en">Dash No. · Inner Diameter (ID) · Cross-Section (CS) in mm. Representative sizes — contact us for detailed or special specifications.</span></p>'
         + secs.map(function(s){
-            return '<h5 class="sizesub"><span class="ko">'+s[1]+' ('+ORING_SIZES.jis[s[0]].length+'종)</span><span class="en">'+s[2]+' ('+ORING_SIZES.jis[s[0]].length+' sizes)</span></h5>'
+            return '<h5 class="sizesub"><span class="ko">'+s[1]+'</span><span class="en">'+s[2]+'</span></h5>'
               + sizeColsHtml(ORING_SIZES.jis[s[0]]);
           }).join('');
     }
