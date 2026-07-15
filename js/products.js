@@ -70,8 +70,8 @@
   var PERFLUORO_TABS = {
     perlast:{
       ko:'퍼플러 (Evolast)', en:'Perfluoro (Evolast)',
-      bodyKo:'씰스타의 퍼플러오링은 이탈리아 MCM社의 FFKM 브랜드 evolast®를 주축으로 공급합니다. FFKM(퍼플루오로 엘라스토머)은 일반 FKM보다 불소 함량이 높아 최고 약 350℃까지 견디는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 동시에 갖췄습니다. evolast®는 PTFE 수준의 내화학성과 FKM 특유의 탄성·유연성을 함께 지녔으며, R&D부터 배합·성형·생산까지 자체적으로 관리해 일관된 품질을 보장합니다.',
-      bodyEn:'Sealstar\'s perfluoro O-rings are supplied mainly under evolast®, the FFKM brand of Italy\'s MCM. FFKM (perfluoroelastomer) carries a higher fluorine content than standard FKM, giving it heat resistance up to roughly 350°C alongside near-universal chemical compatibility. evolast® combines PTFE-level chemical resistance with the flexibility and elasticity of a regular FKM, and MCM controls the full value chain — from R&D and compounding to moulding and production — for consistent quality.',
+      bodyKo:'FFKM(퍼플루오로 엘라스토머)은 일반 FKM보다 불소 함량이 높아 최고 330℃까지 견디는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 동시에 갖췄습니다. evolast®는 PTFE 수준의 내화학성과 FKM 특유의 탄성·유연성을 함께 지녔으며, R&D부터 배합·성형·생산까지 자체적으로 관리해 일관된 품질을 보장합니다.',
+      bodyEn:'FFKM (perfluoroelastomer) carries a higher fluorine content than standard FKM, giving it heat resistance up to 330°C alongside near-universal chemical compatibility. evolast® combines PTFE-level chemical resistance with the flexibility and elasticity of a regular FKM, and MCM controls the full value chain — from R&D and compounding to moulding and production — for consistent quality.',
       grades:[
         {g:'PB694', d:'Chemical resistance, general purpose', c:'White', h:'60', t:'-20℃ ~ +270℃'},
         {g:'PB794', d:'Chemical resistance, FDA / 3A / USP Class VI', c:'White', h:'70', t:'-20℃ ~ +270℃'},
