@@ -144,7 +144,7 @@
       ],
       apps:[{ko:'화학 배관/밸브',en:'Chemical piping & valves'},{ko:'반도체 습식 공정',en:'Semiconductor wet process'},{ko:'제약·식품 설비',en:'Pharma & food equipment'},{ko:'열교환기',en:'Heat exchangers'}] },
 
-    { id:'perfluoro', ko:'퍼플러오링', en:'Perfluoro O-Ring (FFKM)', imgs:imgs('oring',4), special:'perfluoro',
+    { id:'perfluoro', ko:'퍼플러오링', en:'Perfluoro O-Ring (FFKM)', imgs:['images/web/perfluoro1.jpg'], special:'perfluoro',
       dko:'FFKM(퍼플루오로 엘라스토머) 소재의 오링으로, 최대 330℃에 이르는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 갖춰 반도체 공정·초고온·초극한 환경에 사용됩니다.',
       den:'O-rings made from FFKM (perfluoroelastomer), offering heat resistance up to roughly 330°C and near-universal chemical compatibility — used in semiconductor processes and other extreme environments.',
       mat:['FFKM'],
@@ -158,7 +158,7 @@
       ],
       apps:[{ko:'반도체 웨이퍼 공정 챔버',en:'Semiconductor wafer process chambers'},{ko:'고온 밸브',en:'High-temperature valves'},{ko:'강산/강산화 화학 배관',en:'Strong acid & oxidizer piping'},{ko:'우주항공',en:'Aerospace'}] },
 
-    { id:'vulc', ko:'비규격연결오링', en:'Non-Standard Vulc\'d O-Ring', imgs:imgs('oring',5),
+    { id:'vulc', ko:'비규격연결오링', en:'Non-Standard Vulc\'d O-Ring', imgs:['images/web/vulc1.jpg'],
       dko:'표준 규격에 없는 대구경·특수 단면 오링을 코드(cord) 소재로 절단·가황 접합해 제작하는 맞춤형 오링입니다. 진공 챔버, 대형 플랜지 등 비표준 치수에 대응합니다.',
       den:'Custom O-rings made by cutting and vulcanizing cord stock to non-standard diameters or cross-sections — built for vacuum chambers, large flanges and other sizes outside the standard catalog.',
       mat:['NBR','VITON','실리콘','EPDM'],
