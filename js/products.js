@@ -1,4 +1,4 @@
-/* SEALSTAR — Products catalog (flat sidebar, Aegis-style)
+/* SEALSTAR — Products catalog (flat sidebar layout)
    구조: ITEMS 배열(18개 개별 카테고리)을 좌측에서 바로 클릭 → 우측에 상세 표시.
    오링(oring) 항목만 상단에 서브탭(오링설계 / 재질 / 규격표)이 추가로 표시됩니다.
 */
@@ -65,33 +65,34 @@
   };
 
   // ---------------------------------------------------------------
-  // 퍼플러오링 전용 서브탭 콘텐츠 (퍼플러(Perlast) / Kalrez(반도체))
-  // 출처: 이지스씰링테크놀로지(aegisseal.kr) 제품자료
+  // 퍼플러오링 전용 서브탭 콘텐츠 (퍼플러(Evolast) / Kalrez(Dupont))
   // ---------------------------------------------------------------
   var PERFLUORO_TABS = {
     perlast:{
-      ko:'퍼플러 (Perlast)', en:'Perfluoro (Perlast)',
-      bodyKo:'퍼플러(Perfluoroelastomer, FFKM)는 현존하는 고무 탄성체 중 최고 수준의 내열성·내화학성을 갖춘 불소고무로, 듀폰사의 Kalrez, 영국 PPE사의 Perlast, GTC사의 Chemraz 등이 대표적입니다. 재질기호는 FFPM(DIN/ISO 1629) 또는 FFKM(ASTM D1418)이며, 최고 327℃까지 견디고 거의 모든 부식성 화학약품에 대응합니다. Perlast는 국내에는 덜 알려져 있으나 유럽에서는 Kalrez 이상으로 널리 사용되는 퍼플러입니다.',
-      bodyEn:'Perfluoroelastomer (FFKM) is the most heat- and chemical-resistant rubber elastomer available, represented by brands such as DuPont Kalrez, UK-based PPE\'s Perlast and GTC\'s Chemraz. Designated FFPM (DIN/ISO 1629) or FFKM (ASTM D1418), it withstands temperatures up to 327°C and resists almost all corrosive chemicals. Perlast is less known domestically but is used across Europe as widely as Kalrez.',
+      ko:'퍼플러 (Evolast)', en:'Perfluoro (Evolast)',
+      bodyKo:'씰스타의 퍼플러오링은 이탈리아 MCM社의 FFKM 브랜드 evolast®를 주축으로 공급합니다. FFKM(퍼플루오로 엘라스토머)은 일반 FKM보다 불소 함량이 높아 최고 약 350℃까지 견디는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 동시에 갖췄습니다. evolast®는 PTFE 수준의 내화학성과 FKM 특유의 탄성·유연성을 함께 지녔으며, R&D부터 배합·성형·생산까지 자체적으로 관리해 일관된 품질을 보장합니다.',
+      bodyEn:'Sealstar\'s perfluoro O-rings are supplied mainly under evolast®, the FFKM brand of Italy\'s MCM. FFKM (perfluoroelastomer) carries a higher fluorine content than standard FKM, giving it heat resistance up to roughly 350°C alongside near-universal chemical compatibility. evolast® combines PTFE-level chemical resistance with the flexibility and elasticity of a regular FKM, and MCM controls the full value chain — from R&D and compounding to moulding and production — for consistent quality.',
       grades:[
-        {g:'G75M', d:'Ultimate chemical resistance grade', c:'Black', h:'72', t:'-15℃ ~ +260℃'},
-        {g:'G80A', d:'Ultimate chemical resistance grade', c:'Black', h:'80', t:'-15℃ ~ +260℃'},
-        {g:'G75B', d:'General purpose, high temperature grade', c:'Black', h:'78', t:'-15℃ ~ +325℃'},
-        {g:'G75S', d:'Food & Pharma grade — FDA, USP Class VI & 3A', c:'White', h:'75', t:'-15℃ ~ +310℃'},
-        {g:'G75LT', d:'Extreme low temperature grade (Perlast ICE)', c:'Black', h:'75', t:'-46℃ ~ +250℃'},
-        {g:'G92E', d:'ENDURA, ED-resistant grade', c:'Black', h:'90', t:'-15℃ ~ +260℃'},
-        {g:'G92LT', d:'ENDURA, ED-resistant grade (ICE)', c:'Black', h:'90', t:'-46℃ ~ +240℃'}
+        {g:'PB694', d:'Chemical resistance, general purpose', c:'White', h:'60', t:'-20℃ ~ +270℃'},
+        {g:'PB794', d:'Chemical resistance, FDA / 3A / USP Class VI', c:'White', h:'70', t:'-20℃ ~ +270℃'},
+        {g:'PB795', d:'High temperature, chemical resistance', c:'White', h:'70', t:'-15℃ ~ +300℃'},
+        {g:'PB7LT', d:'Excellent low temperature, chemical resistance', c:'White', h:'70', t:'-40℃ ~ +250℃'},
+        {g:'PB7SC', d:'High temperature, high purity — plasma / semiconductor', c:'White', h:'75', t:'-20℃ ~ +300℃'},
+        {g:'PB894', d:'Standard applications, chemical resistance', c:'White', h:'80', t:'-20℃ ~ +270℃'},
+        {g:'PB895', d:'High temperature, chemical resistance', c:'White', h:'80', t:'-15℃ ~ +300℃'},
+        {g:'PB8HC', d:'High temperature — hot water, steam, amine', c:'White', h:'80', t:'-20℃ ~ +260℃'},
+        {g:'PN694', d:'Standard applications, chemical resistance', c:'Black', h:'60', t:'-25℃ ~ +270℃'}
       ],
-      appsKo:'화학공정 산업, 식품·제약 산업, 도장(페인트 스프레이), 오일·가스/유전 산업용 내ED 퍼플러, 디젤·가스 엔진',
-      appsEn:'Chemical processing industry, food & pharmaceutical industry, paint spray, ED-resistant grades for oil & gas / oilfield, diesel & gas engines'
+      appsKo:'에너지·오일&가스·석유화학, 반도체, 화학공정 산업, 식품·음료 산업',
+      appsEn:'Energy, Oil & Gas and Petrochemical; Semiconductor; Chemical process industry; Food and Beverage'
     },
     kalrez:{
-      ko:'Kalrez (반도체)', en:'Kalrez (Semiconductor)',
-      bodyKo:'듀폰 Kalrez는 반도체 공정별 화학·플라즈마 환경에 최적화된 등급을 제공합니다. 아래는 이지스씰링테크놀로지 자료를 기준으로 정리한 공정별 추천 제품군입니다.',
-      bodyEn:'DuPont Kalrez offers grades optimized for the chemical and plasma environment of each semiconductor process step. The table below summarizes recommended grades by process, based on Aegis Sealing Technology reference data.',
+      ko:'Kalrez (Dupont)', en:'Kalrez (DuPont)',
+      bodyKo:'듀폰(DuPont) Kalrez는 반도체 공정별 화학·플라즈마 환경에 최적화된 등급을 제공합니다. 아래는 공정 구분별 추천 제품군을 정리한 표입니다.',
+      bodyEn:'DuPont Kalrez offers grades optimized for the chemical and plasma environment of each semiconductor process step. The table below summarizes recommended grades by process group.',
       rows:[
         {grp:'Plasma', proc:'PECVD / ALD', temp:'25~200℃', env:'TMS, DEMS, TEOS, SiH4, C3H8, NH3, SiF4, O2, N2O, NF3', rec:'9100, 9500', app:'Door/Gate/Pendulum valve seals, Chamber lid, Exhaust valve, Gas inlet·outlet·mixing block, Window seals, Center rings, Wafer/FPD carrier'},
-        {grp:'Plasma', proc:'HDP-CVD', temp:'25~200℃', env:'TEOS, SiH4, NH3, SiF4, O2, C2F6, N2O, NF3, CF4', rec:'9100, 9500', app:'Plasma 공정 챔버 씰 전반'},
+        {grp:'Plasma', proc:'HDP-CVD', temp:'25~200℃', env:'TEOS, SiH4, NH3, SiF4, O2, C2F6, N2O, NF3, CF4', rec:'9100, 9500', app:''},
         {grp:'Plasma', proc:'SACVD', temp:'25~250℃', env:'TEOS, TeP, TEBO, O3, NF3', rec:'9500, 8002', app:''},
         {grp:'Plasma', proc:'Ash / Strip', temp:'25~250℃', env:'O2, CF4, CHF3, NH3, H2O Vapor, Forming Gas', rec:'9300, 9500', app:''},
         {grp:'Plasma', proc:'Dielectric(Oxide) Etch', temp:'25~200℃', env:'CF4, C3F8, CHF3, SF6, O2, H2', rec:'9300, 9500', app:''},
@@ -106,9 +107,7 @@
         {grp:'Wet', proc:'Copper Plating', temp:'25~100℃', env:'CuSO4 Solution, H2SO4, H2O2', rec:'6375UP, 1050LF', app:''}
       ],
       noteKo:'9100 — 가혹한 플라즈마 환경에서 낮은 침식률과 초저파티클 특성 / 9500 — 오존·암모니아·수증기·플라즈마 라디칼에 대한 우수한 저항성 / 9300 — 이온(물리적)과 라디칼(화학적)이 혼재된 플라즈마 공정용 / 8900 — 금속 CVD·ALD·LPCVD·산화·확산 공정 권장 제품 / 8475 — 램프 어닐·RTP 공정 권장 제품 / 6375UP — 전체 습식 공정용 범용 제품',
-      noteEn:'9100 — low erosion rate & ultra-low particle generation in harsh plasma; 9500 — excellent resistance to ozone, ammonia, water vapor & plasma radicals; 9300 — for plasma combining ionic and radical species; 8900 — recommended for metal CVD/ALD/LPCVD, oxidation & diffusion; 8475 — recommended for lamp anneal & RTP; 6375UP — general-purpose grade for all wet process applications.',
-      srcKo:'출처: 이지스씰링테크놀로지(aegisseal.kr) 제품자료',
-      srcEn:'Source: Aegis Sealing Technology (aegisseal.kr) product data'
+      noteEn:'9100 — low erosion rate & ultra-low particle generation in harsh plasma; 9500 — excellent resistance to ozone, ammonia, water vapor & plasma radicals; 9300 — for plasma combining ionic and radical species; 8900 — recommended for metal CVD/ALD/LPCVD, oxidation & diffusion; 8475 — recommended for lamp anneal & RTP; 6375UP — general-purpose grade for all wet process applications.'
     }
   };
 
@@ -507,15 +506,21 @@
         + '<p class="desc" style="margin-top:18px"><span class="ko"><b>적용분야</b> — '+t.appsKo+'</span><span class="en"><b>Applications</b> — '+t.appsEn+'</span></p>';
     } else {
       var t2=PERFLUORO_TABS.kalrez;
+      var lastGrp=null;
       var krows = t2.rows.map(function(r){
-        return '<tr><td class="mname">'+r.grp+'</td><td>'+r.proc+'</td><td class="mtemp">'+r.temp+'</td><td>'+r.env+'</td><td>'+r.rec+'</td><td>'+r.app+'</td></tr>';
+        var grpCell='';
+        if(r.grp!==lastGrp){
+          var span = t2.rows.filter(function(x){ return x.grp===r.grp; }).length;
+          grpCell = '<td class="mname" rowspan="'+span+'" style="vertical-align:middle">'+r.grp+'</td>';
+          lastGrp = r.grp;
+        }
+        return '<tr>'+grpCell+'<td>'+r.proc+'</td><td class="mtemp">'+r.temp+'</td><td>'+r.env+'</td><td>'+r.rec+'</td><td>'+r.app+'</td></tr>';
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t2.bodyKo+'</span><span class="en">'+t2.bodyEn+'</span></p>'
         + '<table class="mtable"><thead><tr>'
         + '<th><span class="ko">공정구분</span><span class="en">Group</span></th><th><span class="ko">세부공정</span><span class="en">Process</span></th><th><span class="ko">온도</span><span class="en">Temp.</span></th><th><span class="ko">공정 환경</span><span class="en">Environment</span></th><th><span class="ko">추천제품</span><span class="en">Suggested</span></th><th><span class="ko">주요 용도</span><span class="en">Applications</span></th>'
         + '</tr></thead><tbody>'+krows+'</tbody></table>'
-        + '<p class="desc" style="margin-top:16px;font-size:13px"><span class="ko">'+t2.noteKo+'</span><span class="en">'+t2.noteEn+'</span></p>'
-        + '<p style="margin-top:10px;font-size:12px;color:var(--muted)"><span class="ko">'+t2.srcKo+'</span><span class="en">'+t2.srcEn+'</span></p>';
+        + '<p class="desc" style="margin-top:16px;font-size:13px"><span class="ko">'+t2.noteKo+'</span><span class="en">'+t2.noteEn+'</span></p>';
     }
 
     content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
