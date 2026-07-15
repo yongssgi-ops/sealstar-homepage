@@ -1,0 +1,8 @@
+.git
+.gitignore
+.assetsignore
+wrangler.jsonc
+node_modules
+.wrangler
+_test.mjs
+sealstar-renewal.html
