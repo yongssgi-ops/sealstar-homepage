@@ -138,11 +138,11 @@
       bodyKo:'피스톤 링의 조인트(절개) 형상은 밀봉·배유 성능과 조립 방식을 좌우합니다. 대표적인 조인트 형식은 다음과 같습니다.',
       bodyEn:'The ring joint (cut) geometry determines sealing/drainage behavior and how the ring is assembled. Representative joint types are listed below.',
       rows:[
-        {img:'images/web/joint-interlock.svg',ko:'인터록 조인트',en:'Interlock Joint',dko:'양방향 밀봉이 가능하며 개구부를 접합부 손상 없이 통과할 수 있어 유압 부품에 널리 쓰입니다.',den:'A bi-directional joint that can pass over open ports without damaging the joint tips — widely used in hydraulic components.',dia:'약 38~1,830mm (1.5"~72")'},
-        {img:'images/web/joint-stepcut.svg',ko:'스텝 컷 조인트',en:'Step Cut Joint',dko:'일정 수준의 누설이 허용되는 조건에서 사용하는 양방향 조인트입니다.',den:'A bi-directional joint used where a controlled amount of leakage is acceptable.',dia:'약 16~1,830mm (0.62"~72")'},
-        {img:'images/web/joint-buttcut.svg',ko:'버트 컷 조인트',en:'Butt Cut Joint',dko:'가장 널리 쓰이는 기본형 조인트입니다.',den:'The most common, basic joint style.',dia:'약 9.5~1,830mm (0.375"~72")'},
-        {img:'images/web/joint-anglebuttcut.svg',ko:'앵글 버트 컷 조인트',en:'Angle Butt Cut Joint',dko:'보어 내벽에 접합선 마모 자국이 남는 것을 방지하기 위해 사용합니다.',den:'Used to prevent the joint line from wearing a visible mark into the bore wall.',dia:'약 9.5~1,830mm (0.375"~72")'},
-        {img:'images/web/joint-hook.svg',ko:'후크 조인트',en:'Hook Joint',dko:'링이 압축된 상태로 최종 작동 내경에 도달해야 하는 카운터보어·블라인드 조립 등에 사용되며 SAE J281 규격을 따릅니다.',den:'Used where the ring must stay compressed to reach its final working bore diameter — e.g. counterbore or blind assembly — and follows the SAE J281 standard.',dia:'약 16~1,830mm (0.62"~72")'}
+        {img:'images/web/joint-interlock.jpg',ko:'인터록 조인트',en:'Interlock Joint',dko:'양방향 밀봉이 가능하며 개구부를 접합부 손상 없이 통과할 수 있어 유압 부품에 널리 쓰입니다.',den:'A bi-directional joint that can pass over open ports without damaging the joint tips — widely used in hydraulic components.',dia:'약 38~1,830mm (1.5"~72")'},
+        {img:'images/web/joint-stepcut.jpg',ko:'스텝 컷 조인트',en:'Step Cut Joint',dko:'일정 수준의 누설이 허용되는 조건에서 사용하는 양방향 조인트입니다.',den:'A bi-directional joint used where a controlled amount of leakage is acceptable.',dia:'약 16~1,830mm (0.62"~72")'},
+        {img:'images/web/joint-buttcut.jpg',ko:'버트 컷 조인트',en:'Butt Cut Joint',dko:'가장 널리 쓰이는 기본형 조인트입니다.',den:'The most common, basic joint style.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {img:'images/web/joint-anglebuttcut.jpg',ko:'앵글 버트 컷 조인트',en:'Angle Butt Cut Joint',dko:'보어 내벽에 접합선 마모 자국이 남는 것을 방지하기 위해 사용합니다.',den:'Used to prevent the joint line from wearing a visible mark into the bore wall.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {img:'images/web/joint-hook.jpg',ko:'후크 조인트',en:'Hook Joint',dko:'링이 압축된 상태로 최종 작동 내경에 도달해야 하는 카운터보어·블라인드 조립 등에 사용되며 SAE J281 규격을 따릅니다.',den:'Used where the ring must stay compressed to reach its final working bore diameter — e.g. counterbore or blind assembly — and follows the SAE J281 standard.',dia:'약 16~1,830mm (0.62"~72")'}
       ]
     },
     material: {
@@ -650,7 +650,7 @@
     var table;
     if(key==='joint'){
       var jrows = d.rows.map(function(r){
-        return '<tr><td style="width:110px"><img src="'+r.img+'" alt="'+esc(r.en)+'" style="width:100px;height:50px;display:block;background:var(--bg-soft);border-radius:6px;padding:4px;box-sizing:border-box" /></td>'
+        return '<tr><td style="width:120px"><img src="'+r.img+'" alt="'+esc(r.en)+'" style="width:108px;height:76px;object-fit:contain;display:block;background:var(--bg-soft);border-radius:6px;padding:4px;box-sizing:border-box" /></td>'
           +'<td class="mname"><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td>'
           +'<td><span class="ko">'+r.dko+'</span><span class="en">'+r.den+'</span></td>'
           +'<td class="mtemp">'+r.dia+'</td></tr>';

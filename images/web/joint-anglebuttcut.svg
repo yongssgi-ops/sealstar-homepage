@@ -1,6 +1,0 @@
-<svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
-  <polygon points="10,20 90,20 70,80 10,80" fill="#0c2340"/>
-  <polygon points="130,20 190,20 190,80 110,80" fill="#0c2340"/>
-  <line x1="90" y1="20" x2="70" y2="80" stroke="#5bace0" stroke-width="2" stroke-dasharray="4 3"/>
-  <line x1="130" y1="20" x2="110" y2="80" stroke="#5bace0" stroke-width="2" stroke-dasharray="4 3"/>
-</svg>
