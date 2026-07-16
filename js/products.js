@@ -379,6 +379,26 @@
         {ko:'금속 OD / 고무 피복 OD 케이스로 하우징 재질에 맞춰 선정',en:'Metal-OD or rubber-covered-OD case options matched to housing material'},
         {ko:'표준형 기준 축속도·편심·압력에 대한 설계 한계값 보유(고속·고압은 특수설계 대응)',en:'Standard designs have defined limits for shaft speed, eccentricity and pressure — special designs cover higher-speed or higher-pressure duty'}
       ],
+      matTable:{
+        titleKo:'재질', titleEn:'Materials',
+        cols:[{ko:'재질',en:'Material'},{ko:'용도',en:'Use'},{ko:'사용 온도',en:'Temp. Range',short:true}],
+        rows:[
+          [{ko:'NBR',en:'NBR'}, {ko:'표준 재질 · 내유·내마모성 우수, 일반 산업기계·유압라인에 적합',en:'Standard material — excellent oil/abrasion resistance, suited to general industrial machinery and hydraulic lines'}, '-30 ~ +100℃'],
+          [{ko:'FKM',en:'FKM'}, {ko:'옵션 재질 · 내열성·내화학성이 필요한 고온 환경에 적합',en:'Optional material — for high-temperature environments requiring heat and chemical resistance'}, '-15 ~ +200℃']
+        ]
+      },
+      specTable:{
+        titleKo:'규격표 · 구성 옵션', titleEn:'Spec Table · Configuration Options',
+        cols:[{ko:'구성',en:'Component'},{ko:'표준 사양',en:'Standard Spec'},{ko:'옵션',en:'Option'}],
+        rows:[
+          [{ko:'케이스 (Case)',en:'Case'}, {ko:'금속 단독형 (Bare Metal OD)',en:'Bare Metal OD'}, {ko:'고무 피복형(Rubber Covered OD) 가능',en:'Rubber Covered OD available'}],
+          [{ko:'립 (Lip)',en:'Lip'}, {ko:'NBR',en:'NBR'}, {ko:'FKM 가능',en:'FKM available'}],
+          [{ko:'스프링 (Garter Spring)',en:'Garter Spring'}, {ko:'스테인리스',en:'Stainless Steel'}, '-'],
+          [{ko:'더스트립 (Dust Lip)',en:'Dust Lip'}, {ko:'노출형(TC 등)에 부착',en:'Fitted on exposed types such as TC'}, {ko:'밀봉형(SC 등)은 미부착',en:'Not fitted on enclosed types such as SC'}]
+        ],
+        noteKo:'JIS B 2402 오일씰 형상 규격을 기준으로 하며, 치수(ID·OD·W)는 재고 현황에 따라 달라질 수 있어 문의 시 정확한 사양을 안내해 드립니다.',
+        noteEn:'Based on the JIS B 2402 oil seal shape standard. Dimensional (ID/OD/W) size charts vary with current stock — contact us for exact specifications.'
+      },
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
     { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:imgs('piston',1), special:'piston',
@@ -398,18 +418,37 @@
       apps:[{ko:'유압 변속기',en:'Hydraulic transmissions'},{ko:'클러치',en:'Clutches'},{ko:'토크컨버터',en:'Torque converters'},{ko:'유정압 변속기',en:'Hydrostatic transmissions'}] },
 
     { id:'isolator', ko:'베어링아이솔레이터', en:'Bearing Isolator (BPS)', imgs:['images/web/isolator1.jpg'],
-      dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터(BPS)입니다. 접촉 마찰이 없어 반영구적으로 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
+      dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터(BPS)입니다. 접촉 마찰이 없어 마모 없이 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
       den:'A non-contact bearing protector/isolator (BPS) that uses a fine labyrinth gap between rotating and stationary elements. Virtually wear-free, it blocks both contamination ingress and lubricant loss.',
       mat:['NBR','PTFE'],
-      principleKo:'회전환과 고정환이 서로 맞물리는 미로(labyrinth) 형태의 미세 간극을 형성하되, 두 부품이 직접 접촉하지는 않습니다. 이 좁고 구불구불한 경로가 물리적 장벽 역할을 해 오염물질의 침입과 윤활유의 유출을 억제하며, 비접촉 구조이기 때문에 마모가 거의 없어 반영구적으로 사용할 수 있습니다. 모델에 따라 O-ring 보조 실링이나 배수 홈을 추가해 밀봉 성능을 높이기도 합니다.',
-      principleEn:'A rotating ring and a stationary ring interlock to form a fine labyrinth clearance without ever touching each other. That narrow, winding path acts as a physical barrier that resists contaminant ingress and lubricant loss, and because there is no rubbing contact, wear is virtually eliminated — giving the isolator a near-permanent service life. Depending on the model, an auxiliary O-ring or drainage groove can be added to further improve sealing performance.',
+      principleKo:'회전환과 고정환이 서로 맞물리는 미로(labyrinth) 형태의 미세 간극을 형성하되, 두 부품이 직접 접촉하지는 않습니다. 이 좁고 구불구불한 경로가 물리적 장벽 역할을 해 오염물질의 침입과 윤활유의 유출을 억제하며, 비접촉 구조이기 때문에 마모가 거의 없어 오랜 기간 안정적으로 사용할 수 있습니다. 모델에 따라 O-ring 보조 실링이나 배수 홈을 추가해 밀봉 성능을 높이기도 합니다.',
+      principleEn:'A rotating ring and a stationary ring interlock to form a fine labyrinth clearance without ever touching each other. That narrow, winding path acts as a physical barrier that resists contaminant ingress and lubricant loss, and because there is no rubbing contact, wear is virtually eliminated — giving the isolator a long, stable service life. Depending on the model, an auxiliary O-ring or drainage groove can be added to further improve sealing performance.',
       features:[
-        {ko:'비접촉 구조로 마모가 없어 반영구적 사용 가능',en:'Non-contact design — virtually no wear, near-permanent service life'},
+        {ko:'비접촉 구조로 마모가 없어 안정적으로 장기간 사용 가능',en:'Non-contact design — virtually no wear, stable long-term service life'},
         {ko:'접촉 마찰이 없어 발열·동력 손실이 최소화',en:'No contact friction, so heat generation and power loss are minimal'},
         {ko:'분당 최대 약 25m/sec 둘레속도, -40~120℃ 대응(제품군별 상이)',en:'Handles surface speeds up to roughly 25 m/sec and -40 to 120°C, depending on the series'},
         {ko:'PTFE 필터·FKM 등 O-ring 보조 실 재질 선택 가능',en:'Auxiliary O-ring materials such as PTFE-filled compounds or FKM can be specified'},
         {ko:'모터·펌프·기어박스 등 다양한 회전 장비에 규격 대응',en:'Sized to fit a wide range of rotating equipment — motors, pumps, gearboxes'}
       ],
+      matTable:{
+        titleKo:'재질', titleEn:'Materials',
+        cols:[{ko:'구성',en:'Component'},{ko:'표준 재질',en:'Standard Material'},{ko:'옵션',en:'Option'}],
+        rows:[
+          [{ko:'씰 (Seal)',en:'Seal'}, {ko:'PTFE 충전재 (PTFE filler)',en:'PTFE filler'}, '-'],
+          [{ko:'오링 (O-ring)',en:'O-ring'}, {ko:'NBR',en:'NBR'}, {ko:'FKM 가능',en:'FKM available'}]
+        ]
+      },
+      specTable:{
+        titleKo:'규격표 · 작동 범위', titleEn:'Spec Table · Operating Range',
+        cols:[{ko:'항목',en:'Item'},{ko:'사양',en:'Spec',short:true}],
+        rows:[
+          [{ko:'둘레속도 (Surface Speed)',en:'Surface Speed'}, '최대 약 25 m/sec'],
+          [{ko:'사용 온도 (Temp. Range)',en:'Temp. Range'}, '-40 ~ 120℃ (제품군별 상이)'],
+          [{ko:'구조 (Structure)',en:'Structure'}, {ko:'이중 미로(Labyrinth) 비접촉 구조',en:'Dual labyrinth, non-contact design'}]
+        ],
+        noteKo:'상세 치수 규격표 및 기술 자료는 문의 바랍니다.',
+        noteEn:'Contact us for detailed dimensional spec sheets and technical data.'
+      },
       apps:[{ko:'전동기 베어링 보호',en:'Electric motor bearing protection'},{ko:'펌프',en:'Pumps'},{ko:'기어박스',en:'Gearboxes'},{ko:'송풍기/블로워',en:'Fans & blowers'}] },
 
     { id:'machined', ko:'가공씰', en:'Machined Seal', imgs:imgs('machined',3),
@@ -519,6 +558,23 @@
   }
 
   // Long-form body: 작동원리/구조(principle) · 특징(features) · 적용분야(applications)
+  // Generic data-table renderer reused by any item's matTable/specTable (재질/규격표 sections)
+  // cols: [{ko,en}, ...]   rows: [ [cellOrSpan, cellOrSpan, ...], ... ] — a cell is either a plain
+  // string (shown as-is, language-agnostic — numbers/codes) or {ko,en} (bilingual span pair)
+  // cols may mark a column {short:true} (e.g. a temp range or numeric spec) to get the
+  // bold, no-wrap "mtemp" treatment; anything else just wraps normally.
+  function renderDataTable(cols, rows){
+    var thead = '<tr>' + cols.map(function(c){ return '<th><span class="ko">'+c.ko+'</span><span class="en">'+c.en+'</span></th>'; }).join('') + '</tr>';
+    var tbody = rows.map(function(r){
+      return '<tr>' + r.map(function(cell,i){
+        var cls = i===0 ? ' class="mname"' : ((cols[i] && cols[i].short) ? ' class="mtemp"' : '');
+        if(typeof cell === 'string') return '<td'+cls+'>'+cell+'</td>';
+        return '<td'+cls+'><span class="ko">'+cell.ko+'</span><span class="en">'+cell.en+'</span></td>';
+      }).join('') + '</tr>';
+    }).join('');
+    return '<table class="mtable"><thead>'+thead+'</thead><tbody>'+tbody+'</tbody></table>';
+  }
+
   function bodyHtml(it){
     var out='';
     if(it.principleKo){
@@ -529,6 +585,15 @@
       out+='<h3><span class="ko">주요 특징</span><span class="en">Key Features</span></h3><ul class="flist">'
         + it.features.map(function(f){ return '<li><span class="ko">'+f.ko+'</span><span class="en">'+f.en+'</span></li>'; }).join('')
         + '</ul>';
+    }
+    if(it.matTable){
+      out+='<h3><span class="ko">'+it.matTable.titleKo+'</span><span class="en">'+it.matTable.titleEn+'</span></h3>'
+        + renderDataTable(it.matTable.cols, it.matTable.rows);
+    }
+    if(it.specTable){
+      out+='<h3><span class="ko">'+it.specTable.titleKo+'</span><span class="en">'+it.specTable.titleEn+'</span></h3>'
+        + renderDataTable(it.specTable.cols, it.specTable.rows)
+        + (it.specTable.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+it.specTable.noteKo+'</span><span class="en">'+it.specTable.noteEn+'</span></p>' : '');
     }
     if(it.apps && it.apps.length){
       out+='<h3><span class="ko">적용 분야</span><span class="en">Applications</span></h3><div class="apps">'
