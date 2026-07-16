@@ -400,18 +400,6 @@
           [{ko:'FKM',en:'FKM'}, {ko:'옵션 재질 · 내열성·내화학성이 필요한 고온 환경에 적합',en:'Optional material — for high-temperature environments requiring heat and chemical resistance'}, '-15 ~ +200℃']
         ]
       },
-      specTable:{
-        titleKo:'규격표 · 구성 옵션', titleEn:'Spec Table · Configuration Options',
-        cols:[{ko:'구성',en:'Component'},{ko:'표준 사양',en:'Standard Spec'},{ko:'옵션',en:'Option'}],
-        rows:[
-          [{ko:'케이스 (Case)',en:'Case'}, {ko:'금속 단독형 (Bare Metal OD)',en:'Bare Metal OD'}, {ko:'고무 피복형(Rubber Covered OD) 가능',en:'Rubber Covered OD available'}],
-          [{ko:'립 (Lip)',en:'Lip'}, {ko:'NBR',en:'NBR'}, {ko:'FKM 가능',en:'FKM available'}],
-          [{ko:'스프링 (Garter Spring)',en:'Garter Spring'}, {ko:'스테인리스',en:'Stainless Steel'}, '-'],
-          [{ko:'더스트립 (Dust Lip)',en:'Dust Lip'}, {ko:'노출형(TC 등)에 부착',en:'Fitted on exposed types such as TC'}, {ko:'밀봉형(SC 등)은 미부착',en:'Not fitted on enclosed types such as SC'}]
-        ],
-        noteKo:'JIS B 2402 오일씰 형상 규격을 기준으로 하며, 치수(ID·OD·W)는 재고 현황에 따라 달라질 수 있어 문의 시 정확한 사양을 안내해 드립니다.',
-        noteEn:'Based on the JIS B 2402 oil seal shape standard. Dimensional (ID/OD/W) size charts vary with current stock — contact us for exact specifications.'
-      },
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
     { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:imgs('piston',1), special:'piston',
@@ -451,17 +439,24 @@
           [{ko:'오링 (O-ring)',en:'O-ring'}, {ko:'FKM (Viton®)',en:'FKM (Viton®)'}, {ko:'NBR, FDA, 실리콘, FFKM 가능',en:'NBR, FDA-grade, Silicone, FFKM available'}]
         ]
       },
-      specTable:{
+      typeCards:{
         titleKo:'타입별 재질 &amp; 작동 범위', titleEn:'Type-by-Type Materials &amp; Operating Range',
-        cols:[{ko:'타입',en:'Type'},{ko:'구조',en:'Structure'},{ko:'재질',en:'Material'},{ko:'압력',en:'Pressure',short:true},{ko:'온도(℃)',en:'Temp.(℃)',short:true},{ko:'속도',en:'Speed',short:true},{ko:'변위',en:'Displacement',short:true}],
-        rows:[
-          ['THBI-01', {img:'images/web/thbi01.jpg',alt:'THBI-01 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
-          ['THBI-02', {img:'images/web/thbi02.jpg',alt:'THBI-02 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
-          ['THBI-03', {img:'images/web/thbi03.jpg',alt:'THBI-03 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
-          ['THBI-04', {img:'images/web/thbi04.jpg',alt:'THBI-04 구조도'}, 'PTFE/SUS/FKM', '0.3 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm']
+        cards:[
+          { type:'THBI-01', img:'images/web/thbi01.jpg', alt:'THBI-01 구조도',
+            specs:[[{ko:'재질',en:'Material'},'PTFE/FKM'],[{ko:'압력',en:'Pressure'},'0 bar'],[{ko:'온도',en:'Temp.'},'-40 ~ 120℃'],[{ko:'속도',en:'Speed'},'25 m/sec 이하'],[{ko:'변위',en:'Displacement'},'0.3mm']],
+            descKo:'주로 수평 구조 장비에 사용됩니다.', descEn:'Mainly used in horizontal-structure equipment.' },
+          { type:'THBI-02', img:'images/web/thbi02.jpg', alt:'THBI-02 구조도',
+            specs:[[{ko:'재질',en:'Material'},'PTFE/FKM'],[{ko:'압력',en:'Pressure'},'0 bar'],[{ko:'온도',en:'Temp.'},'-40 ~ 120℃'],[{ko:'속도',en:'Speed'},'25 m/sec 이하'],[{ko:'변위',en:'Displacement'},'0.3mm']],
+            descKo:'수평 구조 장비에 사용되며, 수직 구조 장비 상단부에도 적극 추천됩니다.', descEn:'Used in horizontal-structure equipment; also strongly recommended for the top of vertical-structure equipment.' },
+          { type:'THBI-03', img:'images/web/thbi03.jpg', alt:'THBI-03 구조도',
+            specs:[[{ko:'재질',en:'Material'},'PTFE/FKM'],[{ko:'압력',en:'Pressure'},'0 bar'],[{ko:'온도',en:'Temp.'},'-40 ~ 120℃'],[{ko:'속도',en:'Speed'},'25 m/sec 이하'],[{ko:'변위',en:'Displacement'},'0.3mm']],
+            descKo:'내장 플랜지 타입으로 기존 립씰을 대체하며 제한된 공간에 사용 가능합니다. 수직 구조 상단부 사용은 권장하지 않습니다.', descEn:'A built-in flange type that can replace conventional lip seals in tight spaces; not recommended for the top of vertical-structure equipment.' },
+          { type:'THBI-04', img:'images/web/thbi04.jpg', alt:'THBI-04 구조도',
+            specs:[[{ko:'재질',en:'Material'},'PTFE/SUS/FKM'],[{ko:'압력',en:'Pressure'},'0.3 bar'],[{ko:'온도',en:'Temp.'},'-40 ~ 120℃'],[{ko:'속도',en:'Speed'},'25 m/sec 이하'],[{ko:'변위',en:'Displacement'},'0.3mm']],
+            descKo:'립씰 기술이 적용되어 액체가 가득 찬 수평 구조 장비나 수직 구조 하단부에 사용됩니다.', descEn:'Uses lip-seal technology; suited to horizontal equipment or the lower section of vertical equipment fully filled with liquid.' }
         ],
-        noteKo:'THBI-01·02는 일반 수평 구조 장비용(THBI-02는 수직 구조 상단부 권장), THBI-03은 내장 플랜지 타입으로 기존 립씰 대체 및 협소 공간용, THBI-04는 립씰 기술이 적용되어 액체가 가득 찬 수평·수직 하단부 장비에 적합합니다. 규격(축경 Ø20~200mm) 및 상세 치수 규격표는 문의 바랍니다.',
-        noteEn:'THBI-01/02 suit general horizontal-shaft equipment (THBI-02 recommended for the top of vertical equipment); THBI-03 is a built-in flange type for replacing conventional lip seals in tight spaces; THBI-04 uses lip-seal technology suited to horizontal or lower-vertical equipment fully filled with liquid. Shaft sizes span Ø20–200mm — contact us for detailed dimensional charts.'
+        noteKo:'규격(축경) Ø20~200mm 대응, 상세 치수 규격표는 문의 바랍니다.',
+        noteEn:'Shaft sizes span Ø20–200mm — contact us for detailed dimensional charts.'
       },
       apps:[{ko:'전동기 베어링 보호',en:'Electric motor bearing protection'},{ko:'펌프',en:'Pumps'},{ko:'기어박스',en:'Gearboxes'},{ko:'송풍기/블로워',en:'Fans & blowers'}] },
 
@@ -591,6 +586,25 @@
     return '<table class="mtable"><thead>'+thead+'</thead><tbody>'+tbody+'</tbody></table>';
   }
 
+  // Card-grid renderer for a small set of product "types" that each need a sizeable
+  // labeled diagram/photo plus a short spec list — used where a dense multi-column
+  // table would squeeze the image down to unreadable size (e.g. bearing isolator types).
+  // t: {titleKo,titleEn, cards:[{type,img,alt,specs:[[{ko,en},val],...],descKo,descEn}], noteKo,noteEn}
+  function typeCardsHtml(t){
+    var cards = t.cards.map(function(c){
+      var specsHtml = c.specs.map(function(s){
+        return '<tr><td><span class="ko">'+s[0].ko+'</span><span class="en">'+s[0].en+'</span></td><td>'+s[1]+'</td></tr>';
+      }).join('');
+      return '<div class="typecard">'
+        + '<div class="tcimgwrap"><img src="'+c.img+'" alt="'+(c.alt||'')+'" loading="lazy"><span class="tclabel">'+c.type+'</span></div>'
+        + '<table class="tcspecs"><tbody>'+specsHtml+'</tbody></table>'
+        + (c.descKo ? '<p class="desc" style="margin-top:10px;font-size:13px"><span class="ko">'+c.descKo+'</span><span class="en">'+c.descEn+'</span></p>' : '')
+        + '</div>';
+    }).join('');
+    return '<h3><span class="ko">'+t.titleKo+'</span><span class="en">'+t.titleEn+'</span></h3><div class="typecards">'+cards+'</div>'
+      + (t.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.noteKo+'</span><span class="en">'+t.noteEn+'</span></p>' : '');
+  }
+
   function bodyHtml(it){
     var out='';
     if(it.principleKo){
@@ -610,6 +624,7 @@
     if(it.shapeTable){ out+=tableSection(it.shapeTable); }
     if(it.matTable){ out+=tableSection(it.matTable); }
     if(it.specTable){ out+=tableSection(it.specTable); }
+    if(it.typeCards){ out+=typeCardsHtml(it.typeCards); }
     if(it.apps && it.apps.length){
       out+='<h3><span class="ko">적용 분야</span><span class="en">Applications</span></h3><div class="apps">'
         + it.apps.map(function(a){ return '<span><span class="ko">'+a.ko+'</span><span class="en">'+a.en+'</span></span>'; }).join('')
