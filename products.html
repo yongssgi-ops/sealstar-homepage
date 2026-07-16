@@ -118,6 +118,16 @@
   .mtable td.mimg{text-align:center;padding:10px;width:190px;min-width:190px}
   .mtable td.mimg img{height:64px;width:auto;max-width:100%;display:block;margin:0 auto}
 
+  /* Fixed-column table for long free-text cells (e.g. evolast grade "Remarks/Approvals") —
+     forces the long-text column to wrap within a bounded width instead of stretching the page */
+  .mtable.gradetable{table-layout:fixed}
+  .mtable.gradetable th:nth-child(1),.mtable.gradetable td:nth-child(1){width:9%}
+  .mtable.gradetable th:nth-child(2),.mtable.gradetable td:nth-child(2){width:11%}
+  .mtable.gradetable th:nth-child(3),.mtable.gradetable td:nth-child(3){width:9%}
+  .mtable.gradetable th:nth-child(4),.mtable.gradetable td:nth-child(4){width:17%}
+  .mtable.gradetable th:nth-child(5),.mtable.gradetable td:nth-child(5){width:54%}
+  .mtable td.mwrap{white-space:normal;word-break:keep-all;overflow-wrap:break-word;line-height:1.6}
+
   /* Certifications / approvals grid (O-ring material tab) */
   .certs{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:16px}
   .certcard{display:flex;gap:14px;align-items:flex-start;background:var(--bg-soft);border:1px solid var(--line);border-radius:12px;padding:16px 18px}

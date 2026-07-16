@@ -335,21 +335,31 @@
             ['DX',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
             ['HW',{ko:'스냅인 와이퍼',en:'Snap-in Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0']
           ] },
-        { key:'guide', ko:'가이드', en:'Guide Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다.', den:'Low-friction guide elements that support the rod/piston so it never contacts bare metal.',
+        { key:'guide', ko:'가이드', en:'Guiding Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 가이드 링·가이드 테이프입니다. 압력을 밀봉하는 부품이 아니라 축 하중을 지지하는 역할이므로 압력 정격은 없습니다.', den:'Guide rings and guide tapes that support the rod/piston so it never contacts bare metal. As load-bearing (not sealing) elements, they carry no pressure rating.',
           rows:[
             ['K68',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +110','1.0'],
             ['K69',{ko:'피스톤 가이드 링',en:'Piston Guide Ring'},{ko:'피스톤',en:'Piston'},'POM','—','-40 / +110','1.0'],
-            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
-            ['K75',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic + PTFE','—','-40 / +130','1.0'],
-            ['K78',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic Aramid','—','-40 / +200','1.0'],
-            ['K79',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic·Graphite','—','-40 / +120','5.0'],
-            ['KBT',{ko:'PTFE 브론즈 가이드 스트립',en:'PTFE Bronze Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Bronze','—','-200 / +260','15.0'],
-            ['KKT',{ko:'카본 PTFE 가이드 스트립',en:'Carbon PTFE Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0'],
-            ['KPB',{ko:'폴리에스터 가이드 스트립',en:'Polyester Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
-            ['KSB',{ko:'로드·피스톤 가이드 스트립',en:'Piston-Rod Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic','—','-40 / +120','1.0'],
-            ['K71',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
-            ['K77',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0']
-          ] },
+            ['K74',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM (유리섬유 강화)','—','-40 / +110','1.0'],
+            ['K71',{ko:'로드 가이드 링 (텔레스코픽 L형)',en:'Rod Guide Ring (Telescopic, L-type)'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
+            ['K77',{ko:'로드 가이드 링 (텔레스코픽 T형)',en:'Rod Guide Ring (Telescopic, T-type)'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
+            ['K70',{ko:'로드·피스톤 가이드 링 (경하중)',en:'Piston-Rod Guide Ring (Light Duty)'},{ko:'로드·피스톤',en:'Piston Rod'},'POM','—','-40 / +100','1.0'],
+            ['K689',{ko:'로드·피스톤 가이드 링 (고하중)',en:'Rod-Piston Guiding Ring (Heavy Duty)'},{ko:'로드·피스톤',en:'Piston Rod'},'PA (유리섬유 강화)','—','-40 / +110','1.0'],
+            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
+            ['K75',{ko:'로드·피스톤 가이드 링 (PTFE 첨가)',en:'Piston-Rod Guide Ring (PTFE-added)'},{ko:'로드·피스톤',en:'Piston Rod'},'페놀수지·PTFE','—','-40 / +130','1.0'],
+            ['K78',{ko:'로드·피스톤 가이드 링 (고온형)',en:'Piston-Rod Guide Ring (High Temp.)'},{ko:'로드·피스톤',en:'Piston Rod'},'아라미드·페놀수지','—','-40 / +200','1.0'],
+            ['K79',{ko:'로드·피스톤 가이드 링 (자기윤활형)',en:'Piston-Rod Guide Ring (Self-lubricating)'},{ko:'로드·피스톤',en:'Piston Rod'},'폴리에스터수지·흑연','—','-40 / +120','5.0'],
+            ['KKBS',{ko:'가이드 테이프',en:'Guiding Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
+            ['KKB',{ko:'가이드 테이프',en:'Guiding Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
+            ['KPB',{ko:'폴리에스터수지 가이드 테이프',en:'Polyester Resin Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
+            ['KSB',{ko:'로드·피스톤 가이드 테이프',en:'Piston-Rod Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'폴리에스터섬유·페놀수지','—','-40 / +120','1.0'],
+            ['KBT',{ko:'PTFE 가이드 테이프',en:'PTFE Bronze Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE','—','-200 / +260','15.0'],
+            ['KKT',{ko:'카본 PTFE 가이드 테이프',en:'Carbon PTFE Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0'],
+            ['K780',{ko:'로드 가이드 링 (부싱형, 무급유)',en:'Rod Guide Ring (Bushing, Dry-running)'},{ko:'로드',en:'Rod'},'탄소강·청동·PTFE','—','-195 / +280','2.0 / 5.0*'],
+            ['K781',{ko:'로드 가이드 링 (부싱형, 고온·고하중)',en:'Rod Guide Ring (Bushing, High Temp./Load)'},{ko:'로드',en:'Rod'},'탄소강·청동·PTFE','—','-195 / +280','2.0 / 5.0*'],
+            ['K782',{ko:'로드 가이드 링 (부싱형, 저소음)',en:'Rod Guide Ring (Bushing, Low Noise)'},{ko:'로드',en:'Rod'},'탄소강·청동·POM','—','-40 / +110','2.0']
+          ],
+          noteKo:'* K780·K781은 무급유(건식) 조건에서 2.0 m/s, 유압유 윤활 조건에서 5.0 m/s까지 대응합니다. KASTAS Hydraulic Guiding Elements 제품군 기준.',
+          noteEn:'* K780/K781 handle up to 2.0 m/s dry-running and up to 5.0 m/s with hydraulic fluid lubrication. Based on the KASTAS Hydraulic Guiding Elements product line.' },
         { key:'static', ko:'스태틱 씰', en:'Static Seals', brand:'KASTAS', dko:'고정부(포트·커넥터 등)에 사용하는 정적 밀봉·백업링입니다.', den:'Static seals and back-up rings used at fixed connections such as ports and fittings.',
           rows:[
             ['K800',{ko:'백업링',en:'Back-up Ring'},{ko:'로드',en:'Rod'},'X-Tone','≤600','-30 / +120','1.0'],
@@ -978,13 +988,13 @@
       var t=PERFLUORO_TABS.perlast;
       var grows = t.grades.map(function(r){
         return '<tr><td class="mname">'+r.g+'</td>'
-          +'<td><span class="ko">'+r.dKo+'</span><span class="en">'+r.dEn+'</span></td>'
           +'<td><span class="ko">'+r.cKo+'</span><span class="en">'+r.cEn+'</span></td>'
-          +'<td>'+r.h+'</td><td class="mtemp">'+r.t+'</td></tr>';
+          +'<td>'+r.h+'</td><td class="mtemp">'+r.t+'</td>'
+          +'<td class="mwrap"><span class="ko">'+r.dKo+'</span><span class="en">'+r.dEn+'</span></td></tr>';
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t.bodyKo+'</span><span class="en">'+t.bodyEn+'</span></p>'
-        + '<table class="mtable"><thead><tr>'
-        + '<th>GRADE</th><th><span class="ko">설명·인증</span><span class="en">Remarks / Approvals</span></th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th>'
+        + '<table class="mtable gradetable"><thead><tr>'
+        + '<th>GRADE</th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th><th><span class="ko">설명·인증</span><span class="en">Remarks / Approvals</span></th>'
         + '</tr></thead><tbody>'+grows+'</tbody></table>'
         + '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.gradeNoteKo+'</span><span class="en">'+t.gradeNoteEn+'</span></p>'
         + '<p class="desc" style="margin-top:18px"><span class="ko"><b>적용분야</b> — '+t.appsKo+'</span><span class="en"><b>Applications</b> — '+t.appsEn+'</span></p>';
@@ -1094,7 +1104,8 @@
     var head = '<h4 class="sizeh"><span class="ko">'+cat.ko+'</span><span class="en">'+cat.en+'</span> '
       + '<small style="font-weight:700;color:var(--muted);font-size:12px">'+cat.brand+'</small></h4>'
       + '<p class="desc" style="margin-bottom:14px"><span class="ko">'+cat.dko+'</span><span class="en">'+cat.den+'</span></p>';
-    return backBtn + head + renderDataTable(HP_COLS, cat.rows);
+    var note = cat.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+cat.noteKo+'</span><span class="en">'+cat.noteEn+'</span></p>' : '';
+    return backBtn + head + renderDataTable(HP_COLS, cat.rows) + note;
   }
 
   function renderHp(){
