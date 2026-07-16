@@ -224,8 +224,8 @@
   var HP_GROUPS = {
     hyd:{
       ko:'유압씰', en:'Hydraulic Seals',
-      bodyKo:'유압 실린더용 로드씰·피스톤씰·와이퍼·가이드·스태틱씰 등을 KASTAS(튀르키예)·SKF(스웨덴) 두 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 재질·압력·온도·속도 사양을 확인할 수 있습니다.',
-      bodyEn:'Rod seals, piston seals, wipers, guide elements and static seals for hydraulic cylinders, supplied under both the KASTAS (Turkey) and SKF (Sweden) brands. Click any category below to see material, pressure, temperature and speed specs by part number.',
+      bodyKo:'유압 실린더용 로드씰·피스톤씰·스태틱씰 등을 KASTAS(튀르키예)·SKF(스웨덴) 두 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 재질·압력·온도·속도 사양을 확인할 수 있습니다.',
+      bodyEn:'Rod seals, piston seals and static seals for hydraulic cylinders, supplied under both the KASTAS (Turkey) and SKF (Sweden) brands. Click any category below to see material, pressure, temperature and speed specs by part number.',
       cats:[
         { key:'rod', ko:'로드씰', en:'Rod Seals', brand:'KASTAS', dko:'실린더 로드(축) 외경을 따라 오일이 누출되지 않도록 막는 1차 밀봉 부품입니다.', den:'The primary seal that prevents oil from leaking along the cylinder rod (shaft) surface.',
           rows:[
@@ -278,30 +278,6 @@
             ['K921',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5'],
             ['K922',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5']
           ] },
-        { key:'wiper', ko:'와이퍼', en:'Wipers', brand:'KASTAS', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
-          rows:[
-            ['K05',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
-            ['K06',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K060',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K07',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K09',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K10',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K11',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'TPE','—','-40 / +120','2.0'],
-            ['K12',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
-            ['K13',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU·STEEL','—','-30 / +100','1.0'],
-            ['K27',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K94',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
-            ['K103',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU·NBR','—','-40 / +100','1.0'],
-            ['K107',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
-            ['K703',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','5.0'],
-            ['K716',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K92',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K101',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
-            ['K102',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
-            ['K705',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K706',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K606',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0']
-          ] },
         { key:'skfrod', ko:'로드씰', en:'Rod Seals', brand:'SKF', dko:'실린더 로드(축) 외경을 따라 오일이 누출되지 않도록 막는 1차 밀봉 부품입니다.', den:'The primary seal that prevents oil from leaking along the cylinder rod (shaft) surface.',
           rows:[
             ['S1S',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5'],
@@ -325,41 +301,6 @@
             ['STD',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5'],
             ['DZ',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5']
           ] },
-        { key:'skfwiper', ko:'와이퍼', en:'Wipers', brand:'SKF', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
-          rows:[
-            ['PA',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['MCW',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR·STEEL','—','-30 / +110','1.0'],
-            ['PAD',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['PADV',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['DTW',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['DX',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['HW',{ko:'스냅인 와이퍼',en:'Snap-in Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0']
-          ] },
-        { key:'guide', ko:'가이드', en:'Guiding Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 가이드 링·가이드 테이프입니다. 압력을 밀봉하는 부품이 아니라 축 하중을 지지하는 역할이므로 압력 정격은 없습니다.', den:'Guide rings and guide tapes that support the rod/piston so it never contacts bare metal. As load-bearing (not sealing) elements, they carry no pressure rating.',
-          rows:[
-            ['K68',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +110','1.0'],
-            ['K69',{ko:'피스톤 가이드 링',en:'Piston Guide Ring'},{ko:'피스톤',en:'Piston'},'POM','—','-40 / +110','1.0'],
-            ['K74',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM (유리섬유 강화)','—','-40 / +110','1.0'],
-            ['K71',{ko:'로드 가이드 링 (텔레스코픽 L형)',en:'Rod Guide Ring (Telescopic, L-type)'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
-            ['K77',{ko:'로드 가이드 링 (텔레스코픽 T형)',en:'Rod Guide Ring (Telescopic, T-type)'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
-            ['K70',{ko:'로드·피스톤 가이드 링 (경하중)',en:'Piston-Rod Guide Ring (Light Duty)'},{ko:'로드·피스톤',en:'Piston Rod'},'POM','—','-40 / +100','1.0'],
-            ['K689',{ko:'로드·피스톤 가이드 링 (고하중)',en:'Rod-Piston Guiding Ring (Heavy Duty)'},{ko:'로드·피스톤',en:'Piston Rod'},'PA (유리섬유 강화)','—','-40 / +110','1.0'],
-            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
-            ['K75',{ko:'로드·피스톤 가이드 링 (PTFE 첨가)',en:'Piston-Rod Guide Ring (PTFE-added)'},{ko:'로드·피스톤',en:'Piston Rod'},'페놀수지·PTFE','—','-40 / +130','1.0'],
-            ['K78',{ko:'로드·피스톤 가이드 링 (고온형)',en:'Piston-Rod Guide Ring (High Temp.)'},{ko:'로드·피스톤',en:'Piston Rod'},'아라미드·페놀수지','—','-40 / +200','1.0'],
-            ['K79',{ko:'로드·피스톤 가이드 링 (자기윤활형)',en:'Piston-Rod Guide Ring (Self-lubricating)'},{ko:'로드·피스톤',en:'Piston Rod'},'폴리에스터수지·흑연','—','-40 / +120','5.0'],
-            ['KKBS',{ko:'가이드 테이프',en:'Guiding Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
-            ['KKB',{ko:'가이드 테이프',en:'Guiding Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
-            ['KPB',{ko:'폴리에스터수지 가이드 테이프',en:'Polyester Resin Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'합성섬유·폴리에스터수지','—','-40 / +120','1.0'],
-            ['KSB',{ko:'로드·피스톤 가이드 테이프',en:'Piston-Rod Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'폴리에스터섬유·페놀수지','—','-40 / +120','1.0'],
-            ['KBT',{ko:'PTFE 가이드 테이프',en:'PTFE Bronze Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE','—','-200 / +260','15.0'],
-            ['KKT',{ko:'카본 PTFE 가이드 테이프',en:'Carbon PTFE Guide Tape'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0'],
-            ['K780',{ko:'로드 가이드 링 (부싱형, 무급유)',en:'Rod Guide Ring (Bushing, Dry-running)'},{ko:'로드',en:'Rod'},'탄소강·청동·PTFE','—','-195 / +280','2.0 / 5.0*'],
-            ['K781',{ko:'로드 가이드 링 (부싱형, 고온·고하중)',en:'Rod Guide Ring (Bushing, High Temp./Load)'},{ko:'로드',en:'Rod'},'탄소강·청동·PTFE','—','-195 / +280','2.0 / 5.0*'],
-            ['K782',{ko:'로드 가이드 링 (부싱형, 저소음)',en:'Rod Guide Ring (Bushing, Low Noise)'},{ko:'로드',en:'Rod'},'탄소강·청동·POM','—','-40 / +110','2.0']
-          ],
-          noteKo:'* K780·K781은 무급유(건식) 조건에서 2.0 m/s, 유압유 윤활 조건에서 5.0 m/s까지 대응합니다. KASTAS Hydraulic Guiding Elements 제품군 기준.',
-          noteEn:'* K780/K781 handle up to 2.0 m/s dry-running and up to 5.0 m/s with hydraulic fluid lubrication. Based on the KASTAS Hydraulic Guiding Elements product line.' },
         { key:'static', ko:'스태틱 씰', en:'Static Seals', brand:'KASTAS', dko:'고정부(포트·커넥터 등)에 사용하는 정적 밀봉·백업링입니다.', den:'Static seals and back-up rings used at fixed connections such as ports and fittings.',
           rows:[
             ['K800',{ko:'백업링',en:'Back-up Ring'},{ko:'로드',en:'Rod'},'X-Tone','≤600','-30 / +120','1.0'],
@@ -426,6 +367,69 @@
             ['K161',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0'],
             ['K506',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
             ['K761',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤16','-30 / +105','4.0']
+          ] }
+      ]
+    },
+    wiper:{
+      ko:'와이퍼', en:'Wipers',
+      bodyKo:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단하는 와이퍼입니다. KASTAS(튀르키예)·SKF(스웨덴) 두 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 재질·온도·속도 사양을 확인할 수 있습니다.',
+      bodyEn:'Wipers that keep dirt and moisture on the rod surface from being drawn into the cylinder, supplied under both the KASTAS (Turkey) and SKF (Sweden) brands. Click a category below to see material, temperature and speed specs by part number.',
+      cats:[
+        { key:'wiper', ko:'와이퍼', en:'Wipers', brand:'KASTAS', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
+          rows:[
+            ['K05',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
+            ['K06',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K060',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K07',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K09',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K10',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K11',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'TPE','—','-40 / +120','2.0'],
+            ['K12',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
+            ['K13',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU·STEEL','—','-30 / +100','1.0'],
+            ['K27',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K94',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
+            ['K103',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU·NBR','—','-40 / +100','1.0'],
+            ['K107',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
+            ['K703',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','5.0'],
+            ['K716',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
+            ['K92',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
+            ['K101',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
+            ['K102',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
+            ['K705',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
+            ['K706',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
+            ['K606',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0']
+          ] },
+        { key:'skfwiper', ko:'와이퍼', en:'Wipers', brand:'SKF', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
+          rows:[
+            ['PA',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
+            ['MCW',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR·STEEL','—','-30 / +110','1.0'],
+            ['PAD',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
+            ['PADV',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
+            ['DTW',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
+            ['DX',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
+            ['HW',{ko:'스냅인 와이퍼',en:'Snap-in Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0']
+          ] }
+      ]
+    },
+    guide:{
+      ko:'가이드', en:'Guide Elements',
+      bodyKo:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다. 씰스타가 실제로 취급하는 품번만 정리했습니다.',
+      bodyEn:'Low-friction guide elements that support the rod/piston so it never contacts bare metal. Listed here are only the part numbers Sealstar actually carries.',
+      cats:[
+        { key:'guide', ko:'가이드', en:'Guide Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다.', den:'Low-friction guide elements that support the rod/piston so it never contacts bare metal.',
+          rows:[
+            ['K68',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +110','1.0'],
+            ['K69',{ko:'피스톤 가이드 링',en:'Piston Guide Ring'},{ko:'피스톤',en:'Piston'},'POM','—','-40 / +110','1.0'],
+            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
+            ['K75',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic + PTFE','—','-40 / +130','1.0'],
+            ['K78',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic Aramid','—','-40 / +200','1.0'],
+            ['K79',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic·Graphite','—','-40 / +120','5.0'],
+            ['KBT',{ko:'PTFE 브론즈 가이드 스트립',en:'PTFE Bronze Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Bronze','—','-200 / +260','15.0'],
+            ['KKT',{ko:'카본 PTFE 가이드 스트립',en:'Carbon PTFE Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0'],
+            ['KPB',{ko:'폴리에스터 가이드 스트립',en:'Polyester Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
+            ['KSB',{ko:'로드·피스톤 가이드 스트립',en:'Piston-Rod Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic','—','-40 / +120','1.0'],
+            ['K71',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
+            ['K77',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0']
           ] }
       ]
     }
@@ -547,20 +551,6 @@
         {ko:'공압용은 저마찰·저압(최대 16bar급) 설계로 경량·고속 대응',en:'Pneumatic-specific designs use low-friction, low-pressure profiles (up to roughly 16 bar) for light, high-speed operation'}
       ],
       apps:[{ko:'건설기계 유압 실린더',en:'Construction equipment hydraulic cylinders'},{ko:'공작기계',en:'Machine tools'},{ko:'프레스',en:'Presses'},{ko:'공압 자동화 실린더',en:'Pneumatic automation cylinders'},{ko:'선박용 유압 장비',en:'Marine hydraulic equipment'}] },
-
-    { id:'wearring', ko:'웨어링', en:'Wear Ring / Guide Ring', imgs:['images/web/wearring1.jpg'],
-      dko:'유공압 실린더의 로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 가이드용 웨어링입니다. ACM 복합소재로 제작되어 저마찰·고내구성을 갖추며 씰의 편심 마모를 방지합니다.',
-      den:'Guide wear rings that support the rod and piston in hydraulic/pneumatic cylinders, preventing metal-to-metal contact. Made from ACM composite for low friction and high durability, reducing uneven seal wear.',
-      mat:['ACM 복합소재','PTFE','POM'],
-      principleKo:'실린더 내부에서 로드나 피스톤의 자중·측하중을 받아내어, 금속(로드/보어)과 금속(피스톤/실린더 튜브)이 직접 맞닿지 않도록 지지하는 역할을 합니다. 웨어링이 축을 정확히 센터링해 주기 때문에 옆에 있는 씰이 한쪽으로만 눌리는 편마모를 막아, 결과적으로 씰 전체의 수명을 늘려줍니다.',
-      principleEn:'Inside a cylinder, the wear ring carries the dead weight and side loads of the rod or piston, keeping metal (rod/bore) from ever touching metal (piston/tube) directly. By centering the moving part accurately, it prevents the seal next to it from being pressed unevenly to one side — which in turn extends the service life of the entire seal set.',
-      features:[
-        {ko:'금속 간 직접 마찰 방지로 실린더 보어 손상 예방',en:'Prevents metal-to-metal rubbing that would damage the cylinder bore'},
-        {ko:'정확한 센터링으로 인접 씰의 편심 마모 방지',en:'Accurate centering prevents uneven wear on the adjacent seal'},
-        {ko:'ACM 복합소재는 청동 가이드 대비 높은 하중 지지력',en:'ACM composite carries substantially higher load than a bronze guide of the same size'},
-        {ko:'저흡습·저마찰·내화학성으로 다양한 유체 환경에 대응',en:'Low moisture absorption, low friction and chemical resistance suit a wide range of fluid environments'}
-      ],
-      apps:[{ko:'유압 실린더 피스톤/로드 가이드',en:'Hydraulic cylinder piston & rod guides'},{ko:'공압 실린더',en:'Pneumatic cylinders'},{ko:'건설/농업기계',en:'Construction & agricultural machinery'}] },
 
     { id:'spring', ko:'스프링에너자이드씰', en:'Spring-Energized Seal', imgs:imgs('spring',9),
       dko:'PTFE 씰 내부에 금속 스프링을 삽입하여 극저온·극고온, 고진공, 강한 화학 환경에서도 일정한 밀봉력을 유지합니다. 반도체·항공우주·수소 등 극한 조건에 적합합니다.',
@@ -1091,7 +1081,7 @@
           return '<div class="dcard clickable" onclick="SS.hpDetail(\''+c.key+'\')"><h5><span class="ko">'+c.ko+'</span><span class="en">'+c.en+'</span> '
             + '<small style="font-weight:700;color:var(--muted);font-size:11px">'+c.brand+'</small></h5>'
             +'<p><span class="ko">'+c.dko+'</span><span class="en">'+c.den+'</span></p>'
-            +'<span class="more"><span class="ko">품번 '+c.rows.length+'종 보기 →</span><span class="en">View '+c.rows.length+' part numbers →</span></span></div>';
+            +'<span class="more"><span class="ko">품번 보기 →</span><span class="en">View part numbers →</span></span></div>';
         }).join('') + '</div>';
   }
 
@@ -1111,7 +1101,7 @@
   function renderHp(){
     var it = MAP['hp'];
     var tabsHtml = '<div class="subtabs">'
-      + ['hyd','pneu'].map(function(k){
+      + ['hyd','pneu','wiper','guide'].map(function(k){
           var g=HP_GROUPS[k];
           return '<button class="'+(k===hpGroup?'on':'')+'" onclick="SS.hpGroup(\''+k+'\')"><span class="ko">'+g.ko+'</span><span class="en">'+g.en+'</span></button>';
         }).join('')

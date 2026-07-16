@@ -71,9 +71,9 @@ function buildStaticContent(id){
     contentHtml = contentHtml.replace(/<div class="subtabs">[\s\S]*?<\/div>\s*<div class="subtab-body">[\s\S]*?<\/div>(?=<div class="inquire")/, '<div class="pbody">' + staticSections + '</div>');
   }
   if(id === 'hp'){
-    const groupLabel = { hyd: ['유압씰','Hydraulic Seals'], pneu: ['공압씰','Pneumatic Seals'] };
+    const groupLabel = { hyd: ['유압씰','Hydraulic Seals'], pneu: ['공압씰','Pneumatic Seals'], wiper: ['와이퍼','Wipers'], guide: ['가이드','Guide Elements'] };
     let staticSections = '';
-    for(const group of ['hyd','pneu']){
+    for(const group of ['hyd','pneu','wiper','guide']){
       window.SS.hpGroup(group); window.SS.hpDetail(null);
       const overview = subtabBody();
       const cats = [...overview.matchAll(/<div class="dcard clickable" onclick="SS\.hpDetail\('([^']+)'\)"><h5><span class="ko">([^<]+)<\/span><span class="en">([^<]+)<\/span>/g)]
