@@ -37,18 +37,48 @@
     },
     material:{
       ko:'재질', en:'Materials',
-      bodyKo:'씰스타는 NBR·H-NBR·EPDM·VITON·실리콘·네오프렌·폴리우레탄·FFKM·테프론 등 다양한 재질의 오링을 취급하며, 사용 온도·유체·화학 조건에 맞는 최적 재질을 선정해 드립니다. 아래 온도범위는 일반적인 참고값이며, 정확한 사양은 문의 바랍니다.',
-      bodyEn:'Sealstar supplies O-rings in NBR, H-NBR, EPDM, VITON, silicone, neoprene, polyurethane, FFKM and PTFE, and helps select the optimal material for your temperature, fluid and chemical conditions. The temperature ranges below are general reference values — please contact us for exact specifications.',
+      bodyKo:'씰스타는 NBR·H-NBR·EPDM·실리콘·네오프렌·VITON(FKM)·AFLAS·FFKM·폴리우레탄·테프론 등 10종의 재질로 오링을 공급하며, 사용 온도·유체·화학 조건에 맞는 최적 재질을 선정해 드립니다. 아래 특성·취약 매체·온도범위는 일반적인 참고값이며, 정확한 사양은 문의 바랍니다.',
+      bodyEn:'Sealstar supplies O-rings in 10 material families — NBR, H-NBR, EPDM, silicone, neoprene (CR), VITON (FKM), AFLAS, FFKM, polyurethane and PTFE — and helps select the optimal material for your temperature, fluid and chemical conditions. The characteristics, incompatible media and temperature ranges below are general reference values — please contact us for exact specifications.',
       rows:[
-        {mat:'NBR (니트릴고무)', ko:'내유성·내마모성이 우수한 범용 소재. 유압·공압 라인에 가장 많이 사용됩니다.', en:'General-purpose material with excellent oil and abrasion resistance — the most common choice for hydraulic/pneumatic lines.', temp:'-30 ~ 100℃'},
-        {mat:'H-NBR (수소첨가 니트릴)', ko:'NBR 대비 내열성·내오존성·내마모성이 강화된 소재입니다.', en:'An upgrade over NBR with improved heat, ozone and abrasion resistance.', temp:'-30 ~ 150℃'},
-        {mat:'EPDM', ko:'내수성·내스팀성·내후성이 우수해 브레이크액, 스팀, 옥외 환경에 적합합니다.', en:'Excellent water, steam and weather resistance — suited to brake fluid, steam and outdoor exposure.', temp:'-45 ~ 150℃'},
-        {mat:'VITON® / FKM', ko:'내열성·내화학성이 뛰어난 범용 고성능 소재로, 오일·연료·고온 환경에 널리 사용됩니다.', en:'A high-performance material with strong heat and chemical resistance — widely used for oil, fuel and high-temperature service.', temp:'-20 ~ 230℃'},
-        {mat:'실리콘 (VMQ)', ko:'식품·의약품 등급 대응이 가능하며 내열성·내한성이 우수합니다.', en:'Food/pharma-grade capable, with excellent heat and cold resistance.', temp:'-55 ~ 200℃'},
-        {mat:'네오프렌 (CR)', ko:'내후성·내오존성이 우수해 옥외 및 일반 산업용에 적합합니다.', en:'Good weather and ozone resistance — suited to outdoor and general industrial use.', temp:'-40 ~ 120℃'},
-        {mat:'폴리우레탄 (PU)', ko:'내마모성·내압성이 뛰어나 고압 실린더용 씰에 주로 사용됩니다.', en:'Outstanding abrasion and pressure resistance — mainly used in high-pressure cylinder seals.', temp:'-30 ~ 80℃'},
-        {mat:'FFKM (퍼플루오로)', ko:'거의 모든 화학물질에 대응하는 최고 수준의 내화학성을 갖춰 반도체·극한 환경에 사용됩니다.', en:'The highest level of chemical resistance, compatible with nearly all chemicals — used in semiconductor and extreme environments.', temp:'-20 ~ 330℃'},
-        {mat:'테프론 (PTFE)', ko:'마찰계수가 가장 낮고 내화학성이 뛰어난 고체형 오링 소재입니다.', en:'The lowest friction coefficient and outstanding chemical resistance among solid O-ring materials.', temp:'-180 ~ 260℃'}
+        {mat:'NBR', sub:'Nitrile · 부타디엔', subEn:'Nitrile · Butadiene',
+          advKo:'표준 씰 최다 사용 · 내유·내마모·저가스투과 · 광유계 오일·그리스·유압유 우수', advEn:'Most widely used standard seal material — excellent oil/abrasion resistance and low gas permeability; strong with petroleum oils, greases and hydraulic fluid',
+          cauKo:'방향족 탄화수소·연료·오존·HFD유엔 취약 (특수 -50℃)', cauEn:'Poor resistance to aromatic hydrocarbons, fuels, ozone and HFD fluids (special grade to -50°C)', temp:'-30 ~ +100℃'},
+        {mat:'HNBR', sub:'Hydrogenated NBR', subEn:'Hydrogenated NBR',
+          advKo:'NBR 수소화 → 내열·내오존·기계강도 향상 · 매체 저항은 NBR과 동등 · 신냉매', advEn:'Hydrogenated NBR — improved heat/ozone resistance and mechanical strength; media resistance on par with NBR; compatible with new refrigerants',
+          cauKo:'고온 아민·강산엔 제한 (특수 -50℃)', cauEn:'Limited resistance to hot amines and strong acids (special grade to -50°C)', temp:'-30 ~ +150℃'},
+        {mat:'EPDM', sub:'Ethylene Propylene', subEn:'Ethylene Propylene',
+          advKo:'온수·스팀·극성용제(알코올·케톤)·글리콜 브레이크액 · 내오존·내후·내약품', advEn:'Suited to hot water, steam, polar solvents (alcohols, ketones) and glycol brake fluid; excellent ozone, weather and chemical resistance',
+          cauKo:'광유계(오일·그리스·연료) 전반 부적합', cauEn:'Not suitable for petroleum-based oils, greases or fuels', temp:'-45 ~ +150℃'},
+        {mat:'SILICONE', sub:'VMQ · 실리콘', subEn:'VMQ · Silicone',
+          advKo:'내열·내한 폭넓음 · 식품·의료 위생·전기절연 · 오존·내후 우수', advEn:'Wide heat/cold range · food and medical hygiene grade, electrical insulation · excellent ozone and weather resistance',
+          cauKo:'강도 약해 정적용 · 연료·방향족유·120℃↑스팀 취약 (특수 +230℃)', cauEn:'Low mechanical strength — static use only; poor with fuels, aromatic oils and steam above 120°C (special grade to +230°C)', temp:'-60 ~ +200℃'},
+        {mat:'CR', sub:'Chloroprene · 네오프렌', subEn:'Chloroprene · Neoprene',
+          advKo:'내후·내오존·내노화 우수 · 냉매(암모니아·프레온) · 옥외·벨로우즈', advEn:'Excellent weather, ozone and aging resistance · compatible with refrigerants (ammonia, Freon) · outdoor use, bellows',
+          cauKo:'일반 광유·연료엔 제한적', cauEn:'Limited resistance to general petroleum oils and fuels', temp:'-40 ~ +100℃'},
+        {mat:'FKM', sub:'Fluoro · Viton®', subEn:'Fluoro · Viton®',
+          advKo:'내열·내화학 광범위 · 오존·내후·저가스투과(진공) · 광유·연료·방향족', advEn:'Broad heat and chemical resistance · ozone/weather resistant, low gas permeability (vacuum) · compatible with petroleum oils, fuels, aromatics',
+          cauKo:'글리콜 브레이크액·아세톤·아민·과열스팀 취약 (특수 -61 ~ +260℃)', cauEn:'Poor resistance to glycol brake fluid, acetone, amines and superheated steam (special grade -61 to +260°C)', temp:'-15 ~ +200℃'},
+        {mat:'AFLAS', sub:'FEPM · TFE/P', subEn:'FEPM · TFE/P',
+          advKo:'강염기·아민·H₂S 30%·스팀·오일 · 석유화학·오일&가스(NORSOK·API 6A)', advEn:'Resists strong bases, amines, 30% H₂S, steam and oil · suited to petrochemical and oil & gas service (NORSOK, API 6A)',
+          cauKo:'저온 유연성 제한 · 탄화수소·방향족 제한적', cauEn:'Limited low-temperature flexibility · limited resistance to hydrocarbons and aromatics', temp:'-20 ~ +230℃'},
+        {mat:'FFKM', sub:'Perfluoro · evolast®', subEn:'Perfluoro · evolast®',
+          advKo:'최고 내화학·내열 · PTFE급 내약품 + 탄성체 복원력 · 반도체·초고온·강산·케톤', advEn:'Highest chemical and heat resistance · PTFE-level chemical inertness with elastomeric recovery · semiconductor, extreme heat, strong acids, ketones',
+          cauKo:'불소화합물엔 취약 · 고가 (특수 -40 ~ +340℃)', cauEn:'Vulnerable to fluorinated compounds · higher cost (special grade -40 to +340°C)', temp:'-25 ~ +270℃'},
+        {mat:'PU', sub:'Polyurethane', subEn:'Polyurethane',
+          advKo:'고압·내마모·인장·인열 우수 · 동적 고하중 · 압출 저항', advEn:'Excellent under high pressure — strong abrasion, tensile and tear resistance · suited to dynamic, high-load service · good extrusion resistance',
+          cauKo:'온수·스팀·산·알칼리·케톤·방향족엔 취약', cauEn:'Poor resistance to hot water, steam, acids, alkalis, ketones and aromatics', temp:'-40 ~ +100℃'},
+        {mat:'PTFE', sub:'Poly-Tetra-Fluoro-Ethylene', subEn:'Poly-Tetra-Fluoro-Ethylene',
+          advKo:'전 화학 내성 · 내열·저마찰·비점착 · 고체 오링·백업링·초고순도', advEn:'Resists virtually all chemicals · heat resistant, low friction, non-stick · used for solid O-rings, back-up rings, ultra-high-purity service',
+          cauKo:'비탄성(복원력 없음) · 정적·백업 용도 위주', cauEn:'Non-elastic (no recovery) · mainly static or back-up applications', temp:'-180 ~ +260℃'}
+      ],
+      certsKo:'국제 인증 · 위생 · 안전', certsEn:'Approvals & Compliance',
+      certs:[
+        {code:'FDA', name:'U.S. Food & Drug Admin.', subKo:'식품 접촉 · 미국', subEn:'Food contact · USA', detail:'CFR 21 §177.2600 / §177.2400 · 반복 사용 고무'},
+        {code:'KIWA', name:'KIWA · 네덜란드', subKo:'음용수 (냉·온수)', subEn:'Drinking water (cold/hot)', detail:'BRL-K17504 · DVGW·WA 인증연계'},
+        {code:'NSF', name:"Nat'l Sanitary Foundation", subKo:'음용수·식품 · 미국', subEn:'Drinking water & food · USA', detail:'NSF 61 (~82℃) · NSF 51 식품 (~100℃)'},
+        {code:'WRAS', name:'Water Reg. Advisory · 영국', subKo:'음용수', subEn:'Drinking water', detail:'BS 6920-1:2000 냉·온수 (~85℃)'},
+        {code:'UL', name:'Underwriter Lab. · 미국', subKo:'난연·안전', subEn:'Flame resistance & safety', detail:'UL 94 난연 등급 대응'},
+        {code:'USP', name:'U.S. Pharmacopeia', subKo:'의료·제약', subEn:'Medical & pharmaceutical', detail:'Class VI 〈87〉In-Vitro · 〈88〉In-Vivo (121℃)'}
       ]
     },
     spec:{
@@ -167,7 +197,7 @@
     { id:'oring', ko:'오링', en:'O-Ring', imgs:imgs('oring',9), special:'oring',
       dko:'가장 널리 사용되는 기본 밀봉 부품으로, 그루브(홈)에 장착되어 두 부품 사이의 정적·동적 누출을 차단합니다. 다양한 재질과 AS568·JIS·미터 규격을 갖춰 고정 및 운동용으로 폭넓게 사용됩니다.',
       den:'The most widely used sealing element, fitted into a groove to block static and dynamic leakage between two parts. Available in a wide range of materials and AS568/JIS/metric sizes for both static and dynamic use.',
-      mat:['NBR','H-NBR','EPDM','VITON','FFKM','실리콘','테프론'],
+      mat:['NBR','H-NBR','EPDM','실리콘','CR','VITON','AFLAS','FFKM','PU','테프론'],
       principleKo:'원형 단면(코드)을 링 형태로 성형한 뒤 그루브에 압축 장착하면, 오링 자체의 탄성 복원력이 접촉면을 지속적으로 눌러 유체·기체의 통로를 막습니다. 압축률(보통 15~30%)과 그루브 치수가 정확할수록 밀봉력과 수명이 안정적으로 유지됩니다.',
       principleEn:'A round-section elastomer cord is molded into a ring and compressed into a groove; the O-ring\'s own elastic recovery keeps constant contact pressure on the mating surfaces, blocking the flow path. Accurate groove dimensions and a proper compression ratio (typically 15–30%) are what keep sealing force — and service life — stable.',
       features:[
@@ -579,14 +609,25 @@
     } else if(oringTab==='material'){
       var t2=ORING_TABS.material;
       var rows = t2.rows.map(function(r){
-        return '<tr><td class="mname">'+r.mat+'</td><td><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td><td class="mtemp">'+r.temp+'</td></tr>';
+        return '<tr><td class="mname">'+r.mat+'<br><span style="font-weight:400;color:var(--muted);font-size:12px"><span class="ko">'+r.sub+'</span><span class="en">'+r.subEn+'</span></span></td>'
+          +'<td><span class="ko">'+r.advKo+'</span><span class="en">'+r.advEn+'</span></td>'
+          +'<td class="mcau"><span class="ko">'+r.cauKo+'</span><span class="en">'+r.cauEn+'</span></td>'
+          +'<td class="mtemp">'+r.temp+'</td></tr>';
+      }).join('');
+      var certCards = t2.certs.map(function(c){
+        return '<div class="certcard"><span class="certbadge">'+c.code+'</span><div><h5>'+c.name+'</h5>'
+          +'<p class="csub"><span class="ko">'+c.subKo+'</span><span class="en">'+c.subEn+'</span></p>'
+          +'<p class="cdetail">'+c.detail+'</p></div></div>';
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t2.bodyKo+'</span><span class="en">'+t2.bodyEn+'</span></p>'
         + '<table class="mtable"><thead><tr>'
         + '<th><span class="ko">재질</span><span class="en">Material</span></th>'
-        + '<th><span class="ko">특징</span><span class="en">Characteristics</span></th>'
+        + '<th><span class="ko">주요 특성·장점</span><span class="en">Key Characteristics</span></th>'
+        + '<th><span class="ko">주의·취약 매체</span><span class="en">Cautions</span></th>'
         + '<th><span class="ko">사용 온도</span><span class="en">Temp. Range</span></th>'
-        + '</tr></thead><tbody>'+rows+'</tbody></table>';
+        + '</tr></thead><tbody>'+rows+'</tbody></table>'
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">'+t2.certsKo+'</span><span class="en">'+t2.certsEn+'</span></h4>'
+        + '<div class="certs">'+certCards+'</div>';
     } else {
       tabBody = renderOringSpecBody();
     }
