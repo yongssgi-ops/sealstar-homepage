@@ -313,16 +313,18 @@
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
     { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:[],
-      dko:'유압 변속기·클러치·토크컨버터 등 회전·동력전달 장치에 사용되는 피스톤 링입니다. 조인트(컷) 형상별로 씰링 성능과 조립성을 최적화해 제작합니다.',
-      den:'Piston rings used in hydraulic transmissions, clutches and torque converters. Joint/cut geometry is optimized per application for sealing performance and ease of assembly.',
+      dko:'유압 변속기·클러치·토크컨버터 등 회전·동력전달 장치에 사용되는 피스톤 링입니다. 조인트(컷) 형상별로 씰링 성능과 조립성을 최적화해 제작합니다. 문의 시 실린더 최소 내경, 링 폭, 반경방향 두께, 조인트 형식, 재질을 알려주시면 규격 검토를 도와드립니다.',
+      den:'Piston rings used in hydraulic transmissions, clutches and torque converters. Joint/cut geometry is optimized per application for sealing performance and ease of assembly. For a quote, please provide the minimum cylinder diameter, ring width, radial wall thickness, joint style and material.',
       mat:['고강도 주철','브론즈 합금'],
       principleKo:'링이 실린더 벽에 면압을 형성해 오일 흐름과 밀봉을 제어하며, 조인트(컷) 형상에 따라 밀봉·배유 성능이 달라집니다. 테이퍼 페이스는 실린더 벽 면압이 높아 빠르게 안착되고, 벤티드 오일링은 슬롯을 통해 배유 경로를 형성하며, 후크 조인트는 카운터보어·블라인드 조립 등 링 구속이 필요한 유압 변속기·클러치·토크컨버터에 가장 많이 사용됩니다.',
       principleEn:'The ring forms a sealing contact pressure against the cylinder wall to control oil flow; sealing and drainage behavior differ by joint/cut geometry. A taper face seats quickly with high wall pressure, a vented oil ring uses slots to form a drainage path, and a hook joint — the most common type for hydraulic transmissions, clutches and torque converters — suits applications needing ring retention such as counterbore or blind assembly.',
       features:[
-        {ko:'테이퍼 페이스·앵글 컷·벤티드 오일링·스텝 컷·후크 조인트 등 조인트 형상 다양',en:'Multiple joint/cut types — taper face, angle cut, vented oil ring, step cut, hook joint and more'},
+        {ko:'테이퍼 페이스·앵글 컷·벤티드 오일링·스텝 컷·인터록 조인트·버트 컷·후크 조인트 등 다양한 조인트 형상 대응',en:'Wide range of joint/cut types available — taper face, angle cut, vented oil ring, step cut, interlock joint, butt cut, hook joint and more'},
         {ko:'후크 조인트 링은 SAE J281 규격 준수 — 조립 용이·우수한 씰링·긴 수명',en:'Hook joint rings comply with SAE J281 — easy assembly, strong sealing, long service life'},
         {ko:'좌측각(Left-hand) 컷이 업계 표준',en:'Left-hand cut is the industry-standard orientation'},
-        {ko:'비표준 조인트 치수 주문 제작 가능, 재질은 고강도 주철·브론즈 합금 등으로 대안 지정 가능',en:'Non-standard joint dimensions available to order; high-strength cast iron or bronze alloy can be specified as alternative materials'}
+        {ko:'표준 코팅은 인산망간(마찰 저항 감소·방청, 초기 길들임에 유리)이며, 용도에 따라 크롬·주석 등 특수 도금도 대응 가능',en:'Standard coating is manganese phosphate — reduces friction, prevents rust and aids break-in; chrome, tin and other special platings are available for specific applications'},
+        {ko:'홈 폭은 링 최대 폭보다 여유를 두고 반경방향 간극도 열팽창을 고려해 설계 — 문의 시 사양에 맞는 그루브(홈) 치수 설계를 지원해 드립니다',en:'Groove width should exceed the ring’s maximum width, and radial clearance should allow for thermal expansion — contact us for groove-dimension design support matched to your specification'},
+        {ko:'비표준 조인트 치수 주문 제작 가능, 재질은 고강도 주철·브론즈 합금 외 니레지스트 주철·스테인리스강 등으로 대안 지정 가능',en:'Non-standard joint dimensions available to order; alternative materials such as Ni-Resist cast iron or stainless steel can be specified in addition to high-strength cast iron and bronze alloy'}
       ],
       apps:[{ko:'유압 변속기',en:'Hydraulic transmissions'},{ko:'클러치',en:'Clutches'},{ko:'토크컨버터',en:'Torque converters'},{ko:'유정압 변속기',en:'Hydrostatic transmissions'}] },
 
