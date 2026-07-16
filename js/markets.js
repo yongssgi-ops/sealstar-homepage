@@ -16,7 +16,7 @@
         {ko:'광범위한 온도범위 대응',en:'Wide Temperature Range',dko:'혹한부터 고온까지 안정적으로 작동하는 소재 적용.',den:'Materials that operate reliably from extreme cold to high heat.'},
         {ko:'장수명 설계',en:'Long Service Life',dko:'유지보수 주기를 늘려 장비 가동률(Uptime)을 높입니다.',den:'Extends maintenance intervals to raise equipment uptime.'}
       ],
-      prod:[{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'}]
+      prod:[{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'피스톤링',en:'Piston Ring',href:'products.html#piston'}]
     },
     {
       id:'semiconductor', ko:'반도체 & 디스플레이', en:'Semiconductor & Display', img:img('14887614'),
@@ -30,7 +30,7 @@
         {ko:'정밀 치수 관리',en:'Precise Tolerances',dko:'수 마이크론 단위의 정밀 공차로 미세 누설을 방지.',den:'Micron-level tolerances that prevent micro-leakage.'},
         {ko:'고온·고진공 대응',en:'High-Temp / High-Vacuum',dko:'공정 온도·압력 변화에도 안정적인 밀봉 성능 유지.',den:'Stable sealing through process temperature and pressure changes.'}
       ],
-      prod:[{ko:'캡슐 오링 (기본씰)',en:'Encapsulated O-Ring',href:'products.html#basic'},{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'}]
+      prod:[{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'}]
     },
     {
       id:'energy', ko:'에너지 (수소·LNG·원자력)', en:'Energy (Hydrogen·LNG·Nuclear)', img:img('4460676'),
@@ -44,7 +44,7 @@
         {ko:'고압 밀봉',en:'High-Pressure Sealing',dko:'고압 환경에서도 안정적인 실링 성능을 확보.',den:'Reliable sealing performance under high pressure.'},
         {ko:'방사선 내성',en:'Radiation Resistance',dko:'원자력 환경의 방사선 노출에도 물성 저하를 최소화.',den:'Minimizes property loss under nuclear radiation exposure.'}
       ],
-      prod:[{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'},{ko:'캡슐 오링 (기본씰)',en:'Encapsulated O-Ring',href:'products.html#basic'}]
+      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'}]
     },
     {
       id:'oilgas', ko:'석유가스화학', en:'Oil, Gas & Petrochemical', img:img('15970032'),
@@ -58,7 +58,7 @@
         {ko:'고온·고압 밀봉',en:'High-Temp / High-Pressure',dko:'플랜트 운전 조건에 맞춘 안정적 실링 성능.',den:'Stable sealing performance matched to plant operating conditions.'},
         {ko:'국제 인증 대응',en:'International Standards',dko:'API, NORSOK M710, NACE 등 규격에 대응하는 소재.',den:'Materials compliant with API, NORSOK M710 and NACE standards.'}
       ],
-      prod:[{ko:'오링 (기본씰)',en:'O-Ring',href:'products.html#basic'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'}]
+      prod:[{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'베어링아이솔레이터',en:'Bearing Isolator (BPS)',href:'products.html#isolator'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'}]
     },
     {
       id:'shipbuilding', ko:'조선해양', en:'Shipbuilding & Marine', img:img('9083327'),
@@ -72,7 +72,7 @@
         {ko:'저온·고습 환경 대응',en:'Low-Temp / High-Humidity',dko:'혹한의 해상 환경에서도 탄성을 잃지 않는 소재 설계.',den:'Materials that retain elasticity in cold, humid marine conditions.'},
         {ko:'국제 선급 인증 대응',en:'Class-Society Compliance',dko:'DNV, ABS 등 주요 선급 규격에 부합하는 소재.',den:'Materials compliant with major class societies such as DNV and ABS.'}
       ],
-      prod:[{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'기본씰',en:'Basic Seals',href:'products.html#basic'}]
+      prod:[{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'}]
     },
     {
       id:'aerospace', ko:'우주항공', en:'Aerospace', img:'https://images.pexels.com/photos/23783/rocket-launch-space-discovery.png?auto=compress&cs=tinysrgb&w=1500',
@@ -86,7 +86,7 @@
         {ko:'내진동·내피로성',en:'Vibration & Fatigue Resistance',dko:'반복되는 진동과 하중에도 성능을 유지.',den:'Sustains performance under repeated vibration and loading.'},
         {ko:'엄격한 품질 추적',en:'Strict Traceability',dko:'항공 산업 표준에 부합하는 품질관리 체계.',den:'Quality control aligned with aerospace industry standards.'}
       ],
-      prod:[{ko:'가공씰',en:'Machined Seals',href:'products.html#machined'},{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'}]
+      prod:[{ko:'가공씰',en:'Machined Seals',href:'products.html#machined'},{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'},{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'}]
     },
     {
       id:'food-pharma', ko:'식·의약품', en:'Food & Pharmaceutical', img:img('9259963'),
@@ -100,7 +100,7 @@
         {ko:'무독성·무취 소재',en:'Non-Toxic & Odorless',dko:'식품·의약품과 직접 접촉해도 안전한 소재.',den:'Materials safe for direct contact with food and pharmaceuticals.'},
         {ko:'넓은 온도 대응',en:'Wide Temperature Range',dko:'저온 보관부터 고온 살균까지 폭넓게 대응.',den:'Covers cold storage through high-temperature sterilization.'}
       ],
-      prod:[{ko:'오링 (기본씰)',en:'O-Ring',href:'products.html#basic'}]
+      prod:[{ko:'FDA·NSF·USP Class VI 인증오링',en:'FDA/NSF/USP Class VI Certified O-Ring',href:'products.html#oring'},{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'}]
     }
   ];
 

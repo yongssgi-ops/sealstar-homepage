@@ -1,5 +1,5 @@
 /* SEALSTAR — Products catalog (flat sidebar layout)
-   구조: ITEMS 배열(18개 개별 카테고리)을 좌측에서 바로 클릭 → 우측에 상세 표시.
+   구조: ITEMS 배열(20개 개별 카테고리)을 좌측에서 바로 클릭 → 우측에 상세 표시.
    오링(oring) 항목만 상단에 서브탭(오링설계 / 재질 / 규격표)이 추가로 표시됩니다.
 */
 (function(){
@@ -122,7 +122,7 @@
   };
 
   // ---------------------------------------------------------------
-  // 전체 제품 카테고리 (좌측에서 바로 선택하는 평면 목록, 18종)
+  // 전체 제품 카테고리 (좌측에서 바로 선택하는 평면 목록, 20종)
   // ---------------------------------------------------------------
   var ITEMS = [
     { id:'oring', ko:'오링', en:'O-Ring', imgs:imgs('oring',9), special:'oring',
@@ -171,7 +171,7 @@
     { id:'vulc', ko:'비규격연결오링', en:'Non-Standard Vulc\'d O-Ring', imgs:['images/web/vulc1.jpg'],
       dko:'표준 규격에 없는 대구경·특수 단면 오링을 코드(cord) 소재로 절단·가황 접합해 제작하는 맞춤형 오링입니다. 진공 챔버, 대형 플랜지 등 비표준 치수에 대응합니다.',
       den:'Custom O-rings made by cutting and vulcanizing cord stock to non-standard diameters or cross-sections — built for vacuum chambers, large flanges and other sizes outside the standard catalog.',
-      mat:['NBR','VITON','실리콘','EPDM'],
+      mat:['NBR','VITON','실리콘','EPDM','FFKM'],
       principleKo:'금형으로 찍어내는 일반 오링과 달리, 원하는 길이만큼 자른 코드(cord) 양끝을 열과 압력으로 가황 접합해 링을 완성합니다. 대형 금형이 필요 없어 대구경·비표준 단면에도 비교적 짧은 납기와 합리적 비용으로 대응할 수 있습니다.',
       principleEn:'Rather than being molded as a single ring, a length of cord is cut to size and its two ends are vulcanized together under heat and pressure. Because no large mold is required, this approach can produce oversized diameters and non-standard cross-sections without the cost and lead time of dedicated tooling.',
       features:[
@@ -196,19 +196,19 @@
       ],
       apps:[{ko:'유압 실린더 피스톤/로드',en:'Hydraulic cylinder pistons & rods'},{ko:'회전 축 밀봉',en:'Rotary shaft sealing'},{ko:'밸브 스템',en:'Valve stems'},{ko:'농기계·건설기계',en:'Agricultural & construction machinery'}] },
 
-    { id:'edring', ko:'ED링', en:'ED-Ring / Back-up Ring', imgs:imgs('edring',4),
-      dko:'플랜지·포트 실링용 ED-링과, 오링의 압출을 방지하는 백업링을 함께 공급합니다. 고압 환경에서 오링의 밀봉 성능과 수명을 보완합니다.',
-      den:'ED-rings for flange/port sealing, plus back-up rings that prevent O-ring extrusion — complementing O-ring sealing performance and service life under high pressure.',
-      mat:['NBR','PTFE','POM'],
-      principleKo:'고압이 걸리면 오링은 그루브와 상대 부품 사이의 미세한 틈으로 밀려나오려는 압출(extrusion) 현상이 발생합니다. ED링·백업링은 오링 바로 옆(저압측)에 함께 장착되어 이 틈을 물리적으로 막아주는 역할을 하며, 압력 방향이 한쪽이면 1개, 양방향이면 2개를 사용합니다.',
-      principleEn:'Under high pressure, an O-ring can be forced into the small clearance gap between the groove and the mating part — a failure mode called extrusion. An ED-ring or back-up ring is installed directly next to the O-ring, on the low-pressure side, to physically close off that gap; single-direction pressure needs one ring, bidirectional pressure needs two.',
+    { id:'edring', ko:'ED링', en:'ED-Ring', imgs:imgs('edring',4),
+      dko:'나사산 체결부에 보조로 장착되는 정적(Static) 씰입니다. 나사산만으로는 완전한 밀봉이 어려운 피팅·포트 연결부에서 1차 씰을 보완해 누유를 막으며, 주로 NBR 재질로 표준 재고를 운영합니다.',
+      den:'A static seal fitted alongside a threaded connection. Where threads alone cannot fully seal a fitting or port joint, the ED-ring backs up the primary seal to prevent leakage — mainly stocked in NBR.',
+      mat:['NBR'],
+      principleKo:'유압·공압 피팅이나 포트를 나사로 체결할 때, 나사산 사이의 미세한 틈만으로는 완전한 밀봉을 보장하기 어렵습니다. ED링은 체결부에 함께 장착되어 이 틈을 보조적으로 막아주는 정적 씰로, 진동이나 압력 변화가 있는 체결부에서도 안정적인 밀봉을 유지하도록 돕습니다.',
+      principleEn:'When a hydraulic or pneumatic fitting or port is joined by threads alone, the fine clearance within the thread engagement often cannot guarantee a complete seal. The ED-ring is fitted alongside the joint as a static seal that backs up that gap, helping maintain reliable sealing even where vibration or pressure fluctuation is present.',
       features:[
-        {ko:'고압 조건에서 오링의 압출 파손을 방지',en:'Prevents O-ring extrusion failure under high pressure'},
-        {ko:'PTFE·POM 등 경질 소재로 낮은 압축영구줄음률',en:'Rigid materials such as PTFE and POM keep compression set low'},
-        {ko:'단방향/양방향 압력에 따라 1개 또는 2개 조합 사용',en:'Used singly or in pairs depending on whether pressure is uni- or bidirectional'},
-        {ko:'기존 오링 규격에 맞춘 표준 및 맞춤 치수 대응',en:'Available in standard sizes matched to common O-ring dimensions, or custom-made'}
+        {ko:'나사산 체결부의 정적 밀봉을 보조',en:'Backs up static sealing at threaded connections'},
+        {ko:'주로 NBR 재질로 표준 규격 재고 운영',en:'Mainly stocked in NBR standard sizes'},
+        {ko:'1차 씰(오링 등)과 함께 사용되어 누유 방지',en:'Used alongside a primary seal (such as an O-ring) to prevent leakage'},
+        {ko:'필요 시 타 재질 주문 제작 가능',en:'Other materials available to order on request'}
       ],
-      apps:[{ko:'고압 유압 실린더',en:'High-pressure hydraulic cylinders'},{ko:'플랜지/포트 연결부',en:'Flange & port connections'},{ko:'유압 밸브',en:'Hydraulic valves'}] },
+      apps:[{ko:'유공압 피팅·포트 연결부',en:'Hydraulic/pneumatic fittings & port connections'},{ko:'플랜지 체결부',en:'Flange joints'},{ko:'배관 나사 체결부',en:'Threaded pipe connections'}] },
 
     { id:'bond', ko:'본드씰', en:'Bonded Seal', imgs:imgs('bond',5),
       dko:'금속 와셔에 고무를 가황 접착한 본드씰로, 나사·플러그 체결부의 유체 누출을 확실하게 차단합니다.',
@@ -238,6 +238,20 @@
       ],
       apps:[{ko:'건설기계 유압 실린더',en:'Construction equipment hydraulic cylinders'},{ko:'공작기계',en:'Machine tools'},{ko:'프레스',en:'Presses'},{ko:'공압 자동화 실린더',en:'Pneumatic automation cylinders'},{ko:'선박용 유압 장비',en:'Marine hydraulic equipment'}] },
 
+    { id:'wearring', ko:'웨어링', en:'Wear Ring / Guide Ring', imgs:['images/web/wearring1.jpg'],
+      dko:'유공압 실린더의 로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 가이드용 웨어링입니다. ACM 복합소재로 제작되어 저마찰·고내구성을 갖추며 씰의 편심 마모를 방지합니다.',
+      den:'Guide wear rings that support the rod and piston in hydraulic/pneumatic cylinders, preventing metal-to-metal contact. Made from ACM composite for low friction and high durability, reducing uneven seal wear.',
+      mat:['ACM 복합소재','PTFE','POM'],
+      principleKo:'실린더 내부에서 로드나 피스톤의 자중·측하중을 받아내어, 금속(로드/보어)과 금속(피스톤/실린더 튜브)이 직접 맞닿지 않도록 지지하는 역할을 합니다. 웨어링이 축을 정확히 센터링해 주기 때문에 옆에 있는 씰이 한쪽으로만 눌리는 편마모를 막아, 결과적으로 씰 전체의 수명을 늘려줍니다.',
+      principleEn:'Inside a cylinder, the wear ring carries the dead weight and side loads of the rod or piston, keeping metal (rod/bore) from ever touching metal (piston/tube) directly. By centering the moving part accurately, it prevents the seal next to it from being pressed unevenly to one side — which in turn extends the service life of the entire seal set.',
+      features:[
+        {ko:'금속 간 직접 마찰 방지로 실린더 보어 손상 예방',en:'Prevents metal-to-metal rubbing that would damage the cylinder bore'},
+        {ko:'정확한 센터링으로 인접 씰의 편심 마모 방지',en:'Accurate centering prevents uneven wear on the adjacent seal'},
+        {ko:'ACM 복합소재는 청동 가이드 대비 높은 하중 지지력',en:'ACM composite carries substantially higher load than a bronze guide of the same size'},
+        {ko:'저흡습·저마찰·내화학성으로 다양한 유체 환경에 대응',en:'Low moisture absorption, low friction and chemical resistance suit a wide range of fluid environments'}
+      ],
+      apps:[{ko:'유압 실린더 피스톤/로드 가이드',en:'Hydraulic cylinder piston & rod guides'},{ko:'공압 실린더',en:'Pneumatic cylinders'},{ko:'건설/농업기계',en:'Construction & agricultural machinery'}] },
+
     { id:'spring', ko:'스프링에너자이드씰', en:'Spring-Energized Seal', imgs:imgs('spring',9),
       dko:'PTFE 씰 내부에 금속 스프링을 삽입하여 극저온·극고온, 고진공, 강한 화학 환경에서도 일정한 밀봉력을 유지합니다. 반도체·항공우주·수소 등 극한 조건에 적합합니다.',
       den:'A metal spring energizes a PTFE jacket to maintain constant sealing force from cryogenic to high temperatures, high vacuum and aggressive chemicals — ideal for semiconductor, aerospace and hydrogen applications.',
@@ -253,10 +267,10 @@
       ],
       apps:[{ko:'반도체 스퍼터/진공 챔버',en:'Semiconductor sputter & vacuum chambers'},{ko:'액화수소·LNG 극저온 설비',en:'Liquid hydrogen & LNG cryogenic equipment'},{ko:'항공기 연료·유압 계통',en:'Aircraft fuel & hydraulic systems'},{ko:'로터리 스위블 조인트',en:'Rotary swivel joints'},{ko:'밸브 스템/시트',en:'Valve stems & seats'}] },
 
-    { id:'lip', ko:'테프론립씰', en:'PTFE Lip Seal', imgs:['images/web/lipseal1.jpg'],
-      dko:'PTFE 소재를 립(lip) 형상으로 가공한 씰로, 낮은 마찰계수와 우수한 내화학성·내마모성을 갖췄습니다. 저윤활·고속 회전축이나 화학 환경에 적합합니다.',
-      den:'Seals machined from PTFE into a lip profile, offering a low friction coefficient with excellent chemical and wear resistance — suited to low-lubrication, high-speed shafts and chemical environments.',
-      mat:['PTFE','PTFE+SUS 스프링'],
+    { id:'lip', ko:'립씰', en:'Lip Seal', imgs:['images/web/lipseal1.jpg'],
+      dko:'PTFE 소재를 립(lip) 형상으로 가공한 씰로, 낮은 마찰계수와 우수한 내화학성·내마모성을 갖췄습니다. 립 바깥을 금속(스틸) 케이스로 감싸 지지력을 보강한 타입도 함께 공급하며, 저윤활·고속 회전축이나 화학 환경에 적합합니다.',
+      den:'Seals machined from PTFE into a lip profile, offering a low friction coefficient with excellent chemical and wear resistance. A version with an outer steel case reinforcing the lip is also available — suited to low-lubrication, high-speed shafts and chemical environments.',
+      mat:['PTFE','PTFE+SUS 스프링','PTFE+스틸케이스'],
       principleKo:'PTFE를 얇은 립(lip) 형상으로 정밀 가공하고, 회전축과 접하는 면을 챔퍼(경사)나 스크레이퍼 형상으로 다듬어 밀봉력과 이물질 배출 성능을 동시에 확보합니다. PTFE 표면조도(마찰계수 약 0.06)가 매우 낮아 무급유 상태에서도 장시간 안정적으로 미끄러질 수 있으며, 필요 시 립 내부에 스프링을 넣어 접촉압을 보강합니다.',
       principleEn:'PTFE is precision-machined into a thin lip, with the shaft-contact edge finished as a chamfered or scraper profile to balance sealing performance with the ability to shed debris. PTFE\'s very low friction coefficient (around 0.06) lets the lip slide against the shaft reliably for long periods without lubrication; a spring can be added inside the lip where extra, consistent contact force is needed.',
       features:[
@@ -264,7 +278,8 @@
         {ko:'-260~260℃ 초광범위 사용 온도',en:'Extremely wide temperature capability, roughly -260°C to 260°C'},
         {ko:'카본·유리섬유·MoS2·스테인리스 등 충전재로 내마모성·내크리프성 강화',en:'Carbon, glass fiber, MoS2 and stainless-steel fillers boost wear and creep resistance as needed'},
         {ko:'거의 모든 화학물질에 반응하지 않는 화학적 불활성',en:'Chemically inert to virtually all process fluids'},
-        {ko:'챔퍼립·스크레이퍼립 등 형상 선택으로 세척성·밀봉성 조절',en:'Chamfered or scraper lip profiles can be selected to balance sealing and wash-down cleanability'}
+        {ko:'챔퍼립·스크레이퍼립 등 형상 선택으로 세척성·밀봉성 조절',en:'Chamfered or scraper lip profiles can be selected to balance sealing and wash-down cleanability'},
+        {ko:'금속 케이스로 립 바깥을 보강한 타입은 하우징 압입 시 강성이 필요한 경우에 적합',en:'The steel-cased variant adds rigidity for press-fit installation into a housing'}
       ],
       apps:[{ko:'고속 회전축 씰링',en:'High-speed rotating shaft sealing'},{ko:'화학 펌프',en:'Chemical pumps'},{ko:'식품 세척(워시다운) 설비',en:'Food wash-down equipment'},{ko:'무급유 베어링 하우징',en:'Dry-running bearing housings'}] },
 
@@ -297,6 +312,20 @@
       ],
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
+    { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:[],
+      dko:'유압 변속기·클러치·토크컨버터 등 회전·동력전달 장치에 사용되는 피스톤 링입니다. 조인트(컷) 형상별로 씰링 성능과 조립성을 최적화해 제작합니다.',
+      den:'Piston rings used in hydraulic transmissions, clutches and torque converters. Joint/cut geometry is optimized per application for sealing performance and ease of assembly.',
+      mat:['고강도 주철','브론즈 합금'],
+      principleKo:'링이 실린더 벽에 면압을 형성해 오일 흐름과 밀봉을 제어하며, 조인트(컷) 형상에 따라 밀봉·배유 성능이 달라집니다. 테이퍼 페이스는 실린더 벽 면압이 높아 빠르게 안착되고, 벤티드 오일링은 슬롯을 통해 배유 경로를 형성하며, 후크 조인트는 카운터보어·블라인드 조립 등 링 구속이 필요한 유압 변속기·클러치·토크컨버터에 가장 많이 사용됩니다.',
+      principleEn:'The ring forms a sealing contact pressure against the cylinder wall to control oil flow; sealing and drainage behavior differ by joint/cut geometry. A taper face seats quickly with high wall pressure, a vented oil ring uses slots to form a drainage path, and a hook joint — the most common type for hydraulic transmissions, clutches and torque converters — suits applications needing ring retention such as counterbore or blind assembly.',
+      features:[
+        {ko:'테이퍼 페이스·앵글 컷·벤티드 오일링·스텝 컷·후크 조인트 등 조인트 형상 다양',en:'Multiple joint/cut types — taper face, angle cut, vented oil ring, step cut, hook joint and more'},
+        {ko:'후크 조인트 링은 SAE J281 규격 준수 — 조립 용이·우수한 씰링·긴 수명',en:'Hook joint rings comply with SAE J281 — easy assembly, strong sealing, long service life'},
+        {ko:'좌측각(Left-hand) 컷이 업계 표준',en:'Left-hand cut is the industry-standard orientation'},
+        {ko:'비표준 조인트 치수 주문 제작 가능, 재질은 고강도 주철·브론즈 합금 등으로 대안 지정 가능',en:'Non-standard joint dimensions available to order; high-strength cast iron or bronze alloy can be specified as alternative materials'}
+      ],
+      apps:[{ko:'유압 변속기',en:'Hydraulic transmissions'},{ko:'클러치',en:'Clutches'},{ko:'토크컨버터',en:'Torque converters'},{ko:'유정압 변속기',en:'Hydrostatic transmissions'}] },
+
     { id:'isolator', ko:'베어링아이솔레이터', en:'Bearing Isolator (BPS)', imgs:['images/web/isolator1.jpg'],
       dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터(BPS)입니다. 접촉 마찰이 없어 반영구적으로 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
       den:'A non-contact bearing protector/isolator (BPS) that uses a fine labyrinth gap between rotating and stationary elements. Virtually wear-free, it blocks both contamination ingress and lubricant loss.',
@@ -312,20 +341,6 @@
       ],
       apps:[{ko:'전동기 베어링 보호',en:'Electric motor bearing protection'},{ko:'펌프',en:'Pumps'},{ko:'기어박스',en:'Gearboxes'},{ko:'송풍기/블로워',en:'Fans & blowers'}] },
 
-    { id:'wearring', ko:'웨어링', en:'Wear Ring / Guide Ring', imgs:['images/web/wearring1.jpg'],
-      dko:'유공압 실린더의 로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 가이드용 웨어링입니다. ACM 복합소재로 제작되어 저마찰·고내구성을 갖추며 씰의 편심 마모를 방지합니다.',
-      den:'Guide wear rings that support the rod and piston in hydraulic/pneumatic cylinders, preventing metal-to-metal contact. Made from ACM composite for low friction and high durability, reducing uneven seal wear.',
-      mat:['ACM 복합소재','PTFE','POM'],
-      principleKo:'실린더 내부에서 로드나 피스톤의 자중·측하중을 받아내어, 금속(로드/보어)과 금속(피스톤/실린더 튜브)이 직접 맞닿지 않도록 지지하는 역할을 합니다. 웨어링이 축을 정확히 센터링해 주기 때문에 옆에 있는 씰이 한쪽으로만 눌리는 편마모를 막아, 결과적으로 씰 전체의 수명을 늘려줍니다.',
-      principleEn:'Inside a cylinder, the wear ring carries the dead weight and side loads of the rod or piston, keeping metal (rod/bore) from ever touching metal (piston/tube) directly. By centering the moving part accurately, it prevents the seal next to it from being pressed unevenly to one side — which in turn extends the service life of the entire seal set.',
-      features:[
-        {ko:'금속 간 직접 마찰 방지로 실린더 보어 손상 예방',en:'Prevents metal-to-metal rubbing that would damage the cylinder bore'},
-        {ko:'정확한 센터링으로 인접 씰의 편심 마모 방지',en:'Accurate centering prevents uneven wear on the adjacent seal'},
-        {ko:'ACM 복합소재는 청동 가이드 대비 높은 하중 지지력',en:'ACM composite carries substantially higher load than a bronze guide of the same size'},
-        {ko:'저흡습·저마찰·내화학성으로 다양한 유체 환경에 대응',en:'Low moisture absorption, low friction and chemical resistance suit a wide range of fluid environments'}
-      ],
-      apps:[{ko:'유압 실린더 피스톤/로드 가이드',en:'Hydraulic cylinder piston & rod guides'},{ko:'공압 실린더',en:'Pneumatic cylinders'},{ko:'건설/농업기계',en:'Construction & agricultural machinery'}] },
-
     { id:'machined', ko:'가공씰', en:'Machined Seal', imgs:imgs('machined',3),
       dko:'비표준 치수·특수 사양에 맞춰 절삭 가공으로 제작하는 씰입니다. 소량·긴급·단종 부품 대응에 유리하며 빠른 납기가 가능합니다.',
       den:'Seals produced by precision machining for non-standard dimensions and special specifications — ideal for small-lot, urgent and obsolete parts with fast lead times.',
@@ -339,6 +354,20 @@
         {ko:'몰드품 대비 납기가 짧아 긴급 대응에 유리',en:'Faster turnaround than molded parts, useful for urgent requirements'}
       ],
       apps:[{ko:'설비 보수용 단종 부품',en:'Discontinued repair parts'},{ko:'시제품/소량 개발품',en:'Prototypes & small-batch development parts'},{ko:'특수 치수 씰',en:'Special-dimension seals'}] },
+
+    { id:'molded', ko:'금형제작품', en:'Molded Rubber & Urethane Products', imgs:[],
+      dko:'도면을 기반으로 금형을 제작해 우레탄 및 각종 고무 제품을 성형 양산합니다. 완충재·롤러·휠부터 범퍼·시트·다이어프램까지 다양한 형상에 대응합니다.',
+      den:'We build molds from customer drawings to produce urethane and rubber parts — cushions, rollers, wheels, bumpers, sheets, diaphragms and more — in production quantities.',
+      mat:['우레탄(PU)','NBR','FKM(Viton)','천연고무(NR)'],
+      principleKo:'도면 또는 샘플을 기반으로 제품 형상에 맞는 금형을 제작한 뒤, 우레탄이나 고무를 그 금형에 사출·압축 성형해 동일한 형상의 제품을 반복 생산합니다. 금형 초기 제작 비용은 발생하지만, 이후로는 절삭 가공 대비 빠르고 일관된 품질로 양산할 수 있습니다.',
+      principleEn:'A mold is built to match the required shape based on a drawing or sample, then urethane or rubber is injection- or compression-molded into it to reproduce the part consistently at volume. There is an upfront tooling cost, but once the mold exists, production is faster and more consistent than machining each part individually.',
+      features:[
+        {ko:'콘크리트펌프카·브레이커·천공장비용 우레탄 쿠션·롤러·휠',en:'Urethane cushions, rollers and wheels for concrete pump trucks, breakers and drilling equipment'},
+        {ko:'고무 범퍼·시트·다이어프램 등 형상 대응',en:'Rubber bumpers, sheets, diaphragms and other shapes'},
+        {ko:'우레탄(PU)부터 NBR~FKM 등 고무까지 소재 선택',en:'Material choice spans polyurethane through NBR–FKM rubber compounds'},
+        {ko:'도면·샘플 기반 금형 제작 후 양산 대응',en:'Mold built from drawing or sample, then produced at volume'}
+      ],
+      apps:[{ko:'건설장비(콘크리트펌프카·브레이커·천공장비)',en:'Construction equipment (concrete pump trucks, breakers, drilling rigs)'},{ko:'산업기계 완충·방진 부품',en:'Industrial machinery cushioning & vibration-damping parts'},{ko:'맞춤 고무 성형품',en:'Custom molded rubber parts'}] },
 
     { id:'acm', ko:'ACM베어링', en:'ACM Bearing', imgs:imgs('acm',2),
       dko:'특수 고분자 폴리에스테르 수지와 정밀섬유·첨가제로 구성된 고기능 복합체 소재의 베어링(가이드 부시)입니다. 고하중·저마찰계수·내화학성이 요구되는 환경에 적합합니다.',

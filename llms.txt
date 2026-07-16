@@ -9,27 +9,29 @@ Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-dae
 - [Home](https://www.sealstar.com/): Company overview and product highlights
 - [About](https://www.sealstar.com/about.html): Company history since 1982, facilities, values, glossary of sealing terms
 - [Markets](https://www.sealstar.com/markets.html): Industries served — construction equipment, semiconductor, energy, oil & gas, marine, aerospace, food & pharma
-- [Products](https://www.sealstar.com/products.html): Interactive catalog of all 18 product categories
+- [Products](https://www.sealstar.com/products.html): Interactive catalog of all 20 product categories
 - [News](https://www.sealstar.com/news.html): Exhibitions and company announcements
 - [Contact](https://www.sealstar.com/contact.html): Quote request form and FAQ
 
-## Products (18 categories, each with a dedicated page)
+## Products (20 categories, each with a dedicated page)
 
 - [O-Ring](https://www.sealstar.com/products/oring.html) — general sealing rings; design, material and spec-table guides included
 - [Teflon Capsule O-Ring](https://www.sealstar.com/products/capsule.html) — FEP/PFA-encapsulated elastomer core O-rings for corrosive chemicals
 - [Perfluoro O-Ring (FFKM)](https://www.sealstar.com/products/perfluoro.html) — evolast (MCM) and Kalrez (DuPont) grades for semiconductor/extreme environments
-- [Non-Standard Vulc'd O-Ring](https://www.sealstar.com/products/vulc.html) — large-diameter, custom-jointed O-rings
+- [Non-Standard Vulc'd O-Ring](https://www.sealstar.com/products/vulc.html) — large-diameter, custom-jointed O-rings, now including FFKM
 - [Quad-Ring / X-Ring](https://www.sealstar.com/products/quad.html)
-- [ED-Ring / Back-up Ring](https://www.sealstar.com/products/edring.html)
+- [ED-Ring](https://www.sealstar.com/products/edring.html) — static seal backing up threaded fitting/port connections, mainly stocked in NBR
 - [Bonded Seal](https://www.sealstar.com/products/bond.html)
 - [Hydraulic & Pneumatic Seal](https://www.sealstar.com/products/hp.html) — rod/piston seals, wipers, buffer rings
+- [Wear Ring / Guide Ring](https://www.sealstar.com/products/wearring.html)
 - [Spring-Energized Seal](https://www.sealstar.com/products/spring.html) — cryogenic to high-temperature sealing
-- [PTFE Lip Seal](https://www.sealstar.com/products/lip.html)
+- [Lip Seal](https://www.sealstar.com/products/lip.html) — PTFE lip seal, also available with an outer steel case for press-fit rigidity
 - [PEEK](https://www.sealstar.com/products/peek.html) — high-strength, high-temperature engineering plastic components
 - [Oil Seal](https://www.sealstar.com/products/oil.html)
+- [Piston Ring](https://www.sealstar.com/products/piston.html) — for hydraulic transmissions, clutches, torque converters (SAE J281 hook joint and more)
 - [Bearing Isolator (BPS)](https://www.sealstar.com/products/isolator.html)
-- [Wear Ring / Guide Ring](https://www.sealstar.com/products/wearring.html)
 - [Machined Seal](https://www.sealstar.com/products/machined.html) — non-standard dimensions, small-lot production
+- [Molded Rubber & Urethane Products](https://www.sealstar.com/products/molded.html) — mold-tooled urethane/rubber parts (cushions, rollers, wheels, bumpers, sheets, diaphragms) produced from drawings
 - [ACM Bearing](https://www.sealstar.com/products/acm.html) — low-friction composite sliding bearing
 - [Magnetic Filter](https://www.sealstar.com/products/magnetic.html) — rare-earth magnetic filtration for hydraulic/lubrication systems
 - [Mechanical Seal](https://www.sealstar.com/products/mechanical.html)
