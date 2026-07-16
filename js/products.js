@@ -122,6 +122,47 @@
   };
 
   // ---------------------------------------------------------------
+  // 피스톤링 세부 기술자료 (조인트 형식별 / 소재별) — 클릭 시 상세 표 노출
+  // ---------------------------------------------------------------
+  var PISTON_DETAIL = {
+    cards: [
+      { key:'joint', ko:'조인트 형식별 상세', en:'Joint Design Details',
+        dko:'테이퍼 페이스·후크 조인트 외에 인터록·스텝컷·버트컷·앵글버트컷 등 조인트 형상별 구조와 대응 직경을 확인하세요.',
+        den:'Beyond taper-face and hook joints, review the structure and diameter range of interlock, step-cut, butt-cut and angle-butt-cut joint geometries.' },
+      { key:'material', ko:'소재별 상세', en:'Material Details',
+        dko:'표준 재질인 고강도 주철(구상흑연주철)을 비롯해 주철·브론즈·니레지스트·스테인리스 등 소재별 특성과 기계적 물성을 확인하세요.',
+        den:'Review the properties of each ring material, from the standard high-strength ductile iron to cast iron, bronze, Ni-Resist and stainless steel.' }
+    ],
+    joint: {
+      ko:'조인트 형식별 상세', en:'Joint Design Details',
+      bodyKo:'피스톤 링의 조인트(절개) 형상은 밀봉·배유 성능과 조립 방식을 좌우합니다. 대표적인 조인트 형식은 다음과 같습니다.',
+      bodyEn:'The ring joint (cut) geometry determines sealing/drainage behavior and how the ring is assembled. Representative joint types are listed below.',
+      rows:[
+        {ko:'테이퍼 페이스',en:'Taper Face',dko:'실린더 벽과의 초기 접촉 면압이 높아 빠르게 안착됩니다.',den:'High initial contact pressure against the cylinder wall for quick seating.',dia:'—'},
+        {ko:'벤티드 오일링',en:'Vented Oil Ring',dko:'슬롯으로 배유 경로를 형성해 오일 배출을 돕습니다.',den:'Slots form a drainage path that helps return oil.',dia:'—'},
+        {ko:'인터록 조인트',en:'Interlock Joint',dko:'양방향 밀봉이 가능하며 개구부를 접합부 손상 없이 통과할 수 있어 유압 부품에 널리 쓰입니다.',den:'A bi-directional joint that can pass over open ports without damaging the joint tips — widely used in hydraulic components.',dia:'약 38~1,830mm (1.5"~72")'},
+        {ko:'스텝 컷 조인트',en:'Step Cut Joint',dko:'일정 수준의 누설이 허용되는 조건에서 사용하는 양방향 조인트입니다.',den:'A bi-directional joint used where a controlled amount of leakage is acceptable.',dia:'약 16~1,830mm (0.62"~72")'},
+        {ko:'버트 컷 조인트',en:'Butt Cut Joint',dko:'가장 널리 쓰이는 기본형 조인트입니다.',den:'The most common, basic joint style.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {ko:'앵글 버트 컷 조인트',en:'Angle Butt Cut Joint',dko:'보어 내벽에 접합선 마모 자국이 남는 것을 방지하기 위해 사용합니다.',den:'Used to prevent the joint line from wearing a visible mark into the bore wall.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {ko:'후크 조인트',en:'Hook Joint',dko:'링이 압축된 상태로 최종 작동 내경에 도달해야 하는 카운터보어·블라인드 조립 등에 사용되며 SAE J281 규격을 따릅니다.',den:'Used where the ring must stay compressed to reach its final working bore diameter — e.g. counterbore or blind assembly — and follows the SAE J281 standard.',dia:'약 16~1,830mm (0.62"~72")'}
+      ]
+    },
+    material: {
+      ko:'소재별 상세', en:'Material Details',
+      bodyKo:'표준 재질은 고강도 주철(구상흑연주철)이며, 사용 환경에 따라 아래 대안 소재를 지정할 수 있습니다.',
+      bodyEn:'The standard material is high-strength ductile (nodular graphite) iron; the alternatives below can be specified to suit the operating environment.',
+      rows:[
+        {mat:'고강도 주철 (표준)',matEn:'Ductile Iron (Standard)',ko:'전체 생산량의 대부분을 차지하는 기본 재질로, 페라이트 기지에 흑연이 고르게 분포합니다. ASTM A-536 기준 인장강도 약 448MPa(65,000psi)·항복강도 약 310MPa(45,000psi)·연신율 약 12%·경도 브리넬 131~220 수준입니다.',en:'The default material for most production, with graphite evenly dispersed in a ferritic matrix. Per ASTM A-536: tensile strength ≈448MPa (65,000psi), yield strength ≈310MPa (45,000psi), elongation ≈12%, hardness 131–220 Brinell.'},
+        {mat:'주철',matEn:'Cast Iron',ko:'Class 30/40급으로 대응 가능합니다.',en:'Available in Class 30/40 grades.'},
+        {mat:'브론즈 합금',matEn:'Bronze Alloy',ko:'증기·해수·합성유 등 철·강을 부식시킬 수 있는 유체 환경에 적합합니다.',en:'Suited to fluid environments — steam, seawater, synthetic fluids — that would corrode iron or steel.'},
+        {mat:'니레지스트 주철',matEn:'Ni-Resist Cast Iron',ko:'내식성·내마모성이 우수하며 중~고온 환경에서도 물성을 유지합니다.',en:'Offers strong corrosion and wear resistance and retains its properties at moderate-to-high temperatures.'},
+        {mat:'스테인리스강 · 특수합금',matEn:'Stainless Steel & Super Alloys',ko:'고강도가 필요하거나 극고온에서도 물성 유지가 필요한 용도에 사용합니다.',en:'Used where higher strength is required, or where properties must hold up under extremely high temperatures.'},
+        {mat:'플라스틱 (PTFE 등)',matEn:'Plastics / PTFE',ko:'저마찰·내화학 등 특수 용도에 맞춰 다양한 컴파운드로 대응합니다.',en:'A range of compounds available for special low-friction or chemically resistant applications.'}
+      ]
+    }
+  };
+
+  // ---------------------------------------------------------------
   // 전체 제품 카테고리 (좌측에서 바로 선택하는 평면 목록, 20종)
   // ---------------------------------------------------------------
   var ITEMS = [
@@ -312,7 +353,7 @@
       ],
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
-    { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:imgs('piston',1),
+    { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:imgs('piston',1), special:'piston',
       dko:'유압 변속기·클러치·토크컨버터 등 회전·동력전달 장치에 사용되는 피스톤 링입니다. 조인트(컷) 형상별로 씰링 성능과 조립성을 최적화해 제작합니다. 문의 시 실린더 최소 내경, 링 폭, 반경방향 두께, 조인트 형식, 재질을 알려주시면 규격 검토를 도와드립니다.',
       den:'Piston rings used in hydraulic transmissions, clutches and torque converters. Joint/cut geometry is optimized per application for sealing performance and ease of assembly. For a quote, please provide the minimum cylinder diameter, ring width, radial wall thickness, joint style and material.',
       mat:['고강도 주철','브론즈 합금'],
@@ -600,10 +641,61 @@
     content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
   }
 
+  // ---- special: 피스톤링 render — 조인트 형식 / 소재 세부 카드 클릭 시 상세표 노출 ----
+  var pistonDetailView = null; // null | 'joint' | 'material'
+
+  function pistonDetailTableHtml(key){
+    var d = PISTON_DETAIL[key];
+    var backBtn = '<button class="backlink" onclick="SS.pistonDetail(null)">← <span class="ko">목록으로</span><span class="en">Back to list</span></button>';
+    var head = '<h4 class="sizeh"><span class="ko">'+d.ko+'</span><span class="en">'+d.en+'</span></h4>'
+      + '<p class="desc" style="margin-bottom:14px"><span class="ko">'+d.bodyKo+'</span><span class="en">'+d.bodyEn+'</span></p>';
+    var table;
+    if(key==='joint'){
+      var jrows = d.rows.map(function(r){
+        return '<tr><td class="mname"><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td>'
+          +'<td><span class="ko">'+r.dko+'</span><span class="en">'+r.den+'</span></td>'
+          +'<td class="mtemp">'+r.dia+'</td></tr>';
+      }).join('');
+      table = '<table class="mtable"><thead><tr>'
+        + '<th><span class="ko">조인트 형식</span><span class="en">Joint Type</span></th>'
+        + '<th><span class="ko">설명</span><span class="en">Description</span></th>'
+        + '<th><span class="ko">대응 직경</span><span class="en">Diameter Range</span></th>'
+        + '</tr></thead><tbody>'+jrows+'</tbody></table>';
+    } else {
+      var mrows = d.rows.map(function(r){
+        return '<tr><td class="mname">'+r.mat+'<br><span style="font-weight:400;color:var(--muted);font-size:12px">'+r.matEn+'</span></td>'
+          +'<td><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td></tr>';
+      }).join('');
+      table = '<table class="mtable"><thead><tr>'
+        + '<th><span class="ko">재질</span><span class="en">Material</span></th>'
+        + '<th><span class="ko">설명</span><span class="en">Description</span></th>'
+        + '</tr></thead><tbody>'+mrows+'</tbody></table>';
+    }
+    return backBtn + head + table;
+  }
+
+  function pistonOverviewHtml(){
+    return '<p class="desc"><span class="ko">아래 항목을 클릭하면 조인트 형식·소재별 세부 사양을 확인할 수 있습니다.</span><span class="en">Click either item below for detailed specifications on joint types and materials.</span></p>'
+      + '<div class="dcards">' + PISTON_DETAIL.cards.map(function(c){
+          return '<div class="dcard clickable" onclick="SS.pistonDetail(\''+c.key+'\')"><h5><span class="ko">'+c.ko+'</span><span class="en">'+c.en+'</span></h5>'
+            +'<p><span class="ko">'+c.dko+'</span><span class="en">'+c.den+'</span></p>'
+            +'<span class="more"><span class="ko">전체 내용 보기 →</span><span class="en">View details →</span></span></div>';
+        }).join('') + '</div>';
+  }
+
+  function renderPiston(){
+    var it = MAP['piston'];
+    var body = pistonDetailView ? pistonDetailTableHtml(pistonDetailView) : pistonOverviewHtml();
+    content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it)
+      + '<div class="pbody"><h3><span class="ko">세부 기술자료</span><span class="en">Detailed Technical Data</span></h3>' + body + '</div>'
+      + inquireHtml;
+  }
+
   function render(id){
     var it=MAP[id]; if(!it) return;
     if(it.special==='oring'){ renderOring(); }
     else if(it.special==='perfluoro'){ renderPerfluoro(); }
+    else if(it.special==='piston'){ renderPiston(); }
     else{
       content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + inquireHtml;
     }
@@ -620,7 +712,8 @@
     },
     oringTab:function(k){ oringTab=k; if(k!=='spec'){ oringSizeView=null; } renderOring(); },
     oringSize:function(k){ oringSizeView=k; renderOring(); if(k && window.innerWidth<900 && content.scrollIntoView){ content.scrollIntoView({behavior:'smooth'}); } },
-    perfluoroTab:function(k){ perfluoroTab=k; renderPerfluoro(); }
+    perfluoroTab:function(k){ perfluoroTab=k; renderPerfluoro(); },
+    pistonDetail:function(k){ pistonDetailView=k; renderPiston(); if(k && window.innerWidth<900 && content.scrollIntoView){ content.scrollIntoView({behavior:'smooth'}); } }
   };
 
   // ---- deep link (#oring, #hp, #oil, ...) ----

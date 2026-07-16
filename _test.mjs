@@ -61,6 +61,14 @@ function chk(s,missing){
   console.log('PRODUCTS o-ring material rows (after switching tabs):',mtableRows);
   window.SS.select('mechanical');
   console.log('PRODUCTS mechanical-seal placeholder shown:',!!window.document.querySelector('.gal-empty'));
+  window.SS.select('piston');
+  window.SS.pistonDetail('joint');
+  const jointRows=window.document.querySelectorAll('.mtable tbody tr').length;
+  window.SS.pistonDetail('material');
+  const materialRows=window.document.querySelectorAll('.mtable tbody tr').length;
+  window.SS.pistonDetail(null);
+  const backToOverview=window.document.querySelectorAll('.dcard.clickable').length;
+  console.log('PRODUCTS piston joint/material detail rows:',jointRows,'/',materialRows,'| overview cards after back:',backToOverview);
 }
 
 // INDEX
