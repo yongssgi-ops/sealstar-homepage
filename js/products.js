@@ -312,7 +312,7 @@
       ],
       apps:[{ko:'유압모터/감속기',en:'Hydraulic motors & gearboxes'},{ko:'일반 산업용 회전기계',en:'General industrial rotating machinery'},{ko:'자동차/중장비 구동축',en:'Automotive & heavy-equipment drive shafts'},{ko:'펌프 축',en:'Pump shafts'}] },
 
-    { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:[],
+    { id:'piston', ko:'피스톤링', en:'Piston Ring', imgs:imgs('piston',1),
       dko:'유압 변속기·클러치·토크컨버터 등 회전·동력전달 장치에 사용되는 피스톤 링입니다. 조인트(컷) 형상별로 씰링 성능과 조립성을 최적화해 제작합니다. 문의 시 실린더 최소 내경, 링 폭, 반경방향 두께, 조인트 형식, 재질을 알려주시면 규격 검토를 도와드립니다.',
       den:'Piston rings used in hydraulic transmissions, clutches and torque converters. Joint/cut geometry is optimized per application for sealing performance and ease of assembly. For a quote, please provide the minimum cylinder diameter, ring width, radial wall thickness, joint style and material.',
       mat:['고강도 주철','브론즈 합금'],
