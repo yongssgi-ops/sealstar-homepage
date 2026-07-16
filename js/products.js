@@ -103,24 +103,24 @@
       bodyKo:'evolast®는 PTFE 열가소성 수지의 우수한 내화학성·내열성과 엘라스토머 특유의 탄성 및 뛰어난 압축영구줄음률을 동시에 갖춘 FFKM으로, 고무를 밀봉 분야에서 이전에 없던 수준으로 끌어올린 소재입니다. 화학·의약품·식품 산업은 물론 오일·가스 생산 및 정제 공정 등 매우 엄격한 기준이 요구되는 분야에 사용됩니다. 초기 단가는 일반 엘라스토머보다 높지만, 긴 수명과 유지보수 비용 절감으로 총소유비용을 상쇄하는 경우가 많습니다. evolast® FFKM 오링은 기존 툴로 소형부터 최대 지름 2,000mm까지 약 10,000종의 규격을 보유하고 있으며, 고객 도면에 따른 맞춤 제작도 가능합니다.',
       bodyEn:'evolast® is an FFKM that combines the excellent chemical and thermal properties of PTFE thermoplastics with the elasticity and superior compression-set resistance of an elastomer — raising rubber to a previously unknown peak in sealing applications. It is used in the chemical, pharmaceutical and food industries as well as in oil & gas production and processing, wherever seals must meet highly exacting standards. Its higher initial cost compared to standard elastomers is often offset by a longer service life and reduced maintenance. evolast® FFKM O-rings are available in roughly 10,000 sizes from existing tooling — from small parts up to 2,000mm in diameter — with custom parts also produced to customer drawings.',
       grades:[
-        {g:'B794', d:'FDA 21CFR177.2400, USP Class VI, 3A-Sanitary Standard, EC 1935/2004, DM 21/03/1973, BfR XXI', c:'White', h:'70', t:'-20℃ ~ +270℃'},
-        {g:'B894', d:'According to FDA, USP Class VI, 3A-Sanitary Standard', c:'White', h:'80', t:'-20℃ ~ +270℃'},
-        {g:'B895', d:'High temperature — according to FDA, USP Class VI, 3A-Sanitary Standard', c:'White', h:'80', t:'-15℃ ~ +300℃'},
-        {g:'N694', d:'Standard applications', c:'Black', h:'60', t:'-25℃ ~ +270℃'},
-        {g:'N775', d:'Outstanding thermal stability — not suitable for steam/amine', c:'Black', h:'75', t:'-15℃ ~ +340℃'},
-        {g:'N794', d:'Standard applications, high temperature — FDA 21 CFR 177.2600, 3A-Sanitary Standard, USP Class VI', c:'Black', h:'70', t:'-25℃ ~ +270℃'},
-        {g:'N7LT', d:'Ultra low temperature', c:'Black', h:'75', t:'-46℃ ~ +250℃'},
-        {g:'N894', d:'Standard applications, preferably stored', c:'Black', h:'75', t:'-25℃ ~ +270℃'},
-        {g:'N896', d:'High temperature', c:'Black', h:'75', t:'-15℃ ~ +330℃'},
-        {g:'N8LT', d:'Ultra low temperature', c:'Black', h:'75', t:'-46℃ ~ +260℃'},
-        {g:'N8SR', d:'Steam, hot water resistance', c:'Black', h:'75', t:'-15℃ ~ +330℃'},
-        {g:'N993', d:'Standard applications', c:'Black', h:'90', t:'-20℃ ~ +270℃'},
-        {g:'N994', d:'Low temperature', c:'Black', h:'90', t:'-30℃ ~ +260℃'},
-        {g:'N9ED', d:'AED NORSOK M710 (5.33mm), API6A sour gas (10% H2S), NACE TM0187 sour gas (5–20% H2S), Arrhenius ISO 23936-2/NORSOK M710-3 sour fluid test', c:'Black', h:'90', t:'-15℃ ~ +260℃'},
-        {g:'N9EX', d:'High temperature — AED Norsok M710', c:'Black', h:'90', t:'-15℃ ~ +320℃'},
-        {g:'N9LT', d:'Low temperature — AED Norsok M710, BS EN ISO 23936-2', c:'Black', h:'90', t:'-46℃ ~ +250℃'},
-        {g:'V7FD', d:'Standard applications — according to FDA, USP Class VI, 3A-Sanitary Standard', c:'Green', h:'70', t:'-15℃ ~ +270℃'},
-        {g:'V895', d:'High temperature', c:'Green', h:'80', t:'-15℃ ~ +310℃'}
+        {g:'B794', dKo:'FDA 21CFR177.2400, USP Class VI, 3A-Sanitary Standard, EC 1935/2004, DM 21/03/1973, BfR XXI 인증', dEn:'FDA 21CFR177.2400, USP Class VI, 3A-Sanitary Standard, EC 1935/2004, DM 21/03/1973, BfR XXI', cKo:'화이트', cEn:'White', h:'70', t:'-20℃ ~ +270℃'},
+        {g:'B894', dKo:'FDA, USP Class VI, 3A-Sanitary Standard 기준 충족', dEn:'According to FDA, USP Class VI, 3A-Sanitary Standard', cKo:'화이트', cEn:'White', h:'80', t:'-20℃ ~ +270℃'},
+        {g:'B895', dKo:'고온용 — FDA, USP Class VI, 3A-Sanitary Standard 기준 충족', dEn:'High temperature — according to FDA, USP Class VI, 3A-Sanitary Standard', cKo:'화이트', cEn:'White', h:'80', t:'-15℃ ~ +300℃'},
+        {g:'N694', dKo:'표준 용도', dEn:'Standard applications', cKo:'블랙', cEn:'Black', h:'60', t:'-25℃ ~ +270℃'},
+        {g:'N775', dKo:'우수한 내열 안정성 — 스팀·아민 환경에는 부적합', dEn:'Outstanding thermal stability — not suitable for steam/amine', cKo:'블랙', cEn:'Black', h:'75', t:'-15℃ ~ +340℃'},
+        {g:'N794', dKo:'표준 용도, 고온용 — FDA 21 CFR 177.2600, 3A-Sanitary Standard, USP Class VI', dEn:'Standard applications, high temperature — FDA 21 CFR 177.2600, 3A-Sanitary Standard, USP Class VI', cKo:'블랙', cEn:'Black', h:'70', t:'-25℃ ~ +270℃'},
+        {g:'N7LT', dKo:'초저온용', dEn:'Ultra low temperature', cKo:'블랙', cEn:'Black', h:'75', t:'-46℃ ~ +250℃'},
+        {g:'N894', dKo:'표준 용도, 재고 보유 권장 등급', dEn:'Standard applications, preferably stored', cKo:'블랙', cEn:'Black', h:'75', t:'-25℃ ~ +270℃'},
+        {g:'N896', dKo:'고온용', dEn:'High temperature', cKo:'블랙', cEn:'Black', h:'75', t:'-15℃ ~ +330℃'},
+        {g:'N8LT', dKo:'초저온용', dEn:'Ultra low temperature', cKo:'블랙', cEn:'Black', h:'75', t:'-46℃ ~ +260℃'},
+        {g:'N8SR', dKo:'스팀·고온수 저항', dEn:'Steam, hot water resistance', cKo:'블랙', cEn:'Black', h:'75', t:'-15℃ ~ +330℃'},
+        {g:'N993', dKo:'표준 용도', dEn:'Standard applications', cKo:'블랙', cEn:'Black', h:'90', t:'-20℃ ~ +270℃'},
+        {g:'N994', dKo:'저온용', dEn:'Low temperature', cKo:'블랙', cEn:'Black', h:'90', t:'-30℃ ~ +260℃'},
+        {g:'N9ED', dKo:'사우어가스 환경용 — AED NORSOK M710(5.33mm), API6A(사우어가스 10% H2S), NACE TM0187(사우어가스 5~20% H2S), Arrhenius ISO 23936-2/NORSOK M710-3 사우어 유체 테스트', dEn:'AED NORSOK M710 (5.33mm), API6A sour gas (10% H2S), NACE TM0187 sour gas (5–20% H2S), Arrhenius ISO 23936-2/NORSOK M710-3 sour fluid test', cKo:'블랙', cEn:'Black', h:'90', t:'-15℃ ~ +260℃'},
+        {g:'N9EX', dKo:'고온용 — AED Norsok M710', dEn:'High temperature — AED Norsok M710', cKo:'블랙', cEn:'Black', h:'90', t:'-15℃ ~ +320℃'},
+        {g:'N9LT', dKo:'저온용 — AED Norsok M710, BS EN ISO 23936-2', dEn:'Low temperature — AED Norsok M710, BS EN ISO 23936-2', cKo:'블랙', cEn:'Black', h:'90', t:'-46℃ ~ +250℃'},
+        {g:'V7FD', dKo:'표준 용도 — FDA, USP Class VI, 3A-Sanitary Standard 기준 충족', dEn:'Standard applications — according to FDA, USP Class VI, 3A-Sanitary Standard', cKo:'그린', cEn:'Green', h:'70', t:'-15℃ ~ +270℃'},
+        {g:'V895', dKo:'고온용', dEn:'High temperature', cKo:'그린', cEn:'Green', h:'80', t:'-15℃ ~ +310℃'}
       ],
       gradeNoteKo:'모든 evolast® 컴파운드는 우수한 내화학성을 갖추고 있습니다. FDA·3A-Sanitary Standard 인증은 2023년 9월 30일 이전 생산분에 한해 유효합니다.',
       gradeNoteEn:'All evolast® compounds offer outstanding chemical resistance performance. FDA and 3A-Sanitary Standard certificates are only valid for materials produced before 30.09.2023.',
@@ -764,7 +764,10 @@
     if(perfluoroTab==='perlast'){
       var t=PERFLUORO_TABS.perlast;
       var grows = t.grades.map(function(r){
-        return '<tr><td class="mname">'+r.g+'</td><td>'+r.d+'</td><td>'+r.c+'</td><td>'+r.h+'</td><td class="mtemp">'+r.t+'</td></tr>';
+        return '<tr><td class="mname">'+r.g+'</td>'
+          +'<td><span class="ko">'+r.dKo+'</span><span class="en">'+r.dEn+'</span></td>'
+          +'<td><span class="ko">'+r.cKo+'</span><span class="en">'+r.cEn+'</span></td>'
+          +'<td>'+r.h+'</td><td class="mtemp">'+r.t+'</td></tr>';
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t.bodyKo+'</span><span class="en">'+t.bodyEn+'</span></p>'
         + '<table class="mtable"><thead><tr>'
