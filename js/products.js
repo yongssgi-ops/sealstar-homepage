@@ -127,10 +127,10 @@
   var PISTON_DETAIL = {
     cards: [
       { key:'joint', ko:'조인트 형식별 상세', en:'Joint Design Details',
-        dko:'테이퍼 페이스·후크 조인트 외에 인터록·스텝컷·버트컷·앵글버트컷 등 조인트 형상별 구조와 대응 직경을 확인하세요.',
-        den:'Beyond taper-face and hook joints, review the structure and diameter range of interlock, step-cut, butt-cut and angle-butt-cut joint geometries.' },
+        dko:'인터록·스텝컷·버트컷·앵글버트컷·후크 조인트 등 조인트 형상별 구조와 대응 직경을 도식과 함께 확인하세요.',
+        den:'Review the structure and diameter range of interlock, step-cut, butt-cut, angle-butt-cut and hook joint geometries, with diagrams.' },
       { key:'material', ko:'소재별 상세', en:'Material Details',
-        dko:'표준 재질인 고강도 주철(구상흑연주철)을 비롯해 주철·브론즈·니레지스트·스테인리스 등 소재별 특성과 기계적 물성을 확인하세요.',
+        dko:'표준 재질인 고강도 주철(구상흑연주철)을 비롯해 주철·브론즈·니켈 레지스트·스테인리스 등 소재별 특성과 기계적 물성을 확인하세요.',
         den:'Review the properties of each ring material, from the standard high-strength ductile iron to cast iron, bronze, Ni-Resist and stainless steel.' }
     ],
     joint: {
@@ -138,13 +138,11 @@
       bodyKo:'피스톤 링의 조인트(절개) 형상은 밀봉·배유 성능과 조립 방식을 좌우합니다. 대표적인 조인트 형식은 다음과 같습니다.',
       bodyEn:'The ring joint (cut) geometry determines sealing/drainage behavior and how the ring is assembled. Representative joint types are listed below.',
       rows:[
-        {ko:'테이퍼 페이스',en:'Taper Face',dko:'실린더 벽과의 초기 접촉 면압이 높아 빠르게 안착됩니다.',den:'High initial contact pressure against the cylinder wall for quick seating.',dia:'—'},
-        {ko:'벤티드 오일링',en:'Vented Oil Ring',dko:'슬롯으로 배유 경로를 형성해 오일 배출을 돕습니다.',den:'Slots form a drainage path that helps return oil.',dia:'—'},
-        {ko:'인터록 조인트',en:'Interlock Joint',dko:'양방향 밀봉이 가능하며 개구부를 접합부 손상 없이 통과할 수 있어 유압 부품에 널리 쓰입니다.',den:'A bi-directional joint that can pass over open ports without damaging the joint tips — widely used in hydraulic components.',dia:'약 38~1,830mm (1.5"~72")'},
-        {ko:'스텝 컷 조인트',en:'Step Cut Joint',dko:'일정 수준의 누설이 허용되는 조건에서 사용하는 양방향 조인트입니다.',den:'A bi-directional joint used where a controlled amount of leakage is acceptable.',dia:'약 16~1,830mm (0.62"~72")'},
-        {ko:'버트 컷 조인트',en:'Butt Cut Joint',dko:'가장 널리 쓰이는 기본형 조인트입니다.',den:'The most common, basic joint style.',dia:'약 9.5~1,830mm (0.375"~72")'},
-        {ko:'앵글 버트 컷 조인트',en:'Angle Butt Cut Joint',dko:'보어 내벽에 접합선 마모 자국이 남는 것을 방지하기 위해 사용합니다.',den:'Used to prevent the joint line from wearing a visible mark into the bore wall.',dia:'약 9.5~1,830mm (0.375"~72")'},
-        {ko:'후크 조인트',en:'Hook Joint',dko:'링이 압축된 상태로 최종 작동 내경에 도달해야 하는 카운터보어·블라인드 조립 등에 사용되며 SAE J281 규격을 따릅니다.',den:'Used where the ring must stay compressed to reach its final working bore diameter — e.g. counterbore or blind assembly — and follows the SAE J281 standard.',dia:'약 16~1,830mm (0.62"~72")'}
+        {img:'images/web/joint-interlock.svg',ko:'인터록 조인트',en:'Interlock Joint',dko:'양방향 밀봉이 가능하며 개구부를 접합부 손상 없이 통과할 수 있어 유압 부품에 널리 쓰입니다.',den:'A bi-directional joint that can pass over open ports without damaging the joint tips — widely used in hydraulic components.',dia:'약 38~1,830mm (1.5"~72")'},
+        {img:'images/web/joint-stepcut.svg',ko:'스텝 컷 조인트',en:'Step Cut Joint',dko:'일정 수준의 누설이 허용되는 조건에서 사용하는 양방향 조인트입니다.',den:'A bi-directional joint used where a controlled amount of leakage is acceptable.',dia:'약 16~1,830mm (0.62"~72")'},
+        {img:'images/web/joint-buttcut.svg',ko:'버트 컷 조인트',en:'Butt Cut Joint',dko:'가장 널리 쓰이는 기본형 조인트입니다.',den:'The most common, basic joint style.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {img:'images/web/joint-anglebuttcut.svg',ko:'앵글 버트 컷 조인트',en:'Angle Butt Cut Joint',dko:'보어 내벽에 접합선 마모 자국이 남는 것을 방지하기 위해 사용합니다.',den:'Used to prevent the joint line from wearing a visible mark into the bore wall.',dia:'약 9.5~1,830mm (0.375"~72")'},
+        {img:'images/web/joint-hook.svg',ko:'후크 조인트',en:'Hook Joint',dko:'링이 압축된 상태로 최종 작동 내경에 도달해야 하는 카운터보어·블라인드 조립 등에 사용되며 SAE J281 규격을 따릅니다.',den:'Used where the ring must stay compressed to reach its final working bore diameter — e.g. counterbore or blind assembly — and follows the SAE J281 standard.',dia:'약 16~1,830mm (0.62"~72")'}
       ]
     },
     material: {
@@ -155,7 +153,7 @@
         {mat:'고강도 주철 (표준)',matEn:'Ductile Iron (Standard)',ko:'전체 생산량의 대부분을 차지하는 기본 재질로, 페라이트 기지에 흑연이 고르게 분포합니다. ASTM A-536 기준 인장강도 약 448MPa(65,000psi)·항복강도 약 310MPa(45,000psi)·연신율 약 12%·경도 브리넬 131~220 수준입니다.',en:'The default material for most production, with graphite evenly dispersed in a ferritic matrix. Per ASTM A-536: tensile strength ≈448MPa (65,000psi), yield strength ≈310MPa (45,000psi), elongation ≈12%, hardness 131–220 Brinell.'},
         {mat:'주철',matEn:'Cast Iron',ko:'Class 30/40급으로 대응 가능합니다.',en:'Available in Class 30/40 grades.'},
         {mat:'브론즈 합금',matEn:'Bronze Alloy',ko:'증기·해수·합성유 등 철·강을 부식시킬 수 있는 유체 환경에 적합합니다.',en:'Suited to fluid environments — steam, seawater, synthetic fluids — that would corrode iron or steel.'},
-        {mat:'니레지스트 주철',matEn:'Ni-Resist Cast Iron',ko:'내식성·내마모성이 우수하며 중~고온 환경에서도 물성을 유지합니다.',en:'Offers strong corrosion and wear resistance and retains its properties at moderate-to-high temperatures.'},
+        {mat:'니켈 레지스트 주철',matEn:'Ni-Resist Cast Iron',ko:'내식성·내마모성이 우수하며 중~고온 환경에서도 물성을 유지합니다.',en:'Offers strong corrosion and wear resistance and retains its properties at moderate-to-high temperatures.'},
         {mat:'스테인리스강 · 특수합금',matEn:'Stainless Steel & Super Alloys',ko:'고강도가 필요하거나 극고온에서도 물성 유지가 필요한 용도에 사용합니다.',en:'Used where higher strength is required, or where properties must hold up under extremely high temperatures.'},
         {mat:'플라스틱 (PTFE 등)',matEn:'Plastics / PTFE',ko:'저마찰·내화학 등 특수 용도에 맞춰 다양한 컴파운드로 대응합니다.',en:'A range of compounds available for special low-friction or chemically resistant applications.'}
       ]
@@ -365,7 +363,7 @@
         {ko:'좌측각(Left-hand) 컷이 업계 표준',en:'Left-hand cut is the industry-standard orientation'},
         {ko:'표준 코팅은 인산망간(마찰 저항 감소·방청, 초기 길들임에 유리)이며, 용도에 따라 크롬·주석 등 특수 도금도 대응 가능',en:'Standard coating is manganese phosphate — reduces friction, prevents rust and aids break-in; chrome, tin and other special platings are available for specific applications'},
         {ko:'홈 폭은 링 최대 폭보다 여유를 두고 반경방향 간극도 열팽창을 고려해 설계 — 문의 시 사양에 맞는 그루브(홈) 치수 설계를 지원해 드립니다',en:'Groove width should exceed the ring’s maximum width, and radial clearance should allow for thermal expansion — contact us for groove-dimension design support matched to your specification'},
-        {ko:'비표준 조인트 치수 주문 제작 가능, 재질은 고강도 주철·브론즈 합금 외 니레지스트 주철·스테인리스강 등으로 대안 지정 가능',en:'Non-standard joint dimensions available to order; alternative materials such as Ni-Resist cast iron or stainless steel can be specified in addition to high-strength cast iron and bronze alloy'}
+        {ko:'비표준 조인트 치수 주문 제작 가능, 재질은 고강도 주철·브론즈 합금 외 니켈 레지스트 주철·스테인리스강 등으로 대안 지정 가능',en:'Non-standard joint dimensions available to order; alternative materials such as Ni-Resist cast iron or stainless steel can be specified in addition to high-strength cast iron and bronze alloy'}
       ],
       apps:[{ko:'유압 변속기',en:'Hydraulic transmissions'},{ko:'클러치',en:'Clutches'},{ko:'토크컨버터',en:'Torque converters'},{ko:'유정압 변속기',en:'Hydrostatic transmissions'}] },
 
@@ -652,11 +650,13 @@
     var table;
     if(key==='joint'){
       var jrows = d.rows.map(function(r){
-        return '<tr><td class="mname"><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td>'
+        return '<tr><td style="width:110px"><img src="'+r.img+'" alt="'+esc(r.en)+'" style="width:100px;height:50px;display:block;background:var(--bg-soft);border-radius:6px;padding:4px;box-sizing:border-box" /></td>'
+          +'<td class="mname"><span class="ko">'+r.ko+'</span><span class="en">'+r.en+'</span></td>'
           +'<td><span class="ko">'+r.dko+'</span><span class="en">'+r.den+'</span></td>'
           +'<td class="mtemp">'+r.dia+'</td></tr>';
       }).join('');
       table = '<table class="mtable"><thead><tr>'
+        + '<th><span class="ko">도식</span><span class="en">Diagram</span></th>'
         + '<th><span class="ko">조인트 형식</span><span class="en">Joint Type</span></th>'
         + '<th><span class="ko">설명</span><span class="en">Description</span></th>'
         + '<th><span class="ko">대응 직경</span><span class="en">Diameter Range</span></th>'
