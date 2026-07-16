@@ -426,7 +426,7 @@
       ],
       apps:[{ko:'설비 보수용 단종 부품',en:'Discontinued repair parts'},{ko:'시제품/소량 개발품',en:'Prototypes & small-batch development parts'},{ko:'특수 치수 씰',en:'Special-dimension seals'}] },
 
-    { id:'molded', ko:'금형제작품', en:'Molded Rubber & Urethane Products', imgs:[],
+    { id:'molded', ko:'금형제작품', en:'Molded Rubber & Urethane Products', imgs:imgs('molded',1),
       dko:'도면을 기반으로 금형을 제작해 우레탄 및 각종 고무 제품을 성형 양산합니다. 완충재·롤러·휠부터 범퍼·시트·다이어프램까지 다양한 형상에 대응합니다.',
       den:'We build molds from customer drawings to produce urethane and rubber parts — cushions, rollers, wheels, bumpers, sheets, diaphragms and more — in production quantities.',
       mat:['우레탄(PU)','NBR','FKM(Viton)','천연고무(NR)'],
