@@ -100,21 +100,32 @@
   var PERFLUORO_TABS = {
     perlast:{
       ko:'퍼플러 (Evolast)', en:'Perfluoro (Evolast)',
-      bodyKo:'FFKM(퍼플루오로 엘라스토머)은 일반 FKM보다 불소 함량이 높아 최고 330℃까지 견디는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 동시에 갖췄습니다. evolast®는 PTFE 수준의 내화학성과 FKM 특유의 탄성·유연성을 함께 지녔으며, R&D부터 배합·성형·생산까지 자체적으로 관리해 일관된 품질을 보장합니다.',
-      bodyEn:'FFKM (perfluoroelastomer) carries a higher fluorine content than standard FKM, giving it heat resistance up to 330°C alongside near-universal chemical compatibility. evolast® combines PTFE-level chemical resistance with the flexibility and elasticity of a regular FKM, and MCM controls the full value chain — from R&D and compounding to moulding and production — for consistent quality.',
+      bodyKo:'evolast®는 PTFE 열가소성 수지의 우수한 내화학성·내열성과 엘라스토머 특유의 탄성 및 뛰어난 압축영구줄음률을 동시에 갖춘 FFKM으로, 고무를 밀봉 분야에서 이전에 없던 수준으로 끌어올린 소재입니다. 화학·의약품·식품 산업은 물론 오일·가스 생산 및 정제 공정 등 매우 엄격한 기준이 요구되는 분야에 사용됩니다. 초기 단가는 일반 엘라스토머보다 높지만, 긴 수명과 유지보수 비용 절감으로 총소유비용을 상쇄하는 경우가 많습니다. evolast® FFKM 오링은 기존 툴로 소형부터 최대 지름 2,000mm까지 약 10,000종의 규격을 보유하고 있으며, 고객 도면에 따른 맞춤 제작도 가능합니다.',
+      bodyEn:'evolast® is an FFKM that combines the excellent chemical and thermal properties of PTFE thermoplastics with the elasticity and superior compression-set resistance of an elastomer — raising rubber to a previously unknown peak in sealing applications. It is used in the chemical, pharmaceutical and food industries as well as in oil & gas production and processing, wherever seals must meet highly exacting standards. Its higher initial cost compared to standard elastomers is often offset by a longer service life and reduced maintenance. evolast® FFKM O-rings are available in roughly 10,000 sizes from existing tooling — from small parts up to 2,000mm in diameter — with custom parts also produced to customer drawings.',
       grades:[
-        {g:'PB694', d:'Chemical resistance, general purpose', c:'White', h:'60', t:'-20℃ ~ +270℃'},
-        {g:'PB794', d:'Chemical resistance, FDA / 3A / USP Class VI', c:'White', h:'70', t:'-20℃ ~ +270℃'},
-        {g:'PB795', d:'High temperature, chemical resistance', c:'White', h:'70', t:'-15℃ ~ +300℃'},
-        {g:'PB7LT', d:'Excellent low temperature, chemical resistance', c:'White', h:'70', t:'-40℃ ~ +250℃'},
-        {g:'PB7SC', d:'High temperature, high purity — plasma / semiconductor', c:'White', h:'75', t:'-20℃ ~ +300℃'},
-        {g:'PB894', d:'Standard applications, chemical resistance', c:'White', h:'80', t:'-20℃ ~ +270℃'},
-        {g:'PB895', d:'High temperature, chemical resistance', c:'White', h:'80', t:'-15℃ ~ +300℃'},
-        {g:'PB8HC', d:'High temperature — hot water, steam, amine', c:'White', h:'80', t:'-20℃ ~ +260℃'},
-        {g:'PN694', d:'Standard applications, chemical resistance', c:'Black', h:'60', t:'-25℃ ~ +270℃'}
+        {g:'B794', d:'FDA 21CFR177.2400, USP Class VI, 3A-Sanitary Standard, EC 1935/2004, DM 21/03/1973, BfR XXI', c:'White', h:'70', t:'-20℃ ~ +270℃'},
+        {g:'B894', d:'According to FDA, USP Class VI, 3A-Sanitary Standard', c:'White', h:'80', t:'-20℃ ~ +270℃'},
+        {g:'B895', d:'High temperature — according to FDA, USP Class VI, 3A-Sanitary Standard', c:'White', h:'80', t:'-15℃ ~ +300℃'},
+        {g:'N694', d:'Standard applications', c:'Black', h:'60', t:'-25℃ ~ +270℃'},
+        {g:'N775', d:'Outstanding thermal stability — not suitable for steam/amine', c:'Black', h:'75', t:'-15℃ ~ +340℃'},
+        {g:'N794', d:'Standard applications, high temperature — FDA 21 CFR 177.2600, 3A-Sanitary Standard, USP Class VI', c:'Black', h:'70', t:'-25℃ ~ +270℃'},
+        {g:'N7LT', d:'Ultra low temperature', c:'Black', h:'75', t:'-46℃ ~ +250℃'},
+        {g:'N894', d:'Standard applications, preferably stored', c:'Black', h:'75', t:'-25℃ ~ +270℃'},
+        {g:'N896', d:'High temperature', c:'Black', h:'75', t:'-15℃ ~ +330℃'},
+        {g:'N8LT', d:'Ultra low temperature', c:'Black', h:'75', t:'-46℃ ~ +260℃'},
+        {g:'N8SR', d:'Steam, hot water resistance', c:'Black', h:'75', t:'-15℃ ~ +330℃'},
+        {g:'N993', d:'Standard applications', c:'Black', h:'90', t:'-20℃ ~ +270℃'},
+        {g:'N994', d:'Low temperature', c:'Black', h:'90', t:'-30℃ ~ +260℃'},
+        {g:'N9ED', d:'AED NORSOK M710 (5.33mm), API6A sour gas (10% H2S), NACE TM0187 sour gas (5–20% H2S), Arrhenius ISO 23936-2/NORSOK M710-3 sour fluid test', c:'Black', h:'90', t:'-15℃ ~ +260℃'},
+        {g:'N9EX', d:'High temperature — AED Norsok M710', c:'Black', h:'90', t:'-15℃ ~ +320℃'},
+        {g:'N9LT', d:'Low temperature — AED Norsok M710, BS EN ISO 23936-2', c:'Black', h:'90', t:'-46℃ ~ +250℃'},
+        {g:'V7FD', d:'Standard applications — according to FDA, USP Class VI, 3A-Sanitary Standard', c:'Green', h:'70', t:'-15℃ ~ +270℃'},
+        {g:'V895', d:'High temperature', c:'Green', h:'80', t:'-15℃ ~ +310℃'}
       ],
-      appsKo:'에너지·오일&가스·석유화학, 반도체, 화학공정 산업, 식품·음료 산업',
-      appsEn:'Energy, Oil & Gas and Petrochemical; Semiconductor; Chemical process industry; Food and Beverage'
+      gradeNoteKo:'모든 evolast® 컴파운드는 우수한 내화학성을 갖추고 있습니다. FDA·3A-Sanitary Standard 인증은 2023년 9월 30일 이전 생산분에 한해 유효합니다.',
+      gradeNoteEn:'All evolast® compounds offer outstanding chemical resistance performance. FDA and 3A-Sanitary Standard certificates are only valid for materials produced before 30.09.2023.',
+      appsKo:'화학 산업, 의약품, 식품 산업, 오일·가스 생산 및 정제 공정, 그 밖에 정밀 밀봉 성능이 요구되는 특수 산업',
+      appsEn:'Chemical industry, pharmaceutical/medical, food industry, oil & gas production and processing, and other applications requiring highly exacting sealing performance'
     },
     kalrez:{
       ko:'Kalrez (Dupont)', en:'Kalrez (DuPont)',
@@ -757,8 +768,9 @@
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t.bodyKo+'</span><span class="en">'+t.bodyEn+'</span></p>'
         + '<table class="mtable"><thead><tr>'
-        + '<th>GRADE</th><th><span class="ko">설명</span><span class="en">Description</span></th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th>'
+        + '<th>GRADE</th><th><span class="ko">설명·인증</span><span class="en">Remarks / Approvals</span></th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th>'
         + '</tr></thead><tbody>'+grows+'</tbody></table>'
+        + '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.gradeNoteKo+'</span><span class="en">'+t.gradeNoteEn+'</span></p>'
         + '<p class="desc" style="margin-top:18px"><span class="ko"><b>적용분야</b> — '+t.appsKo+'</span><span class="en"><b>Applications</b> — '+t.appsEn+'</span></p>';
     } else {
       var t2=PERFLUORO_TABS.kalrez;
