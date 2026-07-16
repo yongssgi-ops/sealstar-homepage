@@ -379,6 +379,19 @@
         {ko:'금속 OD / 고무 피복 OD 케이스로 하우징 재질에 맞춰 선정',en:'Metal-OD or rubber-covered-OD case options matched to housing material'},
         {ko:'표준형 기준 축속도·편심·압력에 대한 설계 한계값 보유(고속·고압은 특수설계 대응)',en:'Standard designs have defined limits for shaft speed, eccentricity and pressure — special designs cover higher-speed or higher-pressure duty'}
       ],
+      shapeTable:{
+        titleKo:'형상별 종류 &amp; 용도', titleEn:'Shape Types &amp; Applications',
+        cols:[{ko:'형상',en:'Shape'},{ko:'용도',en:'Use'},{ko:'최대압력',en:'Max Pressure',short:true},{ko:'특징',en:'Features'}],
+        rows:[
+          [{img:'images/web/oilseal-shapes/tcsc.jpg',alt:'TC, SC 단면도'}, {ko:'기름·물',en:'Oil & water'}, '0.3 kg/cm²', {ko:'립(LIP)에 스프링이 들어있는 가장 많이 사용되는 형식. TC는 더스트립이 있는 노출형, SC는 더스트립이 없는 밀봉형입니다.',en:'The most widely used type, with a spring built into the lip. TC is exposed with a dust lip; SC is enclosed without one.'}],
+          [{img:'images/web/oilseal-shapes/tbsb.jpg',alt:'TB, SB 단면도'}, {ko:'기름·물',en:'Oil & water'}, '0.3 kg/cm²', {ko:'립에 스프링이 들어있으며, 립 사이에 그리스를 충전하면 무윤활유 상태에서도 사용이 가능합니다.',en:'Spring-loaded lip; packing grease between the lips allows operation even without lubricating oil.'}],
+          [{img:'images/web/oilseal-shapes/kckb.jpg',alt:'KC, KB 단면도'}, {ko:'그리스·더스트씰',en:'Grease & dust seal'}, {ko:'압력부 사용불가',en:'Not for pressurized use'}, {ko:'스프링이 없는 형식으로 먼지·토사 유입 방지용 더스트립이 부착되어 있습니다.',en:'No spring; fitted with a dust lip to block dirt and sand ingress.'}],
+          [{img:'images/web/oilseal-shapes/vcvb.jpg',alt:'VC, VB 단면도'}, {ko:'그리스·더스트씰',en:'Grease & dust seal'}, {ko:'압력부 사용불가',en:'Not for pressurized use'}, {ko:'스프링이 없는 씰 립 형식으로 TC·TB형 등과 조립해 사용하기도 합니다. 주속·편심이 지나치게 큰 경우엔 부적합합니다.',en:'Springless seal lip, sometimes assembled together with TC/TB types. Not suitable for excessive peripheral speed or eccentricity.'}],
+          [{img:'images/web/oilseal-shapes/tasa.jpg',alt:'TA, SA 단면도'}, {ko:'기름·물 등',en:'Oil, water, etc.'}, {ko:'압력 상승가능',en:'Some pressure rise possible'}, {ko:'립에 스프링이 들어있고, 립 변형을 줄이는 보강환을 갖춘 구조입니다. TA는 더스트립 부착, SA는 미부착입니다.',en:'Spring-loaded lip with a reinforcing ring that reduces lip deformation. TA has a dust lip, SA does not.'}],
+          [{img:'images/web/oilseal-shapes/dcdb.jpg',alt:'DC, DB 단면도'}, {ko:'2가지 액 분리',en:'Separates two fluids'}, '0.3 kg/cm²', {ko:'스프링이 들어있고 씰 립 2개를 반대방향으로 배치해 서로 다른 유체를 분리합니다.',en:'Spring-loaded with two seal lips facing opposite directions to separate two different fluids.'}],
+          [{img:'images/web/oilseal-shapes/tcv.jpg',alt:'TCV 단면도'}, {ko:'기름·물',en:'Oil & water'}, '3 kg/cm²', {ko:'립 길이가 짧고 강성이 높아 접촉압력 과다 상승을 방지합니다. 스프링을 축 방향으로 배치해 립을 더 효과적으로 지지하는 고압 사양입니다.',en:'Shorter, stiffer lip that prevents excessive contact pressure buildup; a high-pressure design with the spring positioned axially for stronger lip support.'}]
+        ]
+      },
       matTable:{
         titleKo:'재질', titleEn:'Materials',
         cols:[{ko:'재질',en:'Material'},{ko:'용도',en:'Use'},{ko:'사용 온도',en:'Temp. Range',short:true}],
@@ -420,34 +433,35 @@
     { id:'isolator', ko:'베어링아이솔레이터', en:'Bearing Isolator (BPS)', imgs:['images/web/isolator1.jpg'],
       dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터(BPS)입니다. 접촉 마찰이 없어 마모 없이 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
       den:'A non-contact bearing protector/isolator (BPS) that uses a fine labyrinth gap between rotating and stationary elements. Virtually wear-free, it blocks both contamination ingress and lubricant loss.',
-      mat:['NBR','PTFE'],
+      mat:['PTFE','FKM'],
       principleKo:'회전환과 고정환이 서로 맞물리는 미로(labyrinth) 형태의 미세 간극을 형성하되, 두 부품이 직접 접촉하지는 않습니다. 이 좁고 구불구불한 경로가 물리적 장벽 역할을 해 오염물질의 침입과 윤활유의 유출을 억제하며, 비접촉 구조이기 때문에 마모가 거의 없어 오랜 기간 안정적으로 사용할 수 있습니다. 모델에 따라 O-ring 보조 실링이나 배수 홈을 추가해 밀봉 성능을 높이기도 합니다.',
       principleEn:'A rotating ring and a stationary ring interlock to form a fine labyrinth clearance without ever touching each other. That narrow, winding path acts as a physical barrier that resists contaminant ingress and lubricant loss, and because there is no rubbing contact, wear is virtually eliminated — giving the isolator a long, stable service life. Depending on the model, an auxiliary O-ring or drainage groove can be added to further improve sealing performance.',
       features:[
         {ko:'비접촉 구조로 마모가 없어 안정적으로 장기간 사용 가능',en:'Non-contact design — virtually no wear, stable long-term service life'},
         {ko:'접촉 마찰이 없어 발열·동력 손실이 최소화',en:'No contact friction, so heat generation and power loss are minimal'},
         {ko:'분당 최대 약 25m/sec 둘레속도, -40~120℃ 대응(제품군별 상이)',en:'Handles surface speeds up to roughly 25 m/sec and -40 to 120°C, depending on the series'},
-        {ko:'PTFE 필터·FKM 등 O-ring 보조 실 재질 선택 가능',en:'Auxiliary O-ring materials such as PTFE-filled compounds or FKM can be specified'},
+        {ko:'씰은 PTFE 충전재, 보조 오링은 FKM(Viton®)이 표준이며 용도에 따라 FDA·NBR·실리콘·FFKM 등으로 대안 지정 가능',en:'Standard materials are PTFE filler (seal) and FKM/Viton® (auxiliary O-ring); FDA-grade, NBR, silicone or FFKM alternatives can be specified as needed'},
         {ko:'모터·펌프·기어박스 등 다양한 회전 장비에 규격 대응',en:'Sized to fit a wide range of rotating equipment — motors, pumps, gearboxes'}
       ],
       matTable:{
         titleKo:'재질', titleEn:'Materials',
         cols:[{ko:'구성',en:'Component'},{ko:'표준 재질',en:'Standard Material'},{ko:'옵션',en:'Option'}],
         rows:[
-          [{ko:'씰 (Seal)',en:'Seal'}, {ko:'PTFE 충전재 (PTFE filler)',en:'PTFE filler'}, '-'],
-          [{ko:'오링 (O-ring)',en:'O-ring'}, {ko:'NBR',en:'NBR'}, {ko:'FKM 가능',en:'FKM available'}]
+          [{ko:'씰 (Seal)',en:'Seal'}, {ko:'PTFE 충전재 (PTFE filler)',en:'PTFE filler'}, {ko:'FDA 대응 가능',en:'FDA-grade available'}],
+          [{ko:'오링 (O-ring)',en:'O-ring'}, {ko:'FKM (Viton®)',en:'FKM (Viton®)'}, {ko:'NBR, FDA, 실리콘, FFKM 가능',en:'NBR, FDA-grade, Silicone, FFKM available'}]
         ]
       },
       specTable:{
-        titleKo:'규격표 · 작동 범위', titleEn:'Spec Table · Operating Range',
-        cols:[{ko:'항목',en:'Item'},{ko:'사양',en:'Spec',short:true}],
+        titleKo:'타입별 재질 &amp; 작동 범위', titleEn:'Type-by-Type Materials &amp; Operating Range',
+        cols:[{ko:'타입',en:'Type'},{ko:'구조',en:'Structure'},{ko:'재질',en:'Material'},{ko:'압력',en:'Pressure',short:true},{ko:'온도(℃)',en:'Temp.(℃)',short:true},{ko:'속도',en:'Speed',short:true},{ko:'변위',en:'Displacement',short:true}],
         rows:[
-          [{ko:'둘레속도 (Surface Speed)',en:'Surface Speed'}, '최대 약 25 m/sec'],
-          [{ko:'사용 온도 (Temp. Range)',en:'Temp. Range'}, '-40 ~ 120℃ (제품군별 상이)'],
-          [{ko:'구조 (Structure)',en:'Structure'}, {ko:'이중 미로(Labyrinth) 비접촉 구조',en:'Dual labyrinth, non-contact design'}]
+          ['THBI-01', {img:'images/web/thbi01.jpg',alt:'THBI-01 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
+          ['THBI-02', {img:'images/web/thbi02.jpg',alt:'THBI-02 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
+          ['THBI-03', {img:'images/web/thbi03.jpg',alt:'THBI-03 구조도'}, 'PTFE/FKM', '0 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm'],
+          ['THBI-04', {img:'images/web/thbi04.jpg',alt:'THBI-04 구조도'}, 'PTFE/SUS/FKM', '0.3 bar', '-40 ~ 120', '25 m/s 이하', '0.3mm']
         ],
-        noteKo:'상세 치수 규격표 및 기술 자료는 문의 바랍니다.',
-        noteEn:'Contact us for detailed dimensional spec sheets and technical data.'
+        noteKo:'THBI-01·02는 일반 수평 구조 장비용(THBI-02는 수직 구조 상단부 권장), THBI-03은 내장 플랜지 타입으로 기존 립씰 대체 및 협소 공간용, THBI-04는 립씰 기술이 적용되어 액체가 가득 찬 수평·수직 하단부 장비에 적합합니다. 규격(축경 Ø20~200mm) 및 상세 치수 규격표는 문의 바랍니다.',
+        noteEn:'THBI-01/02 suit general horizontal-shaft equipment (THBI-02 recommended for the top of vertical equipment); THBI-03 is a built-in flange type for replacing conventional lip seals in tight spaces; THBI-04 uses lip-seal technology suited to horizontal or lower-vertical equipment fully filled with liquid. Shaft sizes span Ø20–200mm — contact us for detailed dimensional charts.'
       },
       apps:[{ko:'전동기 베어링 보호',en:'Electric motor bearing protection'},{ko:'펌프',en:'Pumps'},{ko:'기어박스',en:'Gearboxes'},{ko:'송풍기/블로워',en:'Fans & blowers'}] },
 
@@ -560,7 +574,8 @@
   // Long-form body: 작동원리/구조(principle) · 특징(features) · 적용분야(applications)
   // Generic data-table renderer reused by any item's matTable/specTable (재질/규격표 sections)
   // cols: [{ko,en}, ...]   rows: [ [cellOrSpan, cellOrSpan, ...], ... ] — a cell is either a plain
-  // string (shown as-is, language-agnostic — numbers/codes) or {ko,en} (bilingual span pair)
+  // string (shown as-is, language-agnostic — numbers/codes), {ko,en} (bilingual span pair),
+  // or {img,alt} (a small centered thumbnail, e.g. a shape/structure diagram).
   // cols may mark a column {short:true} (e.g. a temp range or numeric spec) to get the
   // bold, no-wrap "mtemp" treatment; anything else just wraps normally.
   function renderDataTable(cols, rows){
@@ -569,6 +584,7 @@
       return '<tr>' + r.map(function(cell,i){
         var cls = i===0 ? ' class="mname"' : ((cols[i] && cols[i].short) ? ' class="mtemp"' : '');
         if(typeof cell === 'string') return '<td'+cls+'>'+cell+'</td>';
+        if(cell && cell.img) return '<td class="mimg"><img src="'+cell.img+'" alt="'+(cell.alt||'')+'" loading="lazy"></td>';
         return '<td'+cls+'><span class="ko">'+cell.ko+'</span><span class="en">'+cell.en+'</span></td>';
       }).join('') + '</tr>';
     }).join('');
@@ -586,15 +602,14 @@
         + it.features.map(function(f){ return '<li><span class="ko">'+f.ko+'</span><span class="en">'+f.en+'</span></li>'; }).join('')
         + '</ul>';
     }
-    if(it.matTable){
-      out+='<h3><span class="ko">'+it.matTable.titleKo+'</span><span class="en">'+it.matTable.titleEn+'</span></h3>'
-        + renderDataTable(it.matTable.cols, it.matTable.rows);
+    function tableSection(t){
+      return '<h3><span class="ko">'+t.titleKo+'</span><span class="en">'+t.titleEn+'</span></h3>'
+        + renderDataTable(t.cols, t.rows)
+        + (t.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.noteKo+'</span><span class="en">'+t.noteEn+'</span></p>' : '');
     }
-    if(it.specTable){
-      out+='<h3><span class="ko">'+it.specTable.titleKo+'</span><span class="en">'+it.specTable.titleEn+'</span></h3>'
-        + renderDataTable(it.specTable.cols, it.specTable.rows)
-        + (it.specTable.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+it.specTable.noteKo+'</span><span class="en">'+it.specTable.noteEn+'</span></p>' : '');
-    }
+    if(it.shapeTable){ out+=tableSection(it.shapeTable); }
+    if(it.matTable){ out+=tableSection(it.matTable); }
+    if(it.specTable){ out+=tableSection(it.specTable); }
     if(it.apps && it.apps.length){
       out+='<h3><span class="ko">적용 분야</span><span class="en">Applications</span></h3><div class="apps">'
         + it.apps.map(function(a){ return '<span><span class="ko">'+a.ko+'</span><span class="en">'+a.en+'</span></span>'; }).join('')
