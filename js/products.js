@@ -136,8 +136,15 @@
         {grp:'Wet', proc:'Stripping', temp:'25~125℃', env:'NMP/Alkanolamine, Hydroxylamine', rec:'6375UP, 1050LF', app:''},
         {grp:'Wet', proc:'Copper Plating', temp:'25~100℃', env:'CuSO4 Solution, H2SO4, H2O2', rec:'6375UP, 1050LF', app:''}
       ],
-      noteKo:'9100 — 가혹한 플라즈마 환경에서 낮은 침식률과 초저파티클 특성 / 9500 — 오존·암모니아·수증기·플라즈마 라디칼에 대한 우수한 저항성 / 9300 — 이온(물리적)과 라디칼(화학적)이 혼재된 플라즈마 공정용 / 8900 — 금속 CVD·ALD·LPCVD·산화·확산 공정 권장 제품 / 8475 — 램프 어닐·RTP 공정 권장 제품 / 6375UP — 전체 습식 공정용 범용 제품',
-      noteEn:'9100 — low erosion rate & ultra-low particle generation in harsh plasma; 9500 — excellent resistance to ozone, ammonia, water vapor & plasma radicals; 9300 — for plasma combining ionic and radical species; 8900 — recommended for metal CVD/ALD/LPCVD, oxidation & diffusion; 8475 — recommended for lamp anneal & RTP; 6375UP — general-purpose grade for all wet process applications.'
+      gradesKo:'등급별 특성', gradesEn:'Grade Characteristics',
+      grades:[
+        {code:'9100', ko:'가혹한 플라즈마 환경에서 낮은 침식률과 초저파티클 특성을 가진 등급입니다.', en:'Low erosion rate and ultra-low particle generation in harsh plasma environments.'},
+        {code:'9500', ko:'오존·암모니아·수증기·플라즈마 라디칼에 대한 저항성이 우수한 등급입니다.', en:'Excellent resistance to ozone, ammonia, water vapor and plasma radicals.'},
+        {code:'9300', ko:'이온(물리적)과 라디칼(화학적)이 혼재된 플라즈마 공정에 사용하는 등급입니다.', en:'Suited to plasma processes that combine ionic (physical) and radical (chemical) species.'},
+        {code:'8900', ko:'금속 CVD·ALD·LPCVD 및 산화·확산 공정에 권장하는 등급입니다.', en:'Recommended for metal CVD/ALD/LPCVD and oxidation/diffusion processes.'},
+        {code:'8475', ko:'램프 어닐·RTP 공정에 권장하는 등급입니다.', en:'Recommended for lamp anneal and RTP (rapid thermal processing) steps.'},
+        {code:'6375UP', ko:'전체 습식(Wet) 공정에 사용 가능한 범용 등급입니다.', en:'A general-purpose grade suitable across the full range of wet process steps.'}
+      ]
     }
   };
 
@@ -757,19 +764,27 @@
       var t2=PERFLUORO_TABS.kalrez;
       var lastGrp=null;
       var krows = t2.rows.map(function(r){
-        var grpCell='';
+        var grpCell='', appCell='';
         if(r.grp!==lastGrp){
           var span = t2.rows.filter(function(x){ return x.grp===r.grp; }).length;
           grpCell = '<td class="mname" rowspan="'+span+'" style="vertical-align:middle">'+r.grp+'</td>';
+          appCell = '<td rowspan="'+span+'" style="vertical-align:middle">'+r.app+'</td>';
           lastGrp = r.grp;
         }
-        return '<tr>'+grpCell+'<td>'+r.proc+'</td><td class="mtemp">'+r.temp+'</td><td>'+r.env+'</td><td>'+r.rec+'</td><td>'+r.app+'</td></tr>';
+        return '<tr>'+grpCell+'<td>'+r.proc+'</td><td class="mtemp">'+r.temp+'</td><td>'+r.env+'</td><td>'+r.rec+'</td>'+appCell+'</tr>';
+      }).join('');
+      var gradeCards = t2.grades.map(function(g){
+        return '<div class="certcard"><span class="certbadge">'+g.code+'</span><div>'
+          + '<h5>Kalrez '+g.code+'</h5>'
+          + '<p class="cdetail"><span class="ko">'+g.ko+'</span><span class="en">'+g.en+'</span></p>'
+          + '</div></div>';
       }).join('');
       tabBody = '<p class="desc"><span class="ko">'+t2.bodyKo+'</span><span class="en">'+t2.bodyEn+'</span></p>'
         + '<table class="mtable"><thead><tr>'
         + '<th><span class="ko">공정구분</span><span class="en">Group</span></th><th><span class="ko">세부공정</span><span class="en">Process</span></th><th><span class="ko">온도</span><span class="en">Temp.</span></th><th><span class="ko">공정 환경</span><span class="en">Environment</span></th><th><span class="ko">추천제품</span><span class="en">Suggested</span></th><th><span class="ko">주요 용도</span><span class="en">Applications</span></th>'
         + '</tr></thead><tbody>'+krows+'</tbody></table>'
-        + '<p class="desc" style="margin-top:16px;font-size:13px"><span class="ko">'+t2.noteKo+'</span><span class="en">'+t2.noteEn+'</span></p>';
+        + '<h4 class="sizeh" style="margin-top:26px"><span class="ko">'+t2.gradesKo+'</span><span class="en">'+t2.gradesEn+'</span></h4>'
+        + '<div class="certs">'+gradeCards+'</div>';
     }
 
     content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
