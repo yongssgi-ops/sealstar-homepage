@@ -299,9 +299,9 @@
       apps:[{ko:'고압 밸브 씰 자켓',en:'High-pressure valve seal jackets'},{ko:'동적 피스톤·로드씰 백업링',en:'Back-up rings for dynamic piston/rod seals'},{ko:'반도체 습식 공정 부품',en:'Semiconductor wet-process components'},{ko:'항공우주 구조 부품',en:'Aerospace structural components'},{ko:'극저온 밸브',en:'Cryogenic valves'}] },
 
     { id:'oil', ko:'오일씰', en:'Oil Seal', imgs:imgs('oil',6),
-      dko:'회전축에 장착되어 내부 윤활유의 누출과 외부 이물질의 유입을 방지하는 오일씰입니다. NBR·FKM·실리콘 등 다양한 소재로 일반 산업기계부터 유압모터까지 폭넓게 적용됩니다.',
-      den:'Oil seals fitted on rotating shafts to prevent internal lubricant leakage and external contaminant ingress. Available in NBR, FKM and silicone for everything from general machinery to hydraulic motors.',
-      mat:['NBR','FKM','실리콘','PTFE'],
+      dko:'회전축에 장착되어 내부 윤활유의 누출과 외부 이물질의 유입을 방지하는 오일씰입니다. NBR·FKM 소재로 일반 산업기계부터 유압모터까지 폭넓게 적용됩니다.',
+      den:'Oil seals fitted on rotating shafts to prevent internal lubricant leakage and external contaminant ingress. Available in NBR and FKM for everything from general machinery to hydraulic motors.',
+      mat:['NBR','FKM'],
       principleKo:'금속 케이스에 고무 립을 가황 접착하고, 립 뒤에 가터 스프링(garter spring)을 둘러 축을 향한 조임력을 일정하게 유지합니다. 1차 립이 오일 누출을 막고, 보조(더스트) 립이 있는 타입은 외부의 먼지·수분 유입을 추가로 차단합니다. 케이스는 금속 단독형, 고무 피복형(러버 커버드 OD) 등으로 구분되며, 하우징 재질과 표면 상태에 맞춰 선택합니다.',
       principleEn:'A rubber lip is vulcanized to a metal case, with a garter spring wrapped behind it to maintain constant radial load against the shaft. The primary lip retains lubricant; where a secondary (dust) lip is present, it additionally excludes external dirt and moisture. Cases come in bare-metal-OD and rubber-covered-OD styles, chosen to suit the housing material and bore finish.',
       features:[
