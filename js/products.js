@@ -122,8 +122,8 @@
         {g:'V7FD', dKo:'표준 용도 — FDA, USP Class VI, 3A-Sanitary Standard 기준 충족', dEn:'Standard applications — according to FDA, USP Class VI, 3A-Sanitary Standard', cKo:'그린', cEn:'Green', h:'70', t:'-15℃ ~ +270℃'},
         {g:'V895', dKo:'고온용', dEn:'High temperature', cKo:'그린', cEn:'Green', h:'80', t:'-15℃ ~ +310℃'}
       ],
-      gradeNoteKo:'모든 evolast® 컴파운드는 우수한 내화학성을 갖추고 있습니다. FDA·3A-Sanitary Standard 인증은 2023년 9월 30일 이전 생산분에 한해 유효합니다.',
-      gradeNoteEn:'All evolast® compounds offer outstanding chemical resistance performance. FDA and 3A-Sanitary Standard certificates are only valid for materials produced before 30.09.2023.',
+      gradeNoteKo:'모든 evolast® 컴파운드는 우수한 내화학성을 갖추고 있습니다.',
+      gradeNoteEn:'All evolast® compounds offer outstanding chemical resistance performance.',
       appsKo:'화학 산업, 의약품, 식품 산업, 오일·가스 생산 및 정제 공정, 그 밖에 정밀 밀봉 성능이 요구되는 특수 산업',
       appsEn:'Chemical industry, pharmaceutical/medical, food industry, oil & gas production and processing, and other applications requiring highly exacting sealing performance'
     },
