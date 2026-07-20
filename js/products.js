@@ -558,6 +558,20 @@
       mat:['PTFE','FEP','SUS 스프링'],
       principleKo:'PTFE·UHMWPE 등 저마찰·고내화학성 폴리머로 립(lip) 형태의 자켓을 가공하고, 그 내부에 금속 스프링(17-4 스테인리스, 코발트-니켈, 인코넬 등)을 삽입합니다. 스프링이 립을 상대 표면 쪽으로 지속적으로 밀어주기 때문에, 폴리머 자체의 탄성만으로는 대응하기 어려운 극저온·극고온·고진공 조건에서도 밀봉 접촉이 끊기지 않습니다. 캔틸레버형은 저하중·저속에, 헬리컬 코일형은 중~고하중과 회전용에 주로 사용합니다.',
       principleEn:'A lip-shaped jacket is machined from a low-friction, chemically resistant polymer such as PTFE or UHMWPE, with a metal spring (17-4 stainless, cobalt-nickel or Inconel, among others) fitted inside it. Because the spring continuously pushes the lip against the mating surface, sealing contact is maintained even under cryogenic cold, high heat or high vacuum — conditions where the polymer\'s own elasticity alone would not be enough. Cantilever springs suit low-load, low-speed duty; helical-wound coil springs handle medium-to-high loads and rotary motion.',
+      funcMotion:{
+        titleKo:'씰 작동 및 모션', titleEn:'Seal Function and Motion',
+        paragraphs:[
+          {ko:'밀봉이 이루어지는 두 접촉면의 상대 운동 여부에 따라 씰링은 정적(static)과 동적(dynamic) 방식으로 나뉩니다. 정적 방식은 두 면 사이에 상대 운동이 거의 없는 경우로, 볼트로 체결되는 플랜지 이음이 대표적이며 이때는 축방향(면) 씰이 사용됩니다. 동적 방식은 두 면 중 하나가 상대적으로 움직이는 경우로, 샤프트와 보어로 구성된 유압 실린더가 대표적입니다. 동적 적용은 다시 왕복(직선) 운동과 회전(요동 포함) 운동으로 나뉘며, 이러한 조건에는 반경방향 씰(로드씰·피스톤씰)이 사용됩니다.',
+           en:'Sealing applications fall into two basic types depending on whether the two contacting surfaces move relative to one another: static and dynamic. In static applications there is essentially no relative motion between the surfaces — a bolted flange joint is a typical example, and axial (face) seals are used here. In dynamic applications, at least one surface moves relative to the other, as in a hydraulic cylinder with a shaft and bore. Dynamic applications are further divided into reciprocating (linear) motion and rotary (including oscillating) motion, both of which call for radial seals such as rod seals and piston seals.'},
+          {ko:'씰이 장착되는 홈(gland)의 위치와 하우징 형상에 따라 밀봉 방식은 반경방향(radial) 씰링과 축방향(axial, 면) 씰링으로 구분됩니다. 반경방향 씰링은 씰을 반경 방향으로 압축하는 홈 구조로, 샤프트에 가공되는 수(male) 홈과 보어에 가공되는 암(female) 홈이 있으며 대부분(항상은 아님) 동적 적용에 사용되어 로드씰·피스톤씰로 활용됩니다. 축방향 씰링은 씰의 축 방향으로 압축이 이루어지는 홈 구조로, 부품의 접합면에 가공되며 대부분(항상은 아님) 정적 적용에 사용되어 내측·외측 면씰로 활용됩니다.',
+           en:'Depending on the location of the seal gland and the shape of the hardware, sealing can be classified as radial or axial (face) sealing. Radial sealing uses glands that compress the seal in the radial direction — male glands machined into the shaft and female glands machined into the bore — and is usually, though not always, used in dynamic applications as rod seals and piston seals. Axial sealing uses glands that compress the seal parallel to its axis, machined into the mating face of the hardware, and is usually, though not always, used in static applications as inside and outside face seals.'}
+        ],
+        diagrams:[
+          {img:'images/web/spring-motion-dynamic-radial.png', labelKo:'동적 반경방향 씰링', labelEn:'Dynamic Radial Seal'},
+          {img:'images/web/spring-motion-static-inside-face.png', labelKo:'정적 내측 축방향 씰링', labelEn:'Static Inside Face Seal'},
+          {img:'images/web/spring-motion-static-outside-face.png', labelKo:'정적 외측 축방향 씰링', labelEn:'Static Outside Face Seal'}
+        ]
+      },
       features:[
         {ko:'스프링 하중으로 극한 조건에서도 일정한 접촉압 유지',en:'Spring load keeps contact pressure constant even in extreme conditions'},
         {ko:'PTFE 자켓의 낮은 마찰계수로 장시간 무급유 작동 가능',en:'The PTFE jacket\'s low friction allows extended dry-running operation'},
@@ -863,12 +877,26 @@
       + (t.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.noteKo+'</span><span class="en">'+t.noteEn+'</span></p>' : '');
   }
 
+  // Prose sub-sections (e.g. static/dynamic, radial/axial) plus a row of captioned
+  // reference diagrams — used for topics that need explanation beyond a single
+  // principle paragraph but aren't a spec table. fm:{titleKo,titleEn,paragraphs:[{ko,en}],diagrams:[{img,labelKo,labelEn}]}
+  function funcMotionHtml(fm){
+    var paras = fm.paragraphs.map(function(p){ return '<p><span class="ko">'+p.ko+'</span><span class="en">'+p.en+'</span></p>'; }).join('');
+    var diagrams = fm.diagrams.map(function(d){
+      return '<div class="motiondiag"><img src="'+d.img+'" alt="'+(d.labelEn||'')+'" loading="lazy"><span class="motiondiaglabel"><span class="ko">'+d.labelKo+'</span><span class="en">'+d.labelEn+'</span></span></div>';
+    }).join('');
+    return '<h3><span class="ko">'+fm.titleKo+'</span><span class="en">'+fm.titleEn+'</span></h3>'
+      + paras
+      + '<div class="motiondiags">'+diagrams+'</div>';
+  }
+
   function bodyHtml(it){
     var out='';
     if(it.principleKo){
       out+='<h3><span class="ko">작동 원리 &amp; 구조</span><span class="en">Principle &amp; Structure</span></h3>'
         +'<p><span class="ko">'+it.principleKo+'</span><span class="en">'+it.principleEn+'</span></p>';
     }
+    if(it.funcMotion){ out+=funcMotionHtml(it.funcMotion); }
     if(it.features && it.features.length){
       out+='<h3><span class="ko">주요 특징</span><span class="en">Key Features</span></h3><ul class="flist">'
         + it.features.map(function(f){ return '<li><span class="ko">'+f.ko+'</span><span class="en">'+f.en+'</span></li>'; }).join('')
