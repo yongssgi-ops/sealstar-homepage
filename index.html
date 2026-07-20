@@ -280,6 +280,8 @@
       <div class="mq-item"><img src="images/web/partners/junjin.png" alt="" loading="lazy"/><span class="sr-only">전진건설로봇(JUNJIN)</span></div>
       <div class="mq-item"><img src="images/web/partners/lgdisplay.png" alt="" loading="lazy"/><span class="sr-only">LG디스플레이</span></div>
       <div class="mq-item"><img src="images/web/partners/posco.png" alt="" loading="lazy"/><span class="sr-only">POSCO</span></div>
+      <div class="mq-item"><img src="images/web/partners/doosan.png" alt="" loading="lazy"/><span class="sr-only">두산(Doosan)</span></div>
+      <div class="mq-item"><img src="images/web/partners/sk.png" alt="" loading="lazy"/><span class="sr-only">SK</span></div>
       <div class="mq-item"><img src="images/web/partners/toray.png" alt="" loading="lazy"/><span class="sr-only">토레이첨단소재</span></div>
       <div class="mq-item"><img src="images/web/partners/ajnetworks.png" alt="" loading="lazy"/><span class="sr-only">AJ네트웍스</span></div>
       <div class="mq-item"><img src="images/web/partners/bushkorea.png" alt="" loading="lazy"/><span class="sr-only">부쉬코리아</span></div>
@@ -298,6 +300,8 @@
       <div class="mq-item"><img src="images/web/partners/junjin.png" alt="" loading="lazy"/><span class="sr-only">전진건설로봇(JUNJIN)</span></div>
       <div class="mq-item"><img src="images/web/partners/lgdisplay.png" alt="" loading="lazy"/><span class="sr-only">LG디스플레이</span></div>
       <div class="mq-item"><img src="images/web/partners/posco.png" alt="" loading="lazy"/><span class="sr-only">POSCO</span></div>
+      <div class="mq-item"><img src="images/web/partners/doosan.png" alt="" loading="lazy"/><span class="sr-only">두산(Doosan)</span></div>
+      <div class="mq-item"><img src="images/web/partners/sk.png" alt="" loading="lazy"/><span class="sr-only">SK</span></div>
       <div class="mq-item"><img src="images/web/partners/toray.png" alt="" loading="lazy"/><span class="sr-only">토레이첨단소재</span></div>
       <div class="mq-item"><img src="images/web/partners/ajnetworks.png" alt="" loading="lazy"/><span class="sr-only">AJ네트웍스</span></div>
       <div class="mq-item"><img src="images/web/partners/bushkorea.png" alt="" loading="lazy"/><span class="sr-only">부쉬코리아</span></div>
@@ -448,6 +452,7 @@
         <a><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></a>
         <a href="tel:0226376200">Tel. 02-2637-6200 · Fax. 02-2634-0482</a>
         <a href="mailto:info@sealstar.com">info@sealstar.com</a>
+        <a href="mailto:taehwa@sealstar.com">taehwa@sealstar.com</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -467,14 +472,4 @@
   function esc(s){return (s||'').replace(/</g,'&lt;');}
   var latest = POSTS.slice().sort(function(a,b){ return b.date.localeCompare(a.date); }).slice(0,3);
   grid.innerHTML = latest.map(function(p){
-    var bg = p.img ? ("background-image:url('"+p.img+"')") : "background:linear-gradient(135deg,var(--navy-2),var(--sky-d))";
-    return '<a class="ncard" href="news.html">'
-      +'<div class="nh" style="'+bg+'"></div>'
-      +'<div class="nb"><span class="tag"><span class="ko">'+TAG[p.type].ko+'</span><span class="en">'+TAG[p.type].en+'</span></span>'
-      +'<h4><span class="ko">'+esc(p.titleKo)+'</span><span class="en">'+esc(p.titleEn)+'</span></h4>'
-      +'<span class="date">'+p.date+'</span></div></a>';
-  }).join('');
-})();
-</script>
-</body>
-</html>
+    var bg = p.img ? ("back
