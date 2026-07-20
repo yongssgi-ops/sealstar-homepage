@@ -720,19 +720,46 @@
       apps:[{ko:'건설장비(콘크리트펌프카·브레이커·천공장비)',en:'Construction equipment (concrete pump trucks, breakers, drilling rigs)'},{ko:'산업기계 완충·방진 부품',en:'Industrial machinery cushioning & vibration-damping parts'},{ko:'맞춤 고무 성형품',en:'Custom molded rubber parts'}] },
 
     { id:'acm', ko:'ACM베어링', en:'ACM Bearing', imgs:imgs('acm',2),
-      dko:'특수 고분자 폴리에스테르 수지와 정밀섬유·첨가제로 구성된 고기능 복합체 소재의 베어링(가이드 부시)입니다. 고하중·저마찰계수·내화학성이 요구되는 환경에 적합합니다.',
-      den:'A high-performance composite bearing (guide bushing) made from special polyester resin, precision fiber and additives — suited to environments demanding high load capacity, low friction and chemical resistance.',
-      mat:['폴리에스테르 수지','폴리에스테르/면/노멕스 원단','흑연·MoS2·PTFE'],
+      dko:'특수 고분자 폴리에스테르 수지와 정밀섬유·첨가제로 된 화합물을 겹겹이 적층해 만든 고기능 복합체 베어링(슬라이딩 부싱·가이드링)입니다. 금속보다 가볍고 경제적이면서 고하중·저마찰계수·내화학성이 뛰어나 청동 부시를 대체합니다. ISO 9001:2015 및 KR·DNV·ABS·BV·CCS 등 5대 선급 인증을 획득한 소재로, 선박·교량·원자력·화력발전소·펌프·자동차·건설장비 등에 폭넓게 적용됩니다.',
+      den:'A high-performance composite bearing (sliding bushing/guide ring) built by layering a compound of special polyester resin, precision fiber and additives. Lighter and more economical than metal, with excellent load capacity, low friction and chemical resistance, it replaces bronze bushings. Certified to ISO 9001:2015 and by five major classification societies — KR, DNV, ABS, BV and CCS — it is widely used in ships, bridges, nuclear/thermal power plants, pumps, automotive and construction equipment.',
+      mat:['TRIBOTEX 7 (표준형)','TRIBOTEMP 10 (고온형)','TRIBOCHEM 11 (내화학형)'],
       principleKo:'폴리에스테르 수지에 PTFE·흑연·MoS2 등 저마찰 첨가제를 배합한 뒤 폴리에스테르·면·노멕스 등 보강 원단과 함께 맨드릴에 감아(coiling) 성형하고, 오븐에서 경화(curing)한 뒤 맨드릴에서 압출 성형해 제작합니다. 섬유 보강층이 하중을 지지하고, 수지에 섞인 고체 윤활 성분이 표면 마찰을 낮춰줍니다.',
       principleEn:'PTFE, graphite and MoS2 low-friction additives are compounded into a polyester resin, then coiled onto a mandrel together with a reinforcing fabric — polyester, cotton or Nomex — cured in an oven, and finally pressed off the mandrel to finish the part. The fiber reinforcement carries the load, while the solid-lubricant additives blended into the resin keep surface friction low.',
       features:[
-        {ko:'낮은 흡수율(물흡수 스웰 <0.15%)로 치수 안정성 우수',en:'Very low water absorption (swell <0.15%) gives excellent dimensional stability'},
-        {ko:'낮은 열팽창계수(45~50×10⁻⁶/℃)로 정밀 간극 유지에 유리',en:'Low thermal expansion (45–50×10⁻⁶/°C) helps hold precise running clearances'},
-        {ko:'상시 사용 온도 약 80℃, 최대 120℃까지 대응',en:'Recommended continuous use around 80°C, capable up to 120°C'},
-        {ko:'경도 변화가 적어 우레탄 계열보다 내마모성이 우수',en:'Hardness stays stable over time, giving better wear resistance than urethane bearings'},
-        {ko:'정적 압축강도 최대 440N/㎟급의 고하중 지지력',en:'Static compressive strength up to roughly 440 N/mm²'}
+        {ko:'고하중 대응 — 정적 압축강도 최대 375N/㎟, 동적 100N/㎟급으로 청동 부시를 대체',en:'High load capacity — static compressive strength up to 375 N/mm², dynamic 100 N/mm², replacing bronze bushings'},
+        {ko:'저마찰·자기윤활 — 건식 마찰계수 0.13~0.15로 무급유 운전이 가능',en:'Low friction & self-lubricating — dry friction coefficient of 0.13–0.15 enables oil-free operation'},
+        {ko:'낮은 마모·장수명 — 열 전이가 적어 경도를 유지해 우수한 내마모성을 발휘',en:'Low wear, long life — minimal heat transfer keeps hardness stable, giving excellent wear resistance'},
+        {ko:'저흡수·저팽창 — 물 흡수율 0.15% 미만으로 높은 치수 안정성과 정밀 공차 확보',en:'Low absorption & swell — water absorption under 0.15% ensures high dimensional stability and precise tolerances'},
+        {ko:'낮은 열팽창 — 정밀 공차 설계가 가능해 축 진동을 저감',en:'Low thermal expansion — enables precise tolerance design and reduces shaft vibration'},
+        {ko:'다중 유체 윤활 — 건식·그리스·오일·수중 등 모든 윤활 조건에서 사용 가능',en:'Multi-lubrication compatible — usable dry or with grease, oil, or submerged in water'},
+        {ko:'내충격·내식·무오염 — Charpy 충격강도 100kJ/㎡, 우수한 내식성으로 환경친화적 운전',en:'Impact & corrosion resistant, non-contaminating — Charpy impact strength of 100 kJ/m² with strong corrosion resistance for clean operation'},
+        {ko:'저소음·신속 대응 — 저진동·저소음 운전이 가능하며, 재고 운영 및 긴급 제작 대응이 신속',en:'Low noise, fast turnaround — low-vibration, low-noise operation, with stock inventory and rapid custom production'}
       ],
-      apps:[{ko:'발전소 냉각수/해수 펌프',en:'Power-plant cooling-water & seawater pumps'},{ko:'조선·해양 설비',en:'Shipbuilding & marine equipment'},{ko:'대형 산업 펌프 축베어링',en:'Large industrial pump shaft bearings'},{ko:'식품가공 설비',en:'Food processing equipment'}] },
+      matTable:{
+        titleKo:'재질 그레이드', titleEn:'Material Grades',
+        cols:[{ko:'물성',en:'Property'},{ko:'표준형 TRIBOTEX 7',en:'Standard TRIBOTEX 7',short:true},{ko:'고온형 TRIBOTEMP 10',en:'High-Temp TRIBOTEMP 10',short:true},{ko:'내화학형 TRIBOCHEM 11',en:'Chem-Resistant TRIBOCHEM 11',short:true}],
+        rows:[
+          [{ko:'압축강도',en:'Compressive Strength'}, '375 MPa', '375 MPa', '375 MPa'],
+          [{ko:'압축 탄성률',en:'Compressive Modulus'}, '2,750 MPa', '3,400 MPa', '2,750 MPa'],
+          [{ko:'충격강도',en:'Impact Strength'}, '100 kJ/㎡', '100 kJ/㎡', '100 kJ/㎡'],
+          [{ko:'밀도',en:'Density'}, '1.30 g/㎤', '1.30 g/㎤', '1.25 g/㎤'],
+          [{ko:'경도 (Rockwell M)',en:'Hardness (Rockwell M)'}, '100', '100', '70'],
+          [{ko:'마찰계수 (건식)',en:'Friction Coefficient (Dry)'}, '0.13', '0.18', '0.04'],
+          [{ko:'최대 사용온도',en:'Max. Operating Temp.'}, '130℃', '200℃', '130℃'],
+          [{ko:'최소 사용온도',en:'Min. Operating Temp.'}, '-40℃', '-40℃', '-40℃'],
+          [{ko:'물 팽창률',en:'Water Swell'}, '<0.15%', '<0.50%', '<0.15%']
+        ]
+      },
+      apps:[
+        {ko:'선박 (러더·프로펠러 샤프트 베어링)',en:'Shipbuilding (rudder & propeller-shaft bearings)'},
+        {ko:'오프쇼어 (크레인·윈치 베어링, 무어링)',en:'Offshore (crane/winch bearings, mooring)'},
+        {ko:'수력발전 (터빈·가이드베인 베어링)',en:'Hydropower (turbine & guide-vane bearings)'},
+        {ko:'인쇼어 (록게이트·피시로크 베어링)',en:'Inshore (lock-gate & fish-lock bearings)'},
+        {ko:'유체동력 (로드·피스톤 가이드/웨어링)',en:'Fluid power (rod/piston guides & wear rings)'},
+        {ko:'건설장비 (붐 슬라이드 패드, 크러셔)',en:'Construction equipment (boom slide pads, crushers)'},
+        {ko:'기계·공정설비 (펌프 베어링, 사출성형기)',en:'Machinery & process equipment (pump bearings, injection molders)'},
+        {ko:'철도 (트러니언 베어링, 웨어패드)',en:'Railway (trunnion bearings, wear pads)'}
+      ] },
 
     { id:'magnetic', ko:'자석필터', en:'Magnetic Filter', imgs:imgs('magnetic',3),
       dko:'유압·윤활 시스템 내 금속 마모분·이물질을 강력한 자력으로 포집하여 장비 손상을 예방하고 오일 수명을 연장합니다.',
