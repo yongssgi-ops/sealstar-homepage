@@ -219,16 +219,16 @@
       bodyKo:'스프링에너자이드씰은 적용 형태(정적·동적)와 운동 방향(반경방향·축방향)에 따라 적합한 스프링 형태와 씰 구조가 달라집니다. 아래는 용도별 선정 가이드와, 마찰·압출 간극·표면 조도 등 설계 시 참고할 기준입니다.',
       bodyEn:'The best spring geometry and seal structure for a spring-energized seal depends on the application type (static or dynamic) and direction of motion (radial or axial). Below is a selection guide by application, along with friction, extrusion-gap and surface-finish reference data for design.',
       items:[
-        {ko:'정적 페이스씰',en:'Static Face Seals',
+        {ko:'정적 페이스씰',en:'Static Face Seals', img:'images/web/spring-motion-static-inside-face.png',
           dko:'볼트 체결 커버·플랜지 등 상대 운동이 거의 없는 면씰 적용입니다. 헬리컬 와운드 스프링은 중~고하중을 형성해 넓은 압력·온도 범위에 대응하며, 고진공·초저온·화학 환경처럼 누설 허용치가 엄격한 경우에는 갭이 없는(gap-less) 스프링 구조로 높은 접촉하중을 내는 타입이 유리합니다. 하중이 낮고 하우징 변형이 큰 경우에는 캔틸레버형이 적합합니다.',
           den:'Face-seal applications with essentially no relative motion, such as bolted covers and flanges. Helical-wound springs generate moderate-to-high loads across a wide pressure and temperature range; for tight-leakage duty in high vacuum, cryogenic or aggressive-chemical service, a gap-less spring geometry with high, uniform contact load is preferred. Where loads must stay low or the housing is prone to distortion, a cantilever-spring design fits better.'},
-        {ko:'동적 반경방향씰 — 왕복운동',en:'Dynamic Radial Seals — Reciprocating',
+        {ko:'동적 반경방향씰 — 왕복운동',en:'Dynamic Radial Seals — Reciprocating', img:'images/web/spring-motion-dynamic-radial.png',
           dko:'로드·피스톤 씰링에 가장 널리 쓰이는 형태입니다. 캔틸레버 스프링은 저~중하중으로 마찰이 낮고 수명이 길며, U자형 스프링 형상은 에지 접촉과 스크레이핑 작용에 유리해 이물질 배출 성능이 좋습니다. 더 가혹한 조건(항공기 유압 등)에는 헬리컬 와운드형이 적합하고, 대형 씰 홈(약 3.2mm 이상)에는 처짐량이 크고 내마모성이 뛰어난 더블 와운드형을 사용합니다. 고압 조건에서는 백업링을 병행 적용합니다.',
           den:'The most common configuration for rod and piston seals. Cantilever springs give low-to-moderate load, low friction and long life; a U-shaped spring geometry provides edge contact with a scraping action that sheds contaminants well. Helical-wound springs suit more demanding duty such as aircraft hydraulics, while double-wrapped springs — with high deflection capacity and excellent wear resistance — are used in larger glands (roughly 3.2mm and up). Back-up rings are added for high-pressure service.'},
-        {ko:'동적 반경방향씰 — 회전운동',en:'Dynamic Radial Seals — Rotary',
+        {ko:'동적 반경방향씰 — 회전운동',en:'Dynamic Radial Seals — Rotary', img:'images/web/spring-motion-dynamic-radial.png',
           dko:'회전·요동 운동에서는 마모가 진행되며 씰이 샤프트와 함께 회전하려는 경향이 생길 수 있어, 필요 시 씰 자켓을 홈에 고정하는 플랜지 구조를 적용합니다. 캔틸레버형은 에지 접촉으로 유체·이물질 제어와 저마찰 특성이 우수하며, 소단면(약 3.2mm 미만)의 유니디렉셔널 와이어 스프링형은 큰 변형 허용량으로 편심·진동에 강합니다. 저속·고압 조건에는 더블 와운드형이나 헬리컬 와운드형이 적합하며, 헬리컬 와운드형은 극저온 등 온도 변화가 큰 밸브·챔버 액추에이터 샤프트 씰링에 특히 우수합니다.',
           den:'In rotary or oscillating motion, wear can cause the seal to gradually rotate with the shaft; where this matters, a flanged jacket design locks the seal into the gland. Cantilever springs give edge contact for good fluid/debris control and low friction. Unidirectional wire springs, used mainly in small cross-sections (under about 3.2mm), offer high deflection capacity that tolerates runout and misalignment well. Double-wrapped or helical-wound springs suit slower, higher-pressure duty, and helical-wound springs are especially well suited to actuator shaft sealing in valves and chambers exposed to wide temperature swings such as cryogenic service.'},
-        {ko:'극한 환경(초저온·고진공) 고려사항',en:'Extreme Environment Considerations',
+        {ko:'극한 환경(초저온·고진공) 고려사항',en:'Extreme Environment Considerations', img:'images/web/spring-type-solidcontact.png',
           dko:'초저온(약 -60℉/-51℃ 이하) 환경에서는 폴리머 자켓의 열수축이 금속 하드웨어보다 훨씬 크게 나타나므로 일반 조건과 다른 설계 여유가 필요합니다. 면씰은 반경방향씰보다 저온 영향을 덜 받으며, 반경방향씰은 별도의 저온용 설계와 백업링 형상(간극 또는 경사 절단)이 필요할 수 있습니다. 극저온·고진공·특수 화학 환경의 씰 설계는 사전 문의를 권장합니다.',
           den:'Below roughly -60°F (-51°C), the polymer jacket\'s thermal shrinkage becomes much larger than that of the surrounding metal hardware, so cryogenic designs need different clearances than standard conditions. Face seals are less affected by cold than radial seals; radial seals in cryogenic service often need a dedicated low-temperature design, sometimes including a gapped or angle-cut back-up ring. For cryogenic, high-vacuum or specialty-chemical service, we recommend consulting us during the design stage.'}
       ],
@@ -1372,7 +1372,9 @@
     } else if(springTab==='design'){
       var t=SPRING_TABS.design;
       var dcards = t.items.map(function(x){
-        return '<div class="dcard"><h5><span class="ko">'+x.ko+'</span><span class="en">'+x.en+'</span></h5>'
+        return '<div class="dcard">'
+          + (x.img ? '<div class="dcardimg"><img src="'+x.img+'" alt="'+x.en+'" loading="lazy"></div>' : '')
+          + '<h5><span class="ko">'+x.ko+'</span><span class="en">'+x.en+'</span></h5>'
           +'<p><span class="ko">'+x.dko+'</span><span class="en">'+x.den+'</span></p></div>';
       }).join('');
       var formulaHtml = '<div class="desc" style="margin-top:12px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;font-size:13.5px">'
