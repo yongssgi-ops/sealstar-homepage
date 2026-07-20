@@ -244,7 +244,6 @@
       extrusionKo:'고압·고온 조건에서는 씰 배후(하류측)의 압출 간극 — 하우징과 샤프트/보어 사이의 틈새 — 이 씰 수명을 크게 좌우합니다. 간극이 과도하면 씰 소재가 틈새로 밀려나가 조기 파손으로 이어지므로 간극은 항상 최소로 유지하고, 힐(heel) 두께를 늘리거나 별도 백업링을 적용해 내압출성을 높입니다. 백업링은 씰보다 경도가 높은 소재를 사용하며, 대표적으로 PEEK(무충전/유리섬유/그라파이트-PTFE 충전)와 PTFE(고카본/고유리섬유/브론즈 충전) 계열이 있습니다. 아래는 압력 구간별 허용 압출 간극(직경 기준)의 대략적인 기준입니다.',
       extrusionEn:'At high pressures and temperatures, the extrusion gap behind the seal — the clearance between the housing and the shaft or bore — becomes critical to service life. Excessive clearance lets the seal material extrude into the gap and fail prematurely, so the gap should always be kept to a minimum; increasing the seal\'s heel thickness or adding a separate back-up ring improves extrusion resistance. Back-up rings use a material harder than the seal itself — typically PEEK (unfilled, glass-fiber or graphite/PTFE filled) or PTFE (high-carbon, high-glass-fiber or bronze filled). The table below gives approximate allowable extrusion gaps (diametral) by pressure range.',
       extrusionCols:[
-        {ko:'단면',en:'Cross-Section'},
         {ko:'씰 구성',en:'Configuration'},
         {ko:'~2,000 psi (~138 bar)',en:'~2,000 psi (~138 bar)',short:true},
         {ko:'~4,000 psi (~276 bar)',en:'~4,000 psi (~276 bar)',short:true},
@@ -252,10 +251,10 @@
         {ko:'~15,000 psi (~1,034 bar)',en:'~15,000 psi (~1,034 bar)',short:true}
       ],
       extrusionRows:[
-        [{img:'images/web/spring-gap-standard.png',alt:'Standard Seal'}, {ko:'표준 씰',en:'Standard Seal'}, '0.004″ (0.10mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)', '0.0015″ (0.04mm)'],
-        [{img:'images/web/spring-gap-extended-heel.png',alt:'Extended Heel'}, {ko:'확장 힐 씰',en:'Extended Heel'}, '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)'],
-        [{img:'images/web/spring-gap-single-backup.png',alt:'Single Back-up Ring'}, {ko:'싱글 백업링 적용',en:'Single Back-up Ring'}, '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.0025″ (0.06mm)'],
-        [{img:'images/web/spring-gap-cammed-backup.png',alt:'Extended / Cammed Back-up'}, {ko:'확장/캠드 백업링 적용',en:'Extended / Cammed Back-up'}, '0.012″ (0.30mm)', '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.003″ (0.08mm)']
+        [{img:'images/web/spring-gap-standard.png',alt:'Standard Seal',ko:'표준 씰',en:'Standard Seal'}, '0.004″ (0.10mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)', '0.0015″ (0.04mm)'],
+        [{img:'images/web/spring-gap-extended-heel.png',alt:'Extended Heel',ko:'확장 힐 씰',en:'Extended Heel'}, '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)'],
+        [{img:'images/web/spring-gap-single-backup.png',alt:'Single Back-up Ring',ko:'싱글 백업링 적용',en:'Single Back-up Ring'}, '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.0025″ (0.06mm)'],
+        [{img:'images/web/spring-gap-cammed-backup.png',alt:'Extended / Cammed Back-up',ko:'확장/캠드 백업링 적용',en:'Extended / Cammed Back-up'}, '0.012″ (0.30mm)', '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.003″ (0.08mm)']
       ],
       surfaceTitleKo:'표면 조도(Surface Finish) 기준', surfaceTitleEn:'Surface Finish Guidelines',
       surfaceKo:'씰 홈(gland)도 밀봉 시스템의 절반을 차지하므로, 표면 조도·경도·다공성이 누설률과 마모 수명에 직접 영향을 줍니다. 동적 씰링 면은 로크웰 C43 이상의 경도를 권장하며, 경도가 높을수록 정밀 다듬질이 오래 유지되어 씰 성능과 수명이 향상됩니다. 무급유 동적 조건에서는 8~12 RMS 마이크로인치 조도에서 수명이 가장 길게 나타나는 경향이 있고(마모 입자가 미세 표면 구조에 자리잡아 윤활 역할), 습윤(윤활) 조건에서는 더 정밀한 조도가 유리합니다. 면씰은 하드웨어 중심선과 동심을 이루는 원형 가공 흔적(circular lay)이 되도록 합니다. 아래는 매체·용도별 권장 표면 조도 기준입니다.',
@@ -713,11 +712,11 @@
       apps:[{ko:'건설기계 유압 실린더',en:'Construction equipment hydraulic cylinders'},{ko:'공작기계',en:'Machine tools'},{ko:'프레스',en:'Presses'},{ko:'공압 자동화 실린더',en:'Pneumatic automation cylinders'},{ko:'선박용 유압 장비',en:'Marine hydraulic equipment'}] },
 
     { id:'spring', ko:'스프링에너자이드씰', en:'Spring-Energized Seal', imgs:imgs('spring',9), special:'spring',
-      dko:'PTFE 씰 내부에 금속 스프링을 삽입하여 극저온·극고온, 고진공, 강한 화학 환경에서도 일정한 밀봉력을 유지합니다. 반도체·항공우주·수소 등 극한 조건에 적합합니다.',
-      den:'A metal spring energizes a PTFE jacket to maintain constant sealing force from cryogenic to high temperatures, high vacuum and aggressive chemicals — ideal for semiconductor, aerospace and hydrogen applications.',
-      mat:['PTFE','FEP','SUS 스프링'],
-      principleKo:'PTFE·UHMWPE 등 저마찰·고내화학성 폴리머로 립(lip) 형태의 자켓을 가공하고, 그 내부에 금속 스프링(17-4 스테인리스, 코발트-니켈, 인코넬 등)을 삽입합니다. 스프링이 립을 상대 표면 쪽으로 지속적으로 밀어주기 때문에, 폴리머 자체의 탄성만으로는 대응하기 어려운 극저온·극고온·고진공 조건에서도 밀봉 접촉이 끊기지 않습니다. 캔틸레버형은 저하중·저속에, 헬리컬 코일형은 중~고하중과 회전용에 주로 사용합니다.',
-      principleEn:'A lip-shaped jacket is machined from a low-friction, chemically resistant polymer such as PTFE or UHMWPE, with a metal spring (17-4 stainless, cobalt-nickel or Inconel, among others) fitted inside it. Because the spring continuously pushes the lip against the mating surface, sealing contact is maintained even under cryogenic cold, high heat or high vacuum — conditions where the polymer\'s own elasticity alone would not be enough. Cantilever springs suit low-load, low-speed duty; helical-wound coil springs handle medium-to-high loads and rotary motion.',
+      dko:'PTFE·UHMWPE·PEEK 등 저마찰·고내화학성 폴리머 자켓 내부에 스테인리스강·Elgiloy®·Hastelloy®·Inconel® 등 금속 스프링을 삽입해, 스프링 하중만으로 극저온부터 극고온, 고진공, 강산·강알칼리 환경까지 일정한 밀봉력을 유지하는 씰입니다. 캔틸레버·헬리컬 와운드·유니디렉셔널·더블 와운드·솔리드 콘택트·에칭 등 하중 특성이 다른 6가지 스프링 형태를 적용부(정적·동적, 반경·축방향)에 맞춰 선정하며, 자켓 재질과 스프링 합금도 매체·압력·온도 조건에 따라 개별 구성할 수 있습니다. 반도체·항공우주·수소·극저온 설비 등 오링·립씰이 한계를 보이는 극한 조건에 적합합니다.',
+      den:'A metal spring — stainless steel, Elgiloy®, Hastelloy® or Inconel®, among others — energizes a low-friction, chemically resistant polymer jacket (PTFE, UHMWPE or PEEK) so that spring load alone maintains constant sealing force from cryogenic cold to extreme heat, high vacuum, and strong acid or alkali environments. Six spring geometries — cantilever, helical wound, unidirectional, double wrapped, solid contact and etched — each with different load characteristics, are selected to match the application (static or dynamic, radial or axial), and jacket material and spring alloy can each be configured separately for the specific media, pressure and temperature. Suited to semiconductor, aerospace, hydrogen and cryogenic equipment — extreme conditions where O-rings or lip seals reach their limits.',
+      mat:['PTFE','UHMWPE','PEEK','스테인리스강·Elgiloy®·Hastelloy®·Inconel® 스프링'],
+      principleKo:'PTFE·UHMWPE·PEEK 등 저마찰·고내화학성 폴리머로 립(lip) 형태의 자켓을 정밀 가공하고, 그 내부에 스테인리스강·Elgiloy®·Hastelloy®·Inconel® 등 금속 스프링을 삽입한 구조입니다. 스프링이 립을 상대 표면 쪽으로 지속적으로 밀어주기 때문에, 폴리머 자체의 탄성만으로는 대응하기 어려운 극저온·극고온·고진공 조건에서도 밀봉 접촉이 끊기지 않습니다. 스프링은 하중 특성에 따라 캔틸레버·헬리컬 와운드·유니디렉셔널·더블 와운드·솔리드 콘택트·에칭 등 6가지 형태로 나뉘며, 저하중·저속의 동적 씰링에는 캔틸레버형을, 정적이거나 엄격한 씰링이 요구되는 조건에는 헬리컬 와운드·솔리드 콘택트형을 주로 적용합니다. 자켓 재질과 스프링 합금은 매체·압력·온도 조건에 맞춰 별도로 구성하며, 상세 선정 기준은 아래 설계·자켓재질·금속재질 탭에서 확인하실 수 있습니다.',
+      principleEn:'A lip-shaped jacket is precision-machined from a low-friction, chemically resistant polymer — PTFE, UHMWPE or PEEK — with a metal spring such as stainless steel, Elgiloy®, Hastelloy® or Inconel® fitted inside it. Because the spring continuously pushes the lip against the mating surface, sealing contact is maintained even under cryogenic cold, high heat or high vacuum — conditions where the polymer\'s own elasticity alone would not be enough. Springs come in six geometries with different load characteristics — cantilever, helical wound, unidirectional, double wrapped, solid contact and etched — with cantilever springs typically used for low-load, low-speed dynamic sealing and helical-wound or solid-contact springs for static or especially demanding sealing duty. Jacket material and spring alloy are each configured separately to match the media, pressure and temperature — see the Design, Jacket Material and Spring Alloys tabs below for detailed selection guidance.',
       funcMotion:{
         titleKo:'씰 작동 및 모션', titleEn:'Seal Function and Motion',
         paragraphs:[
@@ -1011,7 +1010,7 @@
       return '<tr>' + r.map(function(cell,i){
         var cls = i===0 ? ' class="mname"' : ((cols[i] && cols[i].short) ? ' class="mtemp"' : '');
         if(typeof cell === 'string') return '<td'+cls+'>'+cell+'</td>';
-        if(cell && cell.img) return '<td class="mimg"><img src="'+cell.img+'" alt="'+(cell.alt||'')+'" loading="lazy"></td>';
+        if(cell && cell.img) return '<td class="mimg"><img src="'+cell.img+'" alt="'+(cell.alt||'')+'" loading="lazy">'+(cell.ko ? '<div class="mimglabel"><span class="ko">'+cell.ko+'</span><span class="en">'+cell.en+'</span></div>' : '')+'</td>';
         return '<td'+cls+'><span class="ko">'+cell.ko+'</span><span class="en">'+cell.en+'</span></td>';
       }).join('') + '</tr>';
     }).join('');
