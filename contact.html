@@ -79,25 +79,10 @@
   .crumb a:hover{color:#fff}
 
   .cwrap{padding:56px 0 92px}
-  .cgrid{display:grid;grid-template-columns:340px 1fr;gap:34px;align-items:start}
-
-  /* Info card */
-  .cinfo{border:1px solid var(--line);border-radius:var(--radius);background:#fff;overflow:hidden}
-  .cinfo .ci-h{background:var(--navy);color:#fff;padding:22px 24px}
-  .cinfo .ci-h .en-s{color:var(--sky);font-weight:700;font-size:12.5px;letter-spacing:.05em;margin-bottom:4px}
-  .cinfo .ci-h h3{font-size:19px;font-weight:800}
-  .ci-list{padding:6px 0}
-  .ci-item{display:flex;gap:14px;padding:16px 24px;border-top:1px solid var(--line)}
-  .ci-item:first-child{border-top:none}
-  .ci-item .ic{width:38px;height:38px;flex:none;border-radius:10px;background:var(--bg-soft);display:flex;align-items:center;justify-content:center;font-size:17px;color:var(--sky-d)}
-  .ci-item .tx .lbl{font-size:12px;color:var(--muted);font-weight:700;letter-spacing:.03em;margin-bottom:2px}
-  .ci-item .tx a, .ci-item .tx span.val{color:var(--navy);font-weight:700;font-size:15px;display:block}
-  .ci-item .tx .sub{color:var(--muted);font-size:13px;margin-top:2px;line-height:1.6}
-  .ci-cta{padding:18px 24px 24px;display:flex;flex-direction:column;gap:10px}
-  .ci-cta .btn{width:100%;text-align:center}
+  .cgrid{max-width:860px;margin:0 auto}
 
   /* Form */
-  .cform{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:32px 34px}
+  .cform{border:1px solid var(--line);border-radius:var(--radius);background:#fff;padding:38px 42px}
   .cform h2{font-size:22px;color:var(--navy);font-weight:800;margin-bottom:6px}
   .cform .lead{color:var(--muted);font-size:14.5px;margin-bottom:26px;line-height:1.7}
   .frow{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
@@ -108,22 +93,34 @@
     width:100%;border:1px solid var(--line);border-radius:10px;padding:11px 14px;font-size:14.5px;font-family:inherit;color:var(--navy);background:#fff;transition:.15s}
   .fgroup input:focus, .fgroup select:focus, .fgroup textarea:focus{outline:none;border-color:var(--sky);box-shadow:0 0 0 3px rgba(91,172,224,.15)}
   .fgroup textarea{resize:vertical;min-height:130px}
+
+  /* File attach */
+  .ffile{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+  .ffile-btn{flex:none;border:none;border-radius:10px;background:var(--navy);color:#fff;font-weight:700;font-size:14px;padding:11px 20px;cursor:pointer;transition:.15s}
+  .ffile-btn:hover{background:var(--navy-2)}
+  .ffile-name{color:var(--muted);font-size:14px}
+  .ffile input[type=file]{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;padding:0}
+  .ffile-note{color:var(--muted);font-size:12.5px;margin-top:8px;line-height:1.6}
+
+  /* Consent */
+  .fconsent{display:flex;align-items:center;gap:9px;font-size:14px;color:var(--navy);margin-top:24px}
+  .fconsent input[type=checkbox]{width:17px;height:17px;flex:none;accent-color:var(--sky-d)}
+  .fconsent a{color:var(--sky-d);font-weight:700;text-decoration:underline;cursor:pointer}
+  .fconsent-body{display:none;margin-top:10px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:14px 16px;color:var(--muted);font-size:13px;line-height:1.7}
+  .fconsent-body.show{display:block}
+
   .fsubmit{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-top:22px}
   .fnote{color:var(--muted);font-size:13px;line-height:1.6}
   .fok{display:none;margin-top:18px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:var(--navy);font-size:14px;font-weight:600}
   .fok.show{display:block}
 
   @media(max-width:900px){
-    .cgrid{grid-template-columns:1fr}
     .frow{grid-template-columns:1fr}
     .cform{padding:26px 22px}
     .pbanner{padding:52px 0 40px}
   }
   @media(max-width:480px){
     .cform{padding:20px 16px}
-    .ci-h{padding:18px 20px}
-    .ci-item{padding:14px 20px}
-    .ci-cta{padding:16px 20px 20px}
   }
 
   .faq{max-width:860px;margin:0 auto}
@@ -172,59 +169,9 @@
 <section class="cwrap">
   <div class="wrap cgrid">
 
-    <!-- INFO CARD -->
-    <div class="cinfo reveal">
-      <div class="ci-h">
-        <div class="en-s">SEALSTAR CO., LTD.</div>
-        <h3><span class="ko">(주)씰스타 연락처</span><span class="en">Contact Information</span></h3>
-      </div>
-      <div class="ci-list">
-        <div class="ci-item">
-          <div class="ic">☎</div>
-          <div class="tx">
-            <div class="lbl"><span class="ko">전화</span><span class="en">Phone</span></div>
-            <a href="tel:0226376200">02-2637-6200</a>
-          </div>
-        </div>
-        <div class="ci-item">
-          <div class="ic">🖨</div>
-          <div class="tx">
-            <div class="lbl"><span class="ko">팩스</span><span class="en">Fax</span></div>
-            <span class="val">02-2634-0482</span>
-          </div>
-        </div>
-        <div class="ci-item">
-          <div class="ic">✉</div>
-          <div class="tx">
-            <div class="lbl"><span class="ko">이메일</span><span class="en">Email</span></div>
-            <a href="mailto:info@sealstar.com">info@sealstar.com</a>
-            <a href="mailto:taehwa@sealstar.com">taehwa@sealstar.com</a>
-          </div>
-        </div>
-        <div class="ci-item">
-          <div class="ic">📍</div>
-          <div class="tx">
-            <div class="lbl"><span class="ko">주소</span><span class="en">Address</span></div>
-            <span class="val"><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></span>
-          </div>
-        </div>
-        <div class="ci-item">
-          <div class="ic">🕐</div>
-          <div class="tx">
-            <div class="lbl"><span class="ko">영업시간</span><span class="en">Business Hours</span></div>
-            <span class="val"><span class="ko">평일 09:00 – 18:00 (주말·공휴일 휴무)</span><span class="en">Mon–Fri 09:00–18:00 (closed weekends & holidays)</span></span>
-          </div>
-        </div>
-      </div>
-      <div class="ci-cta">
-        <a href="tel:0226376200" class="btn btn-primary">☎ <span class="ko">전화 문의</span><span class="en">Call Us</span></a>
-        <a href="mailto:info@sealstar.com" class="btn btn-ghost"><span class="ko">이메일 보내기</span><span class="en">Send an Email</span></a>
-      </div>
-    </div>
-
     <!-- FORM -->
     <div class="cform reveal">
-      <h2><span class="ko">견적 및 제품 문의</span><span class="en">Request a Quote</span></h2>
+      <h2><span class="ko">온라인 문의</span><span class="en">Online Inquiry</span></h2>
       <p class="lead"><span class="ko">아래 양식을 작성해 제출하시면, 입력하신 내용이 담당자 이메일로 전달될 수 있도록 메일 작성 화면이 열립니다. 사양·도면·수량을 함께 알려주시면 더 빠르고 정확한 답변이 가능합니다.</span><span class="en">Fill in the form and submit — it will open your email app with the details pre-filled, ready to send to our team. Including specs, drawings and quantity helps us respond faster and more accurately.</span></p>
 
       <form id="cform">
@@ -234,49 +181,64 @@
             <input type="text" id="f-name" required />
           </div>
           <div class="fgroup">
-            <label><span class="ko">회사명</span><span class="en">Company</span></label>
-            <input type="text" id="f-company" />
+            <label><span class="ko">문의 제품/분야</span><span class="en">Product / Area of Interest</span></label>
+            <select id="f-topic">
+              <option value=""><span class="ko">선택 안 함</span></option>
+              <option value="오링/O-Ring">오링 (O-Ring)</option>
+              <option value="테프론캡슐오링/Teflon Capsule O-Ring">테프론캡슐오링 (Teflon Capsule O-Ring)</option>
+              <option value="퍼플러오링/Perfluoro O-Ring (FFKM)">퍼플러오링 (Perfluoro O-Ring, FFKM)</option>
+              <option value="비규격연결오링/Non-Standard Vulc'd O-Ring">비규격연결오링 (Non-Standard Vulc'd O-Ring)</option>
+              <option value="쿼드링/Quad-Ring · X-Ring">쿼드링 (Quad-Ring / X-Ring)</option>
+              <option value="ED링/ED-Ring">ED링 (ED-Ring)</option>
+              <option value="본드씰/Bonded Seal">본드씰 (Bonded Seal)</option>
+              <option value="유공압씰/Hydraulic&Pneumatic Seal">유공압씰 (Hydraulic &amp; Pneumatic Seal)</option>
+              <option value="스프링에너자이드씰/Spring-Energized Seal">스프링에너자이드씰 (Spring-Energized Seal)</option>
+              <option value="립씰/Lip Seal">립씰 (Lip Seal)</option>
+              <option value="피크(PEEK)/PEEK">피크 (PEEK)</option>
+              <option value="오일씰/Oil Seal">오일씰 (Oil Seal)</option>
+              <option value="피스톤링/Piston Ring">피스톤링 (Piston Ring)</option>
+              <option value="베어링아이솔레이터/Bearing Isolator (BPS)">베어링아이솔레이터 (Bearing Isolator, BPS)</option>
+              <option value="가공씰/Machined Seal">가공씰 (Machined Seal)</option>
+              <option value="금형제작품/Molded Rubber & Urethane Products">금형제작품 (Molded Rubber &amp; Urethane Products)</option>
+              <option value="ACM베어링/ACM Bearing">ACM베어링 (ACM Bearing)</option>
+              <option value="메카니컬씰/Mechanical Seal">메카니컬씰 (Mechanical Seal)</option>
+              <option value="자석필터/Magnetic Filter">자석필터 (Magnetic Filter)</option>
+              <option value="기타/Other">기타 (Other)</option>
+            </select>
           </div>
         </div>
         <div class="frow">
           <div class="fgroup">
-            <label><span class="ko">이메일</span><span class="en">Email</span><span class="req">*</span></label>
-            <input type="email" id="f-email" required />
-          </div>
-          <div class="fgroup">
             <label><span class="ko">연락처</span><span class="en">Phone</span></label>
             <input type="tel" id="f-phone" />
           </div>
+          <div class="fgroup">
+            <label><span class="ko">이메일</span><span class="en">Email</span><span class="req">*</span></label>
+            <input type="email" id="f-email" required />
+          </div>
         </div>
         <div class="fgroup">
-          <label><span class="ko">문의 제품/분야</span><span class="en">Product / Area of Interest</span></label>
-          <select id="f-topic">
-            <option value=""><span class="ko">선택 안 함</span></option>
-            <option value="오링/O-Ring">오링 (O-Ring)</option>
-            <option value="테프론캡슐오링/Teflon Capsule O-Ring">테프론캡슐오링 (Teflon Capsule O-Ring)</option>
-            <option value="퍼플러오링/Perfluoro O-Ring (FFKM)">퍼플러오링 (Perfluoro O-Ring, FFKM)</option>
-            <option value="비규격연결오링/Non-Standard Vulc'd O-Ring">비규격연결오링 (Non-Standard Vulc'd O-Ring)</option>
-            <option value="쿼드링/Quad-Ring · X-Ring">쿼드링 (Quad-Ring / X-Ring)</option>
-            <option value="ED링/ED-Ring">ED링 (ED-Ring)</option>
-            <option value="본드씰/Bonded Seal">본드씰 (Bonded Seal)</option>
-            <option value="유공압씰/Hydraulic&Pneumatic Seal">유공압씰 (Hydraulic &amp; Pneumatic Seal)</option>
-            <option value="스프링에너자이드씰/Spring-Energized Seal">스프링에너자이드씰 (Spring-Energized Seal)</option>
-            <option value="립씰/Lip Seal">립씰 (Lip Seal)</option>
-            <option value="피크(PEEK)/PEEK">피크 (PEEK)</option>
-            <option value="오일씰/Oil Seal">오일씰 (Oil Seal)</option>
-            <option value="피스톤링/Piston Ring">피스톤링 (Piston Ring)</option>
-            <option value="베어링아이솔레이터/Bearing Isolator (BPS)">베어링아이솔레이터 (Bearing Isolator, BPS)</option>
-            <option value="가공씰/Machined Seal">가공씰 (Machined Seal)</option>
-            <option value="금형제작품/Molded Rubber & Urethane Products">금형제작품 (Molded Rubber &amp; Urethane Products)</option>
-            <option value="ACM베어링/ACM Bearing">ACM베어링 (ACM Bearing)</option>
-            <option value="메카니컬씰/Mechanical Seal">메카니컬씰 (Mechanical Seal)</option>
-            <option value="자석필터/Magnetic Filter">자석필터 (Magnetic Filter)</option>
-            <option value="기타/Other">기타 (Other)</option>
-          </select>
+          <label><span class="ko">제목</span><span class="en">Subject</span><span class="req">*</span></label>
+          <input type="text" id="f-title" required placeholder="문의 제목을 입력해주세요." />
         </div>
         <div class="fgroup">
-          <label><span class="ko">문의 내용</span><span class="en">Message</span><span class="req">*</span></label>
+          <label><span class="ko">문의내용</span><span class="en">Message</span><span class="req">*</span></label>
           <textarea id="f-msg" required placeholder="사양·도면·수량 등을 자유롭게 적어주세요."></textarea>
+        </div>
+        <div class="fgroup">
+          <label><span class="ko">첨부파일</span><span class="en">Attachment</span></label>
+          <div class="ffile">
+            <button type="button" class="ffile-btn" onclick="document.getElementById('f-file').click()"><span class="ko">파일첨부</span><span class="en">Attach File</span></button>
+            <span class="ffile-name" id="f-file-name"><span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span></span>
+            <input type="file" id="f-file" />
+          </div>
+          <p class="ffile-note"><span class="ko">※ 메일 작성 화면에는 첨부파일이 자동으로 실리지 않습니다. 메일 앱이 열리면 이 파일을 다시 첨부해 보내주세요.</span><span class="en">※ Attachments can't be carried into the email draft automatically — please re-attach this file once your mail app opens.</span></p>
+        </div>
+
+        <label class="fconsent"><input type="checkbox" id="f-consent" required /><span class="ko">개인정보취급방침에 동의합니다.</span><span class="en">I agree to the privacy policy.</span> <a onclick="var b=document.getElementById('f-consent-body');b.classList.toggle('show');return false;"><span class="ko">[내용보기]</span><span class="en">[View]</span></a></label>
+        <div class="fconsent-body" id="f-consent-body">
+          <span class="ko">(주)씰스타는 문의 답변을 위해 이름, 연락처, 이메일, 문의내용(및 첨부파일)을 수집하며, 답변 완료 후 관련 법령에 따른 보관기간 경과 시 파기합니다. 위 개인정보 수집·이용에 동의하지 않으실 경우 온라인 문의 접수가 제한될 수 있습니다.</span>
+          <span class="en">SEALSTAR collects your name, phone, email and message (and any attachment) solely to respond to your inquiry, and deletes it after the retention period required by law. Declining consent may limit our ability to process your online inquiry.</span>
         </div>
 
         <div class="fsubmit">
@@ -366,7 +328,6 @@
         <a><span class="ko">서울특별시 영등포구 국회대로54길 53-6, 1층</span><span class="en">53-6, Gukhoe-daero 54-gil, Yeongdeungpo-gu, Seoul</span></a>
         <a href="tel:0226376200">Tel. 02-2637-6200 · Fax. 02-2634-0482</a>
         <a href="mailto:info@sealstar.com">info@sealstar.com</a>
-        <a href="mailto:taehwa@sealstar.com">taehwa@sealstar.com</a>
       </div>
     </div>
     <div class="foot-bottom">
@@ -381,26 +342,43 @@
 (function(){
   var form = document.getElementById('cform');
   if(!form) return;
+
+  var fileInput = document.getElementById('f-file');
+  if(fileInput){
+    fileInput.addEventListener('change', function(){
+      var nameEl = document.getElementById('f-file-name');
+      if(fileInput.files && fileInput.files.length){
+        nameEl.textContent = fileInput.files[0].name;
+      } else {
+        nameEl.innerHTML = '<span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span>';
+      }
+    });
+  }
+
   form.addEventListener('submit', function(e){
     e.preventDefault();
     var name = document.getElementById('f-name').value.trim();
-    var company = document.getElementById('f-company').value.trim();
     var email = document.getElementById('f-email').value.trim();
     var phone = document.getElementById('f-phone').value.trim();
     var topic = document.getElementById('f-topic').value;
+    var title = document.getElementById('f-title').value.trim();
     var msg = document.getElementById('f-msg').value.trim();
+    var file = (fileInput && fileInput.files && fileInput.files[0]) ? fileInput.files[0].name : '';
 
-    var subject = '[씰스타 견적문의] ' + (topic || '일반 문의') + ' - ' + name;
+    var subject = '[씰스타 문의] ' + title;
     var bodyLines = [
       '이름: ' + name,
-      '회사명: ' + (company || '-'),
       '이메일: ' + email,
       '연락처: ' + (phone || '-'),
       '문의 제품/분야: ' + (topic || '-'),
+      '제목: ' + title,
       '',
-      '문의 내용:',
+      '문의내용:',
       msg
     ];
+    if(file){
+      bodyLines.push('', '(첨부파일 "' + file + '" 은 자동으로 첨부되지 않으니 메일 작성 화면에서 다시 첨부해주세요.)');
+    }
     var mailto = 'mailto:info@sealstar.com'
       + '?subject=' + encodeURIComponent(subject)
       + '&body=' + encodeURIComponent(bodyLines.join('\n'));
