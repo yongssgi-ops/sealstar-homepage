@@ -96,10 +96,6 @@
   .modal .x{position:absolute;top:14px;right:18px;font-size:30px;color:#fff;cursor:pointer;line-height:1;
     text-shadow:0 1px 6px rgba(0,0,0,.5)}
 
-  .admin-note{margin-top:40px;background:var(--bg-soft);border:1px dashed var(--line);border-radius:12px;padding:18px 22px;color:var(--muted);font-size:13.5px}
-  .admin-note b{color:var(--navy)}
-  code{background:#eef1f5;padding:1px 6px;border-radius:5px;font-size:12.5px}
-
   @media(max-width:900px){
     .ngrid{grid-template-columns:1fr 1fr}
     .pbanner{padding:52px 0 40px}
@@ -159,12 +155,6 @@
       <button data-f="notice" onclick="NB.filter('notice',this)"><span class="ko">공지</span><span class="en">Notice</span></button>
     </div>
     <div class="ngrid" id="ngrid"><!-- rendered by JS --></div>
-
-    <div class="admin-note">
-      <b><span class="ko">＊ 게시글 추가 방법</span><span class="en">＊ How to add posts</span></b>
-      <span class="ko"> — <code>js/news.js</code> 파일 상단의 <code>POSTS</code> 목록에 항목을 하나 추가하면 자동으로 게시됩니다. 이미지는 <code>images/</code> 폴더에 넣고 경로만 지정하세요.</span>
-      <span class="en"> — Add an item to the <code>POSTS</code> array at the top of <code>js/news.js</code>; it appears automatically. Place images in <code>images/</code> and set the path.</span>
-    </div>
   </div>
 </section>
 
