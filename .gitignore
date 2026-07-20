@@ -1,6 +1,8 @@
 node_modules/
 .DS_Store
 Thumbs.db
+.dev.vars
+.wrangler/
 제품소개용 카탈로그자료/
 립씰사진.png
 베어링아이솔레이터사진.png
