@@ -229,102 +229,102 @@
       cats:[
         { key:'rod', ko:'로드씰', en:'Rod Seals', brand:'KASTAS', dko:'실린더 로드(축) 외경을 따라 오일이 누출되지 않도록 막는 1차 밀봉 부품입니다.', den:'The primary seal that prevents oil from leaking along the cylinder rod (shaft) surface.',
           rows:[
-            ['FR200',{ko:'저마찰 로드씰',en:'Low Friction Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-35 / +100','0.5'],
-            ['XT200',{ko:'내압출 로드씰',en:'Extrusion Resistant Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-35 / +125','0.5'],
-            ['K01',{ko:'로드 패킹',en:'Rod Packing'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','0.5'],
-            ['K22',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤150','-30 / +105','0.5'],
-            ['K29',{ko:'버퍼씰',en:'Buffer Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5'],
-            ['K31',{ko:'고하중 로드씰',en:'Heavy Duty Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤630','-30 / +100','0.5'],
-            ['K32',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5'],
-            ['K33',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5'],
-            ['K34',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤700','-30 / +105','0.5'],
-            ['K35',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','5.0'],
-            ['K37',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','0.5'],
-            ['K38',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5'],
-            ['K97',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'HNBR','≤250','-30 / +150','0.5'],
-            ['K39',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤250','-30 / +100','0.5']
+            ['FR200',{ko:'저마찰 로드씰',en:'Low Friction Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-35 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/fr200-low-friction-rod-seal'],
+            ['XT200',{ko:'내압출 로드씰',en:'Extrusion Resistant Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-35 / +125','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/xt200-extrusion-resistant-rod-seal-1-'],
+            ['K01',{ko:'로드 패킹',en:'Rod Packing'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k01-rod-packing-1'],
+            ['K22',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤150','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k22-rod-seal-1'],
+            ['K29',{ko:'버퍼씰',en:'Buffer Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k29-buffer-seal-1'],
+            ['K31',{ko:'고하중 로드씰',en:'Heavy Duty Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤630','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k31-heavy-duty-rod-seal-1'],
+            ['K32',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k32-rod-seal-1'],
+            ['K33',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k33-rod-seal-1'],
+            ['K34',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤700','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k34-rod-seal-1'],
+            ['K35',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','5.0','https://www.kastas.com/en/products/hydraulic-rod-seals/k35-rod-seal-1'],
+            ['K37',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k37-rod-seal-1'],
+            ['K38',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k38-rod-seal-1'],
+            ['K97',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'HNBR','≤250','-30 / +150','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k97-rod-seal-1'],
+            ['K39',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤250','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-rod-seals/k39-rod-seal-1']
           ] },
         { key:'piston', ko:'피스톤씰', en:'Piston Seals', brand:'KASTAS', dko:'피스톤과 실린더 보어 사이를 밀봉해 양쪽 챔버의 압력을 분리합니다.', den:'Seals the gap between piston and cylinder bore, separating pressure between the two chambers.',
           rows:[
-            ['XT300',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-35 / +125','0.5'],
-            ['K03',{ko:'피스톤 패킹',en:'Piston Packing'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','0.5'],
-            ['K15',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤250','-30 / +100','0.5'],
-            ['K16',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','0.5'],
-            ['K17',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','5.0'],
-            ['K19',{ko:'고하중 피스톤씰',en:'Heavy Duty Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','1.50'],
-            ['K23',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤150','-30 / +105','0.5'],
-            ['K26',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤60','-30 / +105','0.5'],
-            ['K49',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU·NBR','≤400','-30 / +100','0.5'],
-            ['K41',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','5.0'],
-            ['K42',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤700','-30 / +105','0.5'],
-            ['K48',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤700','-30 / +100','0.3'],
-            ['K501',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PA·NBR','≤500','-30 / +105','1.0'],
-            ['K502',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤500','-30 / +100','0.5'],
-            ['K503',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤500','-30 / +100','0.5'],
-            ['K504',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤400','-30 / +100','0.5'],
-            ['K505',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤500','-30 / +100','0.5'],
-            ['K518',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤400','-30 / +100','0.5'],
-            ['K518X',{ko:'고압 콤팩트 피스톤씰',en:'HP Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·PA','≤400','-30 / +100','0.5'],
-            ['K753',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤400','-30 / +105','2.0'],
-            ['K757',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤400','-30 / +105','2.0'],
-            ['K515',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU·NBR','≤400','-30 / +100','0.5']
+            ['XT300',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-35 / +125','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/xt300-piston-seal-1'],
+            ['K03',{ko:'피스톤 패킹',en:'Piston Packing'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k03-piston-packing'],
+            ['K15',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤250','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k15-piston-seal-1'],
+            ['K16',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k16-compact-piston-seal-1'],
+            ['K17',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','5.0','https://www.kastas.com/en/products/hydraulic-piston-seals/k17-piston-seal-1'],
+            ['K19',{ko:'고하중 피스톤씰',en:'Heavy Duty Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','1.50','https://www.kastas.com/en/products/hydraulic-piston-seals/k19-double-acting-compact-piston-seal-1'],
+            ['K23',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤150','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k23-piston-seal-1'],
+            ['K26',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤60','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k26-piston-seal-1'],
+            ['K49',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU·NBR','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k49-piston-seal-1'],
+            ['K41',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +105','5.0','https://www.kastas.com/en/products/hydraulic-piston-seals/k41-piston-seal-1'],
+            ['K42',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤700','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k42-compact-piston-seal-1'],
+            ['K48',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤700','-30 / +100','0.3','https://www.kastas.com/en/products/hydraulic-piston-seals/k48-heavy-duty-piston-seal-1'],
+            ['K501',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PA·NBR','≤500','-30 / +105','1.0','https://www.kastas.com/en/products/hydraulic-piston-seals/k501-piston-seal-1'],
+            ['K502',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤500','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k502-compact-piston-seal-1'],
+            ['K503',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤500','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k503-compact-piston-seal-1'],
+            ['K504',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k504-compact-piston-seal-1'],
+            ['K505',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·FABRIC·POM','≤500','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k505-compact-piston-seal-1'],
+            ['K518',{ko:'콤팩트 피스톤씰',en:'Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·POM','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k518-k518x-compact-piston-seals-1'],
+            ['K518X',{ko:'고압 콤팩트 피스톤씰',en:'HP Compact Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·TPE·PA','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k518-k518x-compact-piston-seals-1'],
+            ['K753',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤400','-30 / +105','2.0','https://www.kastas.com/en/products/hydraulic-piston-seals/k753-piston-seal-1'],
+            ['K757',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤400','-30 / +105','2.0','https://www.kastas.com/en/products/hydraulic-piston-seals/k757-piston-seal-1'],
+            ['K515',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU·NBR','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-seals/k515-hydraulic-piston-seals-en']
           ] },
         { key:'pistonrod', ko:'로드·피스톤 겸용', en:'Piston-Rod Seals', brand:'KASTAS', dko:'피스톤씰과 로드씰 기능을 하나의 프로파일로 겸하는 콤팩트 설계입니다.', den:'A compact profile that combines piston-seal and rod-seal function in a single part.',
           rows:[
-            ['K21',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'NBR','≤150','-30 / +105','0.5'],
-            ['K98',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤400','-30 / +100','0.5'],
-            ['K114',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤400','-30 / +105','0.5'],
-            ['K920',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5'],
-            ['K921',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5'],
-            ['K922',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5']
+            ['K21',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'NBR','≤150','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k21-piston-rod-seal'],
+            ['K98',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤400','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k98-piston-rod-seal-1'],
+            ['K114',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤400','-30 / +105','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k114-piston-rod-seal-1'],
+            ['K920',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k920-piston-rod-seal'],
+            ['K921',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k921-piston-rod-seal'],
+            ['K922',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU·NBR','≤350','-30 / +100','0.5','https://www.kastas.com/en/products/hydraulic-piston-rod-seals/k922-piston-rod-seal']
           ] },
         { key:'skfrod', ko:'로드씰', en:'Rod Seals', brand:'SKF', dko:'실린더 로드(축) 외경을 따라 오일이 누출되지 않도록 막는 1차 밀봉 부품입니다.', den:'The primary seal that prevents oil from leaking along the cylinder rod (shaft) surface.',
           rows:[
-            ['S1S',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5'],
-            ['ZBR',{ko:'버퍼 로드씰',en:'Buffer Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5'],
-            ['DZR',{ko:'양방향 로드씰',en:'Double-acting Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5'],
-            ['RBB',{ko:'로드 버퍼씰',en:'Rod Buffer Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5'],
-            ['S9B',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +110','0.5'],
-            ['RSB',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5']
+            ['S1S',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/polyurethane-u-cup-rod-seals/s1s'],
+            ['ZBR',{ko:'버퍼 로드씰',en:'Buffer Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/polyurethane-u-cup-rod-seals/zbr'],
+            ['DZR',{ko:'양방향 로드씰',en:'Double-acting Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/hybrid-rod-seals/dzr'],
+            ['RBB',{ko:'로드 버퍼씰',en:'Rod Buffer Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/polyurethane-u-cup-buffer-seals/rbb'],
+            ['S9B',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/buffer-seals-incorporating-slide-rings/s9b'],
+            ['RSB',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/buffer-seals-incorporating-slide-rings/rsb']
           ] },
         { key:'skfpiston', ko:'피스톤씰', en:'Piston Seals', brand:'SKF', dko:'피스톤과 실린더 보어 사이를 밀봉해 양쪽 챔버의 압력을 분리합니다. 로드·피스톤 겸용 프로파일도 포함합니다.', den:'Seals the gap between piston and cylinder bore. Includes combined piston-rod profiles.',
           rows:[
-            ['MPV',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5'],
-            ['CPV',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5'],
-            ['GH',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0'],
-            ['APR',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0'],
-            ['LCP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0'],
-            ['LTP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +110','0.5'],
-            ['CUT',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5'],
-            ['UNP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5'],
-            ['PTB',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE','≤400','-30 / +110','2.0'],
-            ['STD',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5'],
-            ['DZ',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5']
+            ['MPV',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/polyurethane-slide-rings/mpv'],
+            ['CPV',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/polyurethane-slide-rings/cpv'],
+            ['GH',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/ptfe-slide-rings/gh'],
+            ['APR',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/ptfe-slide-rings/apr'],
+            ['LCP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE','≤400','-30 / +110','2.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/anti-extrusion-rings/lcp'],
+            ['LTP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/anti-extrusion-rings/ltp'],
+            ['CUT',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/rigid-split-slide-rings/cut'],
+            ['UNP',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/piston-seals/single-acting-piston-seals/unp-profile-data'],
+            ['PTB',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE','≤400','-30 / +110','2.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/energized-u-cup-rod-seals/ptb'],
+            ['STD',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/energized-u-cup-rod-seals/std'],
+            ['DZ',{ko:'로드·피스톤씰',en:'Piston-Rod Seal'},{ko:'로드·피스톤',en:'Piston Rod'},'PU','≤400','-30 / +110','0.5','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/rod-and-buffer-seals/hybrid-rod-seals/dz']
           ] },
         { key:'static', ko:'스태틱 씰', en:'Static Seals', brand:'KASTAS', dko:'고정부(포트·커넥터 등)에 사용하는 정적 밀봉·백업링입니다.', den:'Static seals and back-up rings used at fixed connections such as ports and fittings.',
           rows:[
-            ['K800',{ko:'백업링',en:'Back-up Ring'},{ko:'로드',en:'Rod'},'X-Tone','≤600','-30 / +120','1.0'],
-            ['K81',{ko:'백업링',en:'Back-up Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'TPE','≤300','-40 / +100','1.0'],
-            ['K82',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—'],
-            ['K83',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—'],
-            ['K84',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—'],
-            ['K85',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤500','-35 / +110','—'],
-            ['K86',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤500','-40 / +100','—'],
-            ['KO',{ko:'오링',en:'O-Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'NBR','≤63','-30 / +105','0.5'],
-            ['K87',{ko:'유체 커넥터 씰',en:'Fluid Connector Seal'},{ko:'—',en:'—'},'NBR','≤400','-30 / +105','—'],
-            ['K88',{ko:'유체 커넥터 씰',en:'Fluid Connector Seal'},{ko:'—',en:'—'},'NBR','≤400','-30 / +105','—'],
-            ['K89',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—']
+            ['K800',{ko:'백업링',en:'Back-up Ring'},{ko:'로드',en:'Rod'},'X-Tone','≤600','-30 / +120','1.0','https://www.kastas.com/en/products/static-sealing-elements/k800-back-up-ring'],
+            ['K81',{ko:'백업링',en:'Back-up Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'TPE','≤300','-40 / +100','1.0','https://www.kastas.com/en/products/static-sealing-elements/k81-back-up-ring-1'],
+            ['K82',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—','https://www.kastas.com/en/products/static-sealing-elements/k82-static-seal-1'],
+            ['K83',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—','https://www.kastas.com/en/products/static-sealing-elements/k83-static-seal-1'],
+            ['K84',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—','https://www.kastas.com/en/products/static-sealing-elements/k84-static-seal-1'],
+            ['K85',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤500','-35 / +110','—','https://www.kastas.com/en/products/static-sealing-elements/k85-static-seal-1'],
+            ['K86',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤500','-40 / +100','—','https://www.kastas.com/en/products/static-sealing-elements/k86-static-seal-1'],
+            ['KO',{ko:'오링',en:'O-Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'NBR','≤63','-30 / +105','0.5','https://www.kastas.com/en/products/static-sealing-elements/ko-o-ring'],
+            ['K87',{ko:'유체 커넥터 씰',en:'Fluid Connector Seal'},{ko:'—',en:'—'},'NBR','≤400','-30 / +105','—','https://www.kastas.com/en/products/static-sealing-elements/k87-fluid-connector-seal-1'],
+            ['K88',{ko:'유체 커넥터 씰',en:'Fluid Connector Seal'},{ko:'—',en:'—'},'NBR','≤400','-30 / +105','—','https://www.kastas.com/en/products/static-sealing-elements/k88-fluid-connector-seal-1'],
+            ['K89',{ko:'스태틱씰',en:'Static Seal'},{ko:'—',en:'—'},'PU','≤600','-35 / +110','—','https://www.kastas.com/en/products/static-sealing-elements/k89-static-seal-1']
           ] },
         { key:'special', ko:'특수 씰', en:'Special Sealing Elements', brand:'KASTAS', dko:'PTFE 복합소재 로드·피스톤씰, V-링, 쉐브론씰 등 특수 조건용 씰입니다.', den:'PTFE-composite rod/piston seals, V-rings, chevron seals and other seals for special duty conditions.',
           rows:[
-            ['K702',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PTFE·NBR','≤300','-30 / +105','5.0'],
-            ['K752',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤300','-30 / +105','5.0'],
-            ['K14',{ko:'V링',en:'V-Ring'},{ko:'—',en:'—'},'NBR','≤0.3','-30 / +105','12.0'],
-            ['K150',{ko:'쉐브론 링',en:'Chevron Ring'},{ko:'로드',en:'Rod'},'Fabric NBR','≤250','-30 / +80','2.0'],
-            ['K151',{ko:'고압 쉐브론씰',en:'HP Chevron Seal'},{ko:'로드',en:'Rod'},'Fabric NBR·POM·PTFE','≤400','-30 / +80','2.0'],
-            ['K152',{ko:'저압 쉐브론씰',en:'LP Chevron Seal'},{ko:'로드',en:'Rod'},'Fabric NBR·POM','≤80','-30 / +80','2.0'],
-            ['K154',{ko:'저압 쉐브론씰',en:'LP Chevron Seal'},{ko:'로드',en:'Rod'},'NBR·Fabric NBR','≤80','-30 / +80','2.0'],
-            ['K155',{ko:'고압 쉐브론씰',en:'HP Chevron Seal'},{ko:'로드',en:'Rod'},'POM·Fabric NBR·PA','≤400','-30 / +80','2.0']
+            ['K702',{ko:'로드씰',en:'Rod Seal'},{ko:'로드',en:'Rod'},'PTFE·NBR','≤300','-30 / +105','5.0','https://www.kastas.com/en/products/rotary-seals/k702-rod-seal'],
+            ['K752',{ko:'피스톤씰',en:'Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤300','-30 / +105','5.0','https://www.kastas.com/en/products/rotary-seals/k752-piston-seal-1'],
+            ['K14',{ko:'V링',en:'V-Ring'},{ko:'—',en:'—'},'NBR','≤0.3','-30 / +105','12.0','https://www.kastas.com/en/products/rotary-seals/k14-v-ring-en'],
+            ['K150',{ko:'쉐브론 링',en:'Chevron Ring'},{ko:'로드',en:'Rod'},'Fabric NBR','≤250','-30 / +80','2.0','https://www.kastas.com/en/products/other-sealing-elements/k150-chevron-ring'],
+            ['K151',{ko:'고압 쉐브론씰',en:'HP Chevron Seal'},{ko:'로드',en:'Rod'},'Fabric NBR·POM·PTFE','≤400','-30 / +80','2.0','https://www.kastas.com/en/products/other-sealing-elements/k151-high-pressure-chevron-seal-1'],
+            ['K152',{ko:'저압 쉐브론씰',en:'LP Chevron Seal'},{ko:'로드',en:'Rod'},'Fabric NBR·POM','≤80','-30 / +80','2.0','https://www.kastas.com/en/products/other-sealing-elements/k152-low-pressure-chevron-seal-1'],
+            ['K154',{ko:'저압 쉐브론씰',en:'LP Chevron Seal'},{ko:'로드',en:'Rod'},'NBR·Fabric NBR','≤80','-30 / +80','2.0','https://www.kastas.com/en/products/other-sealing-elements/k154-low-pressure-chevron-seal-1'],
+            ['K155',{ko:'고압 쉐브론씰',en:'HP Chevron Seal'},{ko:'로드',en:'Rod'},'POM·Fabric NBR·PA','≤400','-30 / +80','2.0','https://www.kastas.com/en/products/other-sealing-elements/k155-high-pressure-chevron-seal-1']
           ] }
       ]
     },
@@ -335,38 +335,38 @@
       cats:[
         { key:'pneurod', ko:'로드씰', en:'Rod Seals', brand:'KASTAS', dko:'공압 실린더 로드용 저마찰 씰입니다.', den:'Low-friction rod seals for pneumatic cylinders.',
           rows:[
-            ['K64',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤16','-30 / +100','1.0'],
-            ['K51',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤16','-30 / +80','1.0'],
-            ['K106',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0'],
-            ['K130',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0'],
-            ['K30',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0'],
-            ['K52',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0'],
-            ['K53',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0'],
-            ['K56',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0'],
-            ['K67',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤10','-30 / +105','1.0'],
-            ['K109',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0'],
-            ['K131',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0'],
-            ['K715',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PTFE·NBR','≤16','-30 / +105','4.0']
+            ['K64',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤16','-30 / +100','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k64-pneumatic-rod-seal-1'],
+            ['K51',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PU','≤16','-30 / +80','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k51-pneumatic-rod-seal-1'],
+            ['K106',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k106-pneumatic-rod-seal-1'],
+            ['K130',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k130-pneumatic-rod-seal-1'],
+            ['K30',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k30-pneumatic-rod-seal'],
+            ['K52',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k52-pneumatic-rod-seal-1'],
+            ['K53',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k53-pneumatic-cushioning-seal-1'],
+            ['K56',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k56-pneumatic-rod-seal-1'],
+            ['K67',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤10','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k67-pneumatic-rod-seal-1'],
+            ['K109',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k109-pneumatic-rod-seal-1'],
+            ['K131',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'NBR','≤16','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k131-pneumatic-rod-seal-1'],
+            ['K715',{ko:'공압 로드씰',en:'Pneumatic Rod Seal'},{ko:'로드',en:'Rod'},'PTFE·NBR','≤16','-30 / +105','4.0','https://www.kastas.com/en/products/pneumatic-rod-seals/k715-pneumatic-rod-seal-1']
           ] },
         { key:'pneupiston', ko:'피스톤씰', en:'Piston Seals', brand:'KASTAS', dko:'공압 실린더 피스톤용 저마찰 씰입니다.', den:'Low-friction piston seals for pneumatic cylinders.',
           rows:[
-            ['K59',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K50',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K162',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0'],
-            ['K25',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤16','-30 / +105','1.0'],
-            ['K54',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K55',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K57',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K58',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤12','-30 / +80','1.0'],
-            ['K61',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·POM·ALU','≤12','-30 / +100','1.0'],
-            ['K62',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K63',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K65',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K66',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K160',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0'],
-            ['K161',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0'],
-            ['K506',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0'],
-            ['K761',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤16','-30 / +105','4.0']
+            ['K59',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k59-pneumatic-piston-seal-1'],
+            ['K50',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k50-pneumatic-piston-seal-1'],
+            ['K162',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k162-pneumatic-piston-seal'],
+            ['K25',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤16','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k25-pneumatic-piston-seal'],
+            ['K54',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k54-pneumatic-piston-seal-1'],
+            ['K55',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k55-pneumatic-piston-seal-1'],
+            ['K57',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k57-pneumatic-piston-seal-1'],
+            ['K58',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤12','-30 / +80','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k58-pneumatic-piston-seal-1'],
+            ['K61',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR·POM·ALU','≤12','-30 / +100','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k61-pneumatic-piston-seal-1'],
+            ['K62',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k62-pneumatic-piston-seal-1'],
+            ['K63',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k63-pneumatic-piston-seal-1'],
+            ['K65',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k65-pneumatic-piston-seal-1'],
+            ['K66',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k66-pneumatic-piston-seal-1'],
+            ['K160',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k160-pneumatic-piston-seal-1'],
+            ['K161',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PU','≤16','-30 / +100','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k161-pneumatic-piston-seal-1'],
+            ['K506',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'NBR','≤12','-30 / +105','1.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k506-pneumatic-piston-seal-1'],
+            ['K761',{ko:'공압 피스톤씰',en:'Pneumatic Piston Seal'},{ko:'피스톤',en:'Piston'},'PTFE·NBR','≤16','-30 / +105','4.0','https://www.kastas.com/en/products/pneumatic-piston-seals/k761-pneumatic-piston-seal-1']
           ] }
       ]
     },
@@ -377,37 +377,37 @@
       cats:[
         { key:'wiper', ko:'와이퍼', en:'Wipers', brand:'KASTAS', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
           rows:[
-            ['K05',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
-            ['K06',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K060',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K07',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K09',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K10',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K11',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'TPE','—','-40 / +120','2.0'],
-            ['K12',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0'],
-            ['K13',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU·STEEL','—','-30 / +100','1.0'],
-            ['K27',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K94',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
-            ['K103',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU·NBR','—','-40 / +100','1.0'],
-            ['K107',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
-            ['K703',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','5.0'],
-            ['K716',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K92',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0'],
-            ['K101',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0'],
-            ['K102',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0'],
-            ['K705',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K706',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0'],
-            ['K606',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0']
+            ['K05',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0','https://www.kastas.com/en/products/wipers/k05-wiper'],
+            ['K06',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k06-wiper-1'],
+            ['K060',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers'],
+            ['K07',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k07-metal-case-wiper-1'],
+            ['K09',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k09-wiper-1'],
+            ['K10',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k10-double-wiper-1'],
+            ['K11',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'TPE','—','-40 / +120','2.0','https://www.kastas.com/en/products/wipers/k11-wiper-1'],
+            ['K12',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0','https://www.kastas.com/en/products/wipers/k12-metal-case-wiper-1'],
+            ['K13',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'PU·STEEL','—','-30 / +100','1.0','https://www.kastas.com/en/products/wipers/k13-metal-case-wiper-1'],
+            ['K27',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k27-double-wiper-1'],
+            ['K94',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0','https://www.kastas.com/en/products/wipers/k94-wiper-1'],
+            ['K103',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU·NBR','—','-40 / +100','1.0','https://www.kastas.com/en/products/wipers/k103-double-wiper-1'],
+            ['K107',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0','https://www.kastas.com/en/products/wipers/k107-double-wiper-1'],
+            ['K703',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','5.0','https://www.kastas.com/en/products/wipers/k703-wiper-1'],
+            ['K716',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0','https://www.kastas.com/en/products/wipers/k716-wiper-1'],
+            ['K92',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR','—','-30 / +105','1.0','https://www.kastas.com/en/products/wipers/k92-metal-case-wiper-1'],
+            ['K101',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-40 / +100','1.0','https://www.kastas.com/en/products/wipers/k101-external-wiper-1'],
+            ['K102',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-35 / +100','1.0','https://www.kastas.com/en/products/wipers/k102-wiper-1'],
+            ['K705',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0','https://www.kastas.com/en/products/wipers/k705-wiper-1'],
+            ['K706',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +105','5.0','https://www.kastas.com/en/products/wipers/k706-wiper-1'],
+            ['K606',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +100','1.0','https://www.kastas.com/en/products/wipers/k606-wiper']
           ] },
         { key:'skfwiper', ko:'와이퍼', en:'Wipers', brand:'SKF', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
           rows:[
-            ['PA',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['MCW',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR·STEEL','—','-30 / +110','1.0'],
-            ['PAD',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['PADV',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['DTW',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['DX',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0'],
-            ['HW',{ko:'스냅인 와이퍼',en:'Snap-in Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0']
+            ['PA',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/press-in/pa'],
+            ['MCW',{ko:'메탈 케이스 와이퍼',en:'Metal Case Wiper'},{ko:'로드',en:'Rod'},'NBR·STEEL','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/press-in/mcw'],
+            ['PAD',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/press-in/pad-padv'],
+            ['PADV',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/press-in/pad-padv'],
+            ['DTW',{ko:'더블 와이퍼',en:'Double Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/snap-in/dtw'],
+            ['DX',{ko:'와이퍼',en:'Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/snap-in/dx'],
+            ['HW',{ko:'스냅인 와이퍼',en:'Snap-in Wiper'},{ko:'로드',en:'Rod'},'PU','—','-30 / +110','1.0','https://www.skf.com/us/products/industrial-seals/hydraulic-seals/wiper-seals/snap-in/hw']
           ] }
       ]
     },
@@ -418,18 +418,18 @@
       cats:[
         { key:'guide', ko:'가이드', en:'Guide Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다.', den:'Low-friction guide elements that support the rod/piston so it never contacts bare metal.',
           rows:[
-            ['K68',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +110','1.0'],
-            ['K69',{ko:'피스톤 가이드 링',en:'Piston Guide Ring'},{ko:'피스톤',en:'Piston'},'POM','—','-40 / +110','1.0'],
-            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
-            ['K75',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic + PTFE','—','-40 / +130','1.0'],
-            ['K78',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic Aramid','—','-40 / +200','1.0'],
-            ['K79',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic·Graphite','—','-40 / +120','5.0'],
-            ['KBT',{ko:'PTFE 브론즈 가이드 스트립',en:'PTFE Bronze Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Bronze','—','-200 / +260','15.0'],
-            ['KKT',{ko:'카본 PTFE 가이드 스트립',en:'Carbon PTFE Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0'],
-            ['KPB',{ko:'폴리에스터 가이드 스트립',en:'Polyester Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0'],
-            ['KSB',{ko:'로드·피스톤 가이드 스트립',en:'Piston-Rod Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic','—','-40 / +120','1.0'],
-            ['K71',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0'],
-            ['K77',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0']
+            ['K68',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +110','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k68-rod-guide-ring'],
+            ['K69',{ko:'피스톤 가이드 링',en:'Piston Guide Ring'},{ko:'피스톤',en:'Piston'},'POM','—','-40 / +110','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k69-piston-guide-ring-1'],
+            ['K73',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k73-piston-rod-guide-ring-1'],
+            ['K75',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic + PTFE','—','-40 / +130','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k75-piston-rod-guide-ring-1'],
+            ['K78',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Phenolic Aramid','—','-40 / +200','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k78-piston-rod-guide-ring-1'],
+            ['K79',{ko:'로드·피스톤 가이드 링',en:'Piston-Rod Guide Ring'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic·Graphite','—','-40 / +120','5.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k79-piston-rod-guide-ring-1'],
+            ['KBT',{ko:'PTFE 브론즈 가이드 스트립',en:'PTFE Bronze Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Bronze','—','-200 / +260','15.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/kbt-ptfe-bronze-guide-tape-1'],
+            ['KKT',{ko:'카본 PTFE 가이드 스트립',en:'Carbon PTFE Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'PTFE·Carbon','—','-200 / +200','15.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/kkt-carbon-ptfe-guide-tape-1'],
+            ['KPB',{ko:'폴리에스터 가이드 스트립',en:'Polyester Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester Resin','—','-40 / +120','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/kpb-polyester-resin-guide-tape-1'],
+            ['KSB',{ko:'로드·피스톤 가이드 스트립',en:'Piston-Rod Guide Strip'},{ko:'로드·피스톤',en:'Piston Rod'},'Polyester·Phenolic','—','-40 / +120','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/ksb-piston-rod-guide-tape-1'],
+            ['K71',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k71-rod-guide-ring-1'],
+            ['K77',{ko:'로드 가이드 링',en:'Rod Guide Ring'},{ko:'로드',en:'Rod'},'POM','—','-40 / +100','1.0','https://www.kastas.com/en/products/hydraulic-guiding-elements/k77-rod-guide-ring-1']
           ] }
       ]
     }
@@ -1085,6 +1085,29 @@
         }).join('') + '</div>';
   }
 
+  // HP part-number rows carry an 8th field (official KASTAS/SKF product-page URL) on top of
+  // the shared 7-column HP_COLS shape, plus a per-code cross-section icon extracted from the
+  // Sealstar catalog PDF (images/web/hp-shapes/{code-lowercase}.png) — so hp tables use this
+  // dedicated renderer instead of the generic renderDataTable.
+  function hpRowsTableHtml(rows){
+    var thead = '<tr>' + HP_COLS.map(function(c){ return '<th><span class="ko">'+c.ko+'</span><span class="en">'+c.en+'</span></th>'; }).join('') + '</tr>';
+    var tbody = rows.map(function(r){
+      var code=r[0], name=r[1], app=r[2], mat=r[3], pres=r[4], temp=r[5], speed=r[6], url=r[7];
+      var codeInner = '<img class="hpshape" src="images/web/hp-shapes/'+code.toLowerCase()+'.png" alt="'+code+' cross-section" loading="lazy">'
+        + (url ? '<a href="'+url+'" target="_blank" rel="noopener noreferrer">'+code+'</a>' : '<span>'+code+'</span>');
+      return '<tr>'
+        + '<td class="mname"><span class="hprow">'+codeInner+'</span></td>'
+        + '<td><span class="ko">'+name.ko+'</span><span class="en">'+name.en+'</span></td>'
+        + '<td><span class="ko">'+app.ko+'</span><span class="en">'+app.en+'</span></td>'
+        + '<td>'+mat+'</td>'
+        + '<td class="mtemp">'+pres+'</td>'
+        + '<td class="mtemp">'+temp+'</td>'
+        + '<td class="mtemp">'+speed+'</td>'
+        + '</tr>';
+    }).join('');
+    return '<table class="mtable"><thead>'+thead+'</thead><tbody>'+tbody+'</tbody></table>';
+  }
+
   function hpDetailTableHtml(group, key){
     var g = HP_GROUPS[group];
     var cat = null;
@@ -1095,7 +1118,7 @@
       + '<small style="font-weight:700;color:var(--muted);font-size:12px">'+cat.brand+'</small></h4>'
       + '<p class="desc" style="margin-bottom:14px"><span class="ko">'+cat.dko+'</span><span class="en">'+cat.den+'</span></p>';
     var note = cat.noteKo ? '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+cat.noteKo+'</span><span class="en">'+cat.noteEn+'</span></p>' : '';
-    return backBtn + head + renderDataTable(HP_COLS, cat.rows) + note;
+    return backBtn + head + hpRowsTableHtml(cat.rows) + note;
   }
 
   function renderHp(){

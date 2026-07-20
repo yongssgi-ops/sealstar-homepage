@@ -87,6 +87,13 @@
   .mtable td.mimg{text-align:center;padding:10px;width:190px;min-width:190px}
   .mtable td.mimg img{height:64px;width:auto;max-width:100%;display:block;margin:0 auto}
 
+  /* HP part-number cell: cross-section shape icon (from catalog PDF) next to a linked
+     part number (opens the KASTAS/SKF official product page in a new tab) */
+  .hprow{display:flex;align-items:center;gap:8px}
+  .hprow .hpshape{height:26px;width:34px;object-fit:contain;flex:0 0 auto;background:var(--bg-soft);border-radius:4px}
+  .hprow a{color:var(--sky-d);font-weight:800;text-decoration:none;border-bottom:1px dashed var(--sky-d)}
+  .hprow a:hover{color:var(--navy);border-bottom-style:solid}
+
   /* Fixed-column table for long free-text cells (e.g. evolast grade "Remarks/Approvals") —
      forces the long-text column to wrap within a bounded width instead of stretching the page */
   .mtable.gradetable{table-layout:fixed}
