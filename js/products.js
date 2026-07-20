@@ -513,7 +513,7 @@
     { id:'edring', ko:'ED링', en:'ED-Ring', imgs:imgs('edring',4),
       dko:'나사산 체결부에 보조로 장착되는 정적(Static) 씰입니다. 나사산만으로는 완전한 밀봉이 어려운 피팅·포트 연결부에서 1차 씰을 보완해 누유를 막으며, 주로 NBR 재질로 표준 재고를 운영합니다.',
       den:'A static seal fitted alongside a threaded connection. Where threads alone cannot fully seal a fitting or port joint, the ED-ring backs up the primary seal to prevent leakage — mainly stocked in NBR.',
-      mat:['NBR'],
+      mat:['NBR','FKM'],
       principleKo:'유압·공압 피팅이나 포트를 나사로 체결할 때, 나사산 사이의 미세한 틈만으로는 완전한 밀봉을 보장하기 어렵습니다. ED링은 체결부에 함께 장착되어 이 틈을 보조적으로 막아주는 정적 씰로, 진동이나 압력 변화가 있는 체결부에서도 안정적인 밀봉을 유지하도록 돕습니다.',
       principleEn:'When a hydraulic or pneumatic fitting or port is joined by threads alone, the fine clearance within the thread engagement often cannot guarantee a complete seal. The ED-ring is fitted alongside the joint as a static seal that backs up that gap, helping maintain reliable sealing even where vibration or pressure fluctuation is present.',
       features:[
