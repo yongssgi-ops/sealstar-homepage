@@ -383,8 +383,8 @@
   var HP_GROUPS = {
     hyd:{
       ko:'유압씰', en:'Hydraulic Seals',
-      bodyKo:'유압 실린더용 로드씰·피스톤씰·스태틱씰 등을 KASTAS(튀르키예)·SKF(스웨덴) 두 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 재질·압력·온도·속도 사양을 확인할 수 있습니다.',
-      bodyEn:'Rod seals, piston seals and static seals for hydraulic cylinders, supplied under both the KASTAS (Turkey) and SKF (Sweden) brands. Click any category below to see material, pressure, temperature and speed specs by part number.',
+      bodyKo:'유압 실린더용 로드씰·피스톤씰·스태틱씰 등을 KASTAS·SKF 브랜드를 주로 공급합니다. 아래 항목을 클릭하면 품번별 재질·압력·온도·속도 사양을 확인할 수 있습니다.',
+      bodyEn:'Rod seals, piston seals and static seals for hydraulic cylinders, supplied mainly under the KASTAS and SKF brands. Click any category below to see material, pressure, temperature and speed specs by part number.',
       cats:[
         { key:'rod', ko:'로드씰', en:'Rod Seals', brand:'KASTAS', dko:'실린더 로드(축) 외경을 따라 오일이 누출되지 않도록 막는 1차 밀봉 부품입니다.', den:'The primary seal that prevents oil from leaking along the cylinder rod (shaft) surface.',
           rows:[
@@ -489,8 +489,8 @@
     },
     pneu:{
       ko:'공압씰', en:'Pneumatic Seals',
-      bodyKo:'공압 실린더·자동화 기기에 쓰이는 저마찰·저압 설계의 로드씰·피스톤씰을 KASTAS 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 사양을 확인할 수 있습니다.',
-      bodyEn:'Low-friction, low-pressure rod and piston seals for pneumatic cylinders and automation equipment, supplied under the KASTAS brand. Click a category below to see specs by part number.',
+      bodyKo:'공압 실린더·자동화 기기에 쓰이는 저마찰·저압 설계의 로드씰·피스톤씰을 공급합니다. 아래 항목을 클릭하면 품번별 사양을 확인할 수 있습니다.',
+      bodyEn:'Low-friction, low-pressure rod and piston seals for pneumatic cylinders and automation equipment. Click a category below to see specs by part number.',
       cats:[
         { key:'pneurod', ko:'로드씰', en:'Rod Seals', brand:'KASTAS', dko:'공압 실린더 로드용 저마찰 씰입니다.', den:'Low-friction rod seals for pneumatic cylinders.',
           rows:[
@@ -531,8 +531,8 @@
     },
     wiper:{
       ko:'와이퍼', en:'Wipers',
-      bodyKo:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단하는 와이퍼입니다. KASTAS(튀르키예)·SKF(스웨덴) 두 브랜드로 공급합니다. 아래 항목을 클릭하면 품번별 재질·온도·속도 사양을 확인할 수 있습니다.',
-      bodyEn:'Wipers that keep dirt and moisture on the rod surface from being drawn into the cylinder, supplied under both the KASTAS (Turkey) and SKF (Sweden) brands. Click a category below to see material, temperature and speed specs by part number.',
+      bodyKo:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단하는 와이퍼입니다. 아래 항목을 클릭하면 품번별 재질·온도·속도 사양을 확인할 수 있습니다.',
+      bodyEn:'Wipers that keep dirt and moisture on the rod surface from being drawn into the cylinder. Click a category below to see material, temperature and speed specs by part number.',
       cats:[
         { key:'wiper', ko:'와이퍼', en:'Wipers', brand:'KASTAS', dko:'로드 표면의 이물질·수분이 실린더 내부로 유입되는 것을 차단합니다.', den:'Keeps dirt and moisture on the rod surface from being drawn into the cylinder.',
           rows:[
@@ -572,8 +572,8 @@
     },
     guide:{
       ko:'가이드', en:'Guide Elements',
-      bodyKo:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다. 씰스타가 실제로 취급하는 품번만 정리했습니다.',
-      bodyEn:'Low-friction guide elements that support the rod/piston so it never contacts bare metal. Listed here are only the part numbers Sealstar actually carries.',
+      bodyKo:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다.',
+      bodyEn:'Low-friction guide elements that support the rod/piston so it never contacts bare metal.',
       cats:[
         { key:'guide', ko:'가이드', en:'Guide Elements', brand:'KASTAS', dko:'로드·피스톤이 금속과 직접 마찰하지 않도록 지지하는 저마찰 가이드 부품입니다.', den:'Low-friction guide elements that support the rod/piston so it never contacts bare metal.',
           rows:[
