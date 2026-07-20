@@ -124,6 +124,8 @@
       ],
       gradeNoteKo:'모든 evolast® 컴파운드는 우수한 내화학성을 갖추고 있습니다.',
       gradeNoteEn:'All evolast® compounds offer outstanding chemical resistance performance.',
+      supplyNoteKo:'(주)씰스타는 상기 외 국산 및 수입 퍼플러를 재고 운영 및 공급하고 있사오니 관련하여 문의주시기 바랍니다.',
+      supplyNoteEn:'Sealstar Co., Ltd. also stocks and supplies additional domestic and imported perfluoroelastomer (FFKM) products beyond those listed above — please contact us for details.',
       appsKo:'화학 산업, 의약품, 식품 산업, 오일·가스 생산 및 정제 공정, 그 밖에 정밀 밀봉 성능이 요구되는 특수 산업',
       appsEn:'Chemical industry, pharmaceutical/medical, food industry, oil & gas production and processing, and other applications requiring highly exacting sealing performance'
     },
@@ -1042,6 +1044,7 @@
         + '<th>GRADE</th><th><span class="ko">색상</span><span class="en">Colour</span></th><th><span class="ko">경도</span><span class="en">Hardness</span></th><th><span class="ko">사용 온도</span><span class="en">Operating Temp.</span></th><th><span class="ko">설명·인증</span><span class="en">Remarks / Approvals</span></th>'
         + '</tr></thead><tbody>'+grows+'</tbody></table>'
         + '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t.gradeNoteKo+'</span><span class="en">'+t.gradeNoteEn+'</span></p>'
+        + '<p class="desc" style="margin-top:8px;font-size:13px"><span class="ko">'+t.supplyNoteKo+'</span><span class="en">'+t.supplyNoteEn+'</span></p>'
         + '<p class="desc" style="margin-top:18px"><span class="ko"><b>적용분야</b> — '+t.appsKo+'</span><span class="en"><b>Applications</b> — '+t.appsEn+'</span></p>';
     } else {
       var t2=PERFLUORO_TABS.kalrez;
