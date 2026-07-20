@@ -120,7 +120,7 @@ function buildStaticContent(id){
       '<h3><span class="ko">씰 작동 및 모션</span><span class="en">Seal Function and Motion</span></h3>' + motion +
       '<h3><span class="ko">설계</span><span class="en">Design</span></h3>' + design +
       '<h3><span class="ko">자켓재질</span><span class="en">Jacket Material</span></h3>' + jacket +
-      '<h3><span class="ko">금속재질</span><span class="en">Spring Alloys</span></h3>' + springAlloy;
+      '<h3><span class="ko">스프링타입 및 재질</span><span class="en">Spring Types &amp; Alloys</span></h3>' + springAlloy;
     contentHtml = contentHtml.replace(/<div class="subtabs">[\s\S]*?<\/div>\s*<div class="subtab-body">[\s\S]*?<\/div>(?=<div class="inquire")/, '<div class="pbody">' + staticSections + '</div>');
   }
 
