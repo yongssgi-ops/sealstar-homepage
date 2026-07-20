@@ -1040,12 +1040,12 @@
   // Prose sub-sections (e.g. static/dynamic, radial/axial) plus a row of captioned
   // reference diagrams — used for topics that need explanation beyond a single
   // principle paragraph but aren't a spec table. fm:{titleKo,titleEn,paragraphs:[{ko,en}],diagrams:[{img,labelKo,labelEn}]}
-  function funcMotionHtml(fm){
+  function funcMotionHtml(fm, skipTitle){
     var paras = fm.paragraphs.map(function(p){ return '<p><span class="ko">'+p.ko+'</span><span class="en">'+p.en+'</span></p>'; }).join('');
     var diagrams = fm.diagrams.map(function(d){
       return '<div class="motiondiag"><img src="'+d.img+'" alt="'+(d.labelEn||'')+'" loading="lazy"><span class="motiondiaglabel"><span class="ko">'+d.labelKo+'</span><span class="en">'+d.labelEn+'</span></span></div>';
     }).join('');
-    return '<h3><span class="ko">'+fm.titleKo+'</span><span class="en">'+fm.titleEn+'</span></h3>'
+    return (skipTitle ? '' : '<h3><span class="ko">'+fm.titleKo+'</span><span class="en">'+fm.titleEn+'</span></h3>')
       + paras
       + '<div class="motiondiags">'+diagrams+'</div>';
   }
@@ -1056,7 +1056,6 @@
       out+='<h3><span class="ko">작동 원리 &amp; 구조</span><span class="en">Principle &amp; Structure</span></h3>'
         +'<p><span class="ko">'+it.principleKo+'</span><span class="en">'+it.principleEn+'</span></p>';
     }
-    if(it.funcMotion){ out+=funcMotionHtml(it.funcMotion); }
     if(it.features && it.features.length){
       out+='<h3><span class="ko">주요 특징</span><span class="en">Key Features</span></h3><ul class="flist">'
         + it.features.map(function(f){ return '<li><span class="ko">'+f.ko+'</span><span class="en">'+f.en+'</span></li>'; }).join('')
@@ -1351,19 +1350,26 @@
   }
 
   // ---- special: 스프링에너자이드씰 render — 설계 / 자켓재질 / 금속재질 상단 서브탭 ----
-  var springTab = 'design';
+  var springTab = 'motion';
 
   function renderSpring(){
     var it = MAP['spring'];
+    var tabDefs = [
+      {key:'motion', ko:it.funcMotion.titleKo, en:it.funcMotion.titleEn},
+      {key:'design', ko:SPRING_TABS.design.ko, en:SPRING_TABS.design.en},
+      {key:'jacket', ko:SPRING_TABS.jacket.ko, en:SPRING_TABS.jacket.en},
+      {key:'spring', ko:SPRING_TABS.spring.ko, en:SPRING_TABS.spring.en}
+    ];
     var tabsHtml = '<div class="subtabs">'
-      + ['design','jacket','spring'].map(function(k){
-          var t=SPRING_TABS[k];
-          return '<button class="'+(k===springTab?'on':'')+'" onclick="SS.springTab(\''+k+'\')"><span class="ko">'+t.ko+'</span><span class="en">'+t.en+'</span></button>';
+      + tabDefs.map(function(d){
+          return '<button class="'+(d.key===springTab?'on':'')+'" onclick="SS.springTab(\''+d.key+'\')"><span class="ko">'+d.ko+'</span><span class="en">'+d.en+'</span></button>';
         }).join('')
       + '</div>';
 
     var tabBody = '';
-    if(springTab==='design'){
+    if(springTab==='motion'){
+      tabBody = funcMotionHtml(it.funcMotion, true);
+    } else if(springTab==='design'){
       var t=SPRING_TABS.design;
       var dcards = t.items.map(function(x){
         return '<div class="dcard"><h5><span class="ko">'+x.ko+'</span><span class="en">'+x.en+'</span></h5>'

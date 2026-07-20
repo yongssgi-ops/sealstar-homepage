@@ -111,11 +111,13 @@ function buildStaticContent(id){
     contentHtml = contentHtml.replace(/<div class="pbody"><h3><span class="ko">세부 기술자료[\s\S]*?<\/div>(?=<div class="inquire")/, detailSection);
   }
   if(id === 'spring'){
+    window.SS.springTab('motion'); const motion = subtabBody();
     window.SS.springTab('design'); const design = subtabBody();
     window.SS.springTab('jacket'); const jacket = subtabBody();
     window.SS.springTab('spring'); const springAlloy = subtabBody();
-    window.SS.springTab('design'); // reset
+    window.SS.springTab('motion'); // reset
     const staticSections =
+      '<h3><span class="ko">씰 작동 및 모션</span><span class="en">Seal Function and Motion</span></h3>' + motion +
       '<h3><span class="ko">설계</span><span class="en">Design</span></h3>' + design +
       '<h3><span class="ko">자켓재질</span><span class="en">Jacket Material</span></h3>' + jacket +
       '<h3><span class="ko">금속재질</span><span class="en">Spring Alloys</span></h3>' + springAlloy;
