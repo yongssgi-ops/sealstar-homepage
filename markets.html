@@ -72,8 +72,10 @@
   .mitem.on{background:var(--bg-soft);border-left:3px solid var(--amber);padding-left:15px}
   .mitem .arw{color:var(--muted);font-size:12px}
 
-  /* Content */
-  .mcontent{min-height:400px}
+  /* Content — min-width:0 lets this grid item shrink to its track width instead of
+     being pushed wide by any long/wide child, which would otherwise get silently
+     clipped by html/body's overflow-x:hidden on narrow screens. */
+  .mcontent{min-height:400px;min-width:0}
   .mhero{position:relative;border-radius:16px;overflow:hidden;min-height:300px;display:flex;align-items:flex-end;padding:34px;color:#fff;margin-bottom:30px;
     background:var(--navy) center/cover}
   .mhero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(9,25,48,.15),rgba(9,25,48,.86))}

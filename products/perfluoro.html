@@ -39,8 +39,11 @@
   .item:hover{background:var(--bg-soft)}
   .item.on{background:var(--navy);color:#fff;border-left:3px solid var(--amber);padding-left:13px}
 
-  /* Content */
-  .pcontent{min-height:400px}
+  /* Content — min-width:0 is required so this grid item can actually shrink to its
+     track width; without it, a wide child (like .mtable) pushes the item past the
+     track and the page silently clips it via html/body's overflow-x:hidden, instead
+     of the table's own overflow-x:auto giving a local horizontal scrollbar. */
+  .pcontent{min-height:400px;min-width:0}
   .pc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:8px}
   .pcontent h2{font-size:28px;color:var(--navy);font-weight:800}
   .pcontent .en-title{color:var(--sky-d);font-weight:700;font-size:15px;letter-spacing:.04em;margin-bottom:16px}
