@@ -6,3 +6,4 @@ node_modules
 .wrangler
 _test.mjs
 sealstar-renewal.html
+src

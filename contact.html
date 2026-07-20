@@ -113,6 +113,8 @@
   .fnote{color:var(--muted);font-size:13px;line-height:1.6}
   .fok{display:none;margin-top:18px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;color:var(--navy);font-size:14px;font-weight:600}
   .fok.show{display:block}
+  .fok.error{background:#fdecec;border-color:#f3c6c6;color:#b03434}
+  .fsubmit button[disabled]{opacity:.6;cursor:not-allowed}
 
   @media(max-width:900px){
     .frow{grid-template-columns:1fr}
@@ -172,7 +174,7 @@
     <!-- FORM -->
     <div class="cform reveal">
       <h2><span class="ko">온라인 문의</span><span class="en">Online Inquiry</span></h2>
-      <p class="lead"><span class="ko">아래 양식을 작성해 제출하시면, 입력하신 내용이 담당자 이메일로 전달될 수 있도록 메일 작성 화면이 열립니다. 사양·도면·수량을 함께 알려주시면 더 빠르고 정확한 답변이 가능합니다.</span><span class="en">Fill in the form and submit — it will open your email app with the details pre-filled, ready to send to our team. Including specs, drawings and quantity helps us respond faster and more accurately.</span></p>
+      <p class="lead"><span class="ko">아래 양식을 작성해 제출하시면 입력하신 내용이 담당자에게 바로 이메일로 전달됩니다. 사양·도면·수량을 함께 알려주시면 더 빠르고 정확한 답변이 가능합니다.</span><span class="en">Fill in the form and submit — your message is sent directly to our team by email. Including specs, drawings and quantity helps us respond faster and more accurately.</span></p>
 
       <form id="cform">
         <div class="frow">
@@ -232,7 +234,7 @@
             <span class="ffile-name" id="f-file-name"><span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span></span>
             <input type="file" id="f-file" />
           </div>
-          <p class="ffile-note"><span class="ko">※ 메일 작성 화면에는 첨부파일이 자동으로 실리지 않습니다. 메일 앱이 열리면 이 파일을 다시 첨부해 보내주세요.</span><span class="en">※ Attachments can't be carried into the email draft automatically — please re-attach this file once your mail app opens.</span></p>
+          <p class="ffile-note"><span class="ko">※ 첨부파일은 문의 내용과 함께 자동으로 전송됩니다. (최대 8MB)</span><span class="en">※ The attachment is sent automatically together with your message. (Max 8MB)</span></p>
         </div>
 
         <label class="fconsent"><input type="checkbox" id="f-consent" required /><span class="ko">개인정보취급방침에 동의합니다.</span><span class="en">I agree to the privacy policy.</span> <a onclick="var b=document.getElementById('f-consent-body');b.classList.toggle('show');return false;"><span class="ko">[내용보기]</span><span class="en">[View]</span></a></label>
@@ -245,7 +247,7 @@
           <button type="submit" class="btn btn-primary"><span class="ko">문의 보내기</span><span class="en">Send Inquiry</span></button>
           <span class="fnote"><span class="ko">* 표시는 필수 입력 항목입니다.</span><span class="en">* Required fields.</span></span>
         </div>
-        <div class="fok" id="fok"><span class="ko">이메일 작성 화면이 열리지 않으면 info@sealstar.com 으로 직접 보내주세요.</span><span class="en">If your email app didn't open, please send directly to info@sealstar.com.</span></div>
+        <div class="fok" id="fok"></div>
       </form>
     </div>
 
@@ -343,12 +345,43 @@
   var form = document.getElementById('cform');
   if(!form) return;
 
+  var MAX_FILE_BYTES = 8 * 1024 * 1024; // 8MB
   var fileInput = document.getElementById('f-file');
+  var fokBox = document.getElementById('fok');
+
+  function showStatus(type, koText, enText){
+    fokBox.classList.remove('error');
+    if(type === 'error') fokBox.classList.add('error');
+    fokBox.innerHTML = '<span class="ko">'+koText+'</span><span class="en">'+enText+'</span>';
+    fokBox.classList.add('show');
+  }
+
+  function fileToBase64(file){
+    return new Promise(function(resolve, reject){
+      var reader = new FileReader();
+      reader.onload = function(){
+        // result looks like "data:<mime>;base64,AAAA..." — strip the prefix
+        var result = reader.result || '';
+        var idx = result.indexOf(',');
+        resolve(idx >= 0 ? result.slice(idx + 1) : result);
+      };
+      reader.onerror = reject;
+      reader.readAsDataURL(file);
+    });
+  }
+
   if(fileInput){
     fileInput.addEventListener('change', function(){
       var nameEl = document.getElementById('f-file-name');
       if(fileInput.files && fileInput.files.length){
-        nameEl.textContent = fileInput.files[0].name;
+        var f = fileInput.files[0];
+        if(f.size > MAX_FILE_BYTES){
+          showStatus('error', '첨부파일 용량은 8MB를 초과할 수 없습니다.', 'Attachment size cannot exceed 8MB.');
+          fileInput.value = '';
+          nameEl.innerHTML = '<span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span>';
+          return;
+        }
+        nameEl.textContent = f.name;
       } else {
         nameEl.innerHTML = '<span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span>';
       }
@@ -357,33 +390,42 @@
 
   form.addEventListener('submit', function(e){
     e.preventDefault();
+    var submitBtn = form.querySelector('button[type="submit"]');
     var name = document.getElementById('f-name').value.trim();
     var email = document.getElementById('f-email').value.trim();
     var phone = document.getElementById('f-phone').value.trim();
     var topic = document.getElementById('f-topic').value;
     var title = document.getElementById('f-title').value.trim();
     var msg = document.getElementById('f-msg').value.trim();
-    var file = (fileInput && fileInput.files && fileInput.files[0]) ? fileInput.files[0].name : '';
+    var f = (fileInput && fileInput.files && fileInput.files[0]) ? fileInput.files[0] : null;
 
-    var subject = '[씰스타 문의] ' + title;
-    var bodyLines = [
-      '이름: ' + name,
-      '이메일: ' + email,
-      '연락처: ' + (phone || '-'),
-      '문의 제품/분야: ' + (topic || '-'),
-      '제목: ' + title,
-      '',
-      '문의내용:',
-      msg
-    ];
-    if(file){
-      bodyLines.push('', '(첨부파일 "' + file + '" 은 자동으로 첨부되지 않으니 메일 작성 화면에서 다시 첨부해주세요.)');
-    }
-    var mailto = 'mailto:info@sealstar.com'
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(bodyLines.join('\n'));
-    window.location.href = mailto;
-    document.getElementById('fok').classList.add('show');
+    submitBtn.disabled = true;
+
+    var filePromise = f ? fileToBase64(f) : Promise.resolve(null);
+
+    filePromise.then(function(base64){
+      var payload = { name:name, email:email, phone:phone, topic:topic, title:title, message:msg };
+      if(f && base64){
+        payload.file = { filename: f.name, content: base64 };
+      }
+      return fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+    }).then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(result){
+        if(!res.ok) throw new Error(result.error || 'request failed');
+        form.reset();
+        document.getElementById('f-file-name').innerHTML = '<span class="ko">선택된 파일이 없습니다.</span><span class="en">No file selected.</span>';
+        showStatus('success', '문의가 정상적으로 접수되었습니다. 빠른 시일 내에 답변드리겠습니다.', "Thank you. Your inquiry has been received — we'll get back to you soon.");
+      });
+    }).catch(function(err){
+      console.error(err);
+      showStatus('error', (err && err.message) || '전송 중 오류가 발생했습니다. 잠시 후 다시 시도하시거나 전화로 문의해 주세요.', 'Something went wrong. Please try again or contact us by phone.');
+    }).finally(function(){
+      submitBtn.disabled = false;
+    });
   });
 })();
 </script>
