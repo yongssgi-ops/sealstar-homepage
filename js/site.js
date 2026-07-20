@@ -37,4 +37,21 @@ function setLang(l){
       slides[idx].classList.add('on'); dotEls[idx].classList.add('on');
     }, parseInt(box.getAttribute('data-interval'),10) || 4500);
   });
+
+  // Back to top button (bottom-right, appears after scrolling down)
+  var backBtn = document.createElement('button');
+  backBtn.type = 'button';
+  backBtn.className = 'back-to-top';
+  backBtn.setAttribute('aria-label', '맨 위로 이동 / Scroll to top');
+  backBtn.title = '맨 위로';
+  backBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>';
+  document.body.appendChild(backBtn);
+  function toggleBackBtn(){
+    if(window.scrollY > 480){ backBtn.classList.add('show'); } else { backBtn.classList.remove('show'); }
+  }
+  window.addEventListener('scroll', toggleBackBtn, {passive:true});
+  toggleBackBtn();
+  backBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
 })();
