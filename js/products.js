@@ -219,16 +219,16 @@
       bodyKo:'스프링에너자이드씰은 적용 형태(정적·동적)와 운동 방향(반경방향·축방향)에 따라 적합한 스프링 형태와 씰 구조가 달라집니다. 아래는 용도별 선정 가이드와, 마찰·압출 간극·표면 조도 등 설계 시 참고할 기준입니다.',
       bodyEn:'The best spring geometry and seal structure for a spring-energized seal depends on the application type (static or dynamic) and direction of motion (radial or axial). Below is a selection guide by application, along with friction, extrusion-gap and surface-finish reference data for design.',
       items:[
-        {ko:'정적 페이스씰',en:'Static Face Seals', img:'images/web/spring-motion-static-inside-face.png',
+        {ko:'정적 페이스씰',en:'Static Face Seals',
           dko:'볼트 체결 커버·플랜지 등 상대 운동이 거의 없는 면씰 적용입니다. 헬리컬 와운드 스프링은 중~고하중을 형성해 넓은 압력·온도 범위에 대응하며, 고진공·초저온·화학 환경처럼 누설 허용치가 엄격한 경우에는 갭이 없는(gap-less) 스프링 구조로 높은 접촉하중을 내는 타입이 유리합니다. 하중이 낮고 하우징 변형이 큰 경우에는 캔틸레버형이 적합합니다.',
           den:'Face-seal applications with essentially no relative motion, such as bolted covers and flanges. Helical-wound springs generate moderate-to-high loads across a wide pressure and temperature range; for tight-leakage duty in high vacuum, cryogenic or aggressive-chemical service, a gap-less spring geometry with high, uniform contact load is preferred. Where loads must stay low or the housing is prone to distortion, a cantilever-spring design fits better.'},
-        {ko:'동적 반경방향씰 — 왕복운동',en:'Dynamic Radial Seals — Reciprocating', img:'images/web/spring-motion-dynamic-radial.png',
+        {ko:'동적 반경방향씰 — 왕복운동',en:'Dynamic Radial Seals — Reciprocating',
           dko:'로드·피스톤 씰링에 가장 널리 쓰이는 형태입니다. 캔틸레버 스프링은 저~중하중으로 마찰이 낮고 수명이 길며, U자형 스프링 형상은 에지 접촉과 스크레이핑 작용에 유리해 이물질 배출 성능이 좋습니다. 더 가혹한 조건(항공기 유압 등)에는 헬리컬 와운드형이 적합하고, 대형 씰 홈(약 3.2mm 이상)에는 처짐량이 크고 내마모성이 뛰어난 더블 와운드형을 사용합니다. 고압 조건에서는 백업링을 병행 적용합니다.',
           den:'The most common configuration for rod and piston seals. Cantilever springs give low-to-moderate load, low friction and long life; a U-shaped spring geometry provides edge contact with a scraping action that sheds contaminants well. Helical-wound springs suit more demanding duty such as aircraft hydraulics, while double-wrapped springs — with high deflection capacity and excellent wear resistance — are used in larger glands (roughly 3.2mm and up). Back-up rings are added for high-pressure service.'},
-        {ko:'동적 반경방향씰 — 회전운동',en:'Dynamic Radial Seals — Rotary', img:'images/web/spring-motion-dynamic-radial.png',
+        {ko:'동적 반경방향씰 — 회전운동',en:'Dynamic Radial Seals — Rotary',
           dko:'회전·요동 운동에서는 마모가 진행되며 씰이 샤프트와 함께 회전하려는 경향이 생길 수 있어, 필요 시 씰 자켓을 홈에 고정하는 플랜지 구조를 적용합니다. 캔틸레버형은 에지 접촉으로 유체·이물질 제어와 저마찰 특성이 우수하며, 소단면(약 3.2mm 미만)의 유니디렉셔널 와이어 스프링형은 큰 변형 허용량으로 편심·진동에 강합니다. 저속·고압 조건에는 더블 와운드형이나 헬리컬 와운드형이 적합하며, 헬리컬 와운드형은 극저온 등 온도 변화가 큰 밸브·챔버 액추에이터 샤프트 씰링에 특히 우수합니다.',
           den:'In rotary or oscillating motion, wear can cause the seal to gradually rotate with the shaft; where this matters, a flanged jacket design locks the seal into the gland. Cantilever springs give edge contact for good fluid/debris control and low friction. Unidirectional wire springs, used mainly in small cross-sections (under about 3.2mm), offer high deflection capacity that tolerates runout and misalignment well. Double-wrapped or helical-wound springs suit slower, higher-pressure duty, and helical-wound springs are especially well suited to actuator shaft sealing in valves and chambers exposed to wide temperature swings such as cryogenic service.'},
-        {ko:'극한 환경(초저온·고진공) 고려사항',en:'Extreme Environment Considerations', img:'images/web/spring-type-solidcontact.png',
+        {ko:'극한 환경(초저온·고진공) 고려사항',en:'Extreme Environment Considerations',
           dko:'초저온(약 -60℉/-51℃ 이하) 환경에서는 폴리머 자켓의 열수축이 금속 하드웨어보다 훨씬 크게 나타나므로 일반 조건과 다른 설계 여유가 필요합니다. 면씰은 반경방향씰보다 저온 영향을 덜 받으며, 반경방향씰은 별도의 저온용 설계와 백업링 형상(간극 또는 경사 절단)이 필요할 수 있습니다. 극저온·고진공·특수 화학 환경의 씰 설계는 사전 문의를 권장합니다.',
           den:'Below roughly -60°F (-51°C), the polymer jacket\'s thermal shrinkage becomes much larger than that of the surrounding metal hardware, so cryogenic designs need different clearances than standard conditions. Face seals are less affected by cold than radial seals; radial seals in cryogenic service often need a dedicated low-temperature design, sometimes including a gapped or angle-cut back-up ring. For cryogenic, high-vacuum or specialty-chemical service, we recommend consulting us during the design stage.'}
       ],
@@ -244,6 +244,7 @@
       extrusionKo:'고압·고온 조건에서는 씰 배후(하류측)의 압출 간극 — 하우징과 샤프트/보어 사이의 틈새 — 이 씰 수명을 크게 좌우합니다. 간극이 과도하면 씰 소재가 틈새로 밀려나가 조기 파손으로 이어지므로 간극은 항상 최소로 유지하고, 힐(heel) 두께를 늘리거나 별도 백업링을 적용해 내압출성을 높입니다. 백업링은 씰보다 경도가 높은 소재를 사용하며, 대표적으로 PEEK(무충전/유리섬유/그라파이트-PTFE 충전)와 PTFE(고카본/고유리섬유/브론즈 충전) 계열이 있습니다. 아래는 압력 구간별 허용 압출 간극(직경 기준)의 대략적인 기준입니다.',
       extrusionEn:'At high pressures and temperatures, the extrusion gap behind the seal — the clearance between the housing and the shaft or bore — becomes critical to service life. Excessive clearance lets the seal material extrude into the gap and fail prematurely, so the gap should always be kept to a minimum; increasing the seal\'s heel thickness or adding a separate back-up ring improves extrusion resistance. Back-up rings use a material harder than the seal itself — typically PEEK (unfilled, glass-fiber or graphite/PTFE filled) or PTFE (high-carbon, high-glass-fiber or bronze filled). The table below gives approximate allowable extrusion gaps (diametral) by pressure range.',
       extrusionCols:[
+        {ko:'단면',en:'Cross-Section'},
         {ko:'씰 구성',en:'Configuration'},
         {ko:'~2,000 psi (~138 bar)',en:'~2,000 psi (~138 bar)',short:true},
         {ko:'~4,000 psi (~276 bar)',en:'~4,000 psi (~276 bar)',short:true},
@@ -251,10 +252,10 @@
         {ko:'~15,000 psi (~1,034 bar)',en:'~15,000 psi (~1,034 bar)',short:true}
       ],
       extrusionRows:[
-        [{ko:'표준 씰',en:'Standard Seal'}, '0.004″ (0.10mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)', '0.0015″ (0.04mm)'],
-        [{ko:'확장 힐 씰',en:'Extended Heel'}, '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)'],
-        [{ko:'싱글 백업링 적용',en:'Single Back-up Ring'}, '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.0025″ (0.06mm)'],
-        [{ko:'확장/캠드 백업링 적용',en:'Extended / Cammed Back-up'}, '0.012″ (0.30mm)', '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.003″ (0.08mm)']
+        [{img:'images/web/spring-gap-standard.png',alt:'Standard Seal'}, {ko:'표준 씰',en:'Standard Seal'}, '0.004″ (0.10mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)', '0.0015″ (0.04mm)'],
+        [{img:'images/web/spring-gap-extended-heel.png',alt:'Extended Heel'}, {ko:'확장 힐 씰',en:'Extended Heel'}, '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)'],
+        [{img:'images/web/spring-gap-single-backup.png',alt:'Single Back-up Ring'}, {ko:'싱글 백업링 적용',en:'Single Back-up Ring'}, '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.0025″ (0.06mm)'],
+        [{img:'images/web/spring-gap-cammed-backup.png',alt:'Extended / Cammed Back-up'}, {ko:'확장/캠드 백업링 적용',en:'Extended / Cammed Back-up'}, '0.012″ (0.30mm)', '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.003″ (0.08mm)']
       ],
       surfaceTitleKo:'표면 조도(Surface Finish) 기준', surfaceTitleEn:'Surface Finish Guidelines',
       surfaceKo:'씰 홈(gland)도 밀봉 시스템의 절반을 차지하므로, 표면 조도·경도·다공성이 누설률과 마모 수명에 직접 영향을 줍니다. 동적 씰링 면은 로크웰 C43 이상의 경도를 권장하며, 경도가 높을수록 정밀 다듬질이 오래 유지되어 씰 성능과 수명이 향상됩니다. 무급유 동적 조건에서는 8~12 RMS 마이크로인치 조도에서 수명이 가장 길게 나타나는 경향이 있고(마모 입자가 미세 표면 구조에 자리잡아 윤활 역할), 습윤(윤활) 조건에서는 더 정밀한 조도가 유리합니다. 면씰은 하드웨어 중심선과 동심을 이루는 원형 가공 흔적(circular lay)이 되도록 합니다. 아래는 매체·용도별 권장 표면 조도 기준입니다.',
