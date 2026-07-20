@@ -211,6 +211,163 @@
   };
 
   // ---------------------------------------------------------------
+  // 스프링에너자이드씰 전용: 설계 / 자켓재질 / 금속재질 서브탭 콘텐츠
+  // ---------------------------------------------------------------
+  var SPRING_TABS = {
+    design:{
+      ko:'설계', en:'Design',
+      bodyKo:'스프링에너자이드씰은 적용 형태(정적·동적)와 운동 방향(반경방향·축방향)에 따라 적합한 스프링 형태와 씰 구조가 달라집니다. 아래는 용도별 선정 가이드와, 마찰·압출 간극·표면 조도 등 설계 시 참고할 기준입니다.',
+      bodyEn:'The best spring geometry and seal structure for a spring-energized seal depends on the application type (static or dynamic) and direction of motion (radial or axial). Below is a selection guide by application, along with friction, extrusion-gap and surface-finish reference data for design.',
+      items:[
+        {ko:'정적 페이스씰',en:'Static Face Seals',
+          dko:'볼트 체결 커버·플랜지 등 상대 운동이 거의 없는 면씰 적용입니다. 헬리컬 와운드 스프링은 중~고하중을 형성해 넓은 압력·온도 범위에 대응하며, 고진공·초저온·화학 환경처럼 누설 허용치가 엄격한 경우에는 갭이 없는(gap-less) 스프링 구조로 높은 접촉하중을 내는 타입이 유리합니다. 하중이 낮고 하우징 변형이 큰 경우에는 캔틸레버형이 적합합니다.',
+          den:'Face-seal applications with essentially no relative motion, such as bolted covers and flanges. Helical-wound springs generate moderate-to-high loads across a wide pressure and temperature range; for tight-leakage duty in high vacuum, cryogenic or aggressive-chemical service, a gap-less spring geometry with high, uniform contact load is preferred. Where loads must stay low or the housing is prone to distortion, a cantilever-spring design fits better.'},
+        {ko:'동적 반경방향씰 — 왕복운동',en:'Dynamic Radial Seals — Reciprocating',
+          dko:'로드·피스톤 씰링에 가장 널리 쓰이는 형태입니다. 캔틸레버 스프링은 저~중하중으로 마찰이 낮고 수명이 길며, U자형 스프링 형상은 에지 접촉과 스크레이핑 작용에 유리해 이물질 배출 성능이 좋습니다. 더 가혹한 조건(항공기 유압 등)에는 헬리컬 와운드형이 적합하고, 대형 씰 홈(약 3.2mm 이상)에는 처짐량이 크고 내마모성이 뛰어난 더블 와운드형을 사용합니다. 고압 조건에서는 백업링을 병행 적용합니다.',
+          den:'The most common configuration for rod and piston seals. Cantilever springs give low-to-moderate load, low friction and long life; a U-shaped spring geometry provides edge contact with a scraping action that sheds contaminants well. Helical-wound springs suit more demanding duty such as aircraft hydraulics, while double-wrapped springs — with high deflection capacity and excellent wear resistance — are used in larger glands (roughly 3.2mm and up). Back-up rings are added for high-pressure service.'},
+        {ko:'동적 반경방향씰 — 회전운동',en:'Dynamic Radial Seals — Rotary',
+          dko:'회전·요동 운동에서는 마모가 진행되며 씰이 샤프트와 함께 회전하려는 경향이 생길 수 있어, 필요 시 씰 자켓을 홈에 고정하는 플랜지 구조를 적용합니다. 캔틸레버형은 에지 접촉으로 유체·이물질 제어와 저마찰 특성이 우수하며, 소단면(약 3.2mm 미만)의 유니디렉셔널 와이어 스프링형은 큰 변형 허용량으로 편심·진동에 강합니다. 저속·고압 조건에는 더블 와운드형이나 헬리컬 와운드형이 적합하며, 헬리컬 와운드형은 극저온 등 온도 변화가 큰 밸브·챔버 액추에이터 샤프트 씰링에 특히 우수합니다.',
+          den:'In rotary or oscillating motion, wear can cause the seal to gradually rotate with the shaft; where this matters, a flanged jacket design locks the seal into the gland. Cantilever springs give edge contact for good fluid/debris control and low friction. Unidirectional wire springs, used mainly in small cross-sections (under about 3.2mm), offer high deflection capacity that tolerates runout and misalignment well. Double-wrapped or helical-wound springs suit slower, higher-pressure duty, and helical-wound springs are especially well suited to actuator shaft sealing in valves and chambers exposed to wide temperature swings such as cryogenic service.'},
+        {ko:'극한 환경(초저온·고진공) 고려사항',en:'Extreme Environment Considerations',
+          dko:'초저온(약 -60℉/-51℃ 이하) 환경에서는 폴리머 자켓의 열수축이 금속 하드웨어보다 훨씬 크게 나타나므로 일반 조건과 다른 설계 여유가 필요합니다. 면씰은 반경방향씰보다 저온 영향을 덜 받으며, 반경방향씰은 별도의 저온용 설계와 백업링 형상(간극 또는 경사 절단)이 필요할 수 있습니다. 극저온·고진공·특수 화학 환경의 씰 설계는 사전 문의를 권장합니다.',
+          den:'Below roughly -60°F (-51°C), the polymer jacket\'s thermal shrinkage becomes much larger than that of the surrounding metal hardware, so cryogenic designs need different clearances than standard conditions. Face seals are less affected by cold than radial seals; radial seals in cryogenic service often need a dedicated low-temperature design, sometimes including a gapped or angle-cut back-up ring. For cryogenic, high-vacuum or specialty-chemical service, we recommend consulting us during the design stage.'}
+      ],
+      frictionKo:'마찰력은 씰 접촉면과 상대 하드웨어(평면·구면·샤프트) 사이에서 발생하는 저항으로, 표면 조도·온도·매체·압력의 영향을 받습니다. 신품 씰은 접촉폭이 좁아 초기 마찰이 다소 높으며, 짧은 초기 마모(러닝인) 기간 후 안정됩니다. 매체 압력이 커질수록 스프링 하중에 압력 하중이 더해져 마찰과 구동 저항이 함께 증가합니다. 대략적인 회전 토크와 직선 마찰력은 아래 식으로 근사할 수 있습니다.',
+      frictionEn:'Friction is the resistance generated between the seal\'s contact face and the mating hardware — a flat surface, a sphere, or a shaft — and is influenced by surface finish, temperature, media and pressure. A new seal has a narrower contact width and slightly higher initial friction, which settles down after a short break-in period. As media pressure rises, it adds to the spring load and increases friction and drag together. Rotating torque and linear friction can be roughly approximated with the formulas below.',
+      formulas:[
+        {ko:'회전 토크(in·lbf) = (S+P) × D × μ × R × π', en:'Rotating Torque (in·lbf) = (S+P) × D × μ × R × π'},
+        {ko:'직선 마찰력(lbf) = (S+P) × D × μ × π', en:'Linear Friction (lbf) = (S+P) × D × μ × π'}
+      ],
+      formulaNoteKo:'S = 스프링 하중, P = 매체 압력에 의한 하중, μ = 소재 마찰계수, D = 동적 접촉면 직경, R = D/2',
+      formulaNoteEn:'S = spring load, P = pressure-induced load, μ = material coefficient of friction, D = diameter of the dynamic surface, R = D/2',
+      extrusionTitleKo:'압출 간극(Extrusion Gap) 기준', extrusionTitleEn:'Seal Extrusion Gap Guidelines',
+      extrusionKo:'고압·고온 조건에서는 씰 배후(하류측)의 압출 간극 — 하우징과 샤프트/보어 사이의 틈새 — 이 씰 수명을 크게 좌우합니다. 간극이 과도하면 씰 소재가 틈새로 밀려나가 조기 파손으로 이어지므로 간극은 항상 최소로 유지하고, 힐(heel) 두께를 늘리거나 별도 백업링을 적용해 내압출성을 높입니다. 백업링은 씰보다 경도가 높은 소재를 사용하며, 대표적으로 PEEK(무충전/유리섬유/그라파이트-PTFE 충전)와 PTFE(고카본/고유리섬유/브론즈 충전) 계열이 있습니다. 아래는 압력 구간별 허용 압출 간극(직경 기준)의 대략적인 기준입니다.',
+      extrusionEn:'At high pressures and temperatures, the extrusion gap behind the seal — the clearance between the housing and the shaft or bore — becomes critical to service life. Excessive clearance lets the seal material extrude into the gap and fail prematurely, so the gap should always be kept to a minimum; increasing the seal\'s heel thickness or adding a separate back-up ring improves extrusion resistance. Back-up rings use a material harder than the seal itself — typically PEEK (unfilled, glass-fiber or graphite/PTFE filled) or PTFE (high-carbon, high-glass-fiber or bronze filled). The table below gives approximate allowable extrusion gaps (diametral) by pressure range.',
+      extrusionCols:[
+        {ko:'씰 구성',en:'Configuration'},
+        {ko:'~2,000 psi (~138 bar)',en:'~2,000 psi (~138 bar)',short:true},
+        {ko:'~4,000 psi (~276 bar)',en:'~4,000 psi (~276 bar)',short:true},
+        {ko:'~6,000 psi (~414 bar)',en:'~6,000 psi (~414 bar)',short:true},
+        {ko:'~15,000 psi (~1,034 bar)',en:'~15,000 psi (~1,034 bar)',short:true}
+      ],
+      extrusionRows:[
+        [{ko:'표준 씰',en:'Standard Seal'}, '0.004″ (0.10mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)', '0.0015″ (0.04mm)'],
+        [{ko:'확장 힐 씰',en:'Extended Heel'}, '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.003″ (0.08mm)', '0.002″ (0.05mm)'],
+        [{ko:'싱글 백업링 적용',en:'Single Back-up Ring'}, '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.005″ (0.13mm)', '0.0025″ (0.06mm)'],
+        [{ko:'확장/캠드 백업링 적용',en:'Extended / Cammed Back-up'}, '0.012″ (0.30mm)', '0.009″ (0.23mm)', '0.007″ (0.18mm)', '0.003″ (0.08mm)']
+      ],
+      surfaceTitleKo:'표면 조도(Surface Finish) 기준', surfaceTitleEn:'Surface Finish Guidelines',
+      surfaceKo:'씰 홈(gland)도 밀봉 시스템의 절반을 차지하므로, 표면 조도·경도·다공성이 누설률과 마모 수명에 직접 영향을 줍니다. 동적 씰링 면은 로크웰 C43 이상의 경도를 권장하며, 경도가 높을수록 정밀 다듬질이 오래 유지되어 씰 성능과 수명이 향상됩니다. 무급유 동적 조건에서는 8~12 RMS 마이크로인치 조도에서 수명이 가장 길게 나타나는 경향이 있고(마모 입자가 미세 표면 구조에 자리잡아 윤활 역할), 습윤(윤활) 조건에서는 더 정밀한 조도가 유리합니다. 면씰은 하드웨어 중심선과 동심을 이루는 원형 가공 흔적(circular lay)이 되도록 합니다. 아래는 매체·용도별 권장 표면 조도 기준입니다.',
+      surfaceEn:'The seal gland is effectively half of the sealing system, so surface finish, hardness and porosity directly affect leak rate and wear life. Dynamic sealing surfaces should be Rockwell C43 or harder — a harder surface holds its fine finish longer, which improves both sealing performance and service life. Dry dynamic applications tend to last longest around 8–12 RMS micro-inch (worn material settles into the micro-surface structure and adds lubrication at the contact interface), while wetted/lubricated applications benefit from a finer finish. Face-seal finishes should have a circular lay, concentric with the hardware centerline. The table below gives recommended surface-finish ranges by media and application.',
+      surfaceCols:[
+        {ko:'매체군',en:'Media Group'},
+        {ko:'동적 적용 (RMS ㎲in)',en:'Dynamic Applications (RMS µin)',short:true},
+        {ko:'정적 적용 (RMS ㎲in)',en:'Static Applications (RMS µin)',short:true}
+      ],
+      surfaceRows:[
+        [{ko:'극저온·고진공·헬륨·수소',en:'Cryogenics, deep vacuum, helium, hydrogen'}, '2 ~ 6', '4 ~ 8'],
+        [{ko:'공기·메탄올·에탄올·아르곤·질소가스·암모니아·독성가스·액화메탄',en:'Air, methanol/ethanol, argon, nitrogen gas, ammonia, toxic gases, liquid methane'}, '4 ~ 12', '8 ~ 16'],
+        [{ko:'원유·물·경질 석유연료·유압유·가스상 메탄·이산화탄소',en:'Crude oil, water, light petroleum fuels, hydraulic fluids, gaseous methane, carbon dioxide'}, '8 ~ 16', '8 ~ 32']
+      ]
+    },
+    jacket:{
+      ko:'자켓재질', en:'Jacket Material',
+      bodyKo:'씰의 자켓(밀봉 접촉부)은 매체·온도·상대속도·상대재 경도에 맞춰 PTFE·UHMWPE·PEEK 계열의 다양한 충전 컴파운드 중에서 선정합니다. 아래는 대표적인 자켓 소재 그레이드와 특징입니다.',
+      bodyEn:'The seal jacket (the part that contacts the mating surface) is selected from a range of filled PTFE, UHMWPE and PEEK compounds to match the media, temperature, relative speed and mating-surface hardness. Representative jacket material grades and characteristics are listed below.',
+      cols:[
+        {ko:'코드',en:'Code',short:true},
+        {ko:'소재',en:'Material'},
+        {ko:'설명',en:'Description'},
+        {ko:'사용 온도',en:'Temp. Range',short:true}
+      ],
+      rows:[
+        ['01', {ko:'순수 PTFE',en:'Virgin PTFE'}, {ko:'정적 씰링·화학약품·심냉 극저온(LOX, LH2, LHe, N2O4, H2O2, UDMH, LCH4) 등 화학공정 전반에 사용. FDA 적합, 가스투과율 낮음, 고진공 씰링에 적합.',en:'Static seals, chemicals, deep cryogenics (LOX, LH2, LHe, N2O4, H2O2, UDMH, LCH4) and general chemical-plant use. FDA compliant, low gas permeability, suited to hard-vacuum sealing.'}, '-268 ~ 288℃ (-450~550°F)'],
+        ['01S', {ko:'개질 PTFE (TFM)',en:'Virgin TFM Modified PTFE'}, {ko:'일반 PTFE보다 단단하고 가스투과율이 낮음. 기체 또는 극저온의 저분자량 화학물질에 적합. FDA 적합, PTFE와 유사한 내약품성에 마모는 더 느림.',en:'Harder than standard PTFE with lower gas permeability. Suited to gaseous or cryogenic low-molecular-weight chemicals. FDA compliant, near-PTFE chemical inertness with slower wear.'}, '-268 ~ 288℃ (-450~550°F)'],
+        ['02', {ko:'카본·PPS 충전 PTFE',en:'Carbon/PPS Filled PTFE'}, {ko:'저온·고온 모두에서 저마모 동적 용도에 우수. 경질유·수용액·건식 사용 가능. 연질 금속 상대재에는 마모를 유발할 수 있음.',en:'Excellent low-wear performance in dynamic service, hot or cold. Usable in light oils, aqueous solutions or dry. Can be abrasive against soft-metal mating surfaces.'}, '-268 ~ 260℃ (-450~500°F)'],
+        ['03', {ko:'폴리이미드 충전 PTFE',en:'Polyimide Filled PTFE'}, {ko:'고속·고압 유압 용도에 최적. 건식·윤활 모두 마모 우수, 연질~경질 금속 상대재에 사용. 내열성 우수, 고온 건식·윤활 용도에 적합.',en:'Best suited to high-speed, high-pressure hydraulic service. Wears well dry or lubricated, against soft-to-hard metal. Heat resistant, good for hot dry or lubricated duty.'}, '-129 ~ 316℃ (-200~600°F)'],
+        ['04', {ko:'에코놀 충전 PTFE',en:'Ekonol Filled PTFE'}, {ko:'고온 PTFE 블렌드로 고온 합성유에 강함. 연질금속을 손상시키지 않으며 건식·오일 모두 고속 사용 가능. 터빈엔진·베어링 커버·고온 가스 액추에이터 등에 사용.',en:'A high-temperature PTFE blend that holds up well in hot synthetic oils. Runs at high speed dry or on oil without damaging soft metals. Used in turbine engines, bearing covers and hot-gas actuators.'}, '-212 ~ 316℃ (-350~600°F)'],
+        ['05', {ko:'그라파이트 충전 PTFE',en:'Graphite Filled PTFE'}, {ko:'건식·수계·스팀 용도에 우수. 건식 또는 오일/그리스 윤활 조건 모두 사용 가능.',en:'Excellent for dry, water and steam service. Usable dry or with oil/grease lubrication.'}, '-268 ~ 316℃ (-450~600°F)'],
+        ['06', {ko:'브론즈 충전 PTFE',en:'Bronze Filled PTFE'}, {ko:'저~중속 유압 용도에 주로 사용. 액추에이터 샤프트의 웨어밴드·씰링에 적합, 윤활 시 중경도 강 실린더 보어에 무리 없음.',en:'Used mainly in low-to-medium-speed hydraulic service. Suited to actuator-shaft wear bands and seal rings; gentle on medium-hardness steel cylinder bores when lubricated.'}, '-46 ~ 288℃ (-50~550°F)'],
+        ['07', {ko:'미네랄(FDA) 충전 PTFE',en:'Mineral FDA Filled PTFE'}, {ko:'소모품(식품 등) 고온·저온 겸용 FDA 적합 소재. 백색이며 대부분 매체에 불활성. 중속 씰·립씰·슬링거 용도.',en:'FDA-compliant material for hot or cold consumable-contact use. White in color and inert to most media. Used for moderate-speed seals, lip seals and slingers.'}, '-268 ~ 316℃ (-450~600°F)'],
+        ['08', {ko:'유리섬유·MoS₂ 충전 PTFE',en:'Glass/MoS₂ (Moly) Filled PTFE'}, {ko:'고속 씰·립씰·링·베어링·오일 용도에 우수. 고온·저온 모두 사용 가능하며 내마모성이 매우 뛰어남. 중경도 이상(로크웰 C42+) 금속과 함께, 가급적 윤활 상태로 사용 권장.',en:'Excellent for high-speed seals, lip seals, rings, bearings and oil service. Usable hot or cold with very high wear resistance. Best used against medium-hard-or-harder metal (Rockwell C42+), preferably lubricated.'}, '-268 ~ 316℃ (-450~600°F)'],
+        ['09', {ko:'브론즈·MoS₂ 충전 PTFE',en:'Bronze/MoS₂ (Moly) Filled PTFE'}, {ko:'06번의 몰리 윤활 버전으로 건식·습식 모두 내마모성 향상. 유압용 씰·웨어밴드·백업링에 우수, 06번보다 마찰이 낮고 강재 상대재·넓은 온도범위에 적합.',en:'A moly-lubricated version of grade 06 with improved wear resistance dry or wet. Excellent for hydraulic seals, wear bands and back-up rings — lower friction than 06, suited to steel mating surfaces over a wider temperature range.'}, '-184 ~ 316℃ (-300~600°F)'],
+        ['10', {ko:'순수 UHMWPE',en:'Virgin UHMWPE'}, {ko:'수계·유압 용도의 내마모 소재로 질기고 충격에 강함. 연질 상대면을 손상시키지 않음. FDA 적합.',en:'A tough, impact-resistant wear material for water and hydraulic service. Does not damage soft mating surfaces. FDA compliant.'}, '-268 ~ 82℃ (-450~180°F)'],
+        ['10H', {ko:'고온형 UHMWPE',en:'UHMWPE High Temp'}, {ko:'10번의 고온 버전. 연질 상대면에도 사용 가능하며 충격·내마모성 우수. FDA 적합.',en:'A higher-temperature version of grade 10. Usable against soft mating surfaces with good impact and wear resistance. FDA compliant.'}, '-196 ~ 93℃ (-320~200°F)'],
+        ['11', {ko:'순수 PEEK/PEK',en:'Virgin PEEK/PEK'}, {ko:'내열·내마모성이 뛰어나고 강도가 높은 소재. 백업링, 정밀 씰, 구조 부품에 적합. 핫멜트 접착, 밸브 시트 등 고온 용도에 사용.',en:'A strong, heat- and wear-resistant material suited to back-up rings, precision seals and structural parts. Used in hot-melt adhesive equipment, valve seats and other high-temperature duty.'}, '-129 ~ 288℃ (-200~550°F)'],
+        ['12', {ko:'유리섬유 충전 PEEK/PEK',en:'Glass Filled PEEK/PEK'}, {ko:'백업링·랜턴링용 강화 소재. 고온 구조 부품용 엔지니어링 복합재. 연질금속에는 마모를 유발할 수 있어(윤활 시 로크웰 C47+, 건식 로크웰 C55+ 권장) 상대재 경도에 유의합니다.',en:'A reinforced material for back-up and lantern rings — an engineering composite for hot structural parts. Can be abrasive against soft metal, so a Rockwell C47+ (lubricated) or C55+ (dry) mating surface is recommended.'}, '-73 ~ 288℃ (-100~550°F)'],
+        ['13', {ko:'카본파이버 충전 PEEK/PEK',en:'Carbon Fiber PEEK/PEK'}, {ko:'백업링·랜턴링용 프리미엄 강화 소재("블랙 스틸"로도 불림). 고난도 고온 구조 부품에 사용. 연질금속에는 마모를 유발할 수 있어(윤활 시 로크웰 C47+, 건식 로크웰 C55+ 권장) 상대재 경도에 유의합니다.',en:'A premium reinforced material for back-up and lantern rings, sometimes called "black steel." Used for demanding hot structural parts. Can be abrasive against soft metal, so a Rockwell C47+ (lubricated) or C55+ (dry) mating surface is recommended.'}, '-101 ~ 288℃ (-150~550°F)']
+      ]
+    },
+    spring:{
+      ko:'금속재질', en:'Spring Alloys',
+      bodyKo:'스프링 자체의 하중 특성은 형태(타입)에 따라 달라지며, 합금은 매체의 화학적 환경(부식성)에 맞춰 선정합니다. 아래는 하중 특성별 스프링 6종과, 대표 금속 합금의 스프링 형태별 적용 가능 여부·특성입니다.',
+      bodyEn:'A spring\'s load characteristics depend on its geometry (type), while the alloy is selected to suit the chemical environment (corrosivity) of the media. Below are six spring types by load characteristic, along with which spring geometries each representative alloy supports and its general characteristics.',
+      types:[
+        {img:'images/web/spring-type-cantilever.png', ko:'캔틸레버 스프링', en:'Cantilever Spring',
+          descKo:'낮으면서 선형적으로 증가하는 하중 곡선. 매우 동적인 조건에 사용되며 씰·하드웨어 수명을 극대화하는 가장 널리 쓰이는 형태입니다.',
+          descEn:'A low, linearly increasing load curve. Used in highly dynamic conditions and the most widely used geometry for maximizing seal and hardware life.'},
+        {img:'images/web/spring-type-helical.png', ko:'헬리컬 와운드 스프링', en:'Helical Wound Spring',
+          descKo:'길이 변형 당 부하가 상당히 높습니다. 주로 정적이거나 저속 운동 조건, 가벼운 가스 등 엄격한 씰링이 요구되는 조건에 적합합니다.',
+          descEn:'Load per unit deflection is considerably higher. Best suited to static or low-speed motion and demanding sealing duty such as light gases.'},
+        {img:'images/web/spring-type-unidirectional.png', ko:'유니디렉셔널 스프링', en:'Uni-directional Spring',
+          descKo:'변형이 증가해도 거의 일정한 하중을 제공해 마모 허용량이 크며, 넓은 변형 범위에서 거의 일정한 마찰을 유지합니다.',
+          descEn:'Provides a nearly constant load as deflection increases, giving a large wear allowance and keeping friction nearly constant over a wide deflection range.'},
+        {img:'images/web/spring-type-doublewrapped.png', ko:'더블 와운드(리본) 스프링', en:'Double Wrapped (Ribbon) Spring',
+          descKo:'리본 스프링을 감아 형성한 가장 견고한 씰 구조 중 하나로, 왕복·정지·회전 운동 조건에 모두 사용할 수 있습니다.',
+          descEn:'One of the most robust seal structures, wound from ribbon spring stock. Can be used in reciprocating, static and rotary applications alike.'},
+        {img:'images/web/spring-type-solidcontact.png', ko:'솔리드 콘택트 스프링', en:'Solid Contact Spring',
+          descKo:'초저온 적용 분야용으로 높은 하중을 제공하며, 스프링 형상이 수축되지 않아 극한 온도 변화와 고진공 유지에 이상적입니다.',
+          descEn:'Delivers high load for cryogenic applications; the spring geometry does not collapse, making it ideal for extreme temperature swings and holding high vacuum.'},
+        {img:'images/web/spring-type-etched.png', ko:'에칭 스프링', en:'Etched Spring',
+          descKo:'화학적으로 에칭한 소형 스프링으로 내경 0.5mm까지 초소형 제작이 가능해, 고압 조건 및 소형 단면 운동 조건에 추천됩니다.',
+          descEn:'A small, chemically etched spring that can be produced down to a 0.5mm bore — recommended for high-pressure duty and small-cross-section dynamic seals.'}
+      ],
+      compatTitleKo:'합금별 적용 가능 스프링 타입', compatTitleEn:'Spring Types Supported by Alloy',
+      compatCols:[
+        {ko:'스프링 합금',en:'Spring Alloy'},
+        {ko:'에칭 캔틸레버',en:'Etched Cantilever',short:true},
+        {ko:'캔틸레버',en:'Cantilever',short:true},
+        {ko:'헬리컬 와운드',en:'Helical Wound',short:true},
+        {ko:'유니디렉셔널',en:'Uni-directional',short:true},
+        {ko:'더블 와운드',en:'Double Wrapped',short:true},
+        {ko:'솔리드 콘택트',en:'Solid Contact',short:true},
+        {ko:'립씰 가터',en:'Lip Seal Garter',short:true}
+      ],
+      compatRows:(function(){
+        var DOT='<span style="display:block;text-align:center">●</span>';
+        var alloys=[
+          ['17-7 PH 스테인리스강 (7S)','17-7 PH Stainless Steel (7S)',[0,0,1,0,0,0,0]],
+          ['301 스테인리스강 (1S)','301 Stainless Steel (1S)',[1,1,0,0,1,1,0]],
+          ['302 스테인리스강 (2S)','302 Stainless Steel (2S)',[0,0,0,1,0,0,1]],
+          ['304 스테인리스강 (4S)','304 Stainless Steel (4S)',[1,1,1,0,1,1,0]],
+          ['316 스테인리스강 (6S)','316 Stainless Steel (6S)',[1,1,1,1,0,1,1]],
+          ['Elgiloy® (EL)','Elgiloy® (EL)',[1,1,1,0,0,1,0]],
+          ['Hastelloy® (HA)','Hastelloy® (HA)',[1,1,1,1,1,1,0]],
+          ['Inconel® (IN)','Inconel® (IN)',[1,1,1,1,1,1,0]],
+          ['Titanium (TI)','Titanium (TI)',[1,1,0,1,1,1,0]]
+        ];
+        return alloys.map(function(a){
+          return [{ko:a[0],en:a[1]}].concat(a[2].map(function(v){ return v ? DOT : ''; }));
+        });
+      })(),
+      compatNoteKo:'씰 형태·단면 크기에 따라 실제 적용 가능 여부가 달라질 수 있습니다. 구체적인 조합은 문의 바랍니다.',
+      compatNoteEn:'Actual applicability can vary with seal geometry and cross-section size — please contact us for specific combinations.',
+      charTitleKo:'합금별 특성', charTitleEn:'Alloy Characteristics',
+      charCols:[{ko:'합금',en:'Alloy'},{ko:'특성',en:'Characteristics'}],
+      charRows:[
+        [{ko:'301 스테인리스강',en:'301 Stainless Steel'}, {ko:'일반 용도에 적합하나 극도로 부식성이 강한 물질에는 권장하지 않습니다.',en:'Suitable for general use; not recommended for extremely corrosive substances.'}],
+        [{ko:'304 스테인리스강',en:'304 Stainless Steel'}, {ko:'대부분의 환경에서 내식성이 우수하며, 습기·경미한 화학물질이 있는 일반 용도에 적합합니다.',en:'Resists corrosion in most environments — general application with moisture and mild chemicals.'}],
+        [{ko:'316 스테인리스강',en:'316 Stainless Steel'}, {ko:'일반 용도에 사용하며, 저온에서 내식성이 한층 향상됩니다.',en:'General applications, with enhanced corrosion resistance at lower temperatures.'}],
+        [{ko:'17-7 스테인리스강',en:'17-7 Stainless Steel'}, {ko:'고온에서도 기계적 물성을 잘 유지합니다.',en:'Enhanced retention of mechanical properties under elevated temperatures.'}],
+        [{ko:'Inconel 625®',en:'Inconel 625®'}, {ko:'석유화학 분야에서 널리 사용되며 내식성이 우수합니다.',en:'Widely used in petrochemical applications, with excellent corrosion resistance.'}],
+        [{ko:'Elgiloy®',en:'Elgiloy®'}, {ko:'원유·사우어가스 환경에서 널리 사용되는 내식성이 뛰어난 합금입니다.',en:'Widely used in crude oil and sour-gas environments — an excellent corrosion-resistant alloy.'}],
+        [{ko:'Hastelloy®',en:'Hastelloy®'}, {ko:'고온 무기산, 용제, 염소 오염 산에 대한 내식성이 우수합니다.',en:'Excellent resistance to hot mineral acids, solvents and chlorine-contaminated acids.'}],
+        [{ko:'Titanium',en:'Titanium'}, {ko:'경량이면서 내식성이 우수해 경량화·특수 저온 조건에 사용됩니다.',en:'Lightweight with good corrosion resistance — used for weight-sensitive and special low-temperature conditions.'}]
+      ]
+    }
+  };
+
+  // ---------------------------------------------------------------
   // 유공압씰 전용: 유압씰 / 공압씰 그룹 콘텐츠 (품번별 상세 규격표)
   // ---------------------------------------------------------------
   var HP_COLS = [
@@ -554,7 +711,7 @@
       ],
       apps:[{ko:'건설기계 유압 실린더',en:'Construction equipment hydraulic cylinders'},{ko:'공작기계',en:'Machine tools'},{ko:'프레스',en:'Presses'},{ko:'공압 자동화 실린더',en:'Pneumatic automation cylinders'},{ko:'선박용 유압 장비',en:'Marine hydraulic equipment'}] },
 
-    { id:'spring', ko:'스프링에너자이드씰', en:'Spring-Energized Seal', imgs:imgs('spring',9),
+    { id:'spring', ko:'스프링에너자이드씰', en:'Spring-Energized Seal', imgs:imgs('spring',9), special:'spring',
       dko:'PTFE 씰 내부에 금속 스프링을 삽입하여 극저온·극고온, 고진공, 강한 화학 환경에서도 일정한 밀봉력을 유지합니다. 반도체·항공우주·수소 등 극한 조건에 적합합니다.',
       den:'A metal spring energizes a PTFE jacket to maintain constant sealing force from cryogenic to high temperatures, high vacuum and aggressive chemicals — ideal for semiconductor, aerospace and hydrogen applications.',
       mat:['PTFE','FEP','SUS 스프링'],
@@ -866,12 +1023,13 @@
   // t: {titleKo,titleEn, cards:[{type,img,alt,specs:[[{ko,en},val],...],descKo,descEn}], noteKo,noteEn}
   function typeCardsHtml(t){
     var cards = t.cards.map(function(c){
-      var specsHtml = c.specs.map(function(s){
+      var specsHtml = (c.specs||[]).map(function(s){
         return '<tr><td><span class="ko">'+s[0].ko+'</span><span class="en">'+s[0].en+'</span></td><td>'+s[1]+'</td></tr>';
       }).join('');
+      var label = (c.type && typeof c.type === 'object') ? '<span class="ko">'+c.type.ko+'</span><span class="en">'+c.type.en+'</span>' : c.type;
       return '<div class="typecard">'
-        + '<div class="tcimgwrap"><img src="'+c.img+'" alt="'+(c.alt||'')+'" loading="lazy"><span class="tclabel">'+c.type+'</span></div>'
-        + '<table class="tcspecs"><tbody>'+specsHtml+'</tbody></table>'
+        + '<div class="tcimgwrap"><img src="'+c.img+'" alt="'+(c.alt||'')+'" loading="lazy">'+(label ? '<span class="tclabel">'+label+'</span>' : '')+'</div>'
+        + (c.specs && c.specs.length ? '<table class="tcspecs"><tbody>'+specsHtml+'</tbody></table>' : '')
         + (c.descKo ? '<p class="desc" style="margin-top:10px;font-size:13px"><span class="ko">'+c.descKo+'</span><span class="en">'+c.descEn+'</span></p>' : '')
         + '</div>';
     }).join('');
@@ -1192,12 +1350,70 @@
       + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
   }
 
+  // ---- special: 스프링에너자이드씰 render — 설계 / 자켓재질 / 금속재질 상단 서브탭 ----
+  var springTab = 'design';
+
+  function renderSpring(){
+    var it = MAP['spring'];
+    var tabsHtml = '<div class="subtabs">'
+      + ['design','jacket','spring'].map(function(k){
+          var t=SPRING_TABS[k];
+          return '<button class="'+(k===springTab?'on':'')+'" onclick="SS.springTab(\''+k+'\')"><span class="ko">'+t.ko+'</span><span class="en">'+t.en+'</span></button>';
+        }).join('')
+      + '</div>';
+
+    var tabBody = '';
+    if(springTab==='design'){
+      var t=SPRING_TABS.design;
+      var dcards = t.items.map(function(x){
+        return '<div class="dcard"><h5><span class="ko">'+x.ko+'</span><span class="en">'+x.en+'</span></h5>'
+          +'<p><span class="ko">'+x.dko+'</span><span class="en">'+x.den+'</span></p></div>';
+      }).join('');
+      var formulaHtml = '<div class="desc" style="margin-top:12px;background:var(--bg-soft);border:1px solid var(--line);border-radius:10px;padding:16px 18px;font-size:13.5px">'
+        + t.formulas.map(function(f){ return '<div style="font-weight:700;color:var(--navy);margin-bottom:4px"><span class="ko">'+f.ko+'</span><span class="en">'+f.en+'</span></div>'; }).join('')
+        + '<div style="margin-top:8px;color:var(--muted);font-size:12.5px"><span class="ko">'+t.formulaNoteKo+'</span><span class="en">'+t.formulaNoteEn+'</span></div>'
+        + '</div>';
+      tabBody = '<p class="desc"><span class="ko">'+t.bodyKo+'</span><span class="en">'+t.bodyEn+'</span></p>'
+        + '<div class="dcards">'+dcards+'</div>'
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">마찰력 산정</span><span class="en">Estimating Friction</span></h4>'
+        + '<p class="desc"><span class="ko">'+t.frictionKo+'</span><span class="en">'+t.frictionEn+'</span></p>'
+        + formulaHtml
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">'+t.extrusionTitleKo+'</span><span class="en">'+t.extrusionTitleEn+'</span></h4>'
+        + '<p class="desc"><span class="ko">'+t.extrusionKo+'</span><span class="en">'+t.extrusionEn+'</span></p>'
+        + renderDataTable(t.extrusionCols, t.extrusionRows)
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">'+t.surfaceTitleKo+'</span><span class="en">'+t.surfaceTitleEn+'</span></h4>'
+        + '<p class="desc"><span class="ko">'+t.surfaceKo+'</span><span class="en">'+t.surfaceEn+'</span></p>'
+        + renderDataTable(t.surfaceCols, t.surfaceRows);
+    } else if(springTab==='jacket'){
+      var t2=SPRING_TABS.jacket;
+      tabBody = '<p class="desc"><span class="ko">'+t2.bodyKo+'</span><span class="en">'+t2.bodyEn+'</span></p>'
+        + renderDataTable(t2.cols, t2.rows);
+    } else {
+      var t3=SPRING_TABS.spring;
+      var typeCardsBlock = typeCardsHtml({
+        titleKo:'스프링 타입 (하중 특성별 6종)', titleEn:'Spring Types by Load Characteristic',
+        cards: t3.types.map(function(x){ return { type:{ko:x.ko,en:x.en}, img:x.img, alt:x.en, descKo:x.descKo, descEn:x.descEn }; })
+      });
+      tabBody = '<p class="desc"><span class="ko">'+t3.bodyKo+'</span><span class="en">'+t3.bodyEn+'</span></p>'
+        + typeCardsBlock
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">'+t3.compatTitleKo+'</span><span class="en">'+t3.compatTitleEn+'</span></h4>'
+        + renderDataTable(t3.compatCols, t3.compatRows)
+        + '<p class="desc" style="margin-top:12px;font-size:13px"><span class="ko">'+t3.compatNoteKo+'</span><span class="en">'+t3.compatNoteEn+'</span></p>'
+        + '<h4 class="sizeh" style="margin-top:30px;padding-top:20px;border-top:1px solid var(--line)"><span class="ko">'+t3.charTitleKo+'</span><span class="en">'+t3.charTitleEn+'</span></h4>'
+        + renderDataTable(t3.charCols, t3.charRows);
+    }
+
+    content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it)
+      + tabsHtml + '<div class="subtab-body">'+tabBody+'</div>' + inquireHtml;
+  }
+
   function render(id){
     var it=MAP[id]; if(!it) return;
     if(it.special==='oring'){ renderOring(); }
     else if(it.special==='perfluoro'){ renderPerfluoro(); }
     else if(it.special==='piston'){ renderPiston(); }
     else if(it.special==='hp'){ renderHp(); }
+    else if(it.special==='spring'){ renderSpring(); }
     else{
       content.innerHTML = baseHead(it) + heroImgHtml(it) + bodyHtml(it) + inquireHtml;
     }
@@ -1217,7 +1433,8 @@
     perfluoroTab:function(k){ perfluoroTab=k; renderPerfluoro(); },
     pistonDetail:function(k){ pistonDetailView=k; renderPiston(); if(k && window.innerWidth<900 && content.scrollIntoView){ content.scrollIntoView({behavior:'smooth'}); } },
     hpGroup:function(k){ hpGroup=k; hpDetailView=null; renderHp(); },
-    hpDetail:function(k){ hpDetailView=k; renderHp(); if(k && window.innerWidth<900 && content.scrollIntoView){ content.scrollIntoView({behavior:'smooth'}); } }
+    hpDetail:function(k){ hpDetailView=k; renderHp(); if(k && window.innerWidth<900 && content.scrollIntoView){ content.scrollIntoView({behavior:'smooth'}); } },
+    springTab:function(k){ springTab=k; renderSpring(); }
   };
 
   // ---- deep link (#oring, #hp, #oil, ...) ----

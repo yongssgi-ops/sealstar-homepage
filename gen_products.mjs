@@ -110,6 +110,17 @@ function buildStaticContent(id){
       '</div>';
     contentHtml = contentHtml.replace(/<div class="pbody"><h3><span class="ko">세부 기술자료[\s\S]*?<\/div>(?=<div class="inquire")/, detailSection);
   }
+  if(id === 'spring'){
+    window.SS.springTab('design'); const design = subtabBody();
+    window.SS.springTab('jacket'); const jacket = subtabBody();
+    window.SS.springTab('spring'); const springAlloy = subtabBody();
+    window.SS.springTab('design'); // reset
+    const staticSections =
+      '<h3><span class="ko">설계</span><span class="en">Design</span></h3>' + design +
+      '<h3><span class="ko">자켓재질</span><span class="en">Jacket Material</span></h3>' + jacket +
+      '<h3><span class="ko">금속재질</span><span class="en">Spring Alloys</span></h3>' + springAlloy;
+    contentHtml = contentHtml.replace(/<div class="subtabs">[\s\S]*?<\/div>\s*<div class="subtab-body">[\s\S]*?<\/div>(?=<div class="inquire")/, '<div class="pbody">' + staticSections + '</div>');
+  }
 
   // replace background-image hero div with a real <img alt>
   const it = items.find(x => x.id === id);
