@@ -20,8 +20,8 @@
     },
     {
       id:'semiconductor', ko:'반도체 & 디스플레이', en:'Semiconductor & Display', img:img('14887614'),
-      introKo:'반도체·디스플레이 공정은 초정밀 클린룸 환경에서 이루어지며, 미세한 입자 발생이나 화학물질 누출이 수율에 직접적인 영향을 미칩니다. 씰스타는 우수한 화학 내성과 저파티클 특성을 갖춘 캡슐오링, PEEK 소재 씰 등으로 정밀 공정을 지원합니다.',
-      introEn:'Semiconductor and display processes run in ultra-precise cleanrooms, where particle generation or chemical leakage directly affects yield. Sealstar supports these processes with encapsulated O-rings and PEEK seals offering excellent chemical resistance and low-particle characteristics.',
+      introKo:'반도체·디스플레이 공정은 초정밀 클린룸 환경에서 이루어지며, 미세한 입자 발생이나 화학물질 누출이 수율에 직접적인 영향을 미칩니다. 씰스타는 우수한 화학 내성과 저파티클 특성을 갖춘 퍼플러오링, 스프링에너자이즈씰, PEEK 소재 씰 등으로 정밀 공정을 지원합니다.',
+      introEn:'Semiconductor and display processes run in ultra-precise cleanrooms, where particle generation or chemical leakage directly affects yield. Sealstar supports these processes with perfluoro O-rings, spring-energized seals and PEEK seals offering excellent chemical resistance and low-particle characteristics.',
       areasKo:['웨이퍼 이송·척(Chuck) 장비','식각(Etch)·증착(CVD/PVD) 챔버','가스 배관 밸브','초순수(UPW) 배관'],
       areasEn:['Wafer transfer & chuck equipment','Etch / deposition (CVD·PVD) chambers','Gas line valves','Ultra-pure water (UPW) lines'],
       perf:[
@@ -44,7 +44,7 @@
         {ko:'고압 밀봉',en:'High-Pressure Sealing',dko:'고압 환경에서도 안정적인 실링 성능을 확보.',den:'Reliable sealing performance under high pressure.'},
         {ko:'방사선 내성',en:'Radiation Resistance',dko:'원자력 환경의 방사선 노출에도 물성 저하를 최소화.',den:'Minimizes property loss under nuclear radiation exposure.'}
       ],
-      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'}]
+      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'}]
     },
     {
       id:'oilgas', ko:'석유가스화학', en:'Oil, Gas & Petrochemical', img:img('15970032'),
