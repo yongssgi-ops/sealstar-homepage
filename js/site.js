@@ -9,6 +9,13 @@ function setLang(l){
 (function(){
   // restore language
   try{ var l=localStorage.getItem('ss_lang'); if(l) setLang(l); }catch(e){}
+
+  // years of experience since founding (1982) — auto-updates each year
+  var yearsEl = document.getElementById('yearsExp');
+  if(yearsEl){
+    var years = new Date().getFullYear() - 1982;
+    yearsEl.innerHTML = years + '<span>+</span>';
+  }
   // scroll reveal
   var els=document.querySelectorAll('.reveal');
   if('IntersectionObserver' in window){
