@@ -472,11 +472,12 @@
   var latest = POSTS.slice().sort(function(a,b){ return b.date.localeCompare(a.date); }).slice(0,3);
   grid.innerHTML = latest.map(function(p){
     var bg = p.img ? ("background-image:url('"+p.img+"')") : "background:linear-gradient(135deg,var(--navy-2),var(--sky-d))";
-    return '<div class="ncard" onclick="location.href=\'news.html\'">'
+    var href = p.id ? ('news/'+p.id+'.html') : 'news.html';
+    return '<a class="ncard" href="'+href+'">'
       +'<div class="nh" style="'+bg+'"></div>'
       +'<div class="nb"><span class="tag"><span class="ko">'+TAG[p.type].ko+'</span><span class="en">'+TAG[p.type].en+'</span></span>'
       +'<h4><span class="ko">'+esc(p.titleKo)+'</span><span class="en">'+esc(p.titleEn)+'</span></h4>'
-      +'<div class="date"><span>'+p.date+'</span></div></div></div>';
+      +'<div class="date"><span>'+p.date+'</span></div></div></a>';
   }).join('');
 })();
 </script>
