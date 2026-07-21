@@ -58,7 +58,7 @@
         {ko:'고온·고압 밀봉',en:'High-Temp / High-Pressure',dko:'플랜트 운전 조건에 맞춘 안정적 실링 성능.',den:'Stable sealing performance matched to plant operating conditions.'},
         {ko:'국제 인증 대응',en:'International Standards',dko:'API, NORSOK M710, NACE 등 규격에 대응하는 소재.',den:'Materials compliant with API, NORSOK M710 and NACE standards.'}
       ],
-      prod:[{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'베어링아이솔레이터',en:'Bearing Isolator (BPS)',href:'products.html#isolator'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'}]
+      prod:[{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'베어링아이솔레이터',en:'Bearing Isolator',href:'products.html#isolator'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'}]
     },
     {
       id:'shipbuilding', ko:'조선해양', en:'Shipbuilding & Marine', img:img('9083327'),

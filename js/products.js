@@ -822,9 +822,9 @@
       ],
       apps:[{ko:'유압 변속기',en:'Hydraulic transmissions'},{ko:'클러치',en:'Clutches'},{ko:'토크컨버터',en:'Torque converters'},{ko:'유정압 변속기',en:'Hydrostatic transmissions'}] },
 
-    { id:'isolator', ko:'베어링아이솔레이터', en:'Bearing Isolator (BPS)', imgs:['images/web/isolator1.jpg'],
-      dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터(BPS)입니다. 접촉 마찰이 없어 마모 없이 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
-      den:'A non-contact bearing protector/isolator (BPS) that uses a fine labyrinth gap between rotating and stationary elements. Virtually wear-free, it blocks both contamination ingress and lubricant loss.',
+    { id:'isolator', ko:'베어링아이솔레이터', en:'Bearing Isolator', imgs:['images/web/isolator1.jpg'],
+      dko:'회전체와 고정체 사이의 미세 간극을 이용한 비접촉 방식으로 베어링을 보호하는 아이솔레이터입니다. 접촉 마찰이 없어 마모 없이 사용 가능하며, 오염물질 유입과 윤활유 누출을 동시에 차단합니다.',
+      den:'A non-contact bearing protector/isolator that uses a fine labyrinth gap between rotating and stationary elements. Virtually wear-free, it blocks both contamination ingress and lubricant loss.',
       mat:['PTFE','FKM'],
       principleKo:'회전환과 고정환이 서로 맞물리는 미로(labyrinth) 형태의 미세 간극을 형성하되, 두 부품이 직접 접촉하지는 않습니다. 이 좁고 구불구불한 경로가 물리적 장벽 역할을 해 오염물질의 침입과 윤활유의 유출을 억제하며, 비접촉 구조이기 때문에 마모가 거의 없어 오랜 기간 안정적으로 사용할 수 있습니다. 모델에 따라 O-ring 보조 실링이나 배수 홈을 추가해 밀봉 성능을 높이기도 합니다.',
       principleEn:'A rotating ring and a stationary ring interlock to form a fine labyrinth clearance without ever touching each other. That narrow, winding path acts as a physical barrier that resists contaminant ingress and lubricant loss, and because there is no rubbing contact, wear is virtually eliminated — giving the isolator a long, stable service life. Depending on the model, an auxiliary O-ring or drainage groove can be added to further improve sealing performance.',
