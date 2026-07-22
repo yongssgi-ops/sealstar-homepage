@@ -75,7 +75,7 @@
       prod:[{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'베어링아이솔레이터',en:'Bearing Isolator',href:'products.html#isolator'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'}]
     },
     {
-      id:'shipbuilding', ko:'조선해양', en:'Shipbuilding & Marine', img:img('9083327'),
+      id:'shipbuilding', ko:'조선해양', en:'Shipbuilding & Marine', img:'images/web/markets/shipbuilding.jpg',
       introKo:'조선해양 산업은 해상이라는 특수한 환경에서 요구되는 제품 성능과 신뢰성에 대한 기대치가 매우 높은 분야입니다. 씰스타는 해수 부식, 염분, 진동, 장기간의 하중에도 견디는 내구성 높은 씰링 솔루션으로 선박 및 해양플랜트 설비의 안정적인 운용을 지원합니다.',
       introEn:'Shipbuilding and marine is a field with very high expectations for performance and reliability in the demanding offshore environment. Sealstar supports the stable operation of vessels and offshore facilities with durable sealing solutions that withstand seawater corrosion, salinity, vibration and long-term loading.',
       areasKo:['선박 추진축 실링(스턴튜브)','데크 크레인·윈치','해양플랜트 밸브·배관','스러스터·방향타 구동부','밸러스트 시스템 펌프'],
@@ -89,7 +89,7 @@
       prod:[{ko:'오일씰',en:'Oil Seal',href:'products.html#oil'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'}]
     },
     {
-      id:'aerospace', ko:'우주항공', en:'Aerospace', img:'https://images.pexels.com/photos/23783/rocket-launch-space-discovery.png?auto=compress&cs=tinysrgb&w=1500',
+      id:'aerospace', ko:'우주항공', en:'Aerospace', img:'images/web/markets/aerospace.jpg',
       introKo:'항공우주 산업은 극한의 온도 변화, 진동, 경량화 요구가 공존하는 최고 수준의 정밀 산업입니다. 씰스타는 글로벌 우주항공 분야를 이끄는 미국 S社에 씰을 공급하는 최대 협력사의 한국 공식대리점으로 함께하며, 검증된 고신뢰성 씰 제품과 PEEK 등 고기능 엔지니어링 플라스틱을 기반으로 항공우주 부품의 신뢰성을 뒷받침합니다.',
       introEn:'Aerospace is a top-tier precision industry where extreme temperature swings, vibration and weight-reduction demands coexist. Sealstar partners as the official Korean agent for the largest seal supplier to a leading U.S. aerospace company, delivering proven high-reliability seals and high-performance engineering plastics such as PEEK to underpin the reliability of aerospace components.',
       areasKo:['랜딩기어 유압 시스템','연료 시스템 밸브','엔진 주변 실링','유압 액추에이터'],
