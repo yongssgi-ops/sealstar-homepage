@@ -37,8 +37,8 @@
     },
     material:{
       ko:'재질', en:'Materials',
-      bodyKo:'씰스타는 NBR·H-NBR·EPDM·실리콘·네오프렌·VITON(FKM)·AFLAS·FFKM·폴리우레탄·테프론 등 10종의 재질로 오링을 공급하며, 사용 온도·유체·화학 조건에 맞는 최적 재질을 선정해 드립니다. 아래 특성·취약 매체·온도범위는 일반적인 참고값이며, 정확한 사양은 문의 바랍니다.',
-      bodyEn:'Sealstar supplies O-rings in 10 material families — NBR, H-NBR, EPDM, silicone, neoprene (CR), VITON (FKM), AFLAS, FFKM, polyurethane and PTFE — and helps select the optimal material for your temperature, fluid and chemical conditions. The characteristics, incompatible media and temperature ranges below are general reference values — please contact us for exact specifications.',
+      bodyKo:'씰스타는 NBR·H-NBR·EPDM·실리콘·네오프렌·VITON(FKM)·AFLAS·FFKM·폴리우레탄·테프론 등 각종 재질로 오링을 공급하며, 사용 온도·유체·화학 조건에 맞는 최적 재질을 선정해 드립니다. 아래 특성·취약 매체·온도범위는 일반적인 참고값이며, 정확한 사양은 문의 바랍니다.',
+      bodyEn:'Sealstar supplies O-rings in a wide range of material families — NBR, H-NBR, EPDM, silicone, neoprene (CR), VITON (FKM), AFLAS, FFKM, polyurethane and PTFE — and helps select the optimal material for your temperature, fluid and chemical conditions. The characteristics, incompatible media and temperature ranges below are general reference values — please contact us for exact specifications.',
       rows:[
         {mat:'NBR', sub:'Nitrile · 부타디엔', subEn:'Nitrile · Butadiene',
           advKo:'표준 씰 최다 사용 · 내유·내마모·저가스투과 · 광유계 오일·그리스·유압유 우수', advEn:'Most widely used standard seal material — excellent oil/abrasion resistance and low gas permeability; strong with petroleum oils, greases and hydraulic fluid',
