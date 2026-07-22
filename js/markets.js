@@ -47,7 +47,7 @@
       prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'}]
     },
     {
-      id:'energy', ko:'에너지 (수소·LNG)', en:'Energy (Hydrogen·LNG)', img:img('35900949'),
+      id:'energy', ko:'에너지 (수소·LNG)', en:'Energy (Hydrogen·LNG)', img:'images/web/markets/energy.jpg',
       introKo:'수소·LNG 밀봉은 극저온(-162℃), 고압, 수소취성(Hydrogen Embrittlement) 등 기존 산업과는 차원이 다른 고난이도 기술을 요구합니다. 씰스타는 규격화된 기성품이 아닌 고객사의 실제 작동 환경(압력·온도·유체)에 맞춘 맞춤 설계로 최적의 밀봉 조건을 구현하며, 국내 수소·LNG 씰링 분야에서 최대 수준의 적용 실적과 기술력을 보유하고 있습니다.',
       introEn:'Hydrogen and LNG sealing demands technology of a fundamentally different order — cryogenic temperatures (-162°C), high pressure and hydrogen embrittlement. Rather than off-the-shelf parts, Sealstar custom-engineers each seal around the customer\'s actual operating environment — pressure, temperature and fluid — to achieve optimal sealing conditions, backed by the largest track record and technical expertise in hydrogen/LNG sealing in Korea.',
       areasKo:['수소 충전소·저장탱크 밸브','수전해·연료전지 스택','LNG 이송배관 및 저장설비','LNG 기화기(Vaporizer)'],

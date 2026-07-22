@@ -148,7 +148,7 @@ for (const m of MARKETS) {
 <meta property="og:title" content="${escAttr(title)}" />
 <meta property="og:description" content="${escAttr(desc)}" />
 <meta property="og:url" content="${url}" />
-<meta property="og:image" content="${m.img && m.img.startsWith('http') ? escAttr(m.img) : DOMAIN + '/images/logo-color.png'}" />
+<meta property="og:image" content="${m.img ? escAttr(m.img.startsWith('http') ? m.img : DOMAIN + '/' + m.img) : DOMAIN + '/images/logo-color.png'}" />
 <meta property="og:locale" content="ko_KR" />
 <link rel="icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
