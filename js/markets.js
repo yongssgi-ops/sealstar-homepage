@@ -90,8 +90,8 @@
     },
     {
       id:'aerospace', ko:'우주항공', en:'Aerospace', img:'https://images.pexels.com/photos/23783/rocket-launch-space-discovery.png?auto=compress&cs=tinysrgb&w=1500',
-      introKo:'항공우주 산업은 극한의 온도 변화, 진동, 경량화 요구가 공존하는 최고 수준의 정밀 산업입니다. 씰스타는 정밀 가공씰과 PEEK 등 고기능 엔지니어링 플라스틱을 기반으로 항공우주 부품의 신뢰성을 뒷받침합니다.',
-      introEn:'Aerospace is a top-tier precision industry where extreme temperature swings, vibration and weight-reduction demands coexist. Sealstar underpins the reliability of aerospace components with precision-machined seals and high-performance engineering plastics such as PEEK.',
+      introKo:'항공우주 산업은 극한의 온도 변화, 진동, 경량화 요구가 공존하는 최고 수준의 정밀 산업입니다. 씰스타는 미국 정밀 씰링 전문기업 S社의 한국 공식대리점으로, 글로벌 우주항공 프로그램에도 공급 이력을 보유한 고신뢰성 씰 제품과 PEEK 등 고기능 엔지니어링 플라스틱을 기반으로 항공우주 부품의 신뢰성을 뒷받침합니다.',
+      introEn:'Aerospace is a top-tier precision industry where extreme temperature swings, vibration and weight-reduction demands coexist. As the official Korean agent for a leading U.S. precision sealing manufacturer with a supply track record in global aerospace programs, Sealstar underpins the reliability of aerospace components with high-reliability seals and high-performance engineering plastics such as PEEK.',
       areasKo:['랜딩기어 유압 시스템','연료 시스템 밸브','엔진 주변 실링','유압 액추에이터'],
       areasEn:['Landing-gear hydraulic systems','Fuel-system valves','Engine-area sealing','Hydraulic actuators'],
       perf:[
