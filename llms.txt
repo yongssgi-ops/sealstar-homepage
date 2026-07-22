@@ -8,7 +8,7 @@ Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-dae
 
 - [Home](https://www.sealstar.com/): Company overview and product highlights
 - [About](https://www.sealstar.com/about.html): Company history since 1982, facilities, values, glossary of sealing terms
-- [Markets](https://www.sealstar.com/markets.html): Industries served — construction equipment, semiconductor, energy, oil & gas, marine, aerospace, food & pharma
+- [Markets](https://www.sealstar.com/markets.html): Industries served — construction equipment, semiconductor, power plants, hydrogen & LNG energy, oil & gas, marine, aerospace, food & pharma
 - [Products](https://www.sealstar.com/products.html): Interactive catalog of all 20 product categories
 - [News](https://www.sealstar.com/news.html): Exhibitions and company announcements
 - [Contact](https://www.sealstar.com/contact.html): Quote request form and FAQ
@@ -39,7 +39,8 @@ Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-dae
 
 - [Construction & Heavy Machinery](https://www.sealstar.com/markets/construction.html) (건설기계 & 중장비)
 - [Semiconductor & Display](https://www.sealstar.com/markets/semiconductor.html) (반도체 & 디스플레이)
-- [Energy (Hydrogen·LNG·Nuclear)](https://www.sealstar.com/markets/energy.html) (에너지 (수소·LNG·원자력))
+- [Power Plants (Thermal·Hydro·Nuclear)](https://www.sealstar.com/markets/powerplant.html) (발전소 (화력·수력·원자력))
+- [Energy (Hydrogen·LNG)](https://www.sealstar.com/markets/energy.html) (에너지 (수소·LNG))
 - [Oil, Gas & Petrochemical](https://www.sealstar.com/markets/oilgas.html) (석유가스화학)
 - [Shipbuilding & Marine](https://www.sealstar.com/markets/shipbuilding.html) (조선해양)
 - [Aerospace](https://www.sealstar.com/markets/aerospace.html) (우주항공)

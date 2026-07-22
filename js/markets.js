@@ -33,18 +33,32 @@
       prod:[{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'스프링에너자이즈씰 & PEEK',en:'Spring-Energized & PEEK',href:'products.html#spring'},{ko:'테프론캡슐오링',en:'Teflon Capsule O-Ring',href:'products.html#capsule'}]
     },
     {
-      id:'energy', ko:'에너지 (수소·LNG·원자력)', en:'Energy (Hydrogen·LNG·Nuclear)', img:img('4460676'),
-      introKo:'수소, LNG, 원자력 등 차세대 에너지 산업은 극저온, 고압, 수소취성(Hydrogen Embrittlement), 방사선 등 기존 산업과는 다른 차원의 밀봉 조건을 요구합니다. 씰스타는 스프링에너자이즈씰 & PEEK, 캡슐오링 등 고성능 소재 기반 제품으로 에너지 산업의 안전한 밀봉을 지원합니다.',
-      introEn:'Next-generation energy — hydrogen, LNG and nuclear — demands sealing conditions of a different order: cryogenic temperatures, high pressure, hydrogen embrittlement and radiation. Sealstar supports safe sealing with high-performance products such as spring-energized seals, PEEK and encapsulated O-rings.',
-      areasKo:['수소 충전소·저장탱크 밸브','LNG 이송배관 및 저장설비','원자력 발전 밸브·펌프','연료전지 스택'],
-      areasEn:['Hydrogen station & storage-tank valves','LNG transfer piping & storage','Nuclear plant valves & pumps','Fuel-cell stacks'],
+      id:'powerplant', ko:'발전소 (화력·수력·원자력)', en:'Power Plants (Thermal·Hydro·Nuclear)', img:img('3044473'),
+      introKo:'화력·수력·원자력 발전소는 고온·고압 증기, 대유량 냉각수, 방사선 등 극한 환경 속에서 장기간 무정지 운전이 요구되는 대표적인 국가 기간 인프라입니다. 씰스타는 터빈·보일러·냉각계통의 밸브와 펌프에 적용되는 내열·내압·내방사선 씰링 솔루션으로 발전 설비의 안정적인 운전을 지원합니다.',
+      introEn:'Thermal, hydro and nuclear power plants are critical national infrastructure requiring long-term, uninterrupted operation under extreme conditions — high-temperature/high-pressure steam, large-volume cooling water and radiation exposure. Sealstar supports stable plant operation with heat-, pressure- and radiation-resistant sealing solutions for turbine, boiler and cooling-system valves and pumps.',
+      areasKo:['터빈·보일러 스팀 밸브','냉각수 순환 펌프','수차·발전기 축씰(화력·수력)','원자로 냉각재 계통 밸브'],
+      areasEn:['Turbine & boiler steam valves','Cooling-water circulation pumps','Turbine/generator shaft seals (thermal & hydro)','Reactor coolant system valves'],
+      perf:[
+        {ko:'고온·고압 증기 대응',en:'High-Temp Steam Resistance',dko:'터빈·보일러의 고온·고압 증기 환경에서도 안정적인 밀봉 성능을 유지.',den:'Reliable sealing under the high-temperature, high-pressure steam of turbines and boilers.'},
+        {ko:'대유량 냉각수 내구성',en:'Cooling-Water Durability',dko:'대용량 냉각수 순환 계통에서 장기간 마모 없이 작동.',den:'Long-term, wear-free operation in large-volume cooling-water circuits.'},
+        {ko:'방사선 내성 (원자력)',en:'Radiation Resistance (Nuclear)',dko:'원자력 환경의 방사선 노출에도 물성 저하를 최소화.',den:'Minimizes property loss under nuclear radiation exposure.'},
+        {ko:'장기 무정지 운전 신뢰성',en:'Long-Term Uptime Reliability',dko:'정비 주기가 긴 발전설비 특성에 맞춘 장수명 설계.',den:'Long-service-life design suited to power plants\' extended maintenance intervals.'}
+      ],
+      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'}]
+    },
+    {
+      id:'energy', ko:'에너지 (수소·LNG)', en:'Energy (Hydrogen·LNG)', img:img('35900949'),
+      introKo:'수소·LNG 밀봉은 극저온(-162℃), 고압, 수소취성(Hydrogen Embrittlement) 등 기존 산업과는 차원이 다른 고난이도 기술을 요구합니다. 씰스타는 규격화된 기성품이 아닌 고객사의 실제 작동 환경(압력·온도·유체)에 맞춘 맞춤 설계로 최적의 밀봉 조건을 구현하며, 국내 수소·LNG 씰링 분야에서 최대 수준의 적용 실적과 기술력을 보유하고 있습니다.',
+      introEn:'Hydrogen and LNG sealing demands technology of a fundamentally different order — cryogenic temperatures (-162°C), high pressure and hydrogen embrittlement. Rather than off-the-shelf parts, Sealstar custom-engineers each seal around the customer\'s actual operating environment — pressure, temperature and fluid — to achieve optimal sealing conditions, backed by the largest track record and technical expertise in hydrogen/LNG sealing in Korea.',
+      areasKo:['수소 충전소·저장탱크 밸브','수전해·연료전지 스택','LNG 이송배관 및 저장설비','LNG 기화기(Vaporizer)'],
+      areasEn:['Hydrogen station & storage-tank valves','Water electrolysis & fuel-cell stacks','LNG transfer piping & storage','LNG vaporizers'],
       perf:[
         {ko:'수소취성 저항',en:'Hydrogen-Embrittlement Resistance',dko:'수소 침투에 의한 재질 열화를 최소화하는 소재 선정.',den:'Material selection that minimizes degradation from hydrogen ingress.'},
         {ko:'극저온 대응 (Cryogenic)',en:'Cryogenic Capability',dko:'LNG(-162°C) 등 초저온 환경에서도 탄성을 유지.',den:'Retains elasticity in cryogenic environments such as LNG (-162°C).'},
-        {ko:'고압 밀봉',en:'High-Pressure Sealing',dko:'고압 환경에서도 안정적인 실링 성능을 확보.',den:'Reliable sealing performance under high pressure.'},
-        {ko:'방사선 내성',en:'Radiation Resistance',dko:'원자력 환경의 방사선 노출에도 물성 저하를 최소화.',den:'Minimizes property loss under nuclear radiation exposure.'}
+        {ko:'고객 맞춤 설계 대응력',en:'Custom Engineering Capability',dko:'기성품이 아닌 고객사의 작동 환경(압력·온도·유체)에 맞춘 맞춤 설계로 최적의 밀봉 조건을 구현합니다.',den:'Not an off-the-shelf part — every seal is custom-engineered around the customer\'s operating pressure, temperature and fluid for optimal sealing.'},
+        {ko:'국내 최대 실적·기술력',en:'Korea\'s Largest Track Record',dko:'수소·LNG 밀봉 분야에서 국내 최대 수준의 적용 실적과 기술 노하우를 보유하고 있습니다.',den:'Holds the largest domestic track record and technical know-how in hydrogen/LNG sealing.'}
       ],
-      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'퍼플러오링',en:'Perfluoro O-Ring (FFKM)',href:'products.html#perfluoro'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'AED(급속감압) 저항 오링',en:'AED / RGD-Resistant O-Ring',href:'products.html#oring'}]
+      prod:[{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'},{ko:'PEEK',en:'PEEK',href:'products.html#peek'}]
     },
     {
       id:'oilgas', ko:'석유가스화학', en:'Oil, Gas & Petrochemical', img:img('15970032'),
