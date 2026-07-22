@@ -631,6 +631,7 @@
       dko:'FFKM(퍼플루오로 엘라스토머) 소재의 오링으로, 최대 330℃에 이르는 내열성과 거의 모든 화학물질에 대응하는 내화학성을 갖춰 반도체 공정·초고온·초극한 환경에 사용됩니다.',
       den:'O-rings made from FFKM (perfluoroelastomer), offering heat resistance up to roughly 330°C and near-universal chemical compatibility — used in semiconductor processes and other extreme environments.',
       mat:['FFKM'],
+      terms:['칼레츠(Kalrez)','캠레즈(Chemraz)','퍼플러(Perfluoro)'],
       principleKo:'FFKM은 분자 구조 내 수소를 불소로 치환한 완전 불소화 엘라스토머로, PTFE에 가까운 내화학성을 유지하면서도 고무처럼 탄성 밀봉이 가능하도록 설계된 소재입니다. 이 탄성 덕분에 일반 오링과 동일한 방식(그루브 압축)으로 장착·사용할 수 있습니다.',
       principleEn:'FFKM is a fully fluorinated elastomer in which hydrogen atoms are replaced with fluorine, giving it PTFE-like chemical resistance while still retaining the elasticity needed for conventional groove-compression sealing — so it installs and functions just like a standard O-ring.',
       features:[
@@ -971,6 +972,7 @@
     inqDescEn:'Send us your dimensions, drawings and quantity for a prompt reply.',
     inqBtnKo:'견적 문의', inqBtnEn:'Request a Quote',
     matKo:'적용 소재', matEn:'Materials',
+    termsKo:'관련 용어', termsEn:'Related Terms',
     comingKo:'실물 이미지는 준비 중입니다. 자세한 사양은 문의해 주세요.',
     comingEn:'Product photos are coming soon — please contact us for detailed specifications.'
   };
@@ -1080,10 +1082,12 @@
 
   function baseHead(it){
     var mat=(it.mat||[]).map(function(m){return '<span>'+m+'</span>';}).join('');
+    var terms=(it.terms||[]).map(function(m){return '<span>'+m+'</span>';}).join('');
     return '<div class="pc-head"><div><h2><span class="ko">'+it.ko+'</span><span class="en">'+it.en+'</span></h2></div></div>'
       +'<div class="en-title">'+it.en.toUpperCase()+'</div>'
       +'<p class="desc"><span class="ko">'+it.dko+'</span><span class="en">'+it.den+'</span></p>'
-      + (mat ? '<div style="font-weight:800;color:var(--navy);font-size:13px;letter-spacing:.05em;margin-bottom:8px"><span class="ko">'+T.matKo+'</span><span class="en">'+T.matEn+'</span></div><div class="mat">'+mat+'</div>' : '');
+      + (mat ? '<div style="font-weight:800;color:var(--navy);font-size:13px;letter-spacing:.05em;margin-bottom:8px"><span class="ko">'+T.matKo+'</span><span class="en">'+T.matEn+'</span></div><div class="mat">'+mat+'</div>' : '')
+      + (terms ? '<div style="font-weight:800;color:var(--navy);font-size:13px;letter-spacing:.05em;margin:10px 0 8px"><span class="ko">'+T.termsKo+'</span><span class="en">'+T.termsEn+'</span></div><div class="mat">'+terms+'</div>' : '');
   }
 
   var inquireHtml =
