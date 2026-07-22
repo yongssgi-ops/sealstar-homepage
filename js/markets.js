@@ -44,7 +44,7 @@
         {ko:'방사선 내성 (원자력)',en:'Radiation Resistance (Nuclear)',dko:'원자력 환경의 방사선 노출에도 물성 저하를 최소화.',den:'Minimizes property loss under nuclear radiation exposure.'},
         {ko:'장기 무정지 운전 신뢰성',en:'Long-Term Uptime Reliability',dko:'정비 주기가 긴 발전설비 특성에 맞춘 장수명 설계.',den:'Long-service-life design suited to power plants\' extended maintenance intervals.'}
       ],
-      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'}]
+      prod:[{ko:'비규격연결오링',en:'Non-Standard Vulc\'d O-Ring',href:'products.html#vulc'},{ko:'메카니컬씰',en:'Mechanical Seal',href:'products.html#mechanical'},{ko:'ACM 베어링',en:'ACM Bearing',href:'products.html#acm'},{ko:'유압 & 공압씰',en:'Hydraulic & Pneumatic',href:'products.html#hp'},{ko:'스프링에너자이즈씰',en:'Spring-Energized Seal',href:'products.html#spring'}]
     },
     {
       id:'energy', ko:'에너지 (수소·LNG)', en:'Energy (Hydrogen·LNG)', img:img('35900949'),
