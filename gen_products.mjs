@@ -1,8 +1,9 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const root = '/sessions/bold-affectionate-wright/mnt/SealstarHomepage';
+const root = path.dirname(fileURLToPath(import.meta.url));
 const DOMAIN = 'https://www.sealstar.com';
 
 const html = fs.readFileSync(path.join(root, 'products.html'), 'utf8');

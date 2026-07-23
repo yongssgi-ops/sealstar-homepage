@@ -13,8 +13,9 @@
 import fs from 'fs';
 import path from 'path';
 import vm from 'vm';
+import { fileURLToPath } from 'url';
 
-const root = '/sessions/bold-affectionate-wright/mnt/SealstarHomepage';
+const root = path.dirname(fileURLToPath(import.meta.url));
 const DOMAIN = 'https://www.sealstar.com';
 
 // ---- MARKETS 배열 추출 (jsdom 없이) ----

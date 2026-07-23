@@ -7,3 +7,26 @@ node_modules
 _test.mjs
 sealstar-renewal.html
 src
+
+# 내부 문서 (배포 불필요)
+씰스타_카다록_전체_검토용.pdf
+sealstar_신규홈페이지_SEO_GEO_개선안.md
+
+# 미사용 대용량 원본 파일 (어떤 페이지에서도 참조되지 않음)
+evolast1.jpg
+evolast2.jpg
+images/IMG_1287.CR2
+메카니컬씰 사진.png
+베어링아이솔레이터 사진.png
+비규격연결오링 사진.png
+씰스타 검수 사진.png
+자식필터 사진.png
+퍼플러오링 사진.png
+images/web/company-exterior.png
+images/web/company-warehouse-1f.png
+images/web/company-warehouse-2f.png
+images/web/company-warehouse-annex.png
+images/web/company-warehouse-basement.png
+images/web/company-assembly-2f.png
+images/web/company-office-1f.png
+images/web/company-meeting-room.png

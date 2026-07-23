@@ -1,8 +1,9 @@
 import { JSDOM } from 'jsdom';
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 
-const root='/sessions/bold-affectionate-wright/mnt/SealstarHomepage';
+const root = path.dirname(fileURLToPath(import.meta.url));
 function loadPage(file, extraScripts){
   const html=fs.readFileSync(path.join(root,file),'utf8');
   const dom=new JSDOM(html,{runScripts:'outside-only',pretendToBeVisual:true,url:'file://'+root+'/'+file});
