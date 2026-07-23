@@ -62,3 +62,85 @@ function setLang(l){
     window.scrollTo({top:0, behavior:'smooth'});
   });
 })();
+
+// ---------- 규격/코드 검색 (오링·유압씰형상·퍼플러오링·베어링아이솔레이터) ----------
+(function(){
+  var input = document.getElementById('gsearch-input');
+  var panel = document.getElementById('gsearch-results');
+  if(!input || !panel || typeof SEARCH_INDEX === 'undefined') return;
+
+  // 현재 페이지가 하위 폴더(products/markets/news)에 있는지에 따라 상대경로 접두어를 계산
+  var inSubfolder = /^\/(products|markets|news)\//.test(location.pathname);
+  var prefix = inSubfolder ? '../' : '';
+  var curPage = location.pathname.split('/').filter(Boolean).slice(-2).join('/');
+
+  function norm(s){ return (s||'').toString().toLowerCase().replace(/\s+/g,''); }
+
+  function search(q){
+    q = norm(q);
+    if(!q) return [];
+    var exact=[], starts=[], contains=[];
+    for(var i=0;i<SEARCH_INDEX.length;i++){
+      var e = SEARCH_INDEX[i], code = norm(e.c);
+      if(code === q){ exact.push(e); }
+      else if(code.indexOf(q) === 0){ starts.push(e); }
+      else if(code.indexOf(q) !== -1){ contains.push(e); }
+    }
+    return exact.concat(starts, contains).slice(0, 8);
+  }
+
+  function render(list, query){
+    if(!query){ panel.classList.remove('show'); panel.innerHTML=''; return; }
+    if(!list.length){
+      panel.innerHTML = '<div class="gsearch-empty"><span class="ko">검색 결과가 없습니다</span><span class="en">No matches</span></div>';
+      panel.classList.add('show');
+      return;
+    }
+    panel.innerHTML = list.map(function(e,i){
+      return '<a class="gsearch-item'+(i===0?' active':'')+'" href="'+prefix+e.p+'#'+e.i+'" data-p="'+e.p+'" data-i="'+e.i+'">'+e.l+'</a>';
+    }).join('');
+    panel.classList.add('show');
+  }
+
+  function hide(){ panel.classList.remove('show'); }
+
+  function jumpTo(id){
+    var el = document.getElementById(id);
+    if(!el) return;
+    el.scrollIntoView({behavior:'smooth', block:'center'});
+    el.classList.remove('jump-flash'); void el.offsetWidth; el.classList.add('jump-flash');
+  }
+
+  function go(entry){
+    hide(); input.value=''; input.blur();
+    if(entry.p === curPage){ jumpTo(entry.i); }
+    else { location.href = prefix + entry.p + '#' + entry.i; }
+  }
+
+  input.addEventListener('input', function(){ render(search(input.value), input.value.trim()); });
+  input.addEventListener('focus', function(){ if(input.value.trim()) render(search(input.value), input.value.trim()); });
+  input.addEventListener('keydown', function(ev){
+    if(ev.key === 'Enter'){
+      ev.preventDefault();
+      var results = search(input.value);
+      if(results.length) go(results[0]);
+    } else if(ev.key === 'Escape'){ hide(); input.blur(); }
+  });
+  document.addEventListener('click', function(ev){
+    if(!ev.target.closest('.gsearch')) hide();
+  });
+  panel.addEventListener('click', function(ev){
+    var a = ev.target.closest('.gsearch-item');
+    if(!a) return;
+    ev.preventDefault();
+    go({p:a.getAttribute('data-p'), i:a.getAttribute('data-i')});
+  });
+
+  // 검색 결과를 타고 넘어온 경우(#or-P50 등) 로딩 후 자동 스크롤 + 하이라이트
+  if(location.hash.length > 1){
+    var hashId = location.hash.slice(1);
+    if(document.getElementById(hashId)){
+      setTimeout(function(){ jumpTo(hashId); }, 250);
+    }
+  }
+})();

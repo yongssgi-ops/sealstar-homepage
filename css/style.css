@@ -62,6 +62,22 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdro
 .tel{font-weight:800;color:var(--navy);font-size:15px;white-space:nowrap}
 .hamb{display:none;background:none;border:none;font-size:26px;cursor:pointer;color:var(--navy)}
 
+/* ---------- Global code search (오링/유압씰형상/퍼플러오링/베어링아이솔레이터) ---------- */
+.gsearch{position:relative}
+.gsearch-input{width:150px;padding:7px 14px;border:1px solid var(--line);border-radius:999px;
+  font-size:13px;color:var(--ink);outline:none;transition:width .18s,border-color .18s;background:#fff}
+.gsearch-input::placeholder{color:var(--muted)}
+.gsearch-input:focus{width:210px;border-color:var(--sky-d)}
+.gsearch-results{position:absolute;top:calc(100% + 8px);right:0;width:280px;max-height:360px;overflow-y:auto;
+  background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);
+  display:none;z-index:80}
+.gsearch-results.show{display:block}
+.gsearch-item{display:block;padding:10px 14px;font-size:13px;line-height:1.4;color:var(--ink);
+  border-top:1px solid var(--line);cursor:pointer;text-decoration:none}
+.gsearch-item:first-child{border-top:none}
+.gsearch-item:hover,.gsearch-item.active{background:var(--bg-soft);color:var(--navy)}
+.gsearch-empty{padding:14px;font-size:13px;color:var(--muted);text-align:center}
+
 /* ---------- Footer ---------- */
 footer{background:var(--navy-3);color:#a9bad0;padding:64px 0 28px;font-size:14px}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.2fr;gap:44px;margin-bottom:40px}
@@ -105,6 +121,8 @@ html[lang="en"] .en-b{display:block}
   .nav{gap:10px}
   .nav-right{gap:10px}
   .lang button{padding:6px 9px;font-size:12px}
+  .gsearch-input{width:96px}
+  .gsearch-input:focus{width:150px}
 }
 @media(max-width:480px){
   .wrap{padding:0 16px}
@@ -112,6 +130,9 @@ html[lang="en"] .en-b{display:block}
   .nav-right{gap:6px}
   .lang button{padding:5px 8px;font-size:11px}
   .hamb{font-size:23px}
+  .gsearch-input{width:74px;padding:6px 10px}
+  .gsearch-input:focus{width:120px}
+  .gsearch-results{width:240px}
   section{padding:48px 0}
   h2.title{font-size:clamp(22px,6vw,30px)}
   .lead{font-size:15.5px}
@@ -128,4 +149,11 @@ html[lang="en"] .en-b{display:block}
 @media(max-width:480px){
   .back-to-top{right:16px;bottom:16px;width:44px;height:44px}
   .back-to-top svg{width:18px;height:18px}
+}
+
+/* ---------- Search jump highlight ---------- */
+.jump-flash{animation:jumpFlash 1.8s ease}
+@keyframes jumpFlash{
+  0%{background:rgba(245,163,0,.4);box-shadow:0 0 0 3px rgba(245,163,0,.4)}
+  100%{background:transparent;box-shadow:none}
 }
