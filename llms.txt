@@ -10,7 +10,6 @@ Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-dae
 - [About](https://www.sealstar.com/about.html): Company history since 1982, facilities, values, glossary of sealing terms
 - [Markets](https://www.sealstar.com/markets.html): Industries served — construction equipment, semiconductor, power plants, hydrogen & LNG energy, oil & gas, marine, aerospace, food & pharma
 - [Products](https://www.sealstar.com/products.html): Interactive catalog of all 20 product categories
-- [News](https://www.sealstar.com/news.html): Exhibitions and company announcements
 - [Contact](https://www.sealstar.com/contact.html): Quote request form and FAQ
 
 ## Products (20 categories, each with a dedicated page)
@@ -45,24 +44,6 @@ Contact: 02-2637-6200 · info@sealstar.com · Seoul, Yeongdeungpo-gu, Gukhoe-dae
 - [Shipbuilding & Marine](https://www.sealstar.com/markets/shipbuilding.html) (조선해양)
 - [Aerospace](https://www.sealstar.com/markets/aerospace.html) (우주항공)
 - [Food & Pharmaceutical](https://www.sealstar.com/markets/food-pharma.html) (식·의약품)
-
-## News (individual articles)
-
-- [Sealstar Website Renewal & New News Center](https://www.sealstar.com/news/sealstar-website-renewal.html) — 2026-07-24
-- [Exhibited at KIMEX 2026 — Hydraulic, O-Ring & Hydrogen Sealing Solutions](https://www.sealstar.com/news/kimex-2026.html) — 2026-05-19
-- [Exhibited at BUTECH 2025 — Precision Hydraulic Seals & AED O-Rings](https://www.sealstar.com/news/butech-2025.html) — 2025-05-20
-- [Full-Scale Rollout of Hydrogen Sealing Solutions](https://www.sealstar.com/news/hydrogen-sealing-rollout.html) — 2023-09-20
-- [Exhibited at H2 MEET 2023 — Spring-Energized Seals for Hydrogen](https://www.sealstar.com/news/h2meet-2023.html) — 2023-09-13
-- [Exhibited at BUTECH 2023 — Wide Seal & O-Ring Line-up](https://www.sealstar.com/news/butech-2023.html) — 2023-05-16
-- [Exhibited at H2 MEET 2022 — Hydrogen Vehicle & LH2 Tank Seals](https://www.sealstar.com/news/h2meet-2022.html) — 2022-08-31
-- [Exhibited at SIMTOS 2022 — Mechanical Seals & O-Rings](https://www.sealstar.com/news/simtos-2022.html) — 2022-05-23
-- [Exhibited at SF+AW 2021 — Energized Seals, O-Rings & Hydraulic Seals](https://www.sealstar.com/news/sfaw-2021.html) — 2021-09-08
-- [Exhibited at MachineSoft 2019 — Hydraulic Seals, Urethane & O-Rings](https://www.sealstar.com/news/machinesoft-2019.html) — 2019-10-23
-- [Exhibited at KOREA LAB 2019 — Semiconductor & AMAT Equipment Seals](https://www.sealstar.com/news/korealab-2019.html) — 2019-04-16
-- [Exhibited at Automation World (AIMEX) 2019 — Semiconductor Seals](https://www.sealstar.com/news/aimex-2019.html) — 2019-04-03
-- [Exhibited at KIMEX 2018 (Booth 2C21)](https://www.sealstar.com/news/kimex-2018.html) — 2018-10-23
-- [Exhibited at SEMICON Korea 2018 — Seals, VITON O-Rings & ACM Bearings](https://www.sealstar.com/news/semicon-korea-2018.html) — 2018-01-31
-- [Exhibited at KOMAF 2015 (Booth 4B-068)](https://www.sealstar.com/news/komaf-2015.html) — 2015-10-28
 
 ## Notes
 

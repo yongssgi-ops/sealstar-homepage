@@ -1,16 +1,26 @@
 User-agent: *
 Allow: /
+Disallow: /news
+Disallow: /news.html
 
 User-agent: GPTBot
 Allow: /
+Disallow: /news
+Disallow: /news.html
 
 User-agent: ClaudeBot
 Allow: /
+Disallow: /news
+Disallow: /news.html
 
 User-agent: Google-Extended
 Allow: /
+Disallow: /news
+Disallow: /news.html
 
 User-agent: PerplexityBot
 Allow: /
+Disallow: /news
+Disallow: /news.html
 
 Sitemap: https://www.sealstar.com/sitemap.xml

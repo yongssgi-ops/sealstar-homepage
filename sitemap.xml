@@ -4,7 +4,6 @@
   <url><loc>https://www.sealstar.com/about.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.sealstar.com/markets.html</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
   <url><loc>https://www.sealstar.com/products.html</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://www.sealstar.com/news.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.sealstar.com/contact.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.sealstar.com/products/oring.html</loc><changefreq>monthly</changefreq><priority>0.85</priority></url>
   <url><loc>https://www.sealstar.com/products/capsule.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
@@ -25,21 +24,6 @@
   <url><loc>https://www.sealstar.com/products/acm.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.sealstar.com/products/magnetic.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://www.sealstar.com/products/mechanical.html</loc><changefreq>monthly</changefreq><priority>0.75</priority></url>
-  <url><loc>https://www.sealstar.com/news/sealstar-website-renewal.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/kimex-2026.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/butech-2025.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/hydrogen-sealing-rollout.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/h2meet-2023.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/butech-2023.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/h2meet-2022.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/simtos-2022.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/sfaw-2021.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/machinesoft-2019.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/korealab-2019.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/aimex-2019.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/kimex-2018.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/semicon-korea-2018.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
-  <url><loc>https://www.sealstar.com/news/komaf-2015.html</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
   <url><loc>https://www.sealstar.com/markets/construction.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.sealstar.com/markets/semiconductor.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
   <url><loc>https://www.sealstar.com/markets/powerplant.html</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>

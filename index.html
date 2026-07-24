@@ -216,8 +216,7 @@
       <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
       <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
       <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
-      <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
-      <a href="contact.html"><span class="ko">문의하기</span><span class="en">Contact</span></a>
+            <a href="contact.html"><span class="ko">문의하기</span><span class="en">Contact</span></a>
     </nav>
     <div class="nav-right">
       <div class="gsearch">
@@ -365,21 +364,6 @@
   </div>
 </section>
 
-<!-- ===== NEWS / EXHIBITIONS PREVIEW ===== -->
-<section class="section-soft">
-  <div class="wrap">
-    <div class="head-row">
-      <div>
-        <div class="eyebrow"><span class="ko">홍보센터</span><span class="en">News</span></div>
-        <h2 class="title"><span class="ko">씰스타 소식</span><span class="en">Latest News</span></h2>
-        <p class="lead"><span class="ko">씰스타의 최신소식을 전해드립니다.</span><span class="en">Follow Sealstar's latest updates.</span></p>
-      </div>
-      <a href="news.html" class="btn btn-primary"><span class="ko">전체 보기</span><span class="en">View All</span></a>
-    </div>
-    <div class="ngrid" id="homeNewsGrid"><!-- rendered by js/news.js — always shows the latest 3 posts --></div>
-  </div>
-</section>
-
 <!-- ===== CTA ===== -->
 <section style="padding:0 0 92px">
   <div class="cta-band" id="contact">
@@ -406,8 +390,7 @@
         <a href="about.html"><span class="ko">회사소개</span><span class="en">About</span></a>
         <a href="markets.html"><span class="ko">적용분야</span><span class="en">Markets</span></a>
         <a href="products.html"><span class="ko">제품소개</span><span class="en">Products</span></a>
-        <a href="news.html"><span class="ko">홍보센터</span><span class="en">News</span></a>
-      </div>
+              </div>
       <div>
         <h5><span class="ko">회사 정보</span><span class="en">Company Info</span></h5>
         <a><span class="ko">대표: 양희승</span><span class="en">CEO: Hee-seung Yang</span></a>
@@ -423,26 +406,7 @@
   </div>
 </footer>
 
-<script src="js/news.js"></script>
 <script src="js/search-index.js"></script>
 <script src="js/site.js"></script>
-<script>
-(function(){
-  var grid = document.getElementById('homeNewsGrid');
-  if(!grid || typeof POSTS==='undefined') return;
-  var TAG = {exhibition:{ko:'전시회',en:'Exhibition'},press:{ko:'언론보도',en:'Press'},notice:{ko:'공지',en:'Notice'}};
-  function esc(s){return (s||'').replace(/</g,'&lt;');}
-  var latest = POSTS.slice().sort(function(a,b){ return b.date.localeCompare(a.date); }).slice(0,3);
-  grid.innerHTML = latest.map(function(p){
-    var bg = p.img ? ("background-image:url('"+p.img+"')") : "background:linear-gradient(135deg,var(--navy-2),var(--sky-d))";
-    var href = p.id ? ('news/'+p.id+'.html') : 'news.html';
-    return '<a class="ncard" href="'+href+'">'
-      +'<div class="nh" style="'+bg+'"></div>'
-      +'<div class="nb"><span class="tag"><span class="ko">'+TAG[p.type].ko+'</span><span class="en">'+TAG[p.type].en+'</span></span>'
-      +'<h4><span class="ko">'+esc(p.titleKo)+'</span><span class="en">'+esc(p.titleEn)+'</span></h4>'
-      +'<div class="date"><span>'+p.date+'</span></div></div></a>';
-  }).join('');
-})();
-</script>
 </body>
 </html>

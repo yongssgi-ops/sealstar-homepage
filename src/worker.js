@@ -15,6 +15,11 @@ export default {
       return handleContact(request, env);
     }
 
+    // 홍보센터(뉴스) 임시 비활성화 — 보안 이슈로 접근 차단, 홈으로 리다이렉트
+    if (url.pathname === "/news.html" || url.pathname.startsWith("/news/")) {
+      return Response.redirect(url.origin + "/", 302);
+    }
+
     // 그 외 모든 요청은 정적 자산 그대로 서빙
     return env.ASSETS.fetch(request);
   },
