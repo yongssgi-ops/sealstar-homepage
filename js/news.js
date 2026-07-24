@@ -15,7 +15,7 @@ var POSTS = [
     bodyEn:'Sealstar, a precision sealing solutions specialist, has renewed its website.\n\nProduct information is now organized by category — hydraulic/pneumatic seals, O-rings, oil seals, machined seals, spring-energized seals & PEEK, ACM bearings and magnetic filters — alongside new market pages spanning construction, semiconductor, energy (hydrogen/LNG/nuclear), marine, aerospace and food & pharma.\n\nWe have also launched this News Center to share our exhibitions and media coverage. Guided by the values of technology, quality, delivery and trust since 1982, we remain a faithful partner to our customers.'
   },
   {
-    id:'kimex-2026', type:'exhibition', date:'2026-05-19', img:'images/web/hyd1.jpg',
+    id:'kimex-2026', type:'exhibition', date:'2026-05-19', img:'https://www.hellot.net/data/photos/20260522/art_17797764069431_4fbef8.jpg',
     placeKo:'창원 CECO', placeEn:'CECO, Changwon',
     source:'https://www.hellot.net/news/article.html?no=112775', sourceName:'헬로티',
     titleKo:'KIMEX 2026 참가 — 유공압·오링·수소용 씰링 솔루션 대거 선보여',
@@ -24,7 +24,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at the 2026 Korea International Machinery Expo (KIMEX 2026) at Changwon Convention Center (CECO) from May 19–22, 2026, presenting sealing solutions centered on spring-energized seals, hydraulic/pneumatic seals and O-rings.\n\nThe hydraulic/pneumatic line includes piston, rod, buffer and wiper seals optimized for each operating condition, serving construction, industrial machinery, semiconductor, robotics and marine sectors. Its AED-certified O-rings meet AS568, JIS and metric standards in materials such as NBR, H-NBR, silicone, EPDM, VITON, FFKM and PTFE.\n\nSealstar also showcased ACM bearings and hydrogen/liquid-hydrogen sealing solutions for valves, storage tanks, compressors, pumps, dispensers and pipelines. "Our strength is providing the optimal solution for every operating condition, from hydraulic seals to hydrogen sealing," a company official said.'
   },
   {
-    id:'butech-2025', type:'exhibition', date:'2025-05-20', img:'images/web/oring1.jpg',
+    id:'butech-2025', type:'exhibition', date:'2025-05-20', img:'https://file.yeogie.com/img.Editor/202505/on5HPNSV6u.jpg',
     placeKo:'부산 벡스코', placeEn:'BEXCO, Busan',
     source:'https://yeogienews.com/today/274275', sourceName:'여기에뉴스',
     titleKo:'BUTECH 2025 참가 — 정밀 유공압씰·AED 오링 솔루션 전시',
@@ -42,7 +42,7 @@ var POSTS = [
     bodyEn:'Sealstar (CEO Hee-seung Yang), a specialist in O-rings and seals, has begun a full-scale rollout of hydrogen sealing solutions — a key technology for the carbon-neutral era.\n\nIts hydrogen seals suit valves, storage tanks, compressors, pumps, dispensers, vehicles and pipelines for hydrogen and liquid hydrogen, and are already supplied to domestic hydrogen-compressor makers. Seal geometry and material are designed to customer requirements, with a broad range of resin and spring materials.\n\n"Because gaseous hydrogen is charged at very high pressure, securing tightness in the hydrogen line is critical," said CEO Yang. "We are confident Sealstar\'s specialized hydrogen seals will contribute to gas safety in the hydrogen industry." The AED-certified O-rings cover –25°C to 230°C in materials including NBR, H-NBR, silicone, EPDM, neoprene, VITON, FFKM, polyurethane and PTFE.'
   },
   {
-    id:'h2meet-2023', type:'exhibition', date:'2023-09-13', img:'images/web/spring1.jpg',
+    id:'h2meet-2023', type:'exhibition', date:'2023-09-13', img:'https://cdn.kr.aving.net/news/photo/202309/1783676_713487_528.jpg',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://kr.aving.net/news/articleView.html?idxno=1783676', sourceName:'에이빙(AVING)',
     titleKo:'H2 MEET 2023 참가 — 스프링 에너자이즈 씰로 수소 씰링 역량 입증',
@@ -51,7 +51,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at H2 MEET 2023, Korea\'s largest hydrogen-industry show, at KINTEX Hall 1 from September 13–15, 2023, presenting its Spring Energized Seal.\n\nThe spring-energized seal is a high-performance solution for conditions where polyurethane cannot cope — high pressure and cryogenic temperatures. With a wide temperature range and excellent sealing across diverse fluids and high-speed/high-pressure environments, it suits demanding uses such as liquid hydrogen.\n\nBuilding on know-how accumulated since 1982, Sealstar continues to expand into hydrogen while also supplying molded polyurethane seals, wheels and rollers for heavy equipment and jobsites — including parts for concrete pump trucks, breakers and drilling rigs.'
   },
   {
-    id:'butech-2023', type:'exhibition', date:'2023-05-16', img:'images/web/peek1.jpg',
+    id:'butech-2023', type:'exhibition', date:'2023-05-16', img:'https://file.yeogie.com/img.Editor/202305/7yTGgSLTwj.jpg',
     placeKo:'부산 벡스코', placeEn:'BEXCO, Busan',
     source:'https://robotzine.co.kr/entry/265543', sourceName:'월간로봇기술',
     titleKo:'BUTECH 2023 참가 — 유공압씰·PEEK씰·수소씰·초저온씰 등 폭넓은 라인업 소개',
@@ -60,7 +60,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at the 11th Busan International Machinery Fair (BUTECH 2023) at BEXCO from May 16–19, 2023, presenting a broad range of seals and O-rings.\n\nThe line-up included hydraulic/pneumatic seals, pump & valve seals, PEEK seals, hydrogen seals and cryogenic seals, plus large vacuum-chamber O-rings and VITON, EPDM, silicone and Aflas O-rings — spanning construction and machinery through semiconductor vacuum processes and hydrogen/cryogenic environments.\n\n"Since 1982 we have supplied polyurethane, rubber, O-rings, hydraulic seals and PTFE products to construction, machinery, semiconductor and marine sectors," a Sealstar official said. BUTECH 2023 drew 453 companies from 28 countries across 1,742 booths.'
   },
   {
-    id:'h2meet-2022', type:'exhibition', date:'2022-08-31', img:'images/web/xring1.jpg',
+    id:'h2meet-2022', type:'exhibition', date:'2022-08-31', img:'https://cdn.kr.aving.net/news/photo/202209/1771489_687832_535.jpg',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://kr.aving.net/news/articleView.html?idxno=1771489', sourceName:'에이빙(AVING)',
     titleKo:'H2 MEET 2022 참가 — 수소자동차씰·액화수소 탱크씰 선보여',
@@ -69,7 +69,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at H2 MEET 2022 at KINTEX Hall 2 from August 31 to September 3, 2022, presenting hydrogen sealing solutions including hydrogen-vehicle seals and liquid-hydrogen tank seals.\n\nThe company offers hydraulic/pneumatic seals in diverse designs and sizes, and also showcased general-purpose and hydraulic-motor oil seals that prevent oil leakage and contaminant ingress on rotating shafts and moving parts.\n\nH2 MEET is Korea\'s largest hydrogen-industry exhibition, spanning production, storage, transport and utilization. Sealstar continues to strengthen its response to the hydrogen sector on the strength of its accumulated sealing technology.'
   },
   {
-    id:'simtos-2022', type:'exhibition', date:'2022-05-23', img:'images/web/mechanical1.jpg',
+    id:'simtos-2022', type:'exhibition', date:'2022-05-23', img:'https://pimg.daara.co.kr/kidd/photo/2022/05/23/1653276880_34.jpg',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://kidd.co.kr/news/227183', sourceName:'산업일보',
     titleKo:'SIMTOS 2022 참가 — 산업용 기계용 메카니컬 씰·오링 전시',
@@ -78,7 +78,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at SIMTOS 2022 (Seoul International Production & Manufacturing Technology Show) at KINTEX Halls 1–2 from May 23–27, 2022, presenting precision sealing products such as mechanical seals and O-rings for industrial machinery.\n\nSIMTOS is Korea\'s largest manufacturing-technology exhibition, drawing some 800 companies from 29 countries. Sealstar introduced sealing products for hydraulic cylinder manufacturing and maintenance and connected with buyers at home and abroad.\n\nWith a broad portfolio of hydraulic seals, O-rings, oil seals, machined seals and spring-energized seals, Sealstar continues to serve as a sealing partner for increasingly precise manufacturing.'
   },
   {
-    id:'sfaw-2021', type:'exhibition', date:'2021-09-08', img:'images/web/capsule1.jpg',
+    id:'sfaw-2021', type:'exhibition', date:'2021-09-08', img:'https://www.hellot.net/data/photos/20210834/art_16298716668099_8e0135.jpg',
     placeKo:'서울 코엑스', placeEn:'COEX, Seoul',
     source:'https://www.hellot.net/news/article.html?no=61021', sourceName:'헬로티',
     titleKo:'SF+AW 2021 참가 — 에너자이즈씰·오링·유공압씰 전시',
@@ -87,7 +87,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at Smart Factory + Automation World 2021 (SF+AW 2021) at COEX, Seoul, from September 8–10, 2021, presenting spring-energized seals, O-rings and hydraulic/pneumatic seals.\n\nThe spring-energized seal delivers excellent sealing across a wide temperature range and demanding high-speed/high-pressure conditions. Sealstar operates one of Korea\'s largest imported-O-ring inventories through overseas partnerships, supplying semiconductor equipment, pharmaceutical parts, automation robots and industrial machinery.\n\nIts hydraulic/pneumatic seals, available in many designs and sizes, are supplied to leading cylinder makers and hydraulic component manufacturers, with fast delivery backed by large in-house stock.'
   },
   {
-    id:'machinesoft-2019', type:'exhibition', date:'2019-10-23', img:'images/web/molded1.jpg',
+    id:'machinesoft-2019', type:'exhibition', date:'2019-10-23', img:'https://www.hellot.net/data/photos/images/000183/20191024202245304_C41G6463.jpg',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://www.hellot.net/news/article.html?no=48357', sourceName:'헬로티',
     titleKo:'2019 머신소프트(한국산업대전) 참가 — 유공압 씰·우레탄·오링 전시',
@@ -96,7 +96,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at MachineSoft 2019 (part of Korea Industrial Exhibition), presenting hydraulic/pneumatic seals, urethane and O-ring products used in construction equipment, industrial machinery, semiconductor equipment and marine parts.\n\nThe display featured hydraulic seals such as Type B Polyseal, UBR Rod Seal and UNP Piston Seal, plus O-rings and encapsulated O-rings. "Our products are widely used in hydraulic cylinder manufacturing and repair, construction equipment, petrochemical and power-plant valves, and ships," a company official said.\n\nSealstar specializes in hydraulic/pneumatic seals, pump & valve seals, inch-size seals, O-rings, ACM bearings and rubber products.'
   },
   {
-    id:'korealab-2019', type:'exhibition', date:'2019-04-16', img:'images/web/perfluoro1.jpg',
+    id:'korealab-2019', type:'exhibition', date:'2019-04-16', img:'https://cdn.industrynews.co.kr/news/photo/201904/31243_24242_1338.jpg',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://www.industrynews.co.kr/news/articleView.html?idxno=31243', sourceName:'인더스트리뉴스',
     titleKo:'KOREA LAB 2019 참가 — 반도체 장비 씰·AMAT 장비 씰 선보여',
@@ -105,7 +105,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at KOREA LAB 2019 (International Analysis, Scientific, Diagnostic & Lab Technology exhibition) at KINTEX, Goyang, from April 16–19, 2019, presenting semiconductor equipment seals, AMAT equipment seals and energized seals.\n\nBecause particle generation and chemical leakage directly affect semiconductor yield, Sealstar supplies chemical-resistant, low-particle seals for semiconductor tools and Applied Materials (AMAT) equipment.\n\nBuilding on know-how accumulated since 1982, Sealstar has established itself as a trusted sealing partner in the semiconductor and display sectors.'
   },
   {
-    id:'aimex-2019', type:'exhibition', date:'2019-04-03', img:'images/web/acm1.jpg',
+    id:'aimex-2019', type:'exhibition', date:'2019-04-03', img:'https://cdn.industrynews.co.kr/news/photo/201904/30358_23303_5620.jpg',
     placeKo:'서울 코엑스', placeEn:'COEX, Seoul',
     source:'https://www.industrynews.co.kr/news/articleView.html?idxno=30358', sourceName:'인더스트리뉴스',
     titleKo:'오토메이션월드(AIMEX) 2019 참가 — 반도체 장비 씰 전시',
@@ -114,7 +114,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at Automation World (AIMEX) 2019, a smart-factory and industrial-automation show at COEX, Seoul, presenting semiconductor equipment seals, AMAT equipment seals and energized seals.\n\nThe company supplies chemical-resistant seals for semiconductor process tools and custom seals compatible with global semiconductor equipment brands, showcasing its precision sealing capability in the automation and semiconductor fields.\n\nAutomation World is one of Korea\'s leading automation and smart-factory exhibitions, and Sealstar continues to broaden its reach among industrial-automation customers.'
   },
   {
-    id:'kimex-2018', type:'exhibition', date:'2018-10-23', img:'images/web/hyd1.jpg',
+    id:'kimex-2018', type:'exhibition', date:'2018-10-23', img:'https://img.daara.kr/exhi/photo/KIMEX2018/2C21_1.png',
     placeKo:'창원 CECO', placeEn:'CECO, Changwon',
     source:'https://exhi.daara.co.kr/2018_kimex/bbs/sub31_view.html?idx=30311', sourceName:'다아라 온라인전시관',
     titleKo:'2018 한국국제기계박람회(KIMEX) 참가 — 유공압씰 전시 (부스 2C21)',
@@ -123,7 +123,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at the 2018 Korea International Machinery Expo (KIMEX) at Changwon Convention Center (CECO) from October 23–26, 2018, at booth 2C21, displaying hydraulic/pneumatic seals and other sealing products.\n\nIn Changwon — a hub of southeastern Korea\'s manufacturing — Sealstar met customers across construction, machinery and shipbuilding, introducing hydraulic cylinder seals, O-rings and more.\n\nBuilding on know-how since 1982, Sealstar supplies sealing solutions to major industrial sites nationwide.'
   },
   {
-    id:'semicon-korea-2018', type:'exhibition', date:'2018-01-31', img:'images/web/oring1.jpg',
+    id:'semicon-korea-2018', type:'exhibition', date:'2018-01-31', img:'https://www.hellot.net/data/photos/images/000074/20180202181606451_G8WY6CGC.jpg',
     placeKo:'서울 코엑스', placeEn:'COEX, Seoul',
     source:'https://www.hellot.net/news/article.html?no=39473', sourceName:'헬로티',
     titleKo:'세미콘 코리아 2018 참가 — 유공압 씰·VITON 오링·ACM 베어링 소개',
@@ -132,7 +132,7 @@ var POSTS = [
     bodyEn:'Sealstar exhibited at SEMICON Korea 2018 — the world\'s largest semiconductor exhibition — at COEX from January 31, 2018, presenting hydraulic/pneumatic seals, seals for imported equipment, VITON O-rings and other solutions useful across industries.\n\nSealstar\'s ACM bearings, made from a high-performance composite of special polyester resin, precision fiber and additives, offer excellent load capacity, low friction and chemical resistance. The company also showed Aflas and FFKM O-rings for demanding semiconductor processes.\n\nSEMICON Korea gathers over 40,000 semiconductor engineers and industry leaders, and Sealstar continues to demonstrate its semiconductor sealing expertise there.'
   },
   {
-    id:'komaf-2015', type:'exhibition', date:'2015-10-28', img:'images/web/piston1.jpg',
+    id:'komaf-2015', type:'exhibition', date:'2015-10-28', img:'https://img.daara.kr/exhi/photo/2015_komaf/4B-068_1.png',
     placeKo:'일산 킨텍스', placeEn:'KINTEX, Ilsan',
     source:'https://exhi.daara.co.kr/2015_komaf/bbs/sub31_view.html?idx=16763', sourceName:'다아라 온라인전시관',
     titleKo:'2015 한국기계전(KOMAF) 참가 — 유공압씰 전문 기업으로 참가 (부스 4B-068)',
