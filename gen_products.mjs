@@ -266,8 +266,6 @@ ${headerBlock.replace(/href="index\.html"/g,'href="../index.html"').replace(/hre
   </div>
 </section>
 
-<p style="text-align:center;margin:0 0 60px"><a href="../products.html#${it.id}" class="btn btn-ghost"><span class="ko">인터랙티브 카탈로그에서 보기</span><span class="en">View in Interactive Catalog</span></a></p>
-
 ${footerBlock.replace(/href="about\.html"/g,'href="../about.html"').replace(/href="markets\.html"/g,'href="../markets.html"').replace(/href="products\.html"/g,'href="../products.html"').replace(/href="news\.html"/g,'href="../news.html"').replace('images/logo-white.png','../images/logo-white.png')}
 
 <script src="../js/site.js"></script>
