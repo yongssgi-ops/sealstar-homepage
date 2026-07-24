@@ -97,7 +97,8 @@ function setLang(l){
       return;
     }
     panel.innerHTML = list.map(function(e,i){
-      return '<a class="gsearch-item'+(i===0?' active':'')+'" href="'+prefix+e.p+'#'+e.i+'" data-p="'+e.p+'" data-i="'+e.i+'">'+e.l+'</a>';
+      var href = prefix + e.p + (e.i ? '#' + e.i : '');
+      return '<a class="gsearch-item'+(i===0?' active':'')+'" href="'+href+'" data-p="'+e.p+'" data-i="'+e.i+'">'+e.l+'</a>';
     }).join('');
     panel.classList.add('show');
   }
@@ -113,8 +114,8 @@ function setLang(l){
 
   function go(entry){
     hide(); input.value=''; input.blur();
-    if(entry.p === curPage){ jumpTo(entry.i); }
-    else { location.href = prefix + entry.p + '#' + entry.i; }
+    if(entry.p === curPage){ if(entry.i) jumpTo(entry.i); }
+    else { location.href = prefix + entry.p + (entry.i ? '#' + entry.i : ''); }
   }
 
   input.addEventListener('input', function(){ render(search(input.value), input.value.trim()); });
