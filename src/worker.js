@@ -16,7 +16,7 @@ export default {
     }
 
     // 홍보센터(뉴스) 임시 비활성화 — 보안 이슈로 접근 차단, 홈으로 리다이렉트
-    if (url.pathname === "/news.html" || url.pathname.startsWith("/news/")) {
+    if (url.pathname === "/news" || url.pathname === "/news.html" || url.pathname.startsWith("/news/")) {
       return Response.redirect(url.origin + "/", 302);
     }
 
