@@ -7,7 +7,7 @@
    ============================================================ */
 var POSTS = [
   {
-    id:'sealstar-website-renewal', type:'notice', date:'2026-07-22', img:'images/web/company-exterior.jpg',
+    id:'sealstar-website-renewal', type:'notice', date:'2026-07-24', img:'images/web/company-exterior.jpg',
     placeKo:'', placeEn:'',
     titleKo:'씰스타 홈페이지 리뉴얼 및 홍보센터 신설',
     titleEn:'Sealstar Website Renewal & New News Center',
